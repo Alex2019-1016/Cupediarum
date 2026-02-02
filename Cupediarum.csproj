@@ -58,11 +58,11 @@
     <Compile Include="CantidadPersonas.Designer.cs">
       <DependentUpon>CantidadPersonas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Comadas.cs">
+    <Compile Include="CapturaProductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Comadas.Designer.cs">
-      <DependentUpon>Comadas.cs</DependentUpon>
+    <Compile Include="CapturaProductos.Designer.cs">
+      <DependentUpon>CapturaProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="DatosCuenta.cs">
       <SubType>Form</SubType>
@@ -102,8 +102,8 @@
     <EmbeddedResource Include="CantidadPersonas.resx">
       <DependentUpon>CantidadPersonas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Comadas.resx">
-      <DependentUpon>Comadas.cs</DependentUpon>
+    <EmbeddedResource Include="CapturaProductos.resx">
+      <DependentUpon>CapturaProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DatosCuenta.resx">
       <DependentUpon>DatosCuenta.cs</DependentUpon>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cupediarum
 {
-    public partial class FrmComadas : Form
+    public partial class FrmCapturaProductos : Form
     {
-        public FrmComadas()
+        public FrmCapturaProductos()
         {
             InitializeComponent();
         }
@@ -23,6 +23,11 @@ namespace Cupediarum
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void FrmComadas_Load(object sender, EventArgs e)
         {
 
         }

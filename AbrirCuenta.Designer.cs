@@ -30,24 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AbrirCuenta));
             this.RTBCuenta = new System.Windows.Forms.RichTextBox();
-            this.PnlNumeros = new System.Windows.Forms.Panel();
-            this.BtnMas = new System.Windows.Forms.Button();
-            this.BtnGuion = new System.Windows.Forms.Button();
-            this.BtnAsterisco = new System.Windows.Forms.Button();
-            this.BtnSlash = new System.Windows.Forms.Button();
-            this.BtnGuionBajo = new System.Windows.Forms.Button();
-            this.Btn9 = new System.Windows.Forms.Button();
-            this.Btn8 = new System.Windows.Forms.Button();
-            this.Btn7 = new System.Windows.Forms.Button();
-            this.Btn6 = new System.Windows.Forms.Button();
-            this.Btn5 = new System.Windows.Forms.Button();
-            this.Btn4 = new System.Windows.Forms.Button();
-            this.Btn3 = new System.Windows.Forms.Button();
-            this.Btn2 = new System.Windows.Forms.Button();
-            this.Btn1 = new System.Windows.Forms.Button();
-            this.BtnIntro = new System.Windows.Forms.Button();
-            this.BtnPunto = new System.Windows.Forms.Button();
-            this.Btn0 = new System.Windows.Forms.Button();
             this.PnlLetras = new System.Windows.Forms.Panel();
             this.BtnAceptar = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
@@ -84,318 +66,41 @@
             this.BtnE = new System.Windows.Forms.Button();
             this.BtnW = new System.Windows.Forms.Button();
             this.BtnQ = new System.Windows.Forms.Button();
-            this.PnlNumeros.SuspendLayout();
+            this.PnlNumeros = new System.Windows.Forms.Panel();
+            this.BtnMas = new System.Windows.Forms.Button();
+            this.BtnGuion = new System.Windows.Forms.Button();
+            this.BtnAsterisco = new System.Windows.Forms.Button();
+            this.BtnSlash = new System.Windows.Forms.Button();
+            this.BtnGuionBajo = new System.Windows.Forms.Button();
+            this.Btn9 = new System.Windows.Forms.Button();
+            this.Btn8 = new System.Windows.Forms.Button();
+            this.Btn7 = new System.Windows.Forms.Button();
+            this.Btn6 = new System.Windows.Forms.Button();
+            this.Btn5 = new System.Windows.Forms.Button();
+            this.Btn4 = new System.Windows.Forms.Button();
+            this.Btn3 = new System.Windows.Forms.Button();
+            this.Btn2 = new System.Windows.Forms.Button();
+            this.Btn1 = new System.Windows.Forms.Button();
+            this.BtnIntro = new System.Windows.Forms.Button();
+            this.BtnPunto = new System.Windows.Forms.Button();
+            this.Btn0 = new System.Windows.Forms.Button();
             this.PnlLetras.SuspendLayout();
+            this.PnlNumeros.SuspendLayout();
             this.SuspendLayout();
             // 
             // RTBCuenta
             // 
+            this.RTBCuenta.BackColor = System.Drawing.Color.Gainsboro;
             this.RTBCuenta.Location = new System.Drawing.Point(2, 2);
             this.RTBCuenta.Name = "RTBCuenta";
             this.RTBCuenta.Size = new System.Drawing.Size(472, 313);
             this.RTBCuenta.TabIndex = 0;
             this.RTBCuenta.Text = "";
             // 
-            // PnlNumeros
-            // 
-            this.PnlNumeros.BackColor = System.Drawing.Color.Transparent;
-            this.PnlNumeros.Controls.Add(this.BtnMas);
-            this.PnlNumeros.Controls.Add(this.BtnGuion);
-            this.PnlNumeros.Controls.Add(this.BtnAsterisco);
-            this.PnlNumeros.Controls.Add(this.BtnSlash);
-            this.PnlNumeros.Controls.Add(this.BtnGuionBajo);
-            this.PnlNumeros.Controls.Add(this.Btn9);
-            this.PnlNumeros.Controls.Add(this.Btn8);
-            this.PnlNumeros.Controls.Add(this.Btn7);
-            this.PnlNumeros.Controls.Add(this.Btn6);
-            this.PnlNumeros.Controls.Add(this.Btn5);
-            this.PnlNumeros.Controls.Add(this.Btn4);
-            this.PnlNumeros.Controls.Add(this.Btn3);
-            this.PnlNumeros.Controls.Add(this.Btn2);
-            this.PnlNumeros.Controls.Add(this.Btn1);
-            this.PnlNumeros.Controls.Add(this.BtnIntro);
-            this.PnlNumeros.Controls.Add(this.BtnPunto);
-            this.PnlNumeros.Controls.Add(this.Btn0);
-            this.PnlNumeros.Location = new System.Drawing.Point(480, 5);
-            this.PnlNumeros.Name = "PnlNumeros";
-            this.PnlNumeros.Size = new System.Drawing.Size(252, 313);
-            this.PnlNumeros.TabIndex = 50;
-            // 
-            // BtnMas
-            // 
-            this.BtnMas.BackColor = System.Drawing.Color.DarkSalmon;
-            this.BtnMas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMas.BackgroundImage")));
-            this.BtnMas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnMas.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnMas.FlatAppearance.BorderSize = 3;
-            this.BtnMas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMas.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMas.Location = new System.Drawing.Point(187, 66);
-            this.BtnMas.Name = "BtnMas";
-            this.BtnMas.Size = new System.Drawing.Size(60, 121);
-            this.BtnMas.TabIndex = 18;
-            this.BtnMas.Text = "+";
-            this.BtnMas.UseVisualStyleBackColor = false;
-            // 
-            // BtnGuion
-            // 
-            this.BtnGuion.BackColor = System.Drawing.Color.DarkSalmon;
-            this.BtnGuion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnGuion.BackgroundImage")));
-            this.BtnGuion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnGuion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnGuion.FlatAppearance.BorderSize = 3;
-            this.BtnGuion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGuion.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGuion.Location = new System.Drawing.Point(187, 5);
-            this.BtnGuion.Name = "BtnGuion";
-            this.BtnGuion.Size = new System.Drawing.Size(60, 60);
-            this.BtnGuion.TabIndex = 17;
-            this.BtnGuion.Text = "-";
-            this.BtnGuion.UseVisualStyleBackColor = false;
-            // 
-            // BtnAsterisco
-            // 
-            this.BtnAsterisco.BackColor = System.Drawing.Color.DarkSalmon;
-            this.BtnAsterisco.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAsterisco.BackgroundImage")));
-            this.BtnAsterisco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnAsterisco.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnAsterisco.FlatAppearance.BorderSize = 3;
-            this.BtnAsterisco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAsterisco.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAsterisco.Location = new System.Drawing.Point(126, 5);
-            this.BtnAsterisco.Name = "BtnAsterisco";
-            this.BtnAsterisco.Size = new System.Drawing.Size(60, 60);
-            this.BtnAsterisco.TabIndex = 16;
-            this.BtnAsterisco.Text = "*";
-            this.BtnAsterisco.UseVisualStyleBackColor = false;
-            // 
-            // BtnSlash
-            // 
-            this.BtnSlash.BackColor = System.Drawing.Color.DarkSalmon;
-            this.BtnSlash.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSlash.BackgroundImage")));
-            this.BtnSlash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnSlash.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnSlash.FlatAppearance.BorderSize = 3;
-            this.BtnSlash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSlash.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSlash.Location = new System.Drawing.Point(65, 5);
-            this.BtnSlash.Name = "BtnSlash";
-            this.BtnSlash.Size = new System.Drawing.Size(60, 60);
-            this.BtnSlash.TabIndex = 15;
-            this.BtnSlash.Text = "/";
-            this.BtnSlash.UseVisualStyleBackColor = false;
-            // 
-            // BtnGuionBajo
-            // 
-            this.BtnGuionBajo.BackColor = System.Drawing.Color.DarkSalmon;
-            this.BtnGuionBajo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnGuionBajo.BackgroundImage")));
-            this.BtnGuionBajo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnGuionBajo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnGuionBajo.FlatAppearance.BorderSize = 3;
-            this.BtnGuionBajo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGuionBajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGuionBajo.Location = new System.Drawing.Point(4, 5);
-            this.BtnGuionBajo.Name = "BtnGuionBajo";
-            this.BtnGuionBajo.Size = new System.Drawing.Size(60, 60);
-            this.BtnGuionBajo.TabIndex = 14;
-            this.BtnGuionBajo.Text = "_";
-            this.BtnGuionBajo.UseVisualStyleBackColor = false;
-            // 
-            // Btn9
-            // 
-            this.Btn9.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn9.BackgroundImage")));
-            this.Btn9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn9.FlatAppearance.BorderSize = 3;
-            this.Btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn9.Location = new System.Drawing.Point(126, 66);
-            this.Btn9.Name = "Btn9";
-            this.Btn9.Size = new System.Drawing.Size(60, 60);
-            this.Btn9.TabIndex = 13;
-            this.Btn9.Text = "9";
-            this.Btn9.UseVisualStyleBackColor = false;
-            // 
-            // Btn8
-            // 
-            this.Btn8.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn8.BackgroundImage")));
-            this.Btn8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn8.FlatAppearance.BorderSize = 3;
-            this.Btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn8.Location = new System.Drawing.Point(65, 66);
-            this.Btn8.Name = "Btn8";
-            this.Btn8.Size = new System.Drawing.Size(60, 60);
-            this.Btn8.TabIndex = 12;
-            this.Btn8.Text = "8";
-            this.Btn8.UseVisualStyleBackColor = false;
-            // 
-            // Btn7
-            // 
-            this.Btn7.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn7.BackgroundImage")));
-            this.Btn7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn7.FlatAppearance.BorderSize = 3;
-            this.Btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn7.Location = new System.Drawing.Point(4, 66);
-            this.Btn7.Name = "Btn7";
-            this.Btn7.Size = new System.Drawing.Size(60, 60);
-            this.Btn7.TabIndex = 11;
-            this.Btn7.Text = "7";
-            this.Btn7.UseVisualStyleBackColor = false;
-            // 
-            // Btn6
-            // 
-            this.Btn6.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn6.BackgroundImage")));
-            this.Btn6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn6.FlatAppearance.BorderSize = 3;
-            this.Btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn6.Location = new System.Drawing.Point(126, 127);
-            this.Btn6.Name = "Btn6";
-            this.Btn6.Size = new System.Drawing.Size(60, 60);
-            this.Btn6.TabIndex = 10;
-            this.Btn6.Text = "6";
-            this.Btn6.UseVisualStyleBackColor = false;
-            // 
-            // Btn5
-            // 
-            this.Btn5.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn5.BackgroundImage")));
-            this.Btn5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn5.FlatAppearance.BorderSize = 3;
-            this.Btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn5.Location = new System.Drawing.Point(65, 127);
-            this.Btn5.Name = "Btn5";
-            this.Btn5.Size = new System.Drawing.Size(60, 60);
-            this.Btn5.TabIndex = 9;
-            this.Btn5.Text = "5";
-            this.Btn5.UseVisualStyleBackColor = false;
-            // 
-            // Btn4
-            // 
-            this.Btn4.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn4.BackgroundImage")));
-            this.Btn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn4.FlatAppearance.BorderSize = 3;
-            this.Btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn4.Location = new System.Drawing.Point(4, 127);
-            this.Btn4.Name = "Btn4";
-            this.Btn4.Size = new System.Drawing.Size(60, 60);
-            this.Btn4.TabIndex = 8;
-            this.Btn4.Text = "4";
-            this.Btn4.UseVisualStyleBackColor = false;
-            // 
-            // Btn3
-            // 
-            this.Btn3.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn3.BackgroundImage")));
-            this.Btn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn3.FlatAppearance.BorderSize = 3;
-            this.Btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn3.Location = new System.Drawing.Point(126, 188);
-            this.Btn3.Name = "Btn3";
-            this.Btn3.Size = new System.Drawing.Size(60, 60);
-            this.Btn3.TabIndex = 7;
-            this.Btn3.Text = "3";
-            this.Btn3.UseVisualStyleBackColor = false;
-            // 
-            // Btn2
-            // 
-            this.Btn2.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn2.BackgroundImage")));
-            this.Btn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn2.FlatAppearance.BorderSize = 3;
-            this.Btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn2.Location = new System.Drawing.Point(65, 188);
-            this.Btn2.Name = "Btn2";
-            this.Btn2.Size = new System.Drawing.Size(60, 60);
-            this.Btn2.TabIndex = 6;
-            this.Btn2.Text = "2";
-            this.Btn2.UseVisualStyleBackColor = false;
-            // 
-            // Btn1
-            // 
-            this.Btn1.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn1.BackgroundImage")));
-            this.Btn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn1.FlatAppearance.BorderSize = 3;
-            this.Btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn1.Location = new System.Drawing.Point(4, 188);
-            this.Btn1.Name = "Btn1";
-            this.Btn1.Size = new System.Drawing.Size(60, 60);
-            this.Btn1.TabIndex = 5;
-            this.Btn1.Text = "1";
-            this.Btn1.UseVisualStyleBackColor = false;
-            // 
-            // BtnIntro
-            // 
-            this.BtnIntro.BackColor = System.Drawing.Color.DarkSalmon;
-            this.BtnIntro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnIntro.BackgroundImage")));
-            this.BtnIntro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnIntro.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnIntro.FlatAppearance.BorderSize = 3;
-            this.BtnIntro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnIntro.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnIntro.Location = new System.Drawing.Point(187, 188);
-            this.BtnIntro.Name = "BtnIntro";
-            this.BtnIntro.Size = new System.Drawing.Size(60, 121);
-            this.BtnIntro.TabIndex = 4;
-            this.BtnIntro.Text = "Intro";
-            this.BtnIntro.UseVisualStyleBackColor = false;
-            // 
-            // BtnPunto
-            // 
-            this.BtnPunto.BackColor = System.Drawing.Color.DarkSalmon;
-            this.BtnPunto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPunto.BackgroundImage")));
-            this.BtnPunto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnPunto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnPunto.FlatAppearance.BorderSize = 3;
-            this.BtnPunto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPunto.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPunto.Location = new System.Drawing.Point(126, 249);
-            this.BtnPunto.Name = "BtnPunto";
-            this.BtnPunto.Size = new System.Drawing.Size(60, 60);
-            this.BtnPunto.TabIndex = 3;
-            this.BtnPunto.Text = ".";
-            this.BtnPunto.UseVisualStyleBackColor = false;
-            // 
-            // Btn0
-            // 
-            this.Btn0.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn0.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn0.BackgroundImage")));
-            this.Btn0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn0.FlatAppearance.BorderSize = 3;
-            this.Btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn0.Location = new System.Drawing.Point(5, 249);
-            this.Btn0.Name = "Btn0";
-            this.Btn0.Size = new System.Drawing.Size(120, 60);
-            this.Btn0.TabIndex = 2;
-            this.Btn0.Text = "0";
-            this.Btn0.UseVisualStyleBackColor = false;
-            // 
             // PnlLetras
             // 
             this.PnlLetras.BackColor = System.Drawing.Color.Transparent;
+            this.PnlLetras.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PnlLetras.Controls.Add(this.BtnAceptar);
             this.PnlLetras.Controls.Add(this.BtnCancelar);
             this.PnlLetras.Controls.Add(this.BtnBorrar);
@@ -431,21 +136,22 @@
             this.PnlLetras.Controls.Add(this.BtnE);
             this.PnlLetras.Controls.Add(this.BtnW);
             this.PnlLetras.Controls.Add(this.BtnQ);
-            this.PnlLetras.Location = new System.Drawing.Point(3, 319);
+            this.PnlLetras.Location = new System.Drawing.Point(2, 320);
             this.PnlLetras.Name = "PnlLetras";
-            this.PnlLetras.Size = new System.Drawing.Size(726, 246);
+            this.PnlLetras.Size = new System.Drawing.Size(726, 253);
             this.PnlLetras.TabIndex = 51;
+            this.PnlLetras.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlLetras_Paint);
             // 
             // BtnAceptar
             // 
-            this.BtnAceptar.BackColor = System.Drawing.Color.DarkSalmon;
-            this.BtnAceptar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAceptar.BackgroundImage")));
+            this.BtnAceptar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAceptar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.BtnAceptar.FlatAppearance.BorderSize = 3;
+            this.BtnAceptar.FlatAppearance.BorderSize = 5;
             this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAceptar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAceptar.Image")));
+            this.BtnAceptar.Image = global::Cupediarum.Properties.Resources.Icono_RDAceptar32;
             this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnAceptar.Location = new System.Drawing.Point(539, 186);
             this.BtnAceptar.Name = "BtnAceptar";
@@ -457,14 +163,14 @@
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.BackColor = System.Drawing.Color.DarkSalmon;
-            this.BtnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.BackgroundImage")));
+            this.BtnCancelar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnCancelar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.BtnCancelar.FlatAppearance.BorderSize = 3;
+            this.BtnCancelar.FlatAppearance.BorderSize = 5;
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.Image")));
+            this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Icono_RDCancelar32;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnCancelar.Location = new System.Drawing.Point(631, 186);
             this.BtnCancelar.Name = "BtnCancelar";
@@ -476,14 +182,14 @@
             // 
             // BtnBorrar
             // 
-            this.BtnBorrar.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnBorrar.BackColor = System.Drawing.Color.LightCoral;
             this.BtnBorrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBorrar.BackgroundImage")));
             this.BtnBorrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnBorrar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnBorrar.FlatAppearance.BorderSize = 3;
             this.BtnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBorrar.Image = ((System.Drawing.Image)(resources.GetObject("BtnBorrar.Image")));
+            this.BtnBorrar.Image = global::Cupediarum.Properties.Resources.Icono_Borrar;
             this.BtnBorrar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BtnBorrar.Location = new System.Drawing.Point(613, 3);
             this.BtnBorrar.Name = "BtnBorrar";
@@ -495,8 +201,8 @@
             // 
             // BtnMinuscula
             // 
-            this.BtnMinuscula.BackColor = System.Drawing.Color.DarkSalmon;
-            this.BtnMinuscula.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMinuscula.BackgroundImage")));
+            this.BtnMinuscula.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnMinuscula.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnMinuscula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnMinuscula.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnMinuscula.FlatAppearance.BorderSize = 3;
@@ -511,8 +217,8 @@
             // 
             // BtnEspacio
             // 
-            this.BtnEspacio.BackColor = System.Drawing.Color.DarkSalmon;
-            this.BtnEspacio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnEspacio.BackgroundImage")));
+            this.BtnEspacio.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnEspacio.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnEspacio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnEspacio.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnEspacio.FlatAppearance.BorderSize = 3;
@@ -526,7 +232,7 @@
             // 
             // BtnPunto2
             // 
-            this.BtnPunto2.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnPunto2.BackColor = System.Drawing.Color.LightCoral;
             this.BtnPunto2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPunto2.BackgroundImage")));
             this.BtnPunto2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnPunto2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -542,7 +248,7 @@
             // 
             // BtnComa
             // 
-            this.BtnComa.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnComa.BackColor = System.Drawing.Color.LightCoral;
             this.BtnComa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnComa.BackgroundImage")));
             this.BtnComa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnComa.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -558,7 +264,7 @@
             // 
             // BtnM
             // 
-            this.BtnM.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnM.BackColor = System.Drawing.Color.LightCoral;
             this.BtnM.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnM.BackgroundImage")));
             this.BtnM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnM.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -574,7 +280,7 @@
             // 
             // BtnN
             // 
-            this.BtnN.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnN.BackColor = System.Drawing.Color.LightCoral;
             this.BtnN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnN.BackgroundImage")));
             this.BtnN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnN.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -590,7 +296,7 @@
             // 
             // BtnB
             // 
-            this.BtnB.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnB.BackColor = System.Drawing.Color.LightCoral;
             this.BtnB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnB.BackgroundImage")));
             this.BtnB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnB.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -606,7 +312,7 @@
             // 
             // BtnV
             // 
-            this.BtnV.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnV.BackColor = System.Drawing.Color.LightCoral;
             this.BtnV.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnV.BackgroundImage")));
             this.BtnV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnV.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -622,7 +328,7 @@
             // 
             // BtnC
             // 
-            this.BtnC.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnC.BackColor = System.Drawing.Color.LightCoral;
             this.BtnC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnC.BackgroundImage")));
             this.BtnC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnC.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -638,7 +344,7 @@
             // 
             // BtnX
             // 
-            this.BtnX.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnX.BackColor = System.Drawing.Color.LightCoral;
             this.BtnX.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnX.BackgroundImage")));
             this.BtnX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnX.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -654,7 +360,7 @@
             // 
             // BtnZ
             // 
-            this.BtnZ.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnZ.BackColor = System.Drawing.Color.LightCoral;
             this.BtnZ.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnZ.BackgroundImage")));
             this.BtnZ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnZ.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -670,7 +376,7 @@
             // 
             // BtnArroba
             // 
-            this.BtnArroba.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnArroba.BackColor = System.Drawing.Color.LightCoral;
             this.BtnArroba.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnArroba.BackgroundImage")));
             this.BtnArroba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnArroba.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -686,7 +392,7 @@
             // 
             // BtnÑ
             // 
-            this.BtnÑ.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnÑ.BackColor = System.Drawing.Color.LightCoral;
             this.BtnÑ.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnÑ.BackgroundImage")));
             this.BtnÑ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnÑ.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -702,7 +408,7 @@
             // 
             // BtnL
             // 
-            this.BtnL.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnL.BackColor = System.Drawing.Color.LightCoral;
             this.BtnL.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnL.BackgroundImage")));
             this.BtnL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnL.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -718,7 +424,7 @@
             // 
             // BtnK
             // 
-            this.BtnK.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnK.BackColor = System.Drawing.Color.LightCoral;
             this.BtnK.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnK.BackgroundImage")));
             this.BtnK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnK.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -734,7 +440,7 @@
             // 
             // BtnJ
             // 
-            this.BtnJ.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnJ.BackColor = System.Drawing.Color.LightCoral;
             this.BtnJ.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnJ.BackgroundImage")));
             this.BtnJ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnJ.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -750,7 +456,7 @@
             // 
             // BtnH
             // 
-            this.BtnH.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnH.BackColor = System.Drawing.Color.LightCoral;
             this.BtnH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnH.BackgroundImage")));
             this.BtnH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnH.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -766,7 +472,7 @@
             // 
             // BtnG
             // 
-            this.BtnG.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnG.BackColor = System.Drawing.Color.LightCoral;
             this.BtnG.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnG.BackgroundImage")));
             this.BtnG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnG.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -782,7 +488,7 @@
             // 
             // BtnF
             // 
-            this.BtnF.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnF.BackColor = System.Drawing.Color.LightCoral;
             this.BtnF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnF.BackgroundImage")));
             this.BtnF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnF.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -798,7 +504,7 @@
             // 
             // BtnD
             // 
-            this.BtnD.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnD.BackColor = System.Drawing.Color.LightCoral;
             this.BtnD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnD.BackgroundImage")));
             this.BtnD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnD.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -814,7 +520,7 @@
             // 
             // BtnS
             // 
-            this.BtnS.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnS.BackColor = System.Drawing.Color.LightCoral;
             this.BtnS.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnS.BackgroundImage")));
             this.BtnS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -830,7 +536,7 @@
             // 
             // BtnA
             // 
-            this.BtnA.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnA.BackColor = System.Drawing.Color.LightCoral;
             this.BtnA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnA.BackgroundImage")));
             this.BtnA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnA.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -846,7 +552,7 @@
             // 
             // BtnP
             // 
-            this.BtnP.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnP.BackColor = System.Drawing.Color.LightCoral;
             this.BtnP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnP.BackgroundImage")));
             this.BtnP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnP.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -862,7 +568,7 @@
             // 
             // BtnO
             // 
-            this.BtnO.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnO.BackColor = System.Drawing.Color.LightCoral;
             this.BtnO.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnO.BackgroundImage")));
             this.BtnO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnO.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -878,7 +584,7 @@
             // 
             // BtnI
             // 
-            this.BtnI.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnI.BackColor = System.Drawing.Color.LightCoral;
             this.BtnI.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnI.BackgroundImage")));
             this.BtnI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnI.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -894,7 +600,7 @@
             // 
             // BtnU
             // 
-            this.BtnU.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnU.BackColor = System.Drawing.Color.LightCoral;
             this.BtnU.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnU.BackgroundImage")));
             this.BtnU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnU.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -910,7 +616,7 @@
             // 
             // BtnY
             // 
-            this.BtnY.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnY.BackColor = System.Drawing.Color.LightCoral;
             this.BtnY.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnY.BackgroundImage")));
             this.BtnY.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnY.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -926,7 +632,7 @@
             // 
             // BtnT
             // 
-            this.BtnT.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnT.BackColor = System.Drawing.Color.LightCoral;
             this.BtnT.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnT.BackgroundImage")));
             this.BtnT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnT.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -942,7 +648,7 @@
             // 
             // BtnR
             // 
-            this.BtnR.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnR.BackColor = System.Drawing.Color.LightCoral;
             this.BtnR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnR.BackgroundImage")));
             this.BtnR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnR.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -958,7 +664,7 @@
             // 
             // BtnE
             // 
-            this.BtnE.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnE.BackColor = System.Drawing.Color.LightCoral;
             this.BtnE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnE.BackgroundImage")));
             this.BtnE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnE.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -974,7 +680,7 @@
             // 
             // BtnW
             // 
-            this.BtnW.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnW.BackColor = System.Drawing.Color.LightCoral;
             this.BtnW.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnW.BackgroundImage")));
             this.BtnW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnW.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -990,7 +696,7 @@
             // 
             // BtnQ
             // 
-            this.BtnQ.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BtnQ.BackColor = System.Drawing.Color.LightCoral;
             this.BtnQ.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnQ.BackgroundImage")));
             this.BtnQ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnQ.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -1004,15 +710,313 @@
             this.BtnQ.Text = "Q";
             this.BtnQ.UseVisualStyleBackColor = false;
             // 
+            // PnlNumeros
+            // 
+            this.PnlNumeros.BackColor = System.Drawing.Color.Transparent;
+            this.PnlNumeros.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.PnlNumeros.Controls.Add(this.BtnMas);
+            this.PnlNumeros.Controls.Add(this.BtnGuion);
+            this.PnlNumeros.Controls.Add(this.BtnAsterisco);
+            this.PnlNumeros.Controls.Add(this.BtnSlash);
+            this.PnlNumeros.Controls.Add(this.BtnGuionBajo);
+            this.PnlNumeros.Controls.Add(this.Btn9);
+            this.PnlNumeros.Controls.Add(this.Btn8);
+            this.PnlNumeros.Controls.Add(this.Btn7);
+            this.PnlNumeros.Controls.Add(this.Btn6);
+            this.PnlNumeros.Controls.Add(this.Btn5);
+            this.PnlNumeros.Controls.Add(this.Btn4);
+            this.PnlNumeros.Controls.Add(this.Btn3);
+            this.PnlNumeros.Controls.Add(this.Btn2);
+            this.PnlNumeros.Controls.Add(this.Btn1);
+            this.PnlNumeros.Controls.Add(this.BtnIntro);
+            this.PnlNumeros.Controls.Add(this.BtnPunto);
+            this.PnlNumeros.Controls.Add(this.Btn0);
+            this.PnlNumeros.Location = new System.Drawing.Point(476, 3);
+            this.PnlNumeros.Name = "PnlNumeros";
+            this.PnlNumeros.Size = new System.Drawing.Size(253, 313);
+            this.PnlNumeros.TabIndex = 52;
+            // 
+            // BtnMas
+            // 
+            this.BtnMas.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnMas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMas.BackgroundImage")));
+            this.BtnMas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnMas.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnMas.FlatAppearance.BorderSize = 3;
+            this.BtnMas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMas.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMas.Location = new System.Drawing.Point(187, 66);
+            this.BtnMas.Name = "BtnMas";
+            this.BtnMas.Size = new System.Drawing.Size(60, 121);
+            this.BtnMas.TabIndex = 18;
+            this.BtnMas.Text = "+";
+            this.BtnMas.UseVisualStyleBackColor = false;
+            // 
+            // BtnGuion
+            // 
+            this.BtnGuion.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnGuion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnGuion.BackgroundImage")));
+            this.BtnGuion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnGuion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnGuion.FlatAppearance.BorderSize = 3;
+            this.BtnGuion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGuion.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGuion.Location = new System.Drawing.Point(187, 5);
+            this.BtnGuion.Name = "BtnGuion";
+            this.BtnGuion.Size = new System.Drawing.Size(60, 60);
+            this.BtnGuion.TabIndex = 17;
+            this.BtnGuion.Text = "-";
+            this.BtnGuion.UseVisualStyleBackColor = false;
+            // 
+            // BtnAsterisco
+            // 
+            this.BtnAsterisco.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAsterisco.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAsterisco.BackgroundImage")));
+            this.BtnAsterisco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnAsterisco.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnAsterisco.FlatAppearance.BorderSize = 3;
+            this.BtnAsterisco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAsterisco.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAsterisco.Location = new System.Drawing.Point(126, 5);
+            this.BtnAsterisco.Name = "BtnAsterisco";
+            this.BtnAsterisco.Size = new System.Drawing.Size(60, 60);
+            this.BtnAsterisco.TabIndex = 16;
+            this.BtnAsterisco.Text = "*";
+            this.BtnAsterisco.UseVisualStyleBackColor = false;
+            // 
+            // BtnSlash
+            // 
+            this.BtnSlash.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnSlash.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSlash.BackgroundImage")));
+            this.BtnSlash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnSlash.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnSlash.FlatAppearance.BorderSize = 3;
+            this.BtnSlash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSlash.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSlash.Location = new System.Drawing.Point(65, 5);
+            this.BtnSlash.Name = "BtnSlash";
+            this.BtnSlash.Size = new System.Drawing.Size(60, 60);
+            this.BtnSlash.TabIndex = 15;
+            this.BtnSlash.Text = "/";
+            this.BtnSlash.UseVisualStyleBackColor = false;
+            // 
+            // BtnGuionBajo
+            // 
+            this.BtnGuionBajo.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnGuionBajo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnGuionBajo.BackgroundImage")));
+            this.BtnGuionBajo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnGuionBajo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnGuionBajo.FlatAppearance.BorderSize = 3;
+            this.BtnGuionBajo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGuionBajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGuionBajo.Location = new System.Drawing.Point(4, 5);
+            this.BtnGuionBajo.Name = "BtnGuionBajo";
+            this.BtnGuionBajo.Size = new System.Drawing.Size(60, 60);
+            this.BtnGuionBajo.TabIndex = 14;
+            this.BtnGuionBajo.Text = "_";
+            this.BtnGuionBajo.UseVisualStyleBackColor = false;
+            // 
+            // Btn9
+            // 
+            this.Btn9.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn9.BackgroundImage")));
+            this.Btn9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Btn9.FlatAppearance.BorderSize = 3;
+            this.Btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn9.Location = new System.Drawing.Point(126, 66);
+            this.Btn9.Name = "Btn9";
+            this.Btn9.Size = new System.Drawing.Size(60, 60);
+            this.Btn9.TabIndex = 13;
+            this.Btn9.Text = "9";
+            this.Btn9.UseVisualStyleBackColor = false;
+            // 
+            // Btn8
+            // 
+            this.Btn8.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn8.BackgroundImage")));
+            this.Btn8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Btn8.FlatAppearance.BorderSize = 3;
+            this.Btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn8.Location = new System.Drawing.Point(65, 66);
+            this.Btn8.Name = "Btn8";
+            this.Btn8.Size = new System.Drawing.Size(60, 60);
+            this.Btn8.TabIndex = 12;
+            this.Btn8.Text = "8";
+            this.Btn8.UseVisualStyleBackColor = false;
+            // 
+            // Btn7
+            // 
+            this.Btn7.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn7.BackgroundImage")));
+            this.Btn7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Btn7.FlatAppearance.BorderSize = 3;
+            this.Btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn7.Location = new System.Drawing.Point(4, 66);
+            this.Btn7.Name = "Btn7";
+            this.Btn7.Size = new System.Drawing.Size(60, 60);
+            this.Btn7.TabIndex = 11;
+            this.Btn7.Text = "7";
+            this.Btn7.UseVisualStyleBackColor = false;
+            // 
+            // Btn6
+            // 
+            this.Btn6.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn6.BackgroundImage")));
+            this.Btn6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Btn6.FlatAppearance.BorderSize = 3;
+            this.Btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn6.Location = new System.Drawing.Point(126, 127);
+            this.Btn6.Name = "Btn6";
+            this.Btn6.Size = new System.Drawing.Size(60, 60);
+            this.Btn6.TabIndex = 10;
+            this.Btn6.Text = "6";
+            this.Btn6.UseVisualStyleBackColor = false;
+            // 
+            // Btn5
+            // 
+            this.Btn5.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn5.BackgroundImage")));
+            this.Btn5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Btn5.FlatAppearance.BorderSize = 3;
+            this.Btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn5.Location = new System.Drawing.Point(65, 127);
+            this.Btn5.Name = "Btn5";
+            this.Btn5.Size = new System.Drawing.Size(60, 60);
+            this.Btn5.TabIndex = 9;
+            this.Btn5.Text = "5";
+            this.Btn5.UseVisualStyleBackColor = false;
+            // 
+            // Btn4
+            // 
+            this.Btn4.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn4.BackgroundImage")));
+            this.Btn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Btn4.FlatAppearance.BorderSize = 3;
+            this.Btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn4.Location = new System.Drawing.Point(4, 127);
+            this.Btn4.Name = "Btn4";
+            this.Btn4.Size = new System.Drawing.Size(60, 60);
+            this.Btn4.TabIndex = 8;
+            this.Btn4.Text = "4";
+            this.Btn4.UseVisualStyleBackColor = false;
+            // 
+            // Btn3
+            // 
+            this.Btn3.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn3.BackgroundImage")));
+            this.Btn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Btn3.FlatAppearance.BorderSize = 3;
+            this.Btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn3.Location = new System.Drawing.Point(126, 188);
+            this.Btn3.Name = "Btn3";
+            this.Btn3.Size = new System.Drawing.Size(60, 60);
+            this.Btn3.TabIndex = 7;
+            this.Btn3.Text = "3";
+            this.Btn3.UseVisualStyleBackColor = false;
+            // 
+            // Btn2
+            // 
+            this.Btn2.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn2.BackgroundImage")));
+            this.Btn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Btn2.FlatAppearance.BorderSize = 3;
+            this.Btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn2.Location = new System.Drawing.Point(65, 188);
+            this.Btn2.Name = "Btn2";
+            this.Btn2.Size = new System.Drawing.Size(60, 60);
+            this.Btn2.TabIndex = 6;
+            this.Btn2.Text = "2";
+            this.Btn2.UseVisualStyleBackColor = false;
+            // 
+            // Btn1
+            // 
+            this.Btn1.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn1.BackgroundImage")));
+            this.Btn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Btn1.FlatAppearance.BorderSize = 3;
+            this.Btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn1.Location = new System.Drawing.Point(4, 188);
+            this.Btn1.Name = "Btn1";
+            this.Btn1.Size = new System.Drawing.Size(60, 60);
+            this.Btn1.TabIndex = 5;
+            this.Btn1.Text = "1";
+            this.Btn1.UseVisualStyleBackColor = false;
+            // 
+            // BtnIntro
+            // 
+            this.BtnIntro.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnIntro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnIntro.BackgroundImage")));
+            this.BtnIntro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnIntro.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnIntro.FlatAppearance.BorderSize = 3;
+            this.BtnIntro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnIntro.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnIntro.Location = new System.Drawing.Point(187, 188);
+            this.BtnIntro.Name = "BtnIntro";
+            this.BtnIntro.Size = new System.Drawing.Size(60, 121);
+            this.BtnIntro.TabIndex = 4;
+            this.BtnIntro.Text = "Intro";
+            this.BtnIntro.UseVisualStyleBackColor = false;
+            // 
+            // BtnPunto
+            // 
+            this.BtnPunto.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnPunto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPunto.BackgroundImage")));
+            this.BtnPunto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnPunto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnPunto.FlatAppearance.BorderSize = 3;
+            this.BtnPunto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPunto.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPunto.Location = new System.Drawing.Point(126, 249);
+            this.BtnPunto.Name = "BtnPunto";
+            this.BtnPunto.Size = new System.Drawing.Size(60, 60);
+            this.BtnPunto.TabIndex = 3;
+            this.BtnPunto.Text = ".";
+            this.BtnPunto.UseVisualStyleBackColor = false;
+            // 
+            // Btn0
+            // 
+            this.Btn0.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn0.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn0.BackgroundImage")));
+            this.Btn0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Btn0.FlatAppearance.BorderSize = 3;
+            this.Btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn0.Location = new System.Drawing.Point(5, 249);
+            this.Btn0.Name = "Btn0";
+            this.Btn0.Size = new System.Drawing.Size(120, 60);
+            this.Btn0.TabIndex = 2;
+            this.Btn0.Text = "0";
+            this.Btn0.UseVisualStyleBackColor = false;
+            // 
             // AbrirCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(736, 575);
-            this.Controls.Add(this.PnlLetras);
+            this.ClientSize = new System.Drawing.Size(732, 575);
             this.Controls.Add(this.PnlNumeros);
+            this.Controls.Add(this.PnlLetras);
             this.Controls.Add(this.RTBCuenta);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -1020,8 +1024,8 @@
             this.Name = "AbrirCuenta";
             this.Text = "AbrirCuenta";
             this.Load += new System.EventHandler(this.AbrirCuenta_Load);
-            this.PnlNumeros.ResumeLayout(false);
             this.PnlLetras.ResumeLayout(false);
+            this.PnlNumeros.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1029,24 +1033,6 @@
         #endregion
 
         private System.Windows.Forms.RichTextBox RTBCuenta;
-        private System.Windows.Forms.Panel PnlNumeros;
-        private System.Windows.Forms.Button BtnMas;
-        private System.Windows.Forms.Button BtnGuion;
-        private System.Windows.Forms.Button BtnAsterisco;
-        private System.Windows.Forms.Button BtnSlash;
-        private System.Windows.Forms.Button BtnGuionBajo;
-        private System.Windows.Forms.Button Btn9;
-        private System.Windows.Forms.Button Btn8;
-        private System.Windows.Forms.Button Btn7;
-        private System.Windows.Forms.Button Btn6;
-        private System.Windows.Forms.Button Btn5;
-        private System.Windows.Forms.Button Btn4;
-        private System.Windows.Forms.Button Btn3;
-        private System.Windows.Forms.Button Btn2;
-        private System.Windows.Forms.Button Btn1;
-        private System.Windows.Forms.Button BtnIntro;
-        private System.Windows.Forms.Button BtnPunto;
-        private System.Windows.Forms.Button Btn0;
         private System.Windows.Forms.Panel PnlLetras;
         private System.Windows.Forms.Button BtnAceptar;
         private System.Windows.Forms.Button BtnCancelar;
@@ -1083,5 +1069,23 @@
         private System.Windows.Forms.Button BtnE;
         private System.Windows.Forms.Button BtnW;
         private System.Windows.Forms.Button BtnQ;
+        private System.Windows.Forms.Panel PnlNumeros;
+        private System.Windows.Forms.Button BtnMas;
+        private System.Windows.Forms.Button BtnGuion;
+        private System.Windows.Forms.Button BtnAsterisco;
+        private System.Windows.Forms.Button BtnSlash;
+        private System.Windows.Forms.Button BtnGuionBajo;
+        private System.Windows.Forms.Button Btn9;
+        private System.Windows.Forms.Button Btn8;
+        private System.Windows.Forms.Button Btn7;
+        private System.Windows.Forms.Button Btn6;
+        private System.Windows.Forms.Button Btn5;
+        private System.Windows.Forms.Button Btn4;
+        private System.Windows.Forms.Button Btn3;
+        private System.Windows.Forms.Button Btn2;
+        private System.Windows.Forms.Button Btn1;
+        private System.Windows.Forms.Button BtnIntro;
+        private System.Windows.Forms.Button BtnPunto;
+        private System.Windows.Forms.Button Btn0;
     }
 }

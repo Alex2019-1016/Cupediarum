@@ -37,13 +37,13 @@
             this.cajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnSalir = new System.Windows.Forms.Button();
+            this.BtnMesero = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnCorteCaja = new System.Windows.Forms.Button();
             this.BtnCerrarTurno = new System.Windows.Forms.Button();
             this.BtnAbrirTurno = new System.Windows.Forms.Button();
             this.BtnMesas = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtnMesero = new System.Windows.Forms.Button();
-            this.BtnSalir = new System.Windows.Forms.Button();
             this.MnuPrincipal.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,7 +63,7 @@
             this.ayudaToolStripMenuItem1});
             this.MnuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.MnuPrincipal.Name = "MnuPrincipal";
-            this.MnuPrincipal.Size = new System.Drawing.Size(886, 33);
+            this.MnuPrincipal.Size = new System.Drawing.Size(880, 36);
             this.MnuPrincipal.TabIndex = 2;
             this.MnuPrincipal.Text = "menuStrip1";
             // 
@@ -113,8 +113,57 @@
             this.panel1.Controls.Add(this.BtnMesas);
             this.panel1.Location = new System.Drawing.Point(4, 35);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(148, 537);
+            this.panel1.Size = new System.Drawing.Size(148, 538);
             this.panel1.TabIndex = 3;
+            // 
+            // BtnSalir
+            // 
+            this.BtnSalir.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnSalir.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
+            this.BtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnSalir.FlatAppearance.BorderSize = 5;
+            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSalir.Font = new System.Drawing.Font("Modern No. 20", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSalir.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
+            this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnSalir.Location = new System.Drawing.Point(737, 513);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(138, 60);
+            this.BtnSalir.TabIndex = 48;
+            this.BtnSalir.Text = "Salir";
+            this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSalir.UseVisualStyleBackColor = false;
+            // 
+            // BtnMesero
+            // 
+            this.BtnMesero.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnMesero.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnMesero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnMesero.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnMesero.FlatAppearance.BorderSize = 3;
+            this.BtnMesero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMesero.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMesero.Image = global::Cupediarum.Properties.Resources.Icono_Mesero;
+            this.BtnMesero.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnMesero.Location = new System.Drawing.Point(737, 37);
+            this.BtnMesero.Name = "BtnMesero";
+            this.BtnMesero.Size = new System.Drawing.Size(138, 93);
+            this.BtnMesero.TabIndex = 8;
+            this.BtnMesero.Text = "Mesero";
+            this.BtnMesero.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnMesero.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = global::Cupediarum.Properties.Resources.CupediarumLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(158, 35);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(576, 538);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // BtnCorteCaja
             // 
@@ -125,11 +174,11 @@
             this.BtnCorteCaja.FlatAppearance.BorderSize = 3;
             this.BtnCorteCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCorteCaja.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCorteCaja.Image = ((System.Drawing.Image)(resources.GetObject("BtnCorteCaja.Image")));
+            this.BtnCorteCaja.Image = global::Cupediarum.Properties.Resources.Icono_Caja;
             this.BtnCorteCaja.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnCorteCaja.Location = new System.Drawing.Point(3, 424);
+            this.BtnCorteCaja.Location = new System.Drawing.Point(3, 437);
             this.BtnCorteCaja.Name = "BtnCorteCaja";
-            this.BtnCorteCaja.Size = new System.Drawing.Size(140, 96);
+            this.BtnCorteCaja.Size = new System.Drawing.Size(138, 93);
             this.BtnCorteCaja.TabIndex = 9;
             this.BtnCorteCaja.Text = "Corte Caja";
             this.BtnCorteCaja.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -144,11 +193,11 @@
             this.BtnCerrarTurno.FlatAppearance.BorderSize = 3;
             this.BtnCerrarTurno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCerrarTurno.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCerrarTurno.Image = ((System.Drawing.Image)(resources.GetObject("BtnCerrarTurno.Image")));
+            this.BtnCerrarTurno.Image = global::Cupediarum.Properties.Resources.Reloj_Cerrado;
             this.BtnCerrarTurno.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnCerrarTurno.Location = new System.Drawing.Point(3, 288);
             this.BtnCerrarTurno.Name = "BtnCerrarTurno";
-            this.BtnCerrarTurno.Size = new System.Drawing.Size(140, 96);
+            this.BtnCerrarTurno.Size = new System.Drawing.Size(138, 93);
             this.BtnCerrarTurno.TabIndex = 8;
             this.BtnCerrarTurno.Text = "Cerrar Turno";
             this.BtnCerrarTurno.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -164,11 +213,11 @@
             this.BtnAbrirTurno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAbrirTurno.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAbrirTurno.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnAbrirTurno.Image = ((System.Drawing.Image)(resources.GetObject("BtnAbrirTurno.Image")));
+            this.BtnAbrirTurno.Image = global::Cupediarum.Properties.Resources.Reloj_Abierto;
             this.BtnAbrirTurno.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnAbrirTurno.Location = new System.Drawing.Point(3, 139);
             this.BtnAbrirTurno.Name = "BtnAbrirTurno";
-            this.BtnAbrirTurno.Size = new System.Drawing.Size(140, 96);
+            this.BtnAbrirTurno.Size = new System.Drawing.Size(138, 93);
             this.BtnAbrirTurno.TabIndex = 7;
             this.BtnAbrirTurno.Text = "Abrir Turno";
             this.BtnAbrirTurno.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -177,71 +226,22 @@
             // BtnMesas
             // 
             this.BtnMesas.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnMesas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMesas.BackgroundImage")));
+            this.BtnMesas.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnMesas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnMesas.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.BtnMesas.FlatAppearance.BorderSize = 3;
             this.BtnMesas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMesas.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMesas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnMesas.Image = ((System.Drawing.Image)(resources.GetObject("BtnMesas.Image")));
+            this.BtnMesas.Image = global::Cupediarum.Properties.Resources.Icono_Mesas;
             this.BtnMesas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnMesas.Location = new System.Drawing.Point(3, 1);
             this.BtnMesas.Name = "BtnMesas";
-            this.BtnMesas.Size = new System.Drawing.Size(140, 96);
+            this.BtnMesas.Size = new System.Drawing.Size(138, 83);
             this.BtnMesas.TabIndex = 6;
             this.BtnMesas.Text = "Mesas";
             this.BtnMesas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnMesas.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(158, 35);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(576, 537);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // BtnMesero
-            // 
-            this.BtnMesero.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnMesero.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMesero.BackgroundImage")));
-            this.BtnMesero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnMesero.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnMesero.FlatAppearance.BorderSize = 3;
-            this.BtnMesero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMesero.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMesero.Image = ((System.Drawing.Image)(resources.GetObject("BtnMesero.Image")));
-            this.BtnMesero.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnMesero.Location = new System.Drawing.Point(741, 36);
-            this.BtnMesero.Name = "BtnMesero";
-            this.BtnMesero.Size = new System.Drawing.Size(140, 96);
-            this.BtnMesero.TabIndex = 8;
-            this.BtnMesero.Text = "Mesero";
-            this.BtnMesero.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnMesero.UseVisualStyleBackColor = false;
-            // 
-            // BtnSalir
-            // 
-            this.BtnSalir.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnSalir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSalir.BackgroundImage")));
-            this.BtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.BtnSalir.FlatAppearance.BorderSize = 3;
-            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSalir.Font = new System.Drawing.Font("Modern No. 20", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalir.Image = ((System.Drawing.Image)(resources.GetObject("BtnSalir.Image")));
-            this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSalir.Location = new System.Drawing.Point(763, 511);
-            this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(118, 61);
-            this.BtnSalir.TabIndex = 48;
-            this.BtnSalir.Text = "Salir";
-            this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSalir.UseVisualStyleBackColor = false;
             // 
             // FrmMenuPrincipal
             // 
@@ -249,7 +249,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(886, 575);
+            this.ClientSize = new System.Drawing.Size(880, 585);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnMesero);
             this.Controls.Add(this.pictureBox1);

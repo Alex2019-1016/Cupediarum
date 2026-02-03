@@ -31,5 +31,10 @@ namespace Cupediarum
         {
 
         }
+
+        private void PnlLetras_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

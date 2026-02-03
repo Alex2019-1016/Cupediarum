@@ -16,5 +16,10 @@ namespace Cupediarum
         {
             InitializeComponent();
         }
+
+        private void FrmInicioSesion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

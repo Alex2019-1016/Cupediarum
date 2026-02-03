@@ -28,13 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DatosCuenta));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnCancelar = new System.Windows.Forms.Button();
-            this.BtnAbrirMesa = new System.Windows.Forms.Button();
-            this.BtnCliente = new System.Windows.Forms.Button();
-            this.BtnPersonas = new System.Windows.Forms.Button();
-            this.BtnMesa = new System.Windows.Forms.Button();
             this.PnlDatosCuenta = new System.Windows.Forms.Panel();
             this.LblDatosCliente = new System.Windows.Forms.Label();
             this.LblNombreArea = new System.Windows.Forms.Label();
@@ -48,6 +42,11 @@
             this.LblArea = new System.Windows.Forms.Label();
             this.LblCuenta = new System.Windows.Forms.Label();
             this.LblPersonas = new System.Windows.Forms.Label();
+            this.BtnCancelar = new System.Windows.Forms.Button();
+            this.BtnAbrirMesa = new System.Windows.Forms.Button();
+            this.BtnCliente = new System.Windows.Forms.Button();
+            this.BtnPersonas = new System.Windows.Forms.Button();
+            this.BtnMesa = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.PnlDatosCuenta.SuspendLayout();
             this.SuspendLayout();
@@ -63,102 +62,9 @@
             this.panel1.Controls.Add(this.BtnMesa);
             this.panel1.Location = new System.Drawing.Point(1, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(756, 101);
+            this.panel1.Size = new System.Drawing.Size(759, 101);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // BtnCancelar
-            // 
-            this.BtnCancelar.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.BackgroundImage")));
-            this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnCancelar.FlatAppearance.BorderSize = 3;
-            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancelar.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.Image")));
-            this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnCancelar.Location = new System.Drawing.Point(600, 0);
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(147, 96);
-            this.BtnCancelar.TabIndex = 14;
-            this.BtnCancelar.Text = "Cancelar";
-            this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnCancelar.UseVisualStyleBackColor = false;
-            // 
-            // BtnAbrirMesa
-            // 
-            this.BtnAbrirMesa.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnAbrirMesa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAbrirMesa.BackgroundImage")));
-            this.BtnAbrirMesa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnAbrirMesa.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnAbrirMesa.FlatAppearance.BorderSize = 3;
-            this.BtnAbrirMesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAbrirMesa.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAbrirMesa.Image = ((System.Drawing.Image)(resources.GetObject("BtnAbrirMesa.Image")));
-            this.BtnAbrirMesa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnAbrirMesa.Location = new System.Drawing.Point(450, 0);
-            this.BtnAbrirMesa.Name = "BtnAbrirMesa";
-            this.BtnAbrirMesa.Size = new System.Drawing.Size(147, 96);
-            this.BtnAbrirMesa.TabIndex = 13;
-            this.BtnAbrirMesa.Text = "Abrir Mesa";
-            this.BtnAbrirMesa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnAbrirMesa.UseVisualStyleBackColor = false;
-            // 
-            // BtnCliente
-            // 
-            this.BtnCliente.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnCliente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCliente.BackgroundImage")));
-            this.BtnCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnCliente.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnCliente.FlatAppearance.BorderSize = 3;
-            this.BtnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCliente.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCliente.Image = ((System.Drawing.Image)(resources.GetObject("BtnCliente.Image")));
-            this.BtnCliente.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnCliente.Location = new System.Drawing.Point(301, 0);
-            this.BtnCliente.Name = "BtnCliente";
-            this.BtnCliente.Size = new System.Drawing.Size(147, 96);
-            this.BtnCliente.TabIndex = 12;
-            this.BtnCliente.Text = "Cliente";
-            this.BtnCliente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnCliente.UseVisualStyleBackColor = false;
-            // 
-            // BtnPersonas
-            // 
-            this.BtnPersonas.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnPersonas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPersonas.BackgroundImage")));
-            this.BtnPersonas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnPersonas.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnPersonas.FlatAppearance.BorderSize = 3;
-            this.BtnPersonas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPersonas.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPersonas.Image = ((System.Drawing.Image)(resources.GetObject("BtnPersonas.Image")));
-            this.BtnPersonas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPersonas.Location = new System.Drawing.Point(152, 0);
-            this.BtnPersonas.Name = "BtnPersonas";
-            this.BtnPersonas.Size = new System.Drawing.Size(147, 96);
-            this.BtnPersonas.TabIndex = 11;
-            this.BtnPersonas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnPersonas.UseVisualStyleBackColor = false;
-            // 
-            // BtnMesa
-            // 
-            this.BtnMesa.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnMesa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMesa.BackgroundImage")));
-            this.BtnMesa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnMesa.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnMesa.FlatAppearance.BorderSize = 3;
-            this.BtnMesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMesa.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMesa.Image = ((System.Drawing.Image)(resources.GetObject("BtnMesa.Image")));
-            this.BtnMesa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnMesa.Location = new System.Drawing.Point(3, 0);
-            this.BtnMesa.Name = "BtnMesa";
-            this.BtnMesa.Size = new System.Drawing.Size(147, 96);
-            this.BtnMesa.TabIndex = 10;
-            this.BtnMesa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnMesa.UseVisualStyleBackColor = false;
             // 
             // PnlDatosCuenta
             // 
@@ -176,7 +82,7 @@
             this.PnlDatosCuenta.Controls.Add(this.LblArea);
             this.PnlDatosCuenta.Location = new System.Drawing.Point(5, 164);
             this.PnlDatosCuenta.Name = "PnlDatosCuenta";
-            this.PnlDatosCuenta.Size = new System.Drawing.Size(743, 192);
+            this.PnlDatosCuenta.Size = new System.Drawing.Size(755, 192);
             this.PnlDatosCuenta.TabIndex = 1;
             // 
             // LblDatosCliente
@@ -306,13 +212,106 @@
             this.LblPersonas.TabIndex = 3;
             this.LblPersonas.Text = "Personas";
             // 
+            // BtnCancelar
+            // 
+            this.BtnCancelar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnCancelar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.BtnCancelar.FlatAppearance.BorderSize = 5;
+            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCancelar.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Icono_Cancelar64;
+            this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnCancelar.Location = new System.Drawing.Point(600, 0);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(147, 96);
+            this.BtnCancelar.TabIndex = 14;
+            this.BtnCancelar.Text = "Cancelar";
+            this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnCancelar.UseVisualStyleBackColor = false;
+            // 
+            // BtnAbrirMesa
+            // 
+            this.BtnAbrirMesa.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAbrirMesa.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnAbrirMesa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnAbrirMesa.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.BtnAbrirMesa.FlatAppearance.BorderSize = 5;
+            this.BtnAbrirMesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAbrirMesa.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAbrirMesa.Image = global::Cupediarum.Properties.Resources.Icono_Aceptar64;
+            this.BtnAbrirMesa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnAbrirMesa.Location = new System.Drawing.Point(450, 0);
+            this.BtnAbrirMesa.Name = "BtnAbrirMesa";
+            this.BtnAbrirMesa.Size = new System.Drawing.Size(147, 96);
+            this.BtnAbrirMesa.TabIndex = 13;
+            this.BtnAbrirMesa.Text = "Abrir Mesa";
+            this.BtnAbrirMesa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnAbrirMesa.UseVisualStyleBackColor = false;
+            // 
+            // BtnCliente
+            // 
+            this.BtnCliente.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnCliente.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnCliente.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnCliente.FlatAppearance.BorderSize = 3;
+            this.BtnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCliente.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCliente.Image = global::Cupediarum.Properties.Resources.Icono_Cliente;
+            this.BtnCliente.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnCliente.Location = new System.Drawing.Point(301, 0);
+            this.BtnCliente.Name = "BtnCliente";
+            this.BtnCliente.Size = new System.Drawing.Size(147, 96);
+            this.BtnCliente.TabIndex = 12;
+            this.BtnCliente.Text = "Cliente";
+            this.BtnCliente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnCliente.UseVisualStyleBackColor = false;
+            // 
+            // BtnPersonas
+            // 
+            this.BtnPersonas.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnPersonas.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnPersonas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnPersonas.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnPersonas.FlatAppearance.BorderSize = 3;
+            this.BtnPersonas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPersonas.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPersonas.Image = global::Cupediarum.Properties.Resources.Icono_People;
+            this.BtnPersonas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnPersonas.Location = new System.Drawing.Point(152, 0);
+            this.BtnPersonas.Name = "BtnPersonas";
+            this.BtnPersonas.Size = new System.Drawing.Size(147, 96);
+            this.BtnPersonas.TabIndex = 11;
+            this.BtnPersonas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnPersonas.UseVisualStyleBackColor = false;
+            // 
+            // BtnMesa
+            // 
+            this.BtnMesa.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnMesa.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnMesa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnMesa.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnMesa.FlatAppearance.BorderSize = 3;
+            this.BtnMesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMesa.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMesa.Image = global::Cupediarum.Properties.Resources.Icono_Mesas;
+            this.BtnMesa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnMesa.Location = new System.Drawing.Point(3, 0);
+            this.BtnMesa.Name = "BtnMesa";
+            this.BtnMesa.Size = new System.Drawing.Size(147, 96);
+            this.BtnMesa.TabIndex = 10;
+            this.BtnMesa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnMesa.UseVisualStyleBackColor = false;
+            // 
             // DatosCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(758, 389);
+            this.ClientSize = new System.Drawing.Size(771, 361);
             this.Controls.Add(this.LblPersonas);
             this.Controls.Add(this.LblCuenta);
             this.Controls.Add(this.PnlDatosCuenta);

@@ -122,17 +122,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -141,6 +142,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Imagenes\Icono_Aceptar64.png" />
+    <Content Include="Imagenes\Icono_Cancelar64.png" />
+    <Content Include="Imagenes\Icono_Cliente.png" />
+    <Content Include="Imagenes\Icono_People.png" />
+    <Content Include="Imagenes\Ico_AbrirCuenta.ico" />
+    <Content Include="Imagenes\Ico_Pedidos.ico" />
+    <Content Include="Imagenes\FBAzul.png" />
+    <Content Include="Imagenes\FBNaranja.png" />
+    <Content Include="Imagenes\CupediarumLogo.png" />
+    <Content Include="Imagenes\Icono_AbrirCuenta.png" />
+    <Content Include="Imagenes\Icono_Aceptar48.png" />
+    <Content Include="Imagenes\Icono_Borrar.png" />
+    <Content Include="Imagenes\Icono_Caja.png" />
+    <Content Include="Imagenes\Icono_Exit.png" />
+    <Content Include="Imagenes\Icono_Left.png" />
+    <Content Include="Imagenes\Icono_Mesero.png" />
+    <Content Include="Imagenes\Icono_Cancelar32.png" />
+    <Content Include="Imagenes\Icono_Mesas.png" />
+    <Content Include="Imagenes\Icono_Monitor.png" />
+    <None Include="Imagenes\Icono_RDAceptar32.png" />
+    <None Include="Imagenes\Icono_RDCancelar32.png" />
+    <Content Include="Imagenes\Icono_Precios.png" />
+    <Content Include="Imagenes\Icono_Reservas.png" />
+    <Content Include="Imagenes\Icono_Right.png" />
+    <Content Include="Imagenes\Ico_Chef.ico" />
+    <Content Include="Imagenes\Ico_Mesero.ico" />
+    <Content Include="Imagenes\Icono_Pedidos.png" />
+    <Content Include="Imagenes\Ico_People.ico" />
+    <Content Include="Imagenes\Reloj_Abierto.png" />
+    <Content Include="Imagenes\Reloj_Cerrado.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

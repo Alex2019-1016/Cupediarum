@@ -73,6 +73,7 @@
             // 
             // TxtPersonas
             // 
+            this.TxtPersonas.BackColor = System.Drawing.Color.Gainsboro;
             this.TxtPersonas.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPersonas.Location = new System.Drawing.Point(204, 424);
             this.TxtPersonas.Name = "TxtPersonas";
@@ -82,14 +83,14 @@
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.BackColor = System.Drawing.Color.DarkSalmon;
-            this.BtnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.BackgroundImage")));
+            this.BtnCancelar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnCancelar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.BtnCancelar.FlatAppearance.BorderSize = 3;
+            this.BtnCancelar.FlatAppearance.BorderSize = 5;
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.Image")));
+            this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Icono_Cancelar32;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnCancelar.Location = new System.Drawing.Point(204, 351);
             this.BtnCancelar.Name = "BtnCancelar";
@@ -101,14 +102,14 @@
             // 
             // BtnAceptar
             // 
-            this.BtnAceptar.BackColor = System.Drawing.Color.DarkSalmon;
-            this.BtnAceptar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAceptar.BackgroundImage")));
+            this.BtnAceptar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAceptar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.BtnAceptar.FlatAppearance.BorderSize = 3;
+            this.BtnAceptar.FlatAppearance.BorderSize = 5;
             this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAceptar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAceptar.Image")));
+            this.BtnAceptar.Image = global::Cupediarum.Properties.Resources.Icono_Aceptar48;
             this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnAceptar.Location = new System.Drawing.Point(104, 350);
             this.BtnAceptar.Name = "BtnAceptar";
@@ -120,11 +121,11 @@
             // 
             // BtnBorrar
             // 
-            this.BtnBorrar.BackColor = System.Drawing.Color.DarkSalmon;
-            this.BtnBorrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBorrar.BackgroundImage")));
+            this.BtnBorrar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnBorrar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnBorrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnBorrar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnBorrar.FlatAppearance.BorderSize = 3;
+            this.BtnBorrar.FlatAppearance.BorderSize = 5;
             this.BtnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBorrar.Image = ((System.Drawing.Image)(resources.GetObject("BtnBorrar.Image")));
@@ -138,11 +139,11 @@
             // 
             // BtnPunto
             // 
-            this.BtnPunto.BackColor = System.Drawing.Color.DarkSalmon;
-            this.BtnPunto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPunto.BackgroundImage")));
+            this.BtnPunto.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnPunto.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnPunto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnPunto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnPunto.FlatAppearance.BorderSize = 3;
+            this.BtnPunto.FlatAppearance.BorderSize = 5;
             this.BtnPunto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPunto.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPunto.Location = new System.Drawing.Point(204, 264);
@@ -154,11 +155,11 @@
             // 
             // Btn0
             // 
-            this.Btn0.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn0.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn0.BackgroundImage")));
+            this.Btn0.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn0.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.Btn0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn0.FlatAppearance.BorderSize = 3;
+            this.Btn0.FlatAppearance.BorderSize = 5;
             this.Btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn0.Location = new System.Drawing.Point(104, 264);
@@ -170,11 +171,11 @@
             // 
             // Btn3
             // 
-            this.Btn3.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn3.BackgroundImage")));
+            this.Btn3.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn3.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.Btn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn3.FlatAppearance.BorderSize = 3;
+            this.Btn3.FlatAppearance.BorderSize = 5;
             this.Btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn3.Location = new System.Drawing.Point(204, 179);
@@ -186,11 +187,11 @@
             // 
             // Btn2
             // 
-            this.Btn2.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn2.BackgroundImage")));
+            this.Btn2.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn2.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.Btn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn2.FlatAppearance.BorderSize = 3;
+            this.Btn2.FlatAppearance.BorderSize = 5;
             this.Btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn2.Location = new System.Drawing.Point(104, 179);
@@ -202,11 +203,11 @@
             // 
             // Btn1
             // 
-            this.Btn1.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn1.BackgroundImage")));
+            this.Btn1.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn1.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.Btn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn1.FlatAppearance.BorderSize = 3;
+            this.Btn1.FlatAppearance.BorderSize = 5;
             this.Btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn1.Location = new System.Drawing.Point(4, 179);
@@ -218,11 +219,11 @@
             // 
             // Btn6
             // 
-            this.Btn6.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn6.BackgroundImage")));
+            this.Btn6.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn6.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.Btn6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn6.FlatAppearance.BorderSize = 3;
+            this.Btn6.FlatAppearance.BorderSize = 5;
             this.Btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn6.Location = new System.Drawing.Point(204, 94);
@@ -234,11 +235,11 @@
             // 
             // Btn5
             // 
-            this.Btn5.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn5.BackgroundImage")));
+            this.Btn5.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn5.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.Btn5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn5.FlatAppearance.BorderSize = 3;
+            this.Btn5.FlatAppearance.BorderSize = 5;
             this.Btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn5.Location = new System.Drawing.Point(104, 94);
@@ -250,11 +251,11 @@
             // 
             // Btn4
             // 
-            this.Btn4.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn4.BackgroundImage")));
+            this.Btn4.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn4.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.Btn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn4.FlatAppearance.BorderSize = 3;
+            this.Btn4.FlatAppearance.BorderSize = 5;
             this.Btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn4.Location = new System.Drawing.Point(4, 94);
@@ -266,11 +267,11 @@
             // 
             // Btn9
             // 
-            this.Btn9.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn9.BackgroundImage")));
+            this.Btn9.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn9.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.Btn9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn9.FlatAppearance.BorderSize = 3;
+            this.Btn9.FlatAppearance.BorderSize = 5;
             this.Btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn9.Location = new System.Drawing.Point(204, 8);
@@ -282,11 +283,11 @@
             // 
             // Btn8
             // 
-            this.Btn8.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn8.BackgroundImage")));
+            this.Btn8.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn8.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.Btn8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn8.FlatAppearance.BorderSize = 3;
+            this.Btn8.FlatAppearance.BorderSize = 5;
             this.Btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn8.Location = new System.Drawing.Point(104, 8);
@@ -298,11 +299,11 @@
             // 
             // Btn7
             // 
-            this.Btn7.BackColor = System.Drawing.Color.DarkSalmon;
-            this.Btn7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn7.BackgroundImage")));
+            this.Btn7.BackColor = System.Drawing.Color.LightCoral;
+            this.Btn7.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.Btn7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn7.FlatAppearance.BorderSize = 3;
+            this.Btn7.FlatAppearance.BorderSize = 5;
             this.Btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn7.Location = new System.Drawing.Point(4, 8);

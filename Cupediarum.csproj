@@ -82,6 +82,12 @@
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mesas.Designer.cs">
+      <DependentUpon>Mesas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mesero.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mesas.resx">
+      <DependentUpon>Mesas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mesero.resx">
       <DependentUpon>Mesero.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,17 +154,33 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Imagenes\Icono_Aceptar48.png" />
     <Content Include="Imagenes\Icono_Aceptar64.png" />
+    <Content Include="Imagenes\Icono_Agregar.png" />
+    <Content Include="Imagenes\Icono_Bebidas.png" />
     <Content Include="Imagenes\Icono_Cancelar64.png" />
     <Content Include="Imagenes\Icono_Cliente.png" />
+    <Content Include="Imagenes\Icono_Comandas.png" />
+    <None Include="Imagenes\Icono_Delete.png" />
+    <Content Include="Imagenes\Icono_Descuento.png" />
+    <Content Include="Imagenes\Icono_Food.png" />
+    <Content Include="Imagenes\Icono_Favorito.png" />
+    <Content Include="Imagenes\Icono_Comentario.png" />
+    <Content Include="Imagenes\Icono_Imprimir.png" />
+    <Content Include="Imagenes\Icono_Mas.png" />
+    <Content Include="Imagenes\Icono_Menos.png" />
+    <Content Include="Imagenes\Icono_Otros.png" />
+    <Content Include="Imagenes\Icono_PagarCuenta.png" />
     <Content Include="Imagenes\Icono_People.png" />
+    <Content Include="Imagenes\Icono_TC.png" />
     <Content Include="Imagenes\Ico_AbrirCuenta.ico" />
+    <Content Include="Imagenes\Ico_Datos.ico" />
     <Content Include="Imagenes\Ico_Pedidos.ico" />
     <Content Include="Imagenes\FBAzul.png" />
     <Content Include="Imagenes\FBNaranja.png" />
     <Content Include="Imagenes\CupediarumLogo.png" />
     <Content Include="Imagenes\Icono_AbrirCuenta.png" />
-    <Content Include="Imagenes\Icono_Aceptar48.png" />
+    <Content Include="Imagenes\Icono_Aceptar32.png" />
     <Content Include="Imagenes\Icono_Borrar.png" />
     <Content Include="Imagenes\Icono_Caja.png" />
     <Content Include="Imagenes\Icono_Exit.png" />
@@ -164,6 +189,7 @@
     <Content Include="Imagenes\Icono_Cancelar32.png" />
     <Content Include="Imagenes\Icono_Mesas.png" />
     <Content Include="Imagenes\Icono_Monitor.png" />
+    <None Include="Resources\Icono_Bebidas.png" />
     <None Include="Imagenes\Icono_RDAceptar32.png" />
     <None Include="Imagenes\Icono_RDCancelar32.png" />
     <Content Include="Imagenes\Icono_Precios.png" />

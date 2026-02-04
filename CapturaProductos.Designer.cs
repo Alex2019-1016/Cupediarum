@@ -32,8 +32,17 @@
             this.configurarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.FlpComanda = new System.Windows.Forms.FlowLayoutPanel();
+            this.BtnComentario = new System.Windows.Forms.Button();
+            this.BtnComandas = new System.Windows.Forms.Button();
+            this.BtnAceptar = new System.Windows.Forms.Button();
+            this.BtnCancelar = new System.Windows.Forms.Button();
+            this.BtnDescuento = new System.Windows.Forms.Button();
+            this.BtnMenos = new System.Windows.Forms.Button();
+            this.BtnMas = new System.Windows.Forms.Button();
             this.TxtCantidad = new System.Windows.Forms.TextBox();
+            this.BtnBorrarTodo = new System.Windows.Forms.Button();
+            this.BtnBorrarProducto = new System.Windows.Forms.Button();
             this.DgvComanda = new System.Windows.Forms.DataGridView();
             this.COMANDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CANTIDAD = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,7 +50,13 @@
             this.PRECIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DESCUENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FlpCategorias = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.BtnTodo = new System.Windows.Forms.Button();
+            this.BtnBebidas = new System.Windows.Forms.Button();
+            this.BtnComida = new System.Windows.Forms.Button();
+            this.BtnOtros = new System.Windows.Forms.Button();
+            this.BtnFavoritos = new System.Windows.Forms.Button();
+            this.FlpProductos = new System.Windows.Forms.FlowLayoutPanel();
+            this.BtnAtras = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
@@ -70,7 +85,9 @@
             this.button43 = new System.Windows.Forms.Button();
             this.button44 = new System.Windows.Forms.Button();
             this.button45 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.BtnSiguiente = new System.Windows.Forms.Button();
+            this.FlpTipos = new System.Windows.Forms.FlowLayoutPanel();
+            this.BtnAtrasTipos = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -81,42 +98,25 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
-            this.BtnAtras = new System.Windows.Forms.Button();
-            this.button46 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.BtnComentario = new System.Windows.Forms.Button();
-            this.BtnComandas = new System.Windows.Forms.Button();
-            this.BtnAceptar = new System.Windows.Forms.Button();
-            this.BtnCancelar = new System.Windows.Forms.Button();
-            this.button49 = new System.Windows.Forms.Button();
-            this.BtnMenos = new System.Windows.Forms.Button();
-            this.BtnMas = new System.Windows.Forms.Button();
-            this.BtnBorrarTodo = new System.Windows.Forms.Button();
-            this.BtnBorrarProducto = new System.Windows.Forms.Button();
+            this.BtnSiguienteTipos = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.FlpComanda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvComanda)).BeginInit();
             this.FlpCategorias.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
+            this.FlpProductos.SuspendLayout();
+            this.FlpTipos.SuspendLayout();
             this.SuspendLayout();
             // 
             // configurarToolStripMenuItem
             // 
             this.configurarToolStripMenuItem.Name = "configurarToolStripMenuItem";
-            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(112, 30);
+            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
             this.configurarToolStripMenuItem.Text = "Configurar";
             // 
             // acercaToolStripMenuItem
             // 
             this.acercaToolStripMenuItem.Name = "acercaToolStripMenuItem";
-            this.acercaToolStripMenuItem.Size = new System.Drawing.Size(105, 30);
+            this.acercaToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
             this.acercaToolStripMenuItem.Text = "Acerca de";
             // 
             // menuStrip1
@@ -128,29 +128,158 @@
             this.acercaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1428, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1428, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
-            // flowLayoutPanel1
+            // FlpComanda
             // 
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel1.Controls.Add(this.BtnComentario);
-            this.flowLayoutPanel1.Controls.Add(this.BtnComandas);
-            this.flowLayoutPanel1.Controls.Add(this.BtnAceptar);
-            this.flowLayoutPanel1.Controls.Add(this.BtnCancelar);
-            this.flowLayoutPanel1.Controls.Add(this.button49);
-            this.flowLayoutPanel1.Controls.Add(this.BtnMenos);
-            this.flowLayoutPanel1.Controls.Add(this.BtnMas);
-            this.flowLayoutPanel1.Controls.Add(this.TxtCantidad);
-            this.flowLayoutPanel1.Controls.Add(this.BtnBorrarTodo);
-            this.flowLayoutPanel1.Controls.Add(this.BtnBorrarProducto);
-            this.flowLayoutPanel1.Controls.Add(this.DgvComanda);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 40);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(453, 729);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.FlpComanda.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.FlpComanda.Controls.Add(this.BtnComentario);
+            this.FlpComanda.Controls.Add(this.BtnComandas);
+            this.FlpComanda.Controls.Add(this.BtnAceptar);
+            this.FlpComanda.Controls.Add(this.BtnCancelar);
+            this.FlpComanda.Controls.Add(this.BtnDescuento);
+            this.FlpComanda.Controls.Add(this.BtnMenos);
+            this.FlpComanda.Controls.Add(this.BtnMas);
+            this.FlpComanda.Controls.Add(this.TxtCantidad);
+            this.FlpComanda.Controls.Add(this.BtnBorrarTodo);
+            this.FlpComanda.Controls.Add(this.BtnBorrarProducto);
+            this.FlpComanda.Controls.Add(this.DgvComanda);
+            this.FlpComanda.Location = new System.Drawing.Point(0, 40);
+            this.FlpComanda.Name = "FlpComanda";
+            this.FlpComanda.Size = new System.Drawing.Size(453, 729);
+            this.FlpComanda.TabIndex = 1;
+            this.FlpComanda.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
+            // 
+            // BtnComentario
+            // 
+            this.BtnComentario.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnComentario.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnComentario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnComentario.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
+            this.BtnComentario.FlatAppearance.BorderSize = 3;
+            this.BtnComentario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnComentario.Font = new System.Drawing.Font("Modern No. 20", 7.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnComentario.Image = global::Cupediarum.Properties.Resources.Icono_Comentario;
+            this.BtnComentario.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnComentario.Location = new System.Drawing.Point(3, 3);
+            this.BtnComentario.Name = "BtnComentario";
+            this.BtnComentario.Size = new System.Drawing.Size(106, 78);
+            this.BtnComentario.TabIndex = 14;
+            this.BtnComentario.Text = "Comentario";
+            this.BtnComentario.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnComentario.UseVisualStyleBackColor = false;
+            // 
+            // BtnComandas
+            // 
+            this.BtnComandas.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnComandas.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnComandas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnComandas.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
+            this.BtnComandas.FlatAppearance.BorderSize = 3;
+            this.BtnComandas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnComandas.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnComandas.Image = global::Cupediarum.Properties.Resources.Icono_Comandas;
+            this.BtnComandas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnComandas.Location = new System.Drawing.Point(115, 3);
+            this.BtnComandas.Name = "BtnComandas";
+            this.BtnComandas.Size = new System.Drawing.Size(106, 78);
+            this.BtnComandas.TabIndex = 13;
+            this.BtnComandas.Text = "Comandas";
+            this.BtnComandas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnComandas.UseVisualStyleBackColor = false;
+            // 
+            // BtnAceptar
+            // 
+            this.BtnAceptar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAceptar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.BtnAceptar.FlatAppearance.BorderSize = 5;
+            this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAceptar.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAceptar.Image = global::Cupediarum.Properties.Resources.Icono_Aceptar48;
+            this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnAceptar.Location = new System.Drawing.Point(227, 3);
+            this.BtnAceptar.Name = "BtnAceptar";
+            this.BtnAceptar.Size = new System.Drawing.Size(106, 78);
+            this.BtnAceptar.TabIndex = 11;
+            this.BtnAceptar.Text = "Aceptar";
+            this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnAceptar.UseVisualStyleBackColor = false;
+            // 
+            // BtnCancelar
+            // 
+            this.BtnCancelar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnCancelar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.BtnCancelar.FlatAppearance.BorderSize = 5;
+            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCancelar.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.Image")));
+            this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnCancelar.Location = new System.Drawing.Point(339, 3);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(106, 78);
+            this.BtnCancelar.TabIndex = 12;
+            this.BtnCancelar.Text = "Cancelar";
+            this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnCancelar.UseVisualStyleBackColor = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // BtnDescuento
+            // 
+            this.BtnDescuento.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnDescuento.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnDescuento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnDescuento.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
+            this.BtnDescuento.FlatAppearance.BorderSize = 3;
+            this.BtnDescuento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDescuento.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDescuento.Location = new System.Drawing.Point(3, 87);
+            this.BtnDescuento.Name = "BtnDescuento";
+            this.BtnDescuento.Size = new System.Drawing.Size(106, 78);
+            this.BtnDescuento.TabIndex = 21;
+            this.BtnDescuento.Text = "0 % Descuento";
+            this.BtnDescuento.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnDescuento.UseVisualStyleBackColor = false;
+            // 
+            // BtnMenos
+            // 
+            this.BtnMenos.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnMenos.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnMenos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnMenos.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
+            this.BtnMenos.FlatAppearance.BorderSize = 3;
+            this.BtnMenos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMenos.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMenos.Image = global::Cupediarum.Properties.Resources.Icono_Menos;
+            this.BtnMenos.Location = new System.Drawing.Point(115, 87);
+            this.BtnMenos.Name = "BtnMenos";
+            this.BtnMenos.Size = new System.Drawing.Size(106, 78);
+            this.BtnMenos.TabIndex = 15;
+            this.BtnMenos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnMenos.UseVisualStyleBackColor = false;
+            // 
+            // BtnMas
+            // 
+            this.BtnMas.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnMas.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnMas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnMas.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
+            this.BtnMas.FlatAppearance.BorderSize = 3;
+            this.BtnMas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMas.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMas.Image = global::Cupediarum.Properties.Resources.Icono_Mas;
+            this.BtnMas.Location = new System.Drawing.Point(227, 87);
+            this.BtnMas.Name = "BtnMas";
+            this.BtnMas.Size = new System.Drawing.Size(106, 78);
+            this.BtnMas.TabIndex = 16;
+            this.BtnMas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnMas.UseVisualStyleBackColor = false;
             // 
             // TxtCantidad
             // 
@@ -160,6 +289,44 @@
             this.TxtCantidad.Name = "TxtCantidad";
             this.TxtCantidad.Size = new System.Drawing.Size(106, 78);
             this.TxtCantidad.TabIndex = 17;
+            // 
+            // BtnBorrarTodo
+            // 
+            this.BtnBorrarTodo.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnBorrarTodo.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
+            this.BtnBorrarTodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnBorrarTodo.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnBorrarTodo.FlatAppearance.BorderSize = 5;
+            this.BtnBorrarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBorrarTodo.Font = new System.Drawing.Font("Modern No. 20", 7.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBorrarTodo.Image = global::Cupediarum.Properties.Resources.Icono_Delete;
+            this.BtnBorrarTodo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnBorrarTodo.Location = new System.Drawing.Point(3, 171);
+            this.BtnBorrarTodo.Name = "BtnBorrarTodo";
+            this.BtnBorrarTodo.Size = new System.Drawing.Size(162, 78);
+            this.BtnBorrarTodo.TabIndex = 18;
+            this.BtnBorrarTodo.Text = "Borrar Todo";
+            this.BtnBorrarTodo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnBorrarTodo.UseVisualStyleBackColor = false;
+            // 
+            // BtnBorrarProducto
+            // 
+            this.BtnBorrarProducto.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnBorrarProducto.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
+            this.BtnBorrarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnBorrarProducto.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnBorrarProducto.FlatAppearance.BorderSize = 5;
+            this.BtnBorrarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBorrarProducto.Font = new System.Drawing.Font("Modern No. 20", 7.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBorrarProducto.Image = global::Cupediarum.Properties.Resources.Icono_Delete;
+            this.BtnBorrarProducto.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnBorrarProducto.Location = new System.Drawing.Point(171, 171);
+            this.BtnBorrarProducto.Name = "BtnBorrarProducto";
+            this.BtnBorrarProducto.Size = new System.Drawing.Size(162, 78);
+            this.BtnBorrarProducto.TabIndex = 19;
+            this.BtnBorrarProducto.Text = "Borrar Producto";
+            this.BtnBorrarProducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnBorrarProducto.UseVisualStyleBackColor = false;
             // 
             // DgvComanda
             // 
@@ -228,53 +395,167 @@
             // FlpCategorias
             // 
             this.FlpCategorias.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.FlpCategorias.Controls.Add(this.button1);
-            this.FlpCategorias.Controls.Add(this.button2);
-            this.FlpCategorias.Controls.Add(this.button3);
-            this.FlpCategorias.Controls.Add(this.button4);
-            this.FlpCategorias.Controls.Add(this.button5);
+            this.FlpCategorias.Controls.Add(this.BtnTodo);
+            this.FlpCategorias.Controls.Add(this.BtnBebidas);
+            this.FlpCategorias.Controls.Add(this.BtnComida);
+            this.FlpCategorias.Controls.Add(this.BtnOtros);
+            this.FlpCategorias.Controls.Add(this.BtnFavoritos);
             this.FlpCategorias.Location = new System.Drawing.Point(500, 40);
             this.FlpCategorias.Name = "FlpCategorias";
             this.FlpCategorias.Size = new System.Drawing.Size(892, 91);
             this.FlpCategorias.TabIndex = 2;
             // 
-            // flowLayoutPanel3
+            // BtnTodo
             // 
-            this.flowLayoutPanel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel3.Controls.Add(this.BtnAtras);
-            this.flowLayoutPanel3.Controls.Add(this.button20);
-            this.flowLayoutPanel3.Controls.Add(this.button21);
-            this.flowLayoutPanel3.Controls.Add(this.button22);
-            this.flowLayoutPanel3.Controls.Add(this.button23);
-            this.flowLayoutPanel3.Controls.Add(this.button24);
-            this.flowLayoutPanel3.Controls.Add(this.button25);
-            this.flowLayoutPanel3.Controls.Add(this.button26);
-            this.flowLayoutPanel3.Controls.Add(this.button27);
-            this.flowLayoutPanel3.Controls.Add(this.button28);
-            this.flowLayoutPanel3.Controls.Add(this.button29);
-            this.flowLayoutPanel3.Controls.Add(this.button30);
-            this.flowLayoutPanel3.Controls.Add(this.button31);
-            this.flowLayoutPanel3.Controls.Add(this.button32);
-            this.flowLayoutPanel3.Controls.Add(this.button33);
-            this.flowLayoutPanel3.Controls.Add(this.button34);
-            this.flowLayoutPanel3.Controls.Add(this.button35);
-            this.flowLayoutPanel3.Controls.Add(this.button36);
-            this.flowLayoutPanel3.Controls.Add(this.button37);
-            this.flowLayoutPanel3.Controls.Add(this.button38);
-            this.flowLayoutPanel3.Controls.Add(this.button39);
-            this.flowLayoutPanel3.Controls.Add(this.button40);
-            this.flowLayoutPanel3.Controls.Add(this.button41);
-            this.flowLayoutPanel3.Controls.Add(this.button18);
-            this.flowLayoutPanel3.Controls.Add(this.button19);
-            this.flowLayoutPanel3.Controls.Add(this.button42);
-            this.flowLayoutPanel3.Controls.Add(this.button43);
-            this.flowLayoutPanel3.Controls.Add(this.button44);
-            this.flowLayoutPanel3.Controls.Add(this.button45);
-            this.flowLayoutPanel3.Controls.Add(this.button46);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(481, 340);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(940, 429);
-            this.flowLayoutPanel3.TabIndex = 4;
+            this.BtnTodo.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnTodo.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnTodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnTodo.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
+            this.BtnTodo.FlatAppearance.BorderSize = 3;
+            this.BtnTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnTodo.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnTodo.Image = ((System.Drawing.Image)(resources.GetObject("BtnTodo.Image")));
+            this.BtnTodo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnTodo.Location = new System.Drawing.Point(3, 3);
+            this.BtnTodo.Name = "BtnTodo";
+            this.BtnTodo.Size = new System.Drawing.Size(163, 78);
+            this.BtnTodo.TabIndex = 11;
+            this.BtnTodo.Text = "Todo";
+            this.BtnTodo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnTodo.UseVisualStyleBackColor = false;
+            // 
+            // BtnBebidas
+            // 
+            this.BtnBebidas.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnBebidas.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnBebidas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnBebidas.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
+            this.BtnBebidas.FlatAppearance.BorderSize = 3;
+            this.BtnBebidas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBebidas.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBebidas.Image = global::Cupediarum.Properties.Resources.Icono_Bebidas;
+            this.BtnBebidas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnBebidas.Location = new System.Drawing.Point(172, 3);
+            this.BtnBebidas.Name = "BtnBebidas";
+            this.BtnBebidas.Size = new System.Drawing.Size(173, 78);
+            this.BtnBebidas.TabIndex = 12;
+            this.BtnBebidas.Text = "Bebidas";
+            this.BtnBebidas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnBebidas.UseVisualStyleBackColor = false;
+            // 
+            // BtnComida
+            // 
+            this.BtnComida.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnComida.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnComida.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnComida.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
+            this.BtnComida.FlatAppearance.BorderSize = 3;
+            this.BtnComida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnComida.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnComida.Image = global::Cupediarum.Properties.Resources.Icono_Food;
+            this.BtnComida.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnComida.Location = new System.Drawing.Point(351, 3);
+            this.BtnComida.Name = "BtnComida";
+            this.BtnComida.Size = new System.Drawing.Size(181, 78);
+            this.BtnComida.TabIndex = 13;
+            this.BtnComida.Text = "Comida";
+            this.BtnComida.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnComida.UseVisualStyleBackColor = false;
+            // 
+            // BtnOtros
+            // 
+            this.BtnOtros.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnOtros.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnOtros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnOtros.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
+            this.BtnOtros.FlatAppearance.BorderSize = 3;
+            this.BtnOtros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnOtros.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnOtros.Image = global::Cupediarum.Properties.Resources.Icono_Otros;
+            this.BtnOtros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnOtros.Location = new System.Drawing.Point(538, 3);
+            this.BtnOtros.Name = "BtnOtros";
+            this.BtnOtros.Size = new System.Drawing.Size(159, 78);
+            this.BtnOtros.TabIndex = 14;
+            this.BtnOtros.Text = "Otros";
+            this.BtnOtros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnOtros.UseVisualStyleBackColor = false;
+            // 
+            // BtnFavoritos
+            // 
+            this.BtnFavoritos.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnFavoritos.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnFavoritos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnFavoritos.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
+            this.BtnFavoritos.FlatAppearance.BorderSize = 3;
+            this.BtnFavoritos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnFavoritos.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFavoritos.Image = global::Cupediarum.Properties.Resources.Icono_Favorito;
+            this.BtnFavoritos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnFavoritos.Location = new System.Drawing.Point(703, 3);
+            this.BtnFavoritos.Name = "BtnFavoritos";
+            this.BtnFavoritos.Size = new System.Drawing.Size(182, 78);
+            this.BtnFavoritos.TabIndex = 15;
+            this.BtnFavoritos.Text = "Favoritos";
+            this.BtnFavoritos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnFavoritos.UseVisualStyleBackColor = false;
+            // 
+            // FlpProductos
+            // 
+            this.FlpProductos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.FlpProductos.Controls.Add(this.BtnAtras);
+            this.FlpProductos.Controls.Add(this.button20);
+            this.FlpProductos.Controls.Add(this.button21);
+            this.FlpProductos.Controls.Add(this.button22);
+            this.FlpProductos.Controls.Add(this.button23);
+            this.FlpProductos.Controls.Add(this.button24);
+            this.FlpProductos.Controls.Add(this.button25);
+            this.FlpProductos.Controls.Add(this.button26);
+            this.FlpProductos.Controls.Add(this.button27);
+            this.FlpProductos.Controls.Add(this.button28);
+            this.FlpProductos.Controls.Add(this.button29);
+            this.FlpProductos.Controls.Add(this.button30);
+            this.FlpProductos.Controls.Add(this.button31);
+            this.FlpProductos.Controls.Add(this.button32);
+            this.FlpProductos.Controls.Add(this.button33);
+            this.FlpProductos.Controls.Add(this.button34);
+            this.FlpProductos.Controls.Add(this.button35);
+            this.FlpProductos.Controls.Add(this.button36);
+            this.FlpProductos.Controls.Add(this.button37);
+            this.FlpProductos.Controls.Add(this.button38);
+            this.FlpProductos.Controls.Add(this.button39);
+            this.FlpProductos.Controls.Add(this.button40);
+            this.FlpProductos.Controls.Add(this.button41);
+            this.FlpProductos.Controls.Add(this.button18);
+            this.FlpProductos.Controls.Add(this.button19);
+            this.FlpProductos.Controls.Add(this.button42);
+            this.FlpProductos.Controls.Add(this.button43);
+            this.FlpProductos.Controls.Add(this.button44);
+            this.FlpProductos.Controls.Add(this.button45);
+            this.FlpProductos.Controls.Add(this.BtnSiguiente);
+            this.FlpProductos.Location = new System.Drawing.Point(481, 340);
+            this.FlpProductos.Name = "FlpProductos";
+            this.FlpProductos.Size = new System.Drawing.Size(940, 429);
+            this.FlpProductos.TabIndex = 4;
+            // 
+            // BtnAtras
+            // 
+            this.BtnAtras.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAtras.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnAtras.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnAtras.FlatAppearance.BorderSize = 5;
+            this.BtnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAtras.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAtras.Image = global::Cupediarum.Properties.Resources.Icono_Left;
+            this.BtnAtras.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnAtras.Location = new System.Drawing.Point(3, 3);
+            this.BtnAtras.Name = "BtnAtras";
+            this.BtnAtras.Size = new System.Drawing.Size(150, 78);
+            this.BtnAtras.TabIndex = 43;
+            this.BtnAtras.Text = "Atras";
+            this.BtnAtras.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnAtras.UseVisualStyleBackColor = false;
             // 
             // button20
             // 
@@ -724,25 +1005,63 @@
             this.button45.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button45.UseVisualStyleBackColor = false;
             // 
-            // flowLayoutPanel2
+            // BtnSiguiente
             // 
-            this.flowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel2.Controls.Add(this.button6);
-            this.flowLayoutPanel2.Controls.Add(this.button8);
-            this.flowLayoutPanel2.Controls.Add(this.button7);
-            this.flowLayoutPanel2.Controls.Add(this.button9);
-            this.flowLayoutPanel2.Controls.Add(this.button10);
-            this.flowLayoutPanel2.Controls.Add(this.button11);
-            this.flowLayoutPanel2.Controls.Add(this.button12);
-            this.flowLayoutPanel2.Controls.Add(this.button13);
-            this.flowLayoutPanel2.Controls.Add(this.button14);
-            this.flowLayoutPanel2.Controls.Add(this.button15);
-            this.flowLayoutPanel2.Controls.Add(this.button16);
-            this.flowLayoutPanel2.Controls.Add(this.button17);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(481, 149);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(940, 176);
-            this.flowLayoutPanel2.TabIndex = 3;
+            this.BtnSiguiente.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnSiguiente.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnSiguiente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnSiguiente.FlatAppearance.BorderSize = 5;
+            this.BtnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSiguiente.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSiguiente.Image = global::Cupediarum.Properties.Resources.Icono_Right;
+            this.BtnSiguiente.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnSiguiente.Location = new System.Drawing.Point(783, 339);
+            this.BtnSiguiente.Name = "BtnSiguiente";
+            this.BtnSiguiente.Size = new System.Drawing.Size(150, 78);
+            this.BtnSiguiente.TabIndex = 61;
+            this.BtnSiguiente.Text = "Siguiente";
+            this.BtnSiguiente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnSiguiente.UseVisualStyleBackColor = false;
+            // 
+            // FlpTipos
+            // 
+            this.FlpTipos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.FlpTipos.Controls.Add(this.BtnAtrasTipos);
+            this.FlpTipos.Controls.Add(this.button8);
+            this.FlpTipos.Controls.Add(this.button7);
+            this.FlpTipos.Controls.Add(this.button9);
+            this.FlpTipos.Controls.Add(this.button10);
+            this.FlpTipos.Controls.Add(this.button11);
+            this.FlpTipos.Controls.Add(this.button12);
+            this.FlpTipos.Controls.Add(this.button13);
+            this.FlpTipos.Controls.Add(this.button14);
+            this.FlpTipos.Controls.Add(this.button15);
+            this.FlpTipos.Controls.Add(this.button16);
+            this.FlpTipos.Controls.Add(this.BtnSiguienteTipos);
+            this.FlpTipos.Location = new System.Drawing.Point(481, 149);
+            this.FlpTipos.Name = "FlpTipos";
+            this.FlpTipos.Size = new System.Drawing.Size(940, 176);
+            this.FlpTipos.TabIndex = 3;
+            // 
+            // BtnAtrasTipos
+            // 
+            this.BtnAtrasTipos.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAtrasTipos.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnAtrasTipos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnAtrasTipos.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnAtrasTipos.FlatAppearance.BorderSize = 5;
+            this.BtnAtrasTipos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAtrasTipos.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAtrasTipos.Image = global::Cupediarum.Properties.Resources.Icono_Left;
+            this.BtnAtrasTipos.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnAtrasTipos.Location = new System.Drawing.Point(3, 3);
+            this.BtnAtrasTipos.Name = "BtnAtrasTipos";
+            this.BtnAtrasTipos.Size = new System.Drawing.Size(150, 78);
+            this.BtnAtrasTipos.TabIndex = 44;
+            this.BtnAtrasTipos.Text = "Atras";
+            this.BtnAtrasTipos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnAtrasTipos.UseVisualStyleBackColor = false;
             // 
             // button8
             // 
@@ -904,342 +1223,24 @@
             this.button16.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button16.UseVisualStyleBackColor = false;
             // 
-            // BtnAtras
+            // BtnSiguienteTipos
             // 
-            this.BtnAtras.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnAtras.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAtras.BackgroundImage")));
-            this.BtnAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnAtras.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
-            this.BtnAtras.FlatAppearance.BorderSize = 3;
-            this.BtnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAtras.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAtras.Image = ((System.Drawing.Image)(resources.GetObject("BtnAtras.Image")));
-            this.BtnAtras.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnAtras.Location = new System.Drawing.Point(3, 3);
-            this.BtnAtras.Name = "BtnAtras";
-            this.BtnAtras.Size = new System.Drawing.Size(150, 78);
-            this.BtnAtras.TabIndex = 43;
-            this.BtnAtras.Text = "Atras";
-            this.BtnAtras.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnAtras.UseVisualStyleBackColor = false;
-            // 
-            // button46
-            // 
-            this.button46.BackColor = System.Drawing.Color.LightCoral;
-            this.button46.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button46.BackgroundImage")));
-            this.button46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button46.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
-            this.button46.FlatAppearance.BorderSize = 3;
-            this.button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button46.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button46.Image = ((System.Drawing.Image)(resources.GetObject("button46.Image")));
-            this.button46.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button46.Location = new System.Drawing.Point(783, 339);
-            this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(150, 78);
-            this.button46.TabIndex = 61;
-            this.button46.Text = "Siguiente";
-            this.button46.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button46.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.LightCoral;
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
-            this.button6.FlatAppearance.BorderSize = 3;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.Location = new System.Drawing.Point(3, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(150, 78);
-            this.button6.TabIndex = 44;
-            this.button6.Text = "Atras";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.LightCoral;
-            this.button17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button17.BackgroundImage")));
-            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button17.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
-            this.button17.FlatAppearance.BorderSize = 3;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button17.Location = new System.Drawing.Point(783, 87);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(150, 78);
-            this.button17.TabIndex = 60;
-            this.button17.Text = "Siguiente";
-            this.button17.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.LightCoral;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 78);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Todo";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.LightCoral;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
-            this.button2.FlatAppearance.BorderSize = 3;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(172, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 78);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Bebidas";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.LightCoral;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
-            this.button3.FlatAppearance.BorderSize = 3;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(351, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(181, 78);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Comida";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.LightCoral;
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
-            this.button4.FlatAppearance.BorderSize = 3;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(538, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(159, 78);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Otros";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.LightCoral;
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
-            this.button5.FlatAppearance.BorderSize = 3;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(703, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(182, 78);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "Favoritos";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // BtnComentario
-            // 
-            this.BtnComentario.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnComentario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnComentario.BackgroundImage")));
-            this.BtnComentario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnComentario.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnComentario.FlatAppearance.BorderSize = 3;
-            this.BtnComentario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnComentario.Font = new System.Drawing.Font("Modern No. 20", 7.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnComentario.Image = ((System.Drawing.Image)(resources.GetObject("BtnComentario.Image")));
-            this.BtnComentario.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnComentario.Location = new System.Drawing.Point(3, 3);
-            this.BtnComentario.Name = "BtnComentario";
-            this.BtnComentario.Size = new System.Drawing.Size(106, 78);
-            this.BtnComentario.TabIndex = 14;
-            this.BtnComentario.Text = "Comentario";
-            this.BtnComentario.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnComentario.UseVisualStyleBackColor = false;
-            // 
-            // BtnComandas
-            // 
-            this.BtnComandas.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnComandas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnComandas.BackgroundImage")));
-            this.BtnComandas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnComandas.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnComandas.FlatAppearance.BorderSize = 3;
-            this.BtnComandas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnComandas.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnComandas.Image = ((System.Drawing.Image)(resources.GetObject("BtnComandas.Image")));
-            this.BtnComandas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnComandas.Location = new System.Drawing.Point(115, 3);
-            this.BtnComandas.Name = "BtnComandas";
-            this.BtnComandas.Size = new System.Drawing.Size(106, 78);
-            this.BtnComandas.TabIndex = 13;
-            this.BtnComandas.Text = "Comandas";
-            this.BtnComandas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnComandas.UseVisualStyleBackColor = false;
-            // 
-            // BtnAceptar
-            // 
-            this.BtnAceptar.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnAceptar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAceptar.BackgroundImage")));
-            this.BtnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.BtnAceptar.FlatAppearance.BorderSize = 3;
-            this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAceptar.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAceptar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAceptar.Image")));
-            this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnAceptar.Location = new System.Drawing.Point(227, 3);
-            this.BtnAceptar.Name = "BtnAceptar";
-            this.BtnAceptar.Size = new System.Drawing.Size(106, 78);
-            this.BtnAceptar.TabIndex = 11;
-            this.BtnAceptar.Text = "Aceptar";
-            this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnAceptar.UseVisualStyleBackColor = false;
-            // 
-            // BtnCancelar
-            // 
-            this.BtnCancelar.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.BackgroundImage")));
-            this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.BtnCancelar.FlatAppearance.BorderSize = 3;
-            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancelar.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.Image")));
-            this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnCancelar.Location = new System.Drawing.Point(339, 3);
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(106, 78);
-            this.BtnCancelar.TabIndex = 12;
-            this.BtnCancelar.Text = "Cancelar";
-            this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnCancelar.UseVisualStyleBackColor = false;
-            this.BtnCancelar.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button49
-            // 
-            this.button49.BackColor = System.Drawing.Color.LightCoral;
-            this.button49.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button49.BackgroundImage")));
-            this.button49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button49.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.button49.FlatAppearance.BorderSize = 3;
-            this.button49.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button49.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button49.Location = new System.Drawing.Point(3, 87);
-            this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(106, 78);
-            this.button49.TabIndex = 21;
-            this.button49.Text = "0 % Descuento";
-            this.button49.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button49.UseVisualStyleBackColor = false;
-            // 
-            // BtnMenos
-            // 
-            this.BtnMenos.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnMenos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMenos.BackgroundImage")));
-            this.BtnMenos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnMenos.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnMenos.FlatAppearance.BorderSize = 3;
-            this.BtnMenos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMenos.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMenos.Image = ((System.Drawing.Image)(resources.GetObject("BtnMenos.Image")));
-            this.BtnMenos.Location = new System.Drawing.Point(115, 87);
-            this.BtnMenos.Name = "BtnMenos";
-            this.BtnMenos.Size = new System.Drawing.Size(106, 78);
-            this.BtnMenos.TabIndex = 15;
-            this.BtnMenos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnMenos.UseVisualStyleBackColor = false;
-            // 
-            // BtnMas
-            // 
-            this.BtnMas.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnMas.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
-            this.BtnMas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnMas.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnMas.FlatAppearance.BorderSize = 3;
-            this.BtnMas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMas.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMas.Image = ((System.Drawing.Image)(resources.GetObject("BtnMas.Image")));
-            this.BtnMas.Location = new System.Drawing.Point(227, 87);
-            this.BtnMas.Name = "BtnMas";
-            this.BtnMas.Size = new System.Drawing.Size(106, 78);
-            this.BtnMas.TabIndex = 16;
-            this.BtnMas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnMas.UseVisualStyleBackColor = false;
-            // 
-            // BtnBorrarTodo
-            // 
-            this.BtnBorrarTodo.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnBorrarTodo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBorrarTodo.BackgroundImage")));
-            this.BtnBorrarTodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnBorrarTodo.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnBorrarTodo.FlatAppearance.BorderSize = 3;
-            this.BtnBorrarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBorrarTodo.Font = new System.Drawing.Font("Modern No. 20", 7.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBorrarTodo.Image = ((System.Drawing.Image)(resources.GetObject("BtnBorrarTodo.Image")));
-            this.BtnBorrarTodo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnBorrarTodo.Location = new System.Drawing.Point(3, 171);
-            this.BtnBorrarTodo.Name = "BtnBorrarTodo";
-            this.BtnBorrarTodo.Size = new System.Drawing.Size(162, 78);
-            this.BtnBorrarTodo.TabIndex = 18;
-            this.BtnBorrarTodo.Text = "Borrar Todo";
-            this.BtnBorrarTodo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnBorrarTodo.UseVisualStyleBackColor = false;
-            // 
-            // BtnBorrarProducto
-            // 
-            this.BtnBorrarProducto.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnBorrarProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBorrarProducto.BackgroundImage")));
-            this.BtnBorrarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnBorrarProducto.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnBorrarProducto.FlatAppearance.BorderSize = 3;
-            this.BtnBorrarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBorrarProducto.Font = new System.Drawing.Font("Modern No. 20", 7.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBorrarProducto.Image = ((System.Drawing.Image)(resources.GetObject("BtnBorrarProducto.Image")));
-            this.BtnBorrarProducto.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnBorrarProducto.Location = new System.Drawing.Point(171, 171);
-            this.BtnBorrarProducto.Name = "BtnBorrarProducto";
-            this.BtnBorrarProducto.Size = new System.Drawing.Size(162, 78);
-            this.BtnBorrarProducto.TabIndex = 19;
-            this.BtnBorrarProducto.Text = "Borrar Producto";
-            this.BtnBorrarProducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnBorrarProducto.UseVisualStyleBackColor = false;
+            this.BtnSiguienteTipos.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnSiguienteTipos.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnSiguienteTipos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnSiguienteTipos.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnSiguienteTipos.FlatAppearance.BorderSize = 5;
+            this.BtnSiguienteTipos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSiguienteTipos.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSiguienteTipos.Image = global::Cupediarum.Properties.Resources.Icono_Right;
+            this.BtnSiguienteTipos.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnSiguienteTipos.Location = new System.Drawing.Point(783, 87);
+            this.BtnSiguienteTipos.Name = "BtnSiguienteTipos";
+            this.BtnSiguienteTipos.Size = new System.Drawing.Size(150, 78);
+            this.BtnSiguienteTipos.TabIndex = 60;
+            this.BtnSiguienteTipos.Text = "Siguiente";
+            this.BtnSiguienteTipos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnSiguienteTipos.UseVisualStyleBackColor = false;
             // 
             // FrmCapturaProductos
             // 
@@ -1247,22 +1248,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1428, 997);
-            this.Controls.Add(this.flowLayoutPanel3);
-            this.Controls.Add(this.flowLayoutPanel2);
+            this.Controls.Add(this.FlpProductos);
+            this.Controls.Add(this.FlpTipos);
             this.Controls.Add(this.FlpCategorias);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.FlpComanda);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmCapturaProductos";
             this.Text = "Captura de Productos";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
+            this.FlpComanda.ResumeLayout(false);
+            this.FlpComanda.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvComanda)).EndInit();
             this.FlpCategorias.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
+            this.FlpProductos.ResumeLayout(false);
+            this.FlpTipos.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1273,7 +1275,7 @@
         private System.Windows.Forms.ToolStripMenuItem configurarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel FlpComanda;
         private System.Windows.Forms.Button BtnAceptar;
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.Button BtnComandas;
@@ -1284,8 +1286,8 @@
         private System.Windows.Forms.Button BtnBorrarTodo;
         private System.Windows.Forms.Button BtnBorrarProducto;
         private System.Windows.Forms.FlowLayoutPanel FlpCategorias;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.Button BtnTodo;
+        private System.Windows.Forms.FlowLayoutPanel FlpProductos;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button22;
@@ -1314,21 +1316,21 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DESCRIPCION;
         private System.Windows.Forms.DataGridViewTextBoxColumn PRECIO;
         private System.Windows.Forms.DataGridViewTextBoxColumn DESCUENTO;
-        private System.Windows.Forms.Button button49;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button BtnDescuento;
+        private System.Windows.Forms.Button BtnBebidas;
+        private System.Windows.Forms.Button BtnComida;
+        private System.Windows.Forms.Button BtnOtros;
+        private System.Windows.Forms.Button BtnFavoritos;
         private System.Windows.Forms.Button BtnAtras;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.FlowLayoutPanel FlpTipos;
+        private System.Windows.Forms.Button BtnAtrasTipos;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button42;
         private System.Windows.Forms.Button button43;
         private System.Windows.Forms.Button button44;
         private System.Windows.Forms.Button button45;
-        private System.Windows.Forms.Button button46;
+        private System.Windows.Forms.Button BtnSiguiente;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button9;
@@ -1339,6 +1341,6 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button BtnSiguienteTipos;
     }
 }

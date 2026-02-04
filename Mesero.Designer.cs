@@ -447,11 +447,13 @@
             // LblClave
             // 
             this.LblClave.AutoSize = true;
-            this.LblClave.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblClave.BackColor = System.Drawing.Color.Transparent;
+            this.LblClave.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblClave.Font = new System.Drawing.Font("Modern No. 20", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblClave.ForeColor = System.Drawing.Color.White;
-            this.LblClave.Location = new System.Drawing.Point(3, 98);
+            this.LblClave.Location = new System.Drawing.Point(6, 105);
             this.LblClave.Name = "LblClave";
-            this.LblClave.Size = new System.Drawing.Size(168, 34);
+            this.LblClave.Size = new System.Drawing.Size(150, 32);
             this.LblClave.TabIndex = 10;
             this.LblClave.Text = "Contraseña";
             // 
@@ -468,7 +470,7 @@
             this.BtnMesero.BackColor = System.Drawing.Color.LightCoral;
             this.BtnMesero.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnMesero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnMesero.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnMesero.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnMesero.FlatAppearance.BorderSize = 3;
             this.BtnMesero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMesero.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1118,7 +1120,7 @@
             this.BtnMonitor.BackColor = System.Drawing.Color.LightCoral;
             this.BtnMonitor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMonitor.BackgroundImage")));
             this.BtnMonitor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnMonitor.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnMonitor.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnMonitor.FlatAppearance.BorderSize = 3;
             this.BtnMonitor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMonitor.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1137,7 +1139,7 @@
             this.BtnPedidos.BackColor = System.Drawing.Color.LightCoral;
             this.BtnPedidos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPedidos.BackgroundImage")));
             this.BtnPedidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnPedidos.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnPedidos.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnPedidos.FlatAppearance.BorderSize = 3;
             this.BtnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPedidos.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

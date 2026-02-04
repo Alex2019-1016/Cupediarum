@@ -128,7 +128,7 @@
             this.BtnBorrar.FlatAppearance.BorderSize = 5;
             this.BtnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBorrar.Image = ((System.Drawing.Image)(resources.GetObject("BtnBorrar.Image")));
+            this.BtnBorrar.Image = global::Cupediarum.Properties.Resources.Icono_Borrar;
             this.BtnBorrar.Location = new System.Drawing.Point(4, 264);
             this.BtnBorrar.Name = "BtnBorrar";
             this.BtnBorrar.Size = new System.Drawing.Size(99, 84);

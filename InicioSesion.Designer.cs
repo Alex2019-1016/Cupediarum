@@ -33,8 +33,8 @@ namespace Cupediarum
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicioSesion));
             this.TxtClave = new System.Windows.Forms.TextBox();
             this.TxtUsuario = new System.Windows.Forms.TextBox();
-            this.LblUsuario = new System.Windows.Forms.Label();
-            this.LblClave = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.BtnAceptar = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -60,29 +60,29 @@ namespace Cupediarum
             this.TxtUsuario.TabIndex = 9;
             this.TxtUsuario.TextChanged += new System.EventHandler(this.TxtUsuario_TextChanged);
             // 
-            // LblUsuario
+            // label1
             // 
-            this.LblUsuario.AutoSize = true;
-            this.LblUsuario.BackColor = System.Drawing.Color.Black;
-            this.LblUsuario.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblUsuario.Location = new System.Drawing.Point(63, 199);
-            this.LblUsuario.Name = "LblUsuario";
-            this.LblUsuario.Size = new System.Drawing.Size(124, 44);
-            this.LblUsuario.TabIndex = 7;
-            this.LblUsuario.Text = "Usuario";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(63, 199);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 44);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Usuario";
             // 
-            // LblClave
+            // label2
             // 
-            this.LblClave.AutoSize = true;
-            this.LblClave.BackColor = System.Drawing.Color.Black;
-            this.LblClave.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblClave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblClave.Location = new System.Drawing.Point(28, 294);
-            this.LblClave.Name = "LblClave";
-            this.LblClave.Size = new System.Drawing.Size(163, 44);
-            this.LblClave.TabIndex = 13;
-            this.LblClave.Text = "Contraseña";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(28, 294);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(163, 44);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Contraseña";
             // 
             // BtnAceptar
             // 
@@ -138,12 +138,12 @@ namespace Cupediarum
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 527);
-            this.Controls.Add(this.LblClave);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnAceptar);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.TxtClave);
             this.Controls.Add(this.TxtUsuario);
-            this.Controls.Add(this.LblUsuario);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -169,8 +169,8 @@ namespace Cupediarum
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.TextBox TxtClave;
         private System.Windows.Forms.TextBox TxtUsuario;
-        private System.Windows.Forms.Label LblUsuario;
-        private System.Windows.Forms.Label LblClave;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

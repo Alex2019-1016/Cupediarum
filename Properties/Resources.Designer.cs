@@ -133,16 +133,6 @@ namespace Cupediarum.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Icono_Bebidas {
-            get {
-                object obj = ResourceManager.GetObject("Icono_Bebidas", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Icono_Borrar {
             get {
                 object obj = ResourceManager.GetObject("Icono_Borrar", resourceCulture);
@@ -233,9 +223,9 @@ namespace Cupediarum.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Icono_Exit {
+        internal static System.Drawing.Bitmap Icono_Drink {
             get {
-                object obj = ResourceManager.GetObject("Icono_Exit", resourceCulture);
+                object obj = ResourceManager.GetObject("Icono_Drink", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +233,9 @@ namespace Cupediarum.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Icono_Favorito {
+        internal static System.Drawing.Bitmap Icono_Exit {
             get {
-                object obj = ResourceManager.GetObject("Icono_Favorito", resourceCulture);
+                object obj = ResourceManager.GetObject("Icono_Exit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -366,6 +356,16 @@ namespace Cupediarum.Properties {
         internal static System.Drawing.Bitmap Icono_People {
             get {
                 object obj = ResourceManager.GetObject("Icono_People", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icono_Postres {
+            get {
+                object obj = ResourceManager.GetObject("Icono_Postres", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

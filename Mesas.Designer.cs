@@ -28,54 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mesas));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.LblAreaActiva = new System.Windows.Forms.Label();
-            this.CbArea = new System.Windows.Forms.ComboBox();
-            this.TxtBusarCuenta = new System.Windows.Forms.TextBox();
-            this.LblBuscarCuenta = new System.Windows.Forms.Label();
-            this.LnlNumeroCuentas = new System.Windows.Forms.Label();
+            this.PnlCuenta = new System.Windows.Forms.Panel();
+            this.LblNombArea = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.LblArea = new System.Windows.Forms.Label();
+            this.LblCantCuentas = new System.Windows.Forms.Label();
+            this.TxtBusarCuenta = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.CbArea = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.DgvCuentas = new System.Windows.Forms.DataGridView();
-            this.MESERO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IMPRESA = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.CUENTA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FlpCategorias = new System.Windows.Forms.FlowLayoutPanel();
+            this.IMPRESA = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.MESERO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FlpOpciones = new System.Windows.Forms.FlowLayoutPanel();
             this.BtnAbrirCuenta = new System.Windows.Forms.Button();
             this.BtnEliminarProducto = new System.Windows.Forms.Button();
             this.BtnCliente = new System.Windows.Forms.Button();
             this.BtnImprimir = new System.Windows.Forms.Button();
+            this.BtnCerrar = new System.Windows.Forms.Button();
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.BtnCambiarMesero = new System.Windows.Forms.Button();
             this.BtnPagarCuenta = new System.Windows.Forms.Button();
-            this.BtnCerrar = new System.Windows.Forms.Button();
             this.BtnDescuento = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.LblCuenta = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.PnlDatosCuenta = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label21 = new System.Windows.Forms.Label();
+            this.LblNomMesero = new System.Windows.Forms.Label();
+            this.LblNomArea = new System.Windows.Forms.Label();
+            this.LblReserva = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.LblNumMesero = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.LblNumArea = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.Cliente = new System.Windows.Forms.Label();
+            this.LblPersonas = new System.Windows.Forms.Label();
+            this.LblMesa = new System.Windows.Forms.Label();
+            this.LblDCuenta = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.LblCuenta = new System.Windows.Forms.Label();
+            this.DgvComanda = new System.Windows.Forms.DataGridView();
             this.COMANDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CANTIDAD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CLAVE = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -83,6 +83,7 @@
             this.DESCUENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PRECIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
@@ -91,45 +92,87 @@
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.panel1.SuspendLayout();
+            this.PnlCuenta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCuentas)).BeginInit();
-            this.FlpCategorias.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.FlpOpciones.SuspendLayout();
+            this.PnlDatosCuenta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvComanda)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // PnlCuenta
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.LblArea);
-            this.panel1.Controls.Add(this.LnlNumeroCuentas);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.TxtBusarCuenta);
-            this.panel1.Controls.Add(this.LblBuscarCuenta);
-            this.panel1.Controls.Add(this.CbArea);
-            this.panel1.Controls.Add(this.LblAreaActiva);
-            this.panel1.Location = new System.Drawing.Point(8, 10);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(400, 143);
-            this.panel1.TabIndex = 0;
+            this.PnlCuenta.BackColor = System.Drawing.Color.Transparent;
+            this.PnlCuenta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.PnlCuenta.Controls.Add(this.LblNombArea);
+            this.PnlCuenta.Controls.Add(this.label3);
+            this.PnlCuenta.Controls.Add(this.LblCantCuentas);
+            this.PnlCuenta.Controls.Add(this.TxtBusarCuenta);
+            this.PnlCuenta.Controls.Add(this.label2);
+            this.PnlCuenta.Controls.Add(this.CbArea);
+            this.PnlCuenta.Controls.Add(this.label1);
+            this.PnlCuenta.Location = new System.Drawing.Point(8, 10);
+            this.PnlCuenta.Name = "PnlCuenta";
+            this.PnlCuenta.Size = new System.Drawing.Size(400, 143);
+            this.PnlCuenta.TabIndex = 0;
             // 
-            // LblAreaActiva
+            // LblNombArea
             // 
-            this.LblAreaActiva.AutoSize = true;
-            this.LblAreaActiva.BackColor = System.Drawing.Color.Transparent;
-            this.LblAreaActiva.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LblAreaActiva.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAreaActiva.ForeColor = System.Drawing.Color.White;
-            this.LblAreaActiva.Location = new System.Drawing.Point(4, 5);
-            this.LblAreaActiva.Name = "LblAreaActiva";
-            this.LblAreaActiva.Size = new System.Drawing.Size(119, 24);
-            this.LblAreaActiva.TabIndex = 11;
-            this.LblAreaActiva.Text = "Area Activa";
+            this.LblNombArea.BackColor = System.Drawing.Color.Gray;
+            this.LblNombArea.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblNombArea.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNombArea.ForeColor = System.Drawing.Color.White;
+            this.LblNombArea.Location = new System.Drawing.Point(132, 34);
+            this.LblNombArea.Name = "LblNombArea";
+            this.LblNombArea.Size = new System.Drawing.Size(261, 33);
+            this.LblNombArea.TabIndex = 18;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label3.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(281, 74);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 24);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Cuentas:";
+            // 
+            // LblCantCuentas
+            // 
+            this.LblCantCuentas.BackColor = System.Drawing.Color.Gray;
+            this.LblCantCuentas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblCantCuentas.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCantCuentas.ForeColor = System.Drawing.Color.White;
+            this.LblCantCuentas.Location = new System.Drawing.Point(281, 105);
+            this.LblCantCuentas.Name = "LblCantCuentas";
+            this.LblCantCuentas.Size = new System.Drawing.Size(109, 30);
+            this.LblCantCuentas.TabIndex = 17;
+            // 
+            // TxtBusarCuenta
+            // 
+            this.TxtBusarCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBusarCuenta.Location = new System.Drawing.Point(4, 105);
+            this.TxtBusarCuenta.Name = "TxtBusarCuenta";
+            this.TxtBusarCuenta.Size = new System.Drawing.Size(271, 30);
+            this.TxtBusarCuenta.TabIndex = 15;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(4, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(147, 24);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Buscar Cuenta:";
             // 
             // CbArea
             // 
@@ -141,61 +184,18 @@
             this.CbArea.Size = new System.Drawing.Size(119, 33);
             this.CbArea.TabIndex = 12;
             // 
-            // TxtBusarCuenta
+            // label1
             // 
-            this.TxtBusarCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBusarCuenta.Location = new System.Drawing.Point(4, 105);
-            this.TxtBusarCuenta.Name = "TxtBusarCuenta";
-            this.TxtBusarCuenta.Size = new System.Drawing.Size(271, 30);
-            this.TxtBusarCuenta.TabIndex = 15;
-            // 
-            // LblBuscarCuenta
-            // 
-            this.LblBuscarCuenta.AutoSize = true;
-            this.LblBuscarCuenta.BackColor = System.Drawing.Color.Transparent;
-            this.LblBuscarCuenta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LblBuscarCuenta.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblBuscarCuenta.ForeColor = System.Drawing.Color.White;
-            this.LblBuscarCuenta.Location = new System.Drawing.Point(4, 79);
-            this.LblBuscarCuenta.Name = "LblBuscarCuenta";
-            this.LblBuscarCuenta.Size = new System.Drawing.Size(147, 24);
-            this.LblBuscarCuenta.TabIndex = 14;
-            this.LblBuscarCuenta.Text = "Buscar Cuenta:";
-            // 
-            // LnlNumeroCuentas
-            // 
-            this.LnlNumeroCuentas.AutoSize = true;
-            this.LnlNumeroCuentas.BackColor = System.Drawing.Color.Transparent;
-            this.LnlNumeroCuentas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LnlNumeroCuentas.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LnlNumeroCuentas.ForeColor = System.Drawing.Color.White;
-            this.LnlNumeroCuentas.Location = new System.Drawing.Point(281, 74);
-            this.LnlNumeroCuentas.Name = "LnlNumeroCuentas";
-            this.LnlNumeroCuentas.Size = new System.Drawing.Size(87, 24);
-            this.LnlNumeroCuentas.TabIndex = 16;
-            this.LnlNumeroCuentas.Text = "Cuentas:";
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Gray;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(281, 105);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 30);
-            this.label3.TabIndex = 17;
-            // 
-            // LblArea
-            // 
-            this.LblArea.BackColor = System.Drawing.Color.Gray;
-            this.LblArea.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LblArea.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblArea.ForeColor = System.Drawing.Color.White;
-            this.LblArea.Location = new System.Drawing.Point(132, 34);
-            this.LblArea.Name = "LblArea";
-            this.LblArea.Size = new System.Drawing.Size(261, 33);
-            this.LblArea.TabIndex = 18;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(4, 5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 24);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Area Activa";
             // 
             // DgvCuentas
             // 
@@ -215,15 +215,15 @@
             this.DgvCuentas.Size = new System.Drawing.Size(400, 714);
             this.DgvCuentas.TabIndex = 18;
             // 
-            // MESERO
+            // CUENTA
             // 
-            this.MESERO.HeaderText = "MESERO";
-            this.MESERO.MinimumWidth = 8;
-            this.MESERO.Name = "MESERO";
-            this.MESERO.ReadOnly = true;
-            this.MESERO.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.MESERO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.MESERO.Width = 130;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CUENTA.DefaultCellStyle = dataGridViewCellStyle1;
+            this.CUENTA.HeaderText = "CUENTA";
+            this.CUENTA.MinimumWidth = 8;
+            this.CUENTA.Name = "CUENTA";
+            this.CUENTA.ReadOnly = true;
+            this.CUENTA.Width = 110;
             // 
             // IMPRESA
             // 
@@ -237,33 +237,33 @@
             this.IMPRESA.ReadOnly = true;
             this.IMPRESA.Width = 130;
             // 
-            // CUENTA
+            // MESERO
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CUENTA.DefaultCellStyle = dataGridViewCellStyle1;
-            this.CUENTA.HeaderText = "CUENTA";
-            this.CUENTA.MinimumWidth = 8;
-            this.CUENTA.Name = "CUENTA";
-            this.CUENTA.ReadOnly = true;
-            this.CUENTA.Width = 110;
+            this.MESERO.HeaderText = "MESERO";
+            this.MESERO.MinimumWidth = 8;
+            this.MESERO.Name = "MESERO";
+            this.MESERO.ReadOnly = true;
+            this.MESERO.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.MESERO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.MESERO.Width = 130;
             // 
-            // FlpCategorias
+            // FlpOpciones
             // 
-            this.FlpCategorias.BackColor = System.Drawing.Color.Transparent;
-            this.FlpCategorias.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.FlpCategorias.Controls.Add(this.BtnAbrirCuenta);
-            this.FlpCategorias.Controls.Add(this.BtnEliminarProducto);
-            this.FlpCategorias.Controls.Add(this.BtnCliente);
-            this.FlpCategorias.Controls.Add(this.BtnImprimir);
-            this.FlpCategorias.Controls.Add(this.BtnCerrar);
-            this.FlpCategorias.Controls.Add(this.BtnAgregar);
-            this.FlpCategorias.Controls.Add(this.BtnCambiarMesero);
-            this.FlpCategorias.Controls.Add(this.BtnPagarCuenta);
-            this.FlpCategorias.Controls.Add(this.BtnDescuento);
-            this.FlpCategorias.Location = new System.Drawing.Point(425, 3);
-            this.FlpCategorias.Name = "FlpCategorias";
-            this.FlpCategorias.Size = new System.Drawing.Size(776, 155);
-            this.FlpCategorias.TabIndex = 19;
+            this.FlpOpciones.BackColor = System.Drawing.Color.Transparent;
+            this.FlpOpciones.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.FlpOpciones.Controls.Add(this.BtnAbrirCuenta);
+            this.FlpOpciones.Controls.Add(this.BtnEliminarProducto);
+            this.FlpOpciones.Controls.Add(this.BtnCliente);
+            this.FlpOpciones.Controls.Add(this.BtnImprimir);
+            this.FlpOpciones.Controls.Add(this.BtnCerrar);
+            this.FlpOpciones.Controls.Add(this.BtnAgregar);
+            this.FlpOpciones.Controls.Add(this.BtnCambiarMesero);
+            this.FlpOpciones.Controls.Add(this.BtnPagarCuenta);
+            this.FlpOpciones.Controls.Add(this.BtnDescuento);
+            this.FlpOpciones.Location = new System.Drawing.Point(425, 3);
+            this.FlpOpciones.Name = "FlpOpciones";
+            this.FlpOpciones.Size = new System.Drawing.Size(776, 155);
+            this.FlpOpciones.TabIndex = 19;
             // 
             // BtnAbrirCuenta
             // 
@@ -341,6 +341,25 @@
             this.BtnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnImprimir.UseVisualStyleBackColor = false;
             // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnCerrar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.BtnCerrar.FlatAppearance.BorderSize = 5;
+            this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCerrar.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCerrar.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
+            this.BtnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCerrar.Location = new System.Drawing.Point(619, 3);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(148, 69);
+            this.BtnCerrar.TabIndex = 18;
+            this.BtnCerrar.Text = "Cerrar";
+            this.BtnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCerrar.UseVisualStyleBackColor = false;
+            // 
             // BtnAgregar
             // 
             this.BtnAgregar.BackColor = System.Drawing.Color.LightCoral;
@@ -398,25 +417,6 @@
             this.BtnPagarCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnPagarCuenta.UseVisualStyleBackColor = false;
             // 
-            // BtnCerrar
-            // 
-            this.BtnCerrar.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnCerrar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
-            this.BtnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.BtnCerrar.FlatAppearance.BorderSize = 5;
-            this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCerrar.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCerrar.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
-            this.BtnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCerrar.Location = new System.Drawing.Point(619, 3);
-            this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.Size = new System.Drawing.Size(148, 69);
-            this.BtnCerrar.TabIndex = 18;
-            this.BtnCerrar.Text = "Cerrar";
-            this.BtnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCerrar.UseVisualStyleBackColor = false;
-            // 
             // BtnDescuento
             // 
             this.BtnDescuento.BackColor = System.Drawing.Color.LightCoral;
@@ -436,223 +436,42 @@
             this.BtnDescuento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnDescuento.UseVisualStyleBackColor = false;
             // 
-            // panel2
+            // PnlDatosCuenta
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.checkBox1);
-            this.panel2.Controls.Add(this.label21);
-            this.panel2.Controls.Add(this.label20);
-            this.panel2.Controls.Add(this.label19);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.LblCuenta);
-            this.panel2.Location = new System.Drawing.Point(427, 171);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(773, 216);
-            this.panel2.TabIndex = 20;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.PnlDatosCuenta.BackColor = System.Drawing.Color.Transparent;
+            this.PnlDatosCuenta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.PnlDatosCuenta.Controls.Add(this.checkBox1);
+            this.PnlDatosCuenta.Controls.Add(this.label21);
+            this.PnlDatosCuenta.Controls.Add(this.LblNomMesero);
+            this.PnlDatosCuenta.Controls.Add(this.LblNomArea);
+            this.PnlDatosCuenta.Controls.Add(this.LblReserva);
+            this.PnlDatosCuenta.Controls.Add(this.label18);
+            this.PnlDatosCuenta.Controls.Add(this.LblNumMesero);
+            this.PnlDatosCuenta.Controls.Add(this.label16);
+            this.PnlDatosCuenta.Controls.Add(this.LblNumArea);
+            this.PnlDatosCuenta.Controls.Add(this.label14);
+            this.PnlDatosCuenta.Controls.Add(this.Cliente);
+            this.PnlDatosCuenta.Controls.Add(this.LblPersonas);
+            this.PnlDatosCuenta.Controls.Add(this.LblMesa);
+            this.PnlDatosCuenta.Controls.Add(this.LblDCuenta);
+            this.PnlDatosCuenta.Controls.Add(this.label8);
+            this.PnlDatosCuenta.Controls.Add(this.label7);
+            this.PnlDatosCuenta.Controls.Add(this.label6);
+            this.PnlDatosCuenta.Controls.Add(this.LblCuenta);
+            this.PnlDatosCuenta.Location = new System.Drawing.Point(427, 171);
+            this.PnlDatosCuenta.Name = "PnlDatosCuenta";
+            this.PnlDatosCuenta.Size = new System.Drawing.Size(773, 216);
+            this.PnlDatosCuenta.TabIndex = 20;
+            this.PnlDatosCuenta.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // LblCuenta
+            // checkBox1
             // 
-            this.LblCuenta.AutoSize = true;
-            this.LblCuenta.BackColor = System.Drawing.Color.Transparent;
-            this.LblCuenta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LblCuenta.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCuenta.ForeColor = System.Drawing.Color.White;
-            this.LblCuenta.Location = new System.Drawing.Point(3, 10);
-            this.LblCuenta.Name = "LblCuenta";
-            this.LblCuenta.Size = new System.Drawing.Size(73, 24);
-            this.LblCuenta.TabIndex = 17;
-            this.LblCuenta.Text = "Cuenta";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(3, 60);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 24);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "Mesa";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(3, 111);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 24);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Personas";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label8.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(3, 160);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 24);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "Cliente";
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.Gray;
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label9.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(107, 5);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(136, 33);
-            this.label9.TabIndex = 21;
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.Gray;
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label10.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(107, 55);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(136, 33);
-            this.label10.TabIndex = 22;
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.Gray;
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label11.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(108, 105);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(261, 33);
-            this.label11.TabIndex = 23;
-            // 
-            // label12
-            // 
-            this.label12.BackColor = System.Drawing.Color.Gray;
-            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label12.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(107, 155);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(261, 33);
-            this.label12.TabIndex = 24;
-            // 
-            // label13
-            // 
-            this.label13.BackColor = System.Drawing.Color.Gray;
-            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label13.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(480, 5);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(64, 33);
-            this.label13.TabIndex = 26;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label14.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(386, 10);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(55, 24);
-            this.label14.TabIndex = 25;
-            this.label14.Text = "Area";
-            // 
-            // label15
-            // 
-            this.label15.BackColor = System.Drawing.Color.Gray;
-            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label15.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(480, 55);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(64, 33);
-            this.label15.TabIndex = 28;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label16.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(386, 60);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(75, 24);
-            this.label16.TabIndex = 27;
-            this.label16.Text = "Mesero";
-            // 
-            // label17
-            // 
-            this.label17.BackColor = System.Drawing.Color.Gray;
-            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label17.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(480, 105);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(275, 33);
-            this.label17.TabIndex = 30;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label18.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(386, 107);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(82, 24);
-            this.label18.TabIndex = 29;
-            this.label18.Text = "Reserva";
-            // 
-            // label19
-            // 
-            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label19.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(550, 5);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(104, 33);
-            this.label19.TabIndex = 31;
-            // 
-            // label20
-            // 
-            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label20.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(550, 55);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(104, 33);
-            this.label20.TabIndex = 32;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(746, 180);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(22, 21);
+            this.checkBox1.TabIndex = 34;
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // label21
             // 
@@ -667,37 +486,218 @@
             this.label21.TabIndex = 33;
             this.label21.Text = "Impreso";
             // 
-            // checkBox1
+            // LblNomMesero
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(746, 180);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(22, 21);
-            this.checkBox1.TabIndex = 34;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.LblNomMesero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.LblNomMesero.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblNomMesero.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNomMesero.ForeColor = System.Drawing.Color.White;
+            this.LblNomMesero.Location = new System.Drawing.Point(550, 55);
+            this.LblNomMesero.Name = "LblNomMesero";
+            this.LblNomMesero.Size = new System.Drawing.Size(104, 33);
+            this.LblNomMesero.TabIndex = 32;
             // 
-            // dataGridView2
+            // LblNomArea
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.LblNomArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.LblNomArea.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblNomArea.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNomArea.ForeColor = System.Drawing.Color.White;
+            this.LblNomArea.Location = new System.Drawing.Point(550, 5);
+            this.LblNomArea.Name = "LblNomArea";
+            this.LblNomArea.Size = new System.Drawing.Size(104, 33);
+            this.LblNomArea.TabIndex = 31;
+            // 
+            // LblReserva
+            // 
+            this.LblReserva.BackColor = System.Drawing.Color.Gray;
+            this.LblReserva.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblReserva.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblReserva.ForeColor = System.Drawing.Color.White;
+            this.LblReserva.Location = new System.Drawing.Point(480, 105);
+            this.LblReserva.Name = "LblReserva";
+            this.LblReserva.Size = new System.Drawing.Size(275, 33);
+            this.LblReserva.TabIndex = 30;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label18.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(386, 107);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(82, 24);
+            this.label18.TabIndex = 29;
+            this.label18.Text = "Reserva";
+            // 
+            // LblNumMesero
+            // 
+            this.LblNumMesero.BackColor = System.Drawing.Color.Gray;
+            this.LblNumMesero.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblNumMesero.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNumMesero.ForeColor = System.Drawing.Color.White;
+            this.LblNumMesero.Location = new System.Drawing.Point(480, 55);
+            this.LblNumMesero.Name = "LblNumMesero";
+            this.LblNumMesero.Size = new System.Drawing.Size(64, 33);
+            this.LblNumMesero.TabIndex = 28;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label16.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(386, 60);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(75, 24);
+            this.label16.TabIndex = 27;
+            this.label16.Text = "Mesero";
+            // 
+            // LblNumArea
+            // 
+            this.LblNumArea.BackColor = System.Drawing.Color.Gray;
+            this.LblNumArea.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblNumArea.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNumArea.ForeColor = System.Drawing.Color.White;
+            this.LblNumArea.Location = new System.Drawing.Point(480, 5);
+            this.LblNumArea.Name = "LblNumArea";
+            this.LblNumArea.Size = new System.Drawing.Size(64, 33);
+            this.LblNumArea.TabIndex = 26;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label14.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(386, 10);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(55, 24);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "Area";
+            // 
+            // Cliente
+            // 
+            this.Cliente.BackColor = System.Drawing.Color.Gray;
+            this.Cliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Cliente.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cliente.ForeColor = System.Drawing.Color.White;
+            this.Cliente.Location = new System.Drawing.Point(107, 159);
+            this.Cliente.Name = "Cliente";
+            this.Cliente.Size = new System.Drawing.Size(261, 33);
+            this.Cliente.TabIndex = 24;
+            // 
+            // LblPersonas
+            // 
+            this.LblPersonas.BackColor = System.Drawing.Color.Gray;
+            this.LblPersonas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblPersonas.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPersonas.ForeColor = System.Drawing.Color.White;
+            this.LblPersonas.Location = new System.Drawing.Point(108, 105);
+            this.LblPersonas.Name = "LblPersonas";
+            this.LblPersonas.Size = new System.Drawing.Size(59, 33);
+            this.LblPersonas.TabIndex = 23;
+            // 
+            // LblMesa
+            // 
+            this.LblMesa.BackColor = System.Drawing.Color.Gray;
+            this.LblMesa.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblMesa.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMesa.ForeColor = System.Drawing.Color.White;
+            this.LblMesa.Location = new System.Drawing.Point(107, 55);
+            this.LblMesa.Name = "LblMesa";
+            this.LblMesa.Size = new System.Drawing.Size(136, 33);
+            this.LblMesa.TabIndex = 22;
+            // 
+            // LblDCuenta
+            // 
+            this.LblDCuenta.BackColor = System.Drawing.Color.Gray;
+            this.LblDCuenta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblDCuenta.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDCuenta.ForeColor = System.Drawing.Color.White;
+            this.LblDCuenta.Location = new System.Drawing.Point(107, 5);
+            this.LblDCuenta.Name = "LblDCuenta";
+            this.LblDCuenta.Size = new System.Drawing.Size(136, 33);
+            this.LblDCuenta.TabIndex = 21;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label8.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(3, 160);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(75, 24);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Cliente";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label7.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(3, 111);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(92, 24);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Personas";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label6.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(3, 60);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 24);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Mesa";
+            // 
+            // LblCuenta
+            // 
+            this.LblCuenta.AutoSize = true;
+            this.LblCuenta.BackColor = System.Drawing.Color.Transparent;
+            this.LblCuenta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblCuenta.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCuenta.ForeColor = System.Drawing.Color.White;
+            this.LblCuenta.Location = new System.Drawing.Point(3, 10);
+            this.LblCuenta.Name = "LblCuenta";
+            this.LblCuenta.Size = new System.Drawing.Size(73, 24);
+            this.LblCuenta.TabIndex = 17;
+            this.LblCuenta.Text = "Cuenta";
+            // 
+            // DgvComanda
+            // 
+            this.DgvComanda.AllowUserToAddRows = false;
+            this.DgvComanda.AllowUserToDeleteRows = false;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DgvComanda.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.DgvComanda.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DgvComanda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvComanda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.COMANDA,
             this.CANTIDAD,
             this.CLAVE,
             this.DESCRIPCION,
             this.DESCUENTO,
             this.PRECIO});
-            this.dataGridView2.Location = new System.Drawing.Point(427, 393);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowHeadersWidth = 62;
-            this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(774, 260);
-            this.dataGridView2.TabIndex = 21;
+            this.DgvComanda.Location = new System.Drawing.Point(427, 393);
+            this.DgvComanda.Name = "DgvComanda";
+            this.DgvComanda.ReadOnly = true;
+            this.DgvComanda.RowHeadersWidth = 62;
+            this.DgvComanda.RowTemplate.Height = 28;
+            this.DgvComanda.Size = new System.Drawing.Size(774, 260);
+            this.DgvComanda.TabIndex = 21;
             // 
             // COMANDA
             // 
@@ -707,6 +707,7 @@
             this.COMANDA.MinimumWidth = 8;
             this.COMANDA.Name = "COMANDA";
             this.COMANDA.ReadOnly = true;
+            this.COMANDA.Width = 150;
             // 
             // CANTIDAD
             // 
@@ -740,6 +741,7 @@
             this.DESCUENTO.MinimumWidth = 8;
             this.DESCUENTO.Name = "DESCUENTO";
             this.DESCUENTO.ReadOnly = true;
+            this.DESCUENTO.Width = 150;
             // 
             // PRECIO
             // 
@@ -747,6 +749,7 @@
             this.PRECIO.MinimumWidth = 8;
             this.PRECIO.Name = "PRECIO";
             this.PRECIO.ReadOnly = true;
+            this.PRECIO.Width = 150;
             // 
             // panel3
             // 
@@ -765,6 +768,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(484, 202);
             this.panel3.TabIndex = 22;
+            // 
+            // label22
+            // 
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label22.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(189, 60);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(136, 31);
+            this.label22.TabIndex = 25;
             // 
             // label31
             // 
@@ -862,17 +876,6 @@
             this.label38.TabIndex = 17;
             this.label38.Text = "SUBTOTAL";
             // 
-            // label22
-            // 
-            this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label22.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(189, 60);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(136, 31);
-            this.label22.TabIndex = 25;
-            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -904,20 +907,20 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.FlpCategorias);
+            this.Controls.Add(this.DgvComanda);
+            this.Controls.Add(this.PnlDatosCuenta);
+            this.Controls.Add(this.FlpOpciones);
             this.Controls.Add(this.DgvCuentas);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.PnlCuenta);
             this.Name = "Mesas";
             this.Text = "Mesas";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.PnlCuenta.ResumeLayout(false);
+            this.PnlCuenta.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCuentas)).EndInit();
-            this.FlpCategorias.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.FlpOpciones.ResumeLayout(false);
+            this.PnlDatosCuenta.ResumeLayout(false);
+            this.PnlDatosCuenta.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvComanda)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -927,19 +930,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel PnlCuenta;
         private System.Windows.Forms.ComboBox CbArea;
-        private System.Windows.Forms.Label LblAreaActiva;
-        private System.Windows.Forms.Label LnlNumeroCuentas;
-        private System.Windows.Forms.TextBox TxtBusarCuenta;
-        private System.Windows.Forms.Label LblBuscarCuenta;
-        private System.Windows.Forms.Label LblArea;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox TxtBusarCuenta;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LblNombArea;
+        private System.Windows.Forms.Label LblCantCuentas;
         private System.Windows.Forms.DataGridView DgvCuentas;
         private System.Windows.Forms.DataGridViewTextBoxColumn CUENTA;
         private System.Windows.Forms.DataGridViewCheckBoxColumn IMPRESA;
         private System.Windows.Forms.DataGridViewTextBoxColumn MESERO;
-        private System.Windows.Forms.FlowLayoutPanel FlpCategorias;
+        private System.Windows.Forms.FlowLayoutPanel FlpOpciones;
         private System.Windows.Forms.Button BtnAbrirCuenta;
         private System.Windows.Forms.Button BtnEliminarProducto;
         private System.Windows.Forms.Button BtnCliente;
@@ -949,26 +952,26 @@
         private System.Windows.Forms.Button BtnPagarCuenta;
         private System.Windows.Forms.Button BtnCerrar;
         private System.Windows.Forms.Button BtnDescuento;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel PnlDatosCuenta;
         private System.Windows.Forms.Label LblCuenta;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label Cliente;
+        private System.Windows.Forms.Label LblPersonas;
+        private System.Windows.Forms.Label LblMesa;
+        private System.Windows.Forms.Label LblDCuenta;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label LblNomArea;
+        private System.Windows.Forms.Label LblReserva;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label LblNumMesero;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label LblNumArea;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label LblNomMesero;
+        private System.Windows.Forms.DataGridView DgvComanda;
         private System.Windows.Forms.DataGridViewTextBoxColumn COMANDA;
         private System.Windows.Forms.DataGridViewTextBoxColumn CANTIDAD;
         private System.Windows.Forms.DataGridViewTextBoxColumn CLAVE;

@@ -1,6 +1,6 @@
 ﻿namespace Cupediarum
 {
-    partial class FrmMesero
+    partial class AgregarCuenta
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMesero));
-            this.MnuMesero = new System.Windows.Forms.MenuStrip();
-            this.configurarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarCuenta));
+            this.RtbCuenta = new System.Windows.Forms.RichTextBox();
             this.PnlTecladoNum = new System.Windows.Forms.Panel();
             this.BtnMas = new System.Windows.Forms.Button();
             this.BtnGuion = new System.Windows.Forms.Button();
@@ -50,11 +48,6 @@
             this.BtnIntro = new System.Windows.Forms.Button();
             this.BtnPunto = new System.Windows.Forms.Button();
             this.BtnNum0 = new System.Windows.Forms.Button();
-            this.PnlDatosMesero = new System.Windows.Forms.Panel();
-            this.TxtClave = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TxtIDMesero = new System.Windows.Forms.TextBox();
-            this.BtnMesero = new System.Windows.Forms.Button();
             this.PnlTecladoAlf = new System.Windows.Forms.Panel();
             this.BtnAceptar = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
@@ -91,39 +84,18 @@
             this.BtnLetraE = new System.Windows.Forms.Button();
             this.BtnLetraW = new System.Windows.Forms.Button();
             this.BtnLetraQ = new System.Windows.Forms.Button();
-            this.BtnSalir = new System.Windows.Forms.Button();
-            this.BtnMonitor = new System.Windows.Forms.Button();
-            this.Cuentas = new System.Windows.Forms.Button();
-            this.MnuMesero.SuspendLayout();
             this.PnlTecladoNum.SuspendLayout();
-            this.PnlDatosMesero.SuspendLayout();
             this.PnlTecladoAlf.SuspendLayout();
             this.SuspendLayout();
             // 
-            // MnuMesero
+            // RtbCuenta
             // 
-            this.MnuMesero.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.MnuMesero.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.MnuMesero.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.configurarToolStripMenuItem,
-            this.acercaDeToolStripMenuItem});
-            this.MnuMesero.Location = new System.Drawing.Point(0, 0);
-            this.MnuMesero.Name = "MnuMesero";
-            this.MnuMesero.Size = new System.Drawing.Size(912, 33);
-            this.MnuMesero.TabIndex = 17;
-            this.MnuMesero.Text = "menuStrip1";
-            // 
-            // configurarToolStripMenuItem
-            // 
-            this.configurarToolStripMenuItem.Name = "configurarToolStripMenuItem";
-            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
-            this.configurarToolStripMenuItem.Text = "Configurar";
-            // 
-            // acercaDeToolStripMenuItem
-            // 
-            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
-            this.acercaDeToolStripMenuItem.Text = "Acerca de";
+            this.RtbCuenta.BackColor = System.Drawing.Color.Gainsboro;
+            this.RtbCuenta.Location = new System.Drawing.Point(2, 2);
+            this.RtbCuenta.Name = "RtbCuenta";
+            this.RtbCuenta.Size = new System.Drawing.Size(472, 313);
+            this.RtbCuenta.TabIndex = 0;
+            this.RtbCuenta.Text = "";
             // 
             // PnlTecladoNum
             // 
@@ -146,10 +118,10 @@
             this.PnlTecladoNum.Controls.Add(this.BtnIntro);
             this.PnlTecladoNum.Controls.Add(this.BtnPunto);
             this.PnlTecladoNum.Controls.Add(this.BtnNum0);
-            this.PnlTecladoNum.Location = new System.Drawing.Point(482, 36);
+            this.PnlTecladoNum.Location = new System.Drawing.Point(476, 3);
             this.PnlTecladoNum.Name = "PnlTecladoNum";
             this.PnlTecladoNum.Size = new System.Drawing.Size(253, 313);
-            this.PnlTecladoNum.TabIndex = 49;
+            this.PnlTecladoNum.TabIndex = 52;
             // 
             // BtnMas
             // 
@@ -423,67 +395,6 @@
             this.BtnNum0.Text = "0";
             this.BtnNum0.UseVisualStyleBackColor = false;
             // 
-            // PnlDatosMesero
-            // 
-            this.PnlDatosMesero.BackColor = System.Drawing.Color.Transparent;
-            this.PnlDatosMesero.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PnlDatosMesero.Controls.Add(this.TxtClave);
-            this.PnlDatosMesero.Controls.Add(this.label1);
-            this.PnlDatosMesero.Controls.Add(this.TxtIDMesero);
-            this.PnlDatosMesero.Controls.Add(this.BtnMesero);
-            this.PnlDatosMesero.Location = new System.Drawing.Point(32, 119);
-            this.PnlDatosMesero.Name = "PnlDatosMesero";
-            this.PnlDatosMesero.Size = new System.Drawing.Size(408, 158);
-            this.PnlDatosMesero.TabIndex = 53;
-            // 
-            // TxtClave
-            // 
-            this.TxtClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtClave.Location = new System.Drawing.Point(166, 81);
-            this.TxtClave.Name = "TxtClave";
-            this.TxtClave.Size = new System.Drawing.Size(225, 71);
-            this.TxtClave.TabIndex = 11;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(6, 105);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 32);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Contraseña";
-            // 
-            // TxtIDMesero
-            // 
-            this.TxtIDMesero.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtIDMesero.Location = new System.Drawing.Point(166, 4);
-            this.TxtIDMesero.Name = "TxtIDMesero";
-            this.TxtIDMesero.Size = new System.Drawing.Size(80, 71);
-            this.TxtIDMesero.TabIndex = 9;
-            // 
-            // BtnMesero
-            // 
-            this.BtnMesero.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnMesero.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
-            this.BtnMesero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnMesero.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.BtnMesero.FlatAppearance.BorderSize = 3;
-            this.BtnMesero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMesero.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMesero.Image = global::Cupediarum.Properties.Resources.Icono_Mesero;
-            this.BtnMesero.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnMesero.Location = new System.Drawing.Point(9, 4);
-            this.BtnMesero.Name = "BtnMesero";
-            this.BtnMesero.Size = new System.Drawing.Size(147, 72);
-            this.BtnMesero.TabIndex = 8;
-            this.BtnMesero.Text = "Mesero";
-            this.BtnMesero.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnMesero.UseVisualStyleBackColor = false;
-            // 
             // PnlTecladoAlf
             // 
             this.PnlTecladoAlf.BackColor = System.Drawing.Color.Transparent;
@@ -523,10 +434,10 @@
             this.PnlTecladoAlf.Controls.Add(this.BtnLetraE);
             this.PnlTecladoAlf.Controls.Add(this.BtnLetraW);
             this.PnlTecladoAlf.Controls.Add(this.BtnLetraQ);
-            this.PnlTecladoAlf.Location = new System.Drawing.Point(9, 355);
+            this.PnlTecladoAlf.Location = new System.Drawing.Point(3, 320);
             this.PnlTecladoAlf.Name = "PnlTecladoAlf";
             this.PnlTecladoAlf.Size = new System.Drawing.Size(726, 253);
-            this.PnlTecladoAlf.TabIndex = 50;
+            this.PnlTecladoAlf.TabIndex = 53;
             // 
             // BtnAceptar
             // 
@@ -1096,98 +1007,31 @@
             this.BtnLetraQ.Text = "Q";
             this.BtnLetraQ.UseVisualStyleBackColor = false;
             // 
-            // BtnSalir
-            // 
-            this.BtnSalir.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnSalir.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
-            this.BtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnSalir.FlatAppearance.BorderSize = 5;
-            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSalir.Font = new System.Drawing.Font("Modern No. 20", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalir.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
-            this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSalir.Location = new System.Drawing.Point(767, 548);
-            this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(138, 60);
-            this.BtnSalir.TabIndex = 51;
-            this.BtnSalir.Text = "Salir";
-            this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSalir.UseVisualStyleBackColor = false;
-            // 
-            // BtnMonitor
-            // 
-            this.BtnMonitor.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnMonitor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMonitor.BackgroundImage")));
-            this.BtnMonitor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnMonitor.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.BtnMonitor.FlatAppearance.BorderSize = 3;
-            this.BtnMonitor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMonitor.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMonitor.Image = global::Cupediarum.Properties.Resources.Icono_Monitor;
-            this.BtnMonitor.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnMonitor.Location = new System.Drawing.Point(741, 38);
-            this.BtnMonitor.Name = "BtnMonitor";
-            this.BtnMonitor.Size = new System.Drawing.Size(164, 87);
-            this.BtnMonitor.TabIndex = 16;
-            this.BtnMonitor.Text = "Monitor Ventas";
-            this.BtnMonitor.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnMonitor.UseVisualStyleBackColor = false;
-            // 
-            // Cuentas
-            // 
-            this.Cuentas.BackColor = System.Drawing.Color.LightCoral;
-            this.Cuentas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Cuentas.BackgroundImage")));
-            this.Cuentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Cuentas.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.Cuentas.FlatAppearance.BorderSize = 3;
-            this.Cuentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cuentas.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cuentas.Image = global::Cupediarum.Properties.Resources.Icono_Pedidos;
-            this.Cuentas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Cuentas.Location = new System.Drawing.Point(741, 135);
-            this.Cuentas.Name = "Cuentas";
-            this.Cuentas.Size = new System.Drawing.Size(164, 97);
-            this.Cuentas.TabIndex = 15;
-            this.Cuentas.Text = "Cuentas";
-            this.Cuentas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Cuentas.UseVisualStyleBackColor = false;
-            // 
-            // FrmMesero
+            // AgregarCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(912, 615);
-            this.Controls.Add(this.PnlDatosMesero);
-            this.Controls.Add(this.BtnSalir);
+            this.ClientSize = new System.Drawing.Size(732, 575);
             this.Controls.Add(this.PnlTecladoAlf);
             this.Controls.Add(this.PnlTecladoNum);
-            this.Controls.Add(this.MnuMesero);
-            this.Controls.Add(this.BtnMonitor);
-            this.Controls.Add(this.Cuentas);
+            this.Controls.Add(this.RtbCuenta);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmMesero";
-            this.Text = "Mesero";
-            this.Load += new System.EventHandler(this.Mesero_Load);
-            this.MnuMesero.ResumeLayout(false);
-            this.MnuMesero.PerformLayout();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "AgregarCuenta";
+            this.Text = "Agregar Cuenta";
+            this.Load += new System.EventHandler(this.AbrirCuenta_Load);
             this.PnlTecladoNum.ResumeLayout(false);
-            this.PnlDatosMesero.ResumeLayout(false);
-            this.PnlDatosMesero.PerformLayout();
             this.PnlTecladoAlf.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button BtnMonitor;
-        private System.Windows.Forms.Button Cuentas;
-        private System.Windows.Forms.MenuStrip MnuMesero;
-        private System.Windows.Forms.ToolStripMenuItem configurarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
+
+        private System.Windows.Forms.RichTextBox RtbCuenta;
         private System.Windows.Forms.Panel PnlTecladoNum;
         private System.Windows.Forms.Button BtnMas;
         private System.Windows.Forms.Button BtnGuion;
@@ -1206,47 +1050,41 @@
         private System.Windows.Forms.Button BtnIntro;
         private System.Windows.Forms.Button BtnPunto;
         private System.Windows.Forms.Button BtnNum0;
-        private System.Windows.Forms.Button BtnSalir;
-        private System.Windows.Forms.Panel PnlDatosMesero;
-        private System.Windows.Forms.TextBox TxtClave;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxtIDMesero;
-        private System.Windows.Forms.Button BtnMesero;
-        private System.Windows.Forms.Button BtnLetraQ;
-        private System.Windows.Forms.Button BtnLetraW;
-        private System.Windows.Forms.Button BtnLetraE;
-        private System.Windows.Forms.Button BtnLetraR;
-        private System.Windows.Forms.Button BtnLetraT;
-        private System.Windows.Forms.Button BtnLetraY;
-        private System.Windows.Forms.Button BtnLetraU;
-        private System.Windows.Forms.Button BtnLetraI;
-        private System.Windows.Forms.Button BtnLetraO;
-        private System.Windows.Forms.Button BtnLetraP;
-        private System.Windows.Forms.Button BtnLetraA;
-        private System.Windows.Forms.Button BtnLetraS;
-        private System.Windows.Forms.Button BtnLetraD;
-        private System.Windows.Forms.Button BtnLetraF;
-        private System.Windows.Forms.Button BtnLetraG;
-        private System.Windows.Forms.Button BtnLetraH;
-        private System.Windows.Forms.Button BtnLetraJ;
-        private System.Windows.Forms.Button BtnLetraK;
-        private System.Windows.Forms.Button BtnLetraL;
-        private System.Windows.Forms.Button BtnLetraÑ;
-        private System.Windows.Forms.Button BtnArroba;
-        private System.Windows.Forms.Button BtnLetraZ;
-        private System.Windows.Forms.Button BtnLetraX;
-        private System.Windows.Forms.Button BtnLetraC;
-        private System.Windows.Forms.Button BtnLetraV;
-        private System.Windows.Forms.Button BtnLetraB;
-        private System.Windows.Forms.Button BtnLetraN;
-        private System.Windows.Forms.Button BtnLetraM;
-        private System.Windows.Forms.Button BtnComa;
-        private System.Windows.Forms.Button BtnPunto2;
-        private System.Windows.Forms.Button BtnEspacio;
-        private System.Windows.Forms.Button BtnMinuscula;
-        private System.Windows.Forms.Button BtnBorrar;
         private System.Windows.Forms.Panel PnlTecladoAlf;
         private System.Windows.Forms.Button BtnAceptar;
         private System.Windows.Forms.Button BtnCancelar;
+        private System.Windows.Forms.Button BtnBorrar;
+        private System.Windows.Forms.Button BtnMinuscula;
+        private System.Windows.Forms.Button BtnEspacio;
+        private System.Windows.Forms.Button BtnPunto2;
+        private System.Windows.Forms.Button BtnComa;
+        private System.Windows.Forms.Button BtnLetraM;
+        private System.Windows.Forms.Button BtnLetraN;
+        private System.Windows.Forms.Button BtnLetraB;
+        private System.Windows.Forms.Button BtnLetraV;
+        private System.Windows.Forms.Button BtnLetraC;
+        private System.Windows.Forms.Button BtnLetraX;
+        private System.Windows.Forms.Button BtnLetraZ;
+        private System.Windows.Forms.Button BtnArroba;
+        private System.Windows.Forms.Button BtnLetraÑ;
+        private System.Windows.Forms.Button BtnLetraL;
+        private System.Windows.Forms.Button BtnLetraK;
+        private System.Windows.Forms.Button BtnLetraJ;
+        private System.Windows.Forms.Button BtnLetraH;
+        private System.Windows.Forms.Button BtnLetraG;
+        private System.Windows.Forms.Button BtnLetraF;
+        private System.Windows.Forms.Button BtnLetraD;
+        private System.Windows.Forms.Button BtnLetraS;
+        private System.Windows.Forms.Button BtnLetraA;
+        private System.Windows.Forms.Button BtnLetraP;
+        private System.Windows.Forms.Button BtnLetraO;
+        private System.Windows.Forms.Button BtnLetraI;
+        private System.Windows.Forms.Button BtnLetraU;
+        private System.Windows.Forms.Button BtnLetraY;
+        private System.Windows.Forms.Button BtnLetraT;
+        private System.Windows.Forms.Button BtnLetraR;
+        private System.Windows.Forms.Button BtnLetraE;
+        private System.Windows.Forms.Button BtnLetraW;
+        private System.Windows.Forms.Button BtnLetraQ;
     }
 }

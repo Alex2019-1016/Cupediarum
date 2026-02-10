@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cupediarum
 {
-    public partial class AbrirCuenta : Form
+    public partial class AgregarCuenta : Form
     {
-        public AbrirCuenta()
+        public AgregarCuenta()
         {
             InitializeComponent();
         }

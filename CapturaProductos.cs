@@ -36,5 +36,10 @@ namespace Cupediarum
         {
 
         }
+
+        private void FlpProductos_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

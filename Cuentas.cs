@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cupediarum
 {
-    public partial class FrmPedidos : Form
+    public partial class FrmCuentas : Form
     {
-        public FrmPedidos()
+        public FrmCuentas()
         {
             InitializeComponent();
         }

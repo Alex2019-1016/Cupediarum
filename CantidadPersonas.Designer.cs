@@ -29,57 +29,57 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CantidadPersonas));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.TxtPersonas = new System.Windows.Forms.TextBox();
+            this.PnlCantidadPersonas = new System.Windows.Forms.Panel();
+            this.TxtCantPersonas = new System.Windows.Forms.TextBox();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnAceptar = new System.Windows.Forms.Button();
             this.BtnBorrar = new System.Windows.Forms.Button();
             this.BtnPunto = new System.Windows.Forms.Button();
-            this.Btn0 = new System.Windows.Forms.Button();
-            this.Btn3 = new System.Windows.Forms.Button();
-            this.Btn2 = new System.Windows.Forms.Button();
-            this.Btn1 = new System.Windows.Forms.Button();
-            this.Btn6 = new System.Windows.Forms.Button();
-            this.Btn5 = new System.Windows.Forms.Button();
-            this.Btn4 = new System.Windows.Forms.Button();
-            this.Btn9 = new System.Windows.Forms.Button();
-            this.Btn8 = new System.Windows.Forms.Button();
-            this.Btn7 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.BtnNum0 = new System.Windows.Forms.Button();
+            this.BtnNum3 = new System.Windows.Forms.Button();
+            this.BtnNum2 = new System.Windows.Forms.Button();
+            this.BtnNum1 = new System.Windows.Forms.Button();
+            this.BtnNum6 = new System.Windows.Forms.Button();
+            this.BtnNum5 = new System.Windows.Forms.Button();
+            this.BtnNum4 = new System.Windows.Forms.Button();
+            this.BtnNum9 = new System.Windows.Forms.Button();
+            this.BtnNum8 = new System.Windows.Forms.Button();
+            this.BtnNum7 = new System.Windows.Forms.Button();
+            this.PnlCantidadPersonas.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // PnlCantidadPersonas
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.TxtPersonas);
-            this.panel1.Controls.Add(this.BtnCancelar);
-            this.panel1.Controls.Add(this.BtnAceptar);
-            this.panel1.Controls.Add(this.BtnBorrar);
-            this.panel1.Controls.Add(this.BtnPunto);
-            this.panel1.Controls.Add(this.Btn0);
-            this.panel1.Controls.Add(this.Btn3);
-            this.panel1.Controls.Add(this.Btn2);
-            this.panel1.Controls.Add(this.Btn1);
-            this.panel1.Controls.Add(this.Btn6);
-            this.panel1.Controls.Add(this.Btn5);
-            this.panel1.Controls.Add(this.Btn4);
-            this.panel1.Controls.Add(this.Btn9);
-            this.panel1.Controls.Add(this.Btn8);
-            this.panel1.Controls.Add(this.Btn7);
-            this.panel1.Location = new System.Drawing.Point(2, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(308, 479);
-            this.panel1.TabIndex = 50;
+            this.PnlCantidadPersonas.BackColor = System.Drawing.Color.Transparent;
+            this.PnlCantidadPersonas.Controls.Add(this.TxtCantPersonas);
+            this.PnlCantidadPersonas.Controls.Add(this.BtnCancelar);
+            this.PnlCantidadPersonas.Controls.Add(this.BtnAceptar);
+            this.PnlCantidadPersonas.Controls.Add(this.BtnBorrar);
+            this.PnlCantidadPersonas.Controls.Add(this.BtnPunto);
+            this.PnlCantidadPersonas.Controls.Add(this.BtnNum0);
+            this.PnlCantidadPersonas.Controls.Add(this.BtnNum3);
+            this.PnlCantidadPersonas.Controls.Add(this.BtnNum2);
+            this.PnlCantidadPersonas.Controls.Add(this.BtnNum1);
+            this.PnlCantidadPersonas.Controls.Add(this.BtnNum6);
+            this.PnlCantidadPersonas.Controls.Add(this.BtnNum5);
+            this.PnlCantidadPersonas.Controls.Add(this.BtnNum4);
+            this.PnlCantidadPersonas.Controls.Add(this.BtnNum9);
+            this.PnlCantidadPersonas.Controls.Add(this.BtnNum8);
+            this.PnlCantidadPersonas.Controls.Add(this.BtnNum7);
+            this.PnlCantidadPersonas.Location = new System.Drawing.Point(2, 0);
+            this.PnlCantidadPersonas.Name = "PnlCantidadPersonas";
+            this.PnlCantidadPersonas.Size = new System.Drawing.Size(308, 479);
+            this.PnlCantidadPersonas.TabIndex = 50;
             // 
-            // TxtPersonas
+            // TxtCantPersonas
             // 
-            this.TxtPersonas.BackColor = System.Drawing.Color.Gainsboro;
-            this.TxtPersonas.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPersonas.Location = new System.Drawing.Point(204, 424);
-            this.TxtPersonas.Name = "TxtPersonas";
-            this.TxtPersonas.Size = new System.Drawing.Size(99, 44);
-            this.TxtPersonas.TabIndex = 51;
-            this.TxtPersonas.TextChanged += new System.EventHandler(this.TxtPersonas_TextChanged);
+            this.TxtCantPersonas.BackColor = System.Drawing.Color.Gainsboro;
+            this.TxtCantPersonas.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCantPersonas.Location = new System.Drawing.Point(204, 424);
+            this.TxtCantPersonas.Name = "TxtCantPersonas";
+            this.TxtCantPersonas.Size = new System.Drawing.Size(99, 44);
+            this.TxtCantPersonas.TabIndex = 51;
+            this.TxtCantPersonas.TextChanged += new System.EventHandler(this.TxtPersonas_TextChanged);
             // 
             // BtnCancelar
             // 
@@ -92,7 +92,7 @@
             this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Icono_Cancelar32;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnCancelar.Location = new System.Drawing.Point(204, 351);
+            this.BtnCancelar.Location = new System.Drawing.Point(204, 350);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(99, 66);
             this.BtnCancelar.TabIndex = 50;
@@ -153,165 +153,165 @@
             this.BtnPunto.Text = ".";
             this.BtnPunto.UseVisualStyleBackColor = false;
             // 
-            // Btn0
+            // BtnNum0
             // 
-            this.Btn0.BackColor = System.Drawing.Color.LightCoral;
-            this.Btn0.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
-            this.Btn0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn0.FlatAppearance.BorderSize = 5;
-            this.Btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn0.Location = new System.Drawing.Point(104, 264);
-            this.Btn0.Name = "Btn0";
-            this.Btn0.Size = new System.Drawing.Size(99, 84);
-            this.Btn0.TabIndex = 21;
-            this.Btn0.Text = "0";
-            this.Btn0.UseVisualStyleBackColor = false;
+            this.BtnNum0.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum0.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnNum0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum0.FlatAppearance.BorderSize = 5;
+            this.BtnNum0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum0.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum0.Location = new System.Drawing.Point(104, 264);
+            this.BtnNum0.Name = "BtnNum0";
+            this.BtnNum0.Size = new System.Drawing.Size(99, 84);
+            this.BtnNum0.TabIndex = 21;
+            this.BtnNum0.Text = "0";
+            this.BtnNum0.UseVisualStyleBackColor = false;
             // 
-            // Btn3
+            // BtnNum3
             // 
-            this.Btn3.BackColor = System.Drawing.Color.LightCoral;
-            this.Btn3.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
-            this.Btn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn3.FlatAppearance.BorderSize = 5;
-            this.Btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn3.Location = new System.Drawing.Point(204, 179);
-            this.Btn3.Name = "Btn3";
-            this.Btn3.Size = new System.Drawing.Size(99, 84);
-            this.Btn3.TabIndex = 19;
-            this.Btn3.Text = "3";
-            this.Btn3.UseVisualStyleBackColor = false;
+            this.BtnNum3.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum3.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnNum3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum3.FlatAppearance.BorderSize = 5;
+            this.BtnNum3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum3.Location = new System.Drawing.Point(204, 179);
+            this.BtnNum3.Name = "BtnNum3";
+            this.BtnNum3.Size = new System.Drawing.Size(99, 84);
+            this.BtnNum3.TabIndex = 19;
+            this.BtnNum3.Text = "3";
+            this.BtnNum3.UseVisualStyleBackColor = false;
             // 
-            // Btn2
+            // BtnNum2
             // 
-            this.Btn2.BackColor = System.Drawing.Color.LightCoral;
-            this.Btn2.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
-            this.Btn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn2.FlatAppearance.BorderSize = 5;
-            this.Btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn2.Location = new System.Drawing.Point(104, 179);
-            this.Btn2.Name = "Btn2";
-            this.Btn2.Size = new System.Drawing.Size(99, 84);
-            this.Btn2.TabIndex = 18;
-            this.Btn2.Text = "2";
-            this.Btn2.UseVisualStyleBackColor = false;
+            this.BtnNum2.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum2.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnNum2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum2.FlatAppearance.BorderSize = 5;
+            this.BtnNum2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum2.Location = new System.Drawing.Point(104, 179);
+            this.BtnNum2.Name = "BtnNum2";
+            this.BtnNum2.Size = new System.Drawing.Size(99, 84);
+            this.BtnNum2.TabIndex = 18;
+            this.BtnNum2.Text = "2";
+            this.BtnNum2.UseVisualStyleBackColor = false;
             // 
-            // Btn1
+            // BtnNum1
             // 
-            this.Btn1.BackColor = System.Drawing.Color.LightCoral;
-            this.Btn1.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
-            this.Btn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn1.FlatAppearance.BorderSize = 5;
-            this.Btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn1.Location = new System.Drawing.Point(4, 179);
-            this.Btn1.Name = "Btn1";
-            this.Btn1.Size = new System.Drawing.Size(99, 84);
-            this.Btn1.TabIndex = 17;
-            this.Btn1.Text = "1";
-            this.Btn1.UseVisualStyleBackColor = false;
+            this.BtnNum1.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum1.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnNum1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum1.FlatAppearance.BorderSize = 5;
+            this.BtnNum1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum1.Location = new System.Drawing.Point(4, 179);
+            this.BtnNum1.Name = "BtnNum1";
+            this.BtnNum1.Size = new System.Drawing.Size(99, 84);
+            this.BtnNum1.TabIndex = 17;
+            this.BtnNum1.Text = "1";
+            this.BtnNum1.UseVisualStyleBackColor = false;
             // 
-            // Btn6
+            // BtnNum6
             // 
-            this.Btn6.BackColor = System.Drawing.Color.LightCoral;
-            this.Btn6.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
-            this.Btn6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn6.FlatAppearance.BorderSize = 5;
-            this.Btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn6.Location = new System.Drawing.Point(204, 94);
-            this.Btn6.Name = "Btn6";
-            this.Btn6.Size = new System.Drawing.Size(99, 84);
-            this.Btn6.TabIndex = 16;
-            this.Btn6.Text = "6";
-            this.Btn6.UseVisualStyleBackColor = false;
+            this.BtnNum6.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum6.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnNum6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum6.FlatAppearance.BorderSize = 5;
+            this.BtnNum6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum6.Location = new System.Drawing.Point(204, 94);
+            this.BtnNum6.Name = "BtnNum6";
+            this.BtnNum6.Size = new System.Drawing.Size(99, 84);
+            this.BtnNum6.TabIndex = 16;
+            this.BtnNum6.Text = "6";
+            this.BtnNum6.UseVisualStyleBackColor = false;
             // 
-            // Btn5
+            // BtnNum5
             // 
-            this.Btn5.BackColor = System.Drawing.Color.LightCoral;
-            this.Btn5.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
-            this.Btn5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn5.FlatAppearance.BorderSize = 5;
-            this.Btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn5.Location = new System.Drawing.Point(104, 94);
-            this.Btn5.Name = "Btn5";
-            this.Btn5.Size = new System.Drawing.Size(99, 84);
-            this.Btn5.TabIndex = 15;
-            this.Btn5.Text = "5";
-            this.Btn5.UseVisualStyleBackColor = false;
+            this.BtnNum5.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum5.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnNum5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum5.FlatAppearance.BorderSize = 5;
+            this.BtnNum5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum5.Location = new System.Drawing.Point(104, 94);
+            this.BtnNum5.Name = "BtnNum5";
+            this.BtnNum5.Size = new System.Drawing.Size(99, 84);
+            this.BtnNum5.TabIndex = 15;
+            this.BtnNum5.Text = "5";
+            this.BtnNum5.UseVisualStyleBackColor = false;
             // 
-            // Btn4
+            // BtnNum4
             // 
-            this.Btn4.BackColor = System.Drawing.Color.LightCoral;
-            this.Btn4.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
-            this.Btn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn4.FlatAppearance.BorderSize = 5;
-            this.Btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn4.Location = new System.Drawing.Point(4, 94);
-            this.Btn4.Name = "Btn4";
-            this.Btn4.Size = new System.Drawing.Size(99, 84);
-            this.Btn4.TabIndex = 14;
-            this.Btn4.Text = "4";
-            this.Btn4.UseVisualStyleBackColor = false;
+            this.BtnNum4.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum4.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnNum4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum4.FlatAppearance.BorderSize = 5;
+            this.BtnNum4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum4.Location = new System.Drawing.Point(4, 94);
+            this.BtnNum4.Name = "BtnNum4";
+            this.BtnNum4.Size = new System.Drawing.Size(99, 84);
+            this.BtnNum4.TabIndex = 14;
+            this.BtnNum4.Text = "4";
+            this.BtnNum4.UseVisualStyleBackColor = false;
             // 
-            // Btn9
+            // BtnNum9
             // 
-            this.Btn9.BackColor = System.Drawing.Color.LightCoral;
-            this.Btn9.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
-            this.Btn9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn9.FlatAppearance.BorderSize = 5;
-            this.Btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn9.Location = new System.Drawing.Point(204, 8);
-            this.Btn9.Name = "Btn9";
-            this.Btn9.Size = new System.Drawing.Size(99, 84);
-            this.Btn9.TabIndex = 13;
-            this.Btn9.Text = "9";
-            this.Btn9.UseVisualStyleBackColor = false;
+            this.BtnNum9.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum9.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnNum9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum9.FlatAppearance.BorderSize = 5;
+            this.BtnNum9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum9.Location = new System.Drawing.Point(204, 8);
+            this.BtnNum9.Name = "BtnNum9";
+            this.BtnNum9.Size = new System.Drawing.Size(99, 84);
+            this.BtnNum9.TabIndex = 13;
+            this.BtnNum9.Text = "9";
+            this.BtnNum9.UseVisualStyleBackColor = false;
             // 
-            // Btn8
+            // BtnNum8
             // 
-            this.Btn8.BackColor = System.Drawing.Color.LightCoral;
-            this.Btn8.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
-            this.Btn8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn8.FlatAppearance.BorderSize = 5;
-            this.Btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn8.Location = new System.Drawing.Point(104, 8);
-            this.Btn8.Name = "Btn8";
-            this.Btn8.Size = new System.Drawing.Size(99, 84);
-            this.Btn8.TabIndex = 12;
-            this.Btn8.Text = "8";
-            this.Btn8.UseVisualStyleBackColor = false;
+            this.BtnNum8.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum8.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnNum8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum8.FlatAppearance.BorderSize = 5;
+            this.BtnNum8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum8.Location = new System.Drawing.Point(104, 8);
+            this.BtnNum8.Name = "BtnNum8";
+            this.BtnNum8.Size = new System.Drawing.Size(99, 84);
+            this.BtnNum8.TabIndex = 12;
+            this.BtnNum8.Text = "8";
+            this.BtnNum8.UseVisualStyleBackColor = false;
             // 
-            // Btn7
+            // BtnNum7
             // 
-            this.Btn7.BackColor = System.Drawing.Color.LightCoral;
-            this.Btn7.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
-            this.Btn7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn7.FlatAppearance.BorderSize = 5;
-            this.Btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn7.Location = new System.Drawing.Point(4, 8);
-            this.Btn7.Name = "Btn7";
-            this.Btn7.Size = new System.Drawing.Size(99, 84);
-            this.Btn7.TabIndex = 11;
-            this.Btn7.Text = "7";
-            this.Btn7.UseVisualStyleBackColor = false;
+            this.BtnNum7.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum7.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnNum7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum7.FlatAppearance.BorderSize = 5;
+            this.BtnNum7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum7.Location = new System.Drawing.Point(4, 8);
+            this.BtnNum7.Name = "BtnNum7";
+            this.BtnNum7.Size = new System.Drawing.Size(99, 84);
+            this.BtnNum7.TabIndex = 11;
+            this.BtnNum7.Text = "7";
+            this.BtnNum7.UseVisualStyleBackColor = false;
             // 
             // CantidadPersonas
             // 
@@ -319,35 +319,35 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(313, 485);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.PnlCantidadPersonas);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CantidadPersonas";
             this.Text = "Cantidad de Personas";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.PnlCantidadPersonas.ResumeLayout(false);
+            this.PnlCantidadPersonas.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button Btn7;
-        private System.Windows.Forms.Button Btn3;
-        private System.Windows.Forms.Button Btn2;
-        private System.Windows.Forms.Button Btn1;
-        private System.Windows.Forms.Button Btn6;
-        private System.Windows.Forms.Button Btn5;
-        private System.Windows.Forms.Button Btn4;
-        private System.Windows.Forms.Button Btn9;
-        private System.Windows.Forms.Button Btn8;
+        private System.Windows.Forms.Panel PnlCantidadPersonas;
+        private System.Windows.Forms.Button BtnNum7;
+        private System.Windows.Forms.Button BtnNum3;
+        private System.Windows.Forms.Button BtnNum2;
+        private System.Windows.Forms.Button BtnNum1;
+        private System.Windows.Forms.Button BtnNum6;
+        private System.Windows.Forms.Button BtnNum5;
+        private System.Windows.Forms.Button BtnNum4;
+        private System.Windows.Forms.Button BtnNum9;
+        private System.Windows.Forms.Button BtnNum8;
         private System.Windows.Forms.Button BtnPunto;
-        private System.Windows.Forms.Button Btn0;
+        private System.Windows.Forms.Button BtnNum0;
         private System.Windows.Forms.Button BtnBorrar;
         private System.Windows.Forms.Button BtnAceptar;
         private System.Windows.Forms.Button BtnCancelar;
-        private System.Windows.Forms.TextBox TxtPersonas;
+        private System.Windows.Forms.TextBox TxtCantPersonas;
     }
 }

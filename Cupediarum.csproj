@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbrirCuenta.cs">
+    <Compile Include="AgregarCuenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AbrirCuenta.Designer.cs">
-      <DependentUpon>AbrirCuenta.cs</DependentUpon>
+    <Compile Include="AgregarCuenta.Designer.cs">
+      <DependentUpon>AgregarCuenta.cs</DependentUpon>
     </Compile>
     <Compile Include="CantidadPersonas.cs">
       <SubType>Form</SubType>
@@ -94,16 +94,16 @@
     <Compile Include="Mesero.Designer.cs">
       <DependentUpon>Mesero.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pedidos.cs">
+    <Compile Include="Cuentas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pedidos.Designer.cs">
-      <DependentUpon>Pedidos.cs</DependentUpon>
+    <Compile Include="Cuentas.Designer.cs">
+      <DependentUpon>Cuentas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AbrirCuenta.resx">
-      <DependentUpon>AbrirCuenta.cs</DependentUpon>
+    <EmbeddedResource Include="AgregarCuenta.resx">
+      <DependentUpon>AgregarCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CantidadPersonas.resx">
       <DependentUpon>CantidadPersonas.cs</DependentUpon>
@@ -126,8 +126,8 @@
     <EmbeddedResource Include="Mesero.resx">
       <DependentUpon>Mesero.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pedidos.resx">
-      <DependentUpon>Pedidos.cs</DependentUpon>
+    <EmbeddedResource Include="Cuentas.resx">
+      <DependentUpon>Cuentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -163,6 +163,7 @@
     <Content Include="Imagenes\Icono_Comandas.png" />
     <None Include="Imagenes\Icono_Delete.png" />
     <Content Include="Imagenes\Icono_Descuento.png" />
+    <Content Include="Imagenes\Icono_Drink.png" />
     <Content Include="Imagenes\Icono_Food.png" />
     <Content Include="Imagenes\Icono_Favorito.png" />
     <Content Include="Imagenes\Icono_Comentario.png" />
@@ -172,7 +173,7 @@
     <Content Include="Imagenes\Icono_Otros.png" />
     <Content Include="Imagenes\Icono_PagarCuenta.png" />
     <Content Include="Imagenes\Icono_People.png" />
-    <Content Include="Imagenes\Icono_TC.png" />
+    <Content Include="Imagenes\Icono_Postres.png" />
     <Content Include="Imagenes\Ico_AbrirCuenta.ico" />
     <Content Include="Imagenes\Ico_Datos.ico" />
     <Content Include="Imagenes\Ico_Pedidos.ico" />

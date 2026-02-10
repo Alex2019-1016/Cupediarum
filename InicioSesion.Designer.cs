@@ -44,19 +44,21 @@ namespace Cupediarum
             // TxtClave
             // 
             this.TxtClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtClave.Location = new System.Drawing.Point(207, 301);
+            this.TxtClave.Location = new System.Drawing.Point(276, 376);
+            this.TxtClave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtClave.Name = "TxtClave";
             this.TxtClave.PasswordChar = '*';
-            this.TxtClave.Size = new System.Drawing.Size(177, 35);
+            this.TxtClave.Size = new System.Drawing.Size(235, 44);
             this.TxtClave.TabIndex = 10;
             this.TxtClave.UseSystemPasswordChar = true;
             // 
             // TxtUsuario
             // 
             this.TxtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtUsuario.Location = new System.Drawing.Point(209, 200);
+            this.TxtUsuario.Location = new System.Drawing.Point(279, 250);
+            this.TxtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtUsuario.Name = "TxtUsuario";
-            this.TxtUsuario.Size = new System.Drawing.Size(279, 35);
+            this.TxtUsuario.Size = new System.Drawing.Size(371, 44);
             this.TxtUsuario.TabIndex = 9;
             this.TxtUsuario.TextChanged += new System.EventHandler(this.TxtUsuario_TextChanged);
             // 
@@ -64,11 +66,12 @@ namespace Cupediarum
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(63, 199);
+            this.label1.Location = new System.Drawing.Point(84, 249);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 44);
+            this.label1.Size = new System.Drawing.Size(190, 55);
             this.label1.TabIndex = 7;
             this.label1.Text = "Usuario";
             // 
@@ -76,11 +79,12 @@ namespace Cupediarum
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Black;
-            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(28, 294);
+            this.label2.Location = new System.Drawing.Point(37, 368);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 44);
+            this.label2.Size = new System.Drawing.Size(274, 55);
             this.label2.TabIndex = 13;
             this.label2.Text = "Contraseña";
             // 
@@ -90,17 +94,19 @@ namespace Cupediarum
             this.BtnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.BtnAceptar.FlatAppearance.BorderSize = 3;
             this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAceptar.Font = new System.Drawing.Font("Monotype Corsiva", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAceptar.ForeColor = System.Drawing.Color.White;
             this.BtnAceptar.Image = global::Cupediarum.Properties.Resources.Icono_Aceptar48;
             this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAceptar.Location = new System.Drawing.Point(391, 464);
+            this.BtnAceptar.Location = new System.Drawing.Point(521, 580);
+            this.BtnAceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnAceptar.Name = "BtnAceptar";
-            this.BtnAceptar.Size = new System.Drawing.Size(179, 57);
+            this.BtnAceptar.Size = new System.Drawing.Size(239, 71);
             this.BtnAceptar.TabIndex = 12;
             this.BtnAceptar.Text = "Aceptar";
             this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAceptar.UseVisualStyleBackColor = false;
+            this.BtnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
             // 
             // BtnCancelar
             // 
@@ -108,13 +114,14 @@ namespace Cupediarum
             this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.BtnCancelar.FlatAppearance.BorderSize = 3;
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancelar.Font = new System.Drawing.Font("Monotype Corsiva", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
             this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Icono_Cancelar32;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCancelar.Location = new System.Drawing.Point(12, 464);
+            this.BtnCancelar.Location = new System.Drawing.Point(16, 580);
+            this.BtnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(179, 57);
+            this.BtnCancelar.Size = new System.Drawing.Size(239, 71);
             this.BtnCancelar.TabIndex = 11;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -126,18 +133,19 @@ namespace Cupediarum
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(579, 528);
+            this.pictureBox1.Size = new System.Drawing.Size(771, 659);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // FrmInicioSesion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 527);
+            this.ClientSize = new System.Drawing.Size(779, 659);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnAceptar);
             this.Controls.Add(this.BtnCancelar);
@@ -146,6 +154,7 @@ namespace Cupediarum
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmInicioSesion";
@@ -159,7 +168,7 @@ namespace Cupediarum
 
         private void TxtUsuario_TextChanged(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            
         }
 
         #endregion

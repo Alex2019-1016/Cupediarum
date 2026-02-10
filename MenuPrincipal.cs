@@ -21,5 +21,22 @@ namespace Cupediarum
         {
 
         }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show(
+        "¿Desea cerrar sesión y volver al inicio?",
+        "Confirmar salida",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question
+    );
+
+            if (r == DialogResult.Yes)
+            {
+                FrmInicioSesion login = new FrmInicioSesion();
+                login.Show();
+                this.Close();
+            }
+        }
     }
 }

@@ -43,7 +43,7 @@ namespace Cupediarum
             // 
             // TxtClave
             // 
-            this.TxtClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtClave.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtClave.Location = new System.Drawing.Point(207, 301);
             this.TxtClave.Name = "TxtClave";
             this.TxtClave.PasswordChar = '*';
@@ -53,7 +53,7 @@ namespace Cupediarum
             // 
             // TxtUsuario
             // 
-            this.TxtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtUsuario.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtUsuario.Location = new System.Drawing.Point(209, 200);
             this.TxtUsuario.Name = "TxtUsuario";
             this.TxtUsuario.Size = new System.Drawing.Size(279, 35);
@@ -136,8 +136,7 @@ namespace Cupediarum
             // 
             // FrmInicioSesion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(585, 530);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnAceptar);

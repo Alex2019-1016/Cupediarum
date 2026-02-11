@@ -91,6 +91,7 @@
             // RtbCuenta
             // 
             this.RtbCuenta.BackColor = System.Drawing.Color.Gainsboro;
+            this.RtbCuenta.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RtbCuenta.Location = new System.Drawing.Point(2, 2);
             this.RtbCuenta.Name = "RtbCuenta";
             this.RtbCuenta.Size = new System.Drawing.Size(472, 313);
@@ -131,7 +132,7 @@
             this.BtnMas.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnMas.FlatAppearance.BorderSize = 3;
             this.BtnMas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMas.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMas.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMas.Location = new System.Drawing.Point(187, 66);
             this.BtnMas.Name = "BtnMas";
             this.BtnMas.Size = new System.Drawing.Size(60, 121);
@@ -147,7 +148,7 @@
             this.BtnGuion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnGuion.FlatAppearance.BorderSize = 3;
             this.BtnGuion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGuion.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGuion.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGuion.Location = new System.Drawing.Point(187, 5);
             this.BtnGuion.Name = "BtnGuion";
             this.BtnGuion.Size = new System.Drawing.Size(60, 60);
@@ -163,7 +164,7 @@
             this.BtnAsterisco.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnAsterisco.FlatAppearance.BorderSize = 3;
             this.BtnAsterisco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAsterisco.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAsterisco.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAsterisco.Location = new System.Drawing.Point(126, 5);
             this.BtnAsterisco.Name = "BtnAsterisco";
             this.BtnAsterisco.Size = new System.Drawing.Size(60, 60);
@@ -179,7 +180,7 @@
             this.BtnSlash.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnSlash.FlatAppearance.BorderSize = 3;
             this.BtnSlash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSlash.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSlash.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSlash.Location = new System.Drawing.Point(65, 5);
             this.BtnSlash.Name = "BtnSlash";
             this.BtnSlash.Size = new System.Drawing.Size(60, 60);
@@ -195,7 +196,7 @@
             this.BtnGuionBajo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnGuionBajo.FlatAppearance.BorderSize = 3;
             this.BtnGuionBajo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGuionBajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGuionBajo.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGuionBajo.Location = new System.Drawing.Point(4, 5);
             this.BtnGuionBajo.Name = "BtnGuionBajo";
             this.BtnGuionBajo.Size = new System.Drawing.Size(60, 60);
@@ -211,7 +212,7 @@
             this.BtnNum9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnNum9.FlatAppearance.BorderSize = 3;
             this.BtnNum9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum9.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNum9.Location = new System.Drawing.Point(126, 66);
             this.BtnNum9.Name = "BtnNum9";
             this.BtnNum9.Size = new System.Drawing.Size(60, 60);
@@ -227,7 +228,7 @@
             this.BtnNum8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnNum8.FlatAppearance.BorderSize = 3;
             this.BtnNum8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum8.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNum8.Location = new System.Drawing.Point(65, 66);
             this.BtnNum8.Name = "BtnNum8";
             this.BtnNum8.Size = new System.Drawing.Size(60, 60);
@@ -243,7 +244,7 @@
             this.BtnNum7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnNum7.FlatAppearance.BorderSize = 3;
             this.BtnNum7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum7.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNum7.Location = new System.Drawing.Point(4, 66);
             this.BtnNum7.Name = "BtnNum7";
             this.BtnNum7.Size = new System.Drawing.Size(60, 60);
@@ -259,7 +260,7 @@
             this.BtnNum6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnNum6.FlatAppearance.BorderSize = 3;
             this.BtnNum6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum6.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNum6.Location = new System.Drawing.Point(126, 127);
             this.BtnNum6.Name = "BtnNum6";
             this.BtnNum6.Size = new System.Drawing.Size(60, 60);
@@ -275,7 +276,7 @@
             this.BtnNum5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnNum5.FlatAppearance.BorderSize = 3;
             this.BtnNum5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum5.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNum5.Location = new System.Drawing.Point(65, 127);
             this.BtnNum5.Name = "BtnNum5";
             this.BtnNum5.Size = new System.Drawing.Size(60, 60);
@@ -291,7 +292,7 @@
             this.BtnNum4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnNum4.FlatAppearance.BorderSize = 3;
             this.BtnNum4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum4.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNum4.Location = new System.Drawing.Point(4, 127);
             this.BtnNum4.Name = "BtnNum4";
             this.BtnNum4.Size = new System.Drawing.Size(60, 60);
@@ -307,7 +308,7 @@
             this.BtnNum3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnNum3.FlatAppearance.BorderSize = 3;
             this.BtnNum3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNum3.Location = new System.Drawing.Point(126, 188);
             this.BtnNum3.Name = "BtnNum3";
             this.BtnNum3.Size = new System.Drawing.Size(60, 60);
@@ -323,7 +324,7 @@
             this.BtnNum2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnNum2.FlatAppearance.BorderSize = 3;
             this.BtnNum2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum2.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNum2.Location = new System.Drawing.Point(65, 188);
             this.BtnNum2.Name = "BtnNum2";
             this.BtnNum2.Size = new System.Drawing.Size(60, 60);
@@ -339,7 +340,7 @@
             this.BtnNum1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnNum1.FlatAppearance.BorderSize = 3;
             this.BtnNum1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNum1.Location = new System.Drawing.Point(4, 188);
             this.BtnNum1.Name = "BtnNum1";
             this.BtnNum1.Size = new System.Drawing.Size(60, 60);
@@ -355,7 +356,7 @@
             this.BtnIntro.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnIntro.FlatAppearance.BorderSize = 3;
             this.BtnIntro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnIntro.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnIntro.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnIntro.Location = new System.Drawing.Point(187, 188);
             this.BtnIntro.Name = "BtnIntro";
             this.BtnIntro.Size = new System.Drawing.Size(60, 121);
@@ -371,7 +372,7 @@
             this.BtnPunto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnPunto.FlatAppearance.BorderSize = 3;
             this.BtnPunto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPunto.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPunto.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPunto.Location = new System.Drawing.Point(126, 249);
             this.BtnPunto.Name = "BtnPunto";
             this.BtnPunto.Size = new System.Drawing.Size(60, 60);
@@ -387,7 +388,7 @@
             this.BtnNum0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnNum0.FlatAppearance.BorderSize = 3;
             this.BtnNum0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum0.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum0.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNum0.Location = new System.Drawing.Point(5, 249);
             this.BtnNum0.Name = "BtnNum0";
             this.BtnNum0.Size = new System.Drawing.Size(120, 60);
@@ -434,7 +435,7 @@
             this.PnlTecladoAlf.Controls.Add(this.BtnLetraE);
             this.PnlTecladoAlf.Controls.Add(this.BtnLetraW);
             this.PnlTecladoAlf.Controls.Add(this.BtnLetraQ);
-            this.PnlTecladoAlf.Location = new System.Drawing.Point(3, 320);
+            this.PnlTecladoAlf.Location = new System.Drawing.Point(2, 322);
             this.PnlTecladoAlf.Name = "PnlTecladoAlf";
             this.PnlTecladoAlf.Size = new System.Drawing.Size(726, 253);
             this.PnlTecladoAlf.TabIndex = 53;
@@ -447,7 +448,7 @@
             this.BtnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.BtnAceptar.FlatAppearance.BorderSize = 5;
             this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAceptar.Font = new System.Drawing.Font("Times New Roman", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAceptar.Image = global::Cupediarum.Properties.Resources.Icono_RDAceptar32;
             this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnAceptar.Location = new System.Drawing.Point(539, 186);
@@ -457,7 +458,7 @@
             this.BtnAceptar.Text = "Aceptar";
             this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAceptar.UseVisualStyleBackColor = false;
-            this.BtnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
+            this.BtnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click_1);
             // 
             // BtnCancelar
             // 
@@ -467,7 +468,7 @@
             this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.BtnCancelar.FlatAppearance.BorderSize = 5;
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelar.Font = new System.Drawing.Font("Times New Roman", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Icono_RDCancelar32;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnCancelar.Location = new System.Drawing.Point(631, 186);
@@ -486,7 +487,7 @@
             this.BtnBorrar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnBorrar.FlatAppearance.BorderSize = 3;
             this.BtnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBorrar.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBorrar.Image = global::Cupediarum.Properties.Resources.Icono_Borrar;
             this.BtnBorrar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BtnBorrar.Location = new System.Drawing.Point(613, 3);
@@ -494,7 +495,7 @@
             this.BtnBorrar.Size = new System.Drawing.Size(108, 60);
             this.BtnBorrar.TabIndex = 46;
             this.BtnBorrar.Text = "Borrar";
-            this.BtnBorrar.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.BtnBorrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnBorrar.UseVisualStyleBackColor = false;
             // 
             // BtnMinuscula
@@ -505,7 +506,7 @@
             this.BtnMinuscula.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnMinuscula.FlatAppearance.BorderSize = 3;
             this.BtnMinuscula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMinuscula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMinuscula.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMinuscula.Location = new System.Drawing.Point(5, 186);
             this.BtnMinuscula.Name = "BtnMinuscula";
             this.BtnMinuscula.Size = new System.Drawing.Size(182, 60);
@@ -536,7 +537,7 @@
             this.BtnPunto2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnPunto2.FlatAppearance.BorderSize = 3;
             this.BtnPunto2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPunto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPunto2.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPunto2.Location = new System.Drawing.Point(576, 125);
             this.BtnPunto2.Name = "BtnPunto2";
             this.BtnPunto2.Size = new System.Drawing.Size(60, 60);
@@ -552,12 +553,13 @@
             this.BtnComa.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnComa.FlatAppearance.BorderSize = 3;
             this.BtnComa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnComa.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnComa.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnComa.Location = new System.Drawing.Point(515, 125);
             this.BtnComa.Name = "BtnComa";
             this.BtnComa.Size = new System.Drawing.Size(60, 60);
             this.BtnComa.TabIndex = 35;
             this.BtnComa.Text = ",";
+            this.BtnComa.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnComa.UseVisualStyleBackColor = false;
             // 
             // BtnLetraM
@@ -568,7 +570,7 @@
             this.BtnLetraM.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraM.FlatAppearance.BorderSize = 3;
             this.BtnLetraM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraM.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraM.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraM.Location = new System.Drawing.Point(454, 125);
             this.BtnLetraM.Name = "BtnLetraM";
             this.BtnLetraM.Size = new System.Drawing.Size(60, 60);
@@ -584,7 +586,7 @@
             this.BtnLetraN.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraN.FlatAppearance.BorderSize = 3;
             this.BtnLetraN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraN.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraN.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraN.Location = new System.Drawing.Point(393, 125);
             this.BtnLetraN.Name = "BtnLetraN";
             this.BtnLetraN.Size = new System.Drawing.Size(60, 60);
@@ -600,7 +602,7 @@
             this.BtnLetraB.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraB.FlatAppearance.BorderSize = 3;
             this.BtnLetraB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraB.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraB.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraB.Location = new System.Drawing.Point(332, 125);
             this.BtnLetraB.Name = "BtnLetraB";
             this.BtnLetraB.Size = new System.Drawing.Size(60, 60);
@@ -616,7 +618,7 @@
             this.BtnLetraV.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraV.FlatAppearance.BorderSize = 3;
             this.BtnLetraV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraV.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraV.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraV.Location = new System.Drawing.Point(271, 125);
             this.BtnLetraV.Name = "BtnLetraV";
             this.BtnLetraV.Size = new System.Drawing.Size(60, 60);
@@ -632,7 +634,7 @@
             this.BtnLetraC.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraC.FlatAppearance.BorderSize = 3;
             this.BtnLetraC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraC.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraC.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraC.Location = new System.Drawing.Point(210, 125);
             this.BtnLetraC.Name = "BtnLetraC";
             this.BtnLetraC.Size = new System.Drawing.Size(60, 60);
@@ -648,7 +650,7 @@
             this.BtnLetraX.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraX.FlatAppearance.BorderSize = 3;
             this.BtnLetraX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraX.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraX.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraX.Location = new System.Drawing.Point(149, 125);
             this.BtnLetraX.Name = "BtnLetraX";
             this.BtnLetraX.Size = new System.Drawing.Size(60, 60);
@@ -664,7 +666,7 @@
             this.BtnLetraZ.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraZ.FlatAppearance.BorderSize = 3;
             this.BtnLetraZ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraZ.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraZ.Location = new System.Drawing.Point(88, 125);
             this.BtnLetraZ.Name = "BtnLetraZ";
             this.BtnLetraZ.Size = new System.Drawing.Size(60, 60);
@@ -680,7 +682,7 @@
             this.BtnArroba.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnArroba.FlatAppearance.BorderSize = 3;
             this.BtnArroba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnArroba.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnArroba.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnArroba.Location = new System.Drawing.Point(637, 64);
             this.BtnArroba.Name = "BtnArroba";
             this.BtnArroba.Size = new System.Drawing.Size(60, 60);
@@ -696,7 +698,7 @@
             this.BtnLetraÑ.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraÑ.FlatAppearance.BorderSize = 3;
             this.BtnLetraÑ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraÑ.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraÑ.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraÑ.Location = new System.Drawing.Point(576, 64);
             this.BtnLetraÑ.Name = "BtnLetraÑ";
             this.BtnLetraÑ.Size = new System.Drawing.Size(60, 60);
@@ -712,7 +714,7 @@
             this.BtnLetraL.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraL.FlatAppearance.BorderSize = 3;
             this.BtnLetraL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraL.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraL.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraL.Location = new System.Drawing.Point(515, 64);
             this.BtnLetraL.Name = "BtnLetraL";
             this.BtnLetraL.Size = new System.Drawing.Size(60, 60);
@@ -728,7 +730,7 @@
             this.BtnLetraK.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraK.FlatAppearance.BorderSize = 3;
             this.BtnLetraK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraK.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraK.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraK.Location = new System.Drawing.Point(454, 64);
             this.BtnLetraK.Name = "BtnLetraK";
             this.BtnLetraK.Size = new System.Drawing.Size(60, 60);
@@ -744,7 +746,7 @@
             this.BtnLetraJ.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraJ.FlatAppearance.BorderSize = 3;
             this.BtnLetraJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraJ.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraJ.Location = new System.Drawing.Point(393, 64);
             this.BtnLetraJ.Name = "BtnLetraJ";
             this.BtnLetraJ.Size = new System.Drawing.Size(60, 60);
@@ -760,7 +762,7 @@
             this.BtnLetraH.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraH.FlatAppearance.BorderSize = 3;
             this.BtnLetraH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraH.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraH.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraH.Location = new System.Drawing.Point(332, 64);
             this.BtnLetraH.Name = "BtnLetraH";
             this.BtnLetraH.Size = new System.Drawing.Size(60, 60);
@@ -776,7 +778,7 @@
             this.BtnLetraG.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraG.FlatAppearance.BorderSize = 3;
             this.BtnLetraG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraG.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraG.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraG.Location = new System.Drawing.Point(271, 64);
             this.BtnLetraG.Name = "BtnLetraG";
             this.BtnLetraG.Size = new System.Drawing.Size(60, 60);
@@ -792,7 +794,7 @@
             this.BtnLetraF.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraF.FlatAppearance.BorderSize = 3;
             this.BtnLetraF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraF.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraF.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraF.Location = new System.Drawing.Point(210, 64);
             this.BtnLetraF.Name = "BtnLetraF";
             this.BtnLetraF.Size = new System.Drawing.Size(60, 60);
@@ -808,7 +810,7 @@
             this.BtnLetraD.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraD.FlatAppearance.BorderSize = 3;
             this.BtnLetraD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraD.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraD.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraD.Location = new System.Drawing.Point(149, 64);
             this.BtnLetraD.Name = "BtnLetraD";
             this.BtnLetraD.Size = new System.Drawing.Size(60, 60);
@@ -824,7 +826,7 @@
             this.BtnLetraS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraS.FlatAppearance.BorderSize = 3;
             this.BtnLetraS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraS.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraS.Location = new System.Drawing.Point(88, 64);
             this.BtnLetraS.Name = "BtnLetraS";
             this.BtnLetraS.Size = new System.Drawing.Size(60, 60);
@@ -840,7 +842,7 @@
             this.BtnLetraA.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraA.FlatAppearance.BorderSize = 3;
             this.BtnLetraA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraA.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraA.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraA.Location = new System.Drawing.Point(27, 64);
             this.BtnLetraA.Name = "BtnLetraA";
             this.BtnLetraA.Size = new System.Drawing.Size(60, 60);
@@ -856,7 +858,7 @@
             this.BtnLetraP.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraP.FlatAppearance.BorderSize = 3;
             this.BtnLetraP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraP.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraP.Location = new System.Drawing.Point(552, 3);
             this.BtnLetraP.Name = "BtnLetraP";
             this.BtnLetraP.Size = new System.Drawing.Size(60, 60);
@@ -872,7 +874,7 @@
             this.BtnLetraO.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraO.FlatAppearance.BorderSize = 3;
             this.BtnLetraO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraO.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraO.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraO.Location = new System.Drawing.Point(491, 3);
             this.BtnLetraO.Name = "BtnLetraO";
             this.BtnLetraO.Size = new System.Drawing.Size(60, 60);
@@ -888,7 +890,7 @@
             this.BtnLetraI.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraI.FlatAppearance.BorderSize = 3;
             this.BtnLetraI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraI.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraI.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraI.Location = new System.Drawing.Point(430, 3);
             this.BtnLetraI.Name = "BtnLetraI";
             this.BtnLetraI.Size = new System.Drawing.Size(60, 60);
@@ -904,7 +906,7 @@
             this.BtnLetraU.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraU.FlatAppearance.BorderSize = 3;
             this.BtnLetraU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraU.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraU.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraU.Location = new System.Drawing.Point(369, 3);
             this.BtnLetraU.Name = "BtnLetraU";
             this.BtnLetraU.Size = new System.Drawing.Size(60, 60);
@@ -920,7 +922,7 @@
             this.BtnLetraY.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraY.FlatAppearance.BorderSize = 3;
             this.BtnLetraY.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraY.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraY.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraY.Location = new System.Drawing.Point(308, 3);
             this.BtnLetraY.Name = "BtnLetraY";
             this.BtnLetraY.Size = new System.Drawing.Size(60, 60);
@@ -936,7 +938,7 @@
             this.BtnLetraT.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraT.FlatAppearance.BorderSize = 3;
             this.BtnLetraT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraT.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraT.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraT.Location = new System.Drawing.Point(247, 3);
             this.BtnLetraT.Name = "BtnLetraT";
             this.BtnLetraT.Size = new System.Drawing.Size(60, 60);
@@ -952,7 +954,7 @@
             this.BtnLetraR.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraR.FlatAppearance.BorderSize = 3;
             this.BtnLetraR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraR.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraR.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraR.Location = new System.Drawing.Point(186, 3);
             this.BtnLetraR.Name = "BtnLetraR";
             this.BtnLetraR.Size = new System.Drawing.Size(60, 60);
@@ -968,7 +970,7 @@
             this.BtnLetraE.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraE.FlatAppearance.BorderSize = 3;
             this.BtnLetraE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraE.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraE.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraE.Location = new System.Drawing.Point(125, 3);
             this.BtnLetraE.Name = "BtnLetraE";
             this.BtnLetraE.Size = new System.Drawing.Size(60, 60);
@@ -984,7 +986,7 @@
             this.BtnLetraW.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraW.FlatAppearance.BorderSize = 3;
             this.BtnLetraW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraW.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraW.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraW.Location = new System.Drawing.Point(64, 3);
             this.BtnLetraW.Name = "BtnLetraW";
             this.BtnLetraW.Size = new System.Drawing.Size(60, 60);
@@ -1000,7 +1002,7 @@
             this.BtnLetraQ.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLetraQ.FlatAppearance.BorderSize = 3;
             this.BtnLetraQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLetraQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLetraQ.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLetraQ.Location = new System.Drawing.Point(3, 3);
             this.BtnLetraQ.Name = "BtnLetraQ";
             this.BtnLetraQ.Size = new System.Drawing.Size(60, 60);
@@ -1010,11 +1012,10 @@
             // 
             // FrmAgregarCuenta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(732, 575);
+            this.ClientSize = new System.Drawing.Size(734, 575);
             this.Controls.Add(this.PnlTecladoAlf);
             this.Controls.Add(this.PnlTecladoNum);
             this.Controls.Add(this.RtbCuenta);

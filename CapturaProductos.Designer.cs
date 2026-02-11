@@ -127,7 +127,7 @@
             this.acercaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1428, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1196, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -147,8 +147,9 @@
             this.FlpComanda.Controls.Add(this.DgvComanda);
             this.FlpComanda.Location = new System.Drawing.Point(0, 40);
             this.FlpComanda.Name = "FlpComanda";
-            this.FlpComanda.Size = new System.Drawing.Size(453, 729);
+            this.FlpComanda.Size = new System.Drawing.Size(406, 587);
             this.FlpComanda.TabIndex = 1;
+            this.FlpComanda.Paint += new System.Windows.Forms.PaintEventHandler(this.FlpComanda_Paint);
             // 
             // BtnComentario
             // 
@@ -158,12 +159,12 @@
             this.BtnComentario.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
             this.BtnComentario.FlatAppearance.BorderSize = 3;
             this.BtnComentario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnComentario.Font = new System.Drawing.Font("Modern No. 20", 7.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnComentario.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnComentario.Image = global::Cupediarum.Properties.Resources.Icono_Comentario;
             this.BtnComentario.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnComentario.Location = new System.Drawing.Point(3, 3);
             this.BtnComentario.Name = "BtnComentario";
-            this.BtnComentario.Size = new System.Drawing.Size(106, 78);
+            this.BtnComentario.Size = new System.Drawing.Size(101, 56);
             this.BtnComentario.TabIndex = 14;
             this.BtnComentario.Text = "Comentario";
             this.BtnComentario.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -177,12 +178,12 @@
             this.BtnComandas.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
             this.BtnComandas.FlatAppearance.BorderSize = 3;
             this.BtnComandas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnComandas.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnComandas.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnComandas.Image = global::Cupediarum.Properties.Resources.Icono_Comandas;
             this.BtnComandas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnComandas.Location = new System.Drawing.Point(115, 3);
+            this.BtnComandas.Location = new System.Drawing.Point(110, 3);
             this.BtnComandas.Name = "BtnComandas";
-            this.BtnComandas.Size = new System.Drawing.Size(106, 78);
+            this.BtnComandas.Size = new System.Drawing.Size(101, 56);
             this.BtnComandas.TabIndex = 13;
             this.BtnComandas.Text = "Comandas";
             this.BtnComandas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -194,18 +195,19 @@
             this.BtnAceptar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.BtnAceptar.FlatAppearance.BorderSize = 5;
+            this.BtnAceptar.FlatAppearance.BorderSize = 3;
             this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAceptar.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAceptar.Image = global::Cupediarum.Properties.Resources.Icono_Aceptar48;
+            this.BtnAceptar.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAceptar.Image = global::Cupediarum.Properties.Resources.Icono_RDAceptar32;
             this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnAceptar.Location = new System.Drawing.Point(227, 3);
+            this.BtnAceptar.Location = new System.Drawing.Point(217, 3);
             this.BtnAceptar.Name = "BtnAceptar";
-            this.BtnAceptar.Size = new System.Drawing.Size(106, 78);
+            this.BtnAceptar.Size = new System.Drawing.Size(86, 56);
             this.BtnAceptar.TabIndex = 11;
             this.BtnAceptar.Text = "Aceptar";
             this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAceptar.UseVisualStyleBackColor = false;
+            this.BtnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
             // 
             // BtnCancelar
             // 
@@ -213,14 +215,14 @@
             this.BtnCancelar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.BtnCancelar.FlatAppearance.BorderSize = 5;
+            this.BtnCancelar.FlatAppearance.BorderSize = 3;
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancelar.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.Image")));
+            this.BtnCancelar.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Icono_RDCancelar32;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnCancelar.Location = new System.Drawing.Point(339, 3);
+            this.BtnCancelar.Location = new System.Drawing.Point(309, 3);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(106, 78);
+            this.BtnCancelar.Size = new System.Drawing.Size(86, 56);
             this.BtnCancelar.TabIndex = 12;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -234,10 +236,10 @@
             this.BtnDescuento.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
             this.BtnDescuento.FlatAppearance.BorderSize = 3;
             this.BtnDescuento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDescuento.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDescuento.Location = new System.Drawing.Point(3, 87);
+            this.BtnDescuento.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDescuento.Location = new System.Drawing.Point(3, 65);
             this.BtnDescuento.Name = "BtnDescuento";
-            this.BtnDescuento.Size = new System.Drawing.Size(106, 78);
+            this.BtnDescuento.Size = new System.Drawing.Size(101, 56);
             this.BtnDescuento.TabIndex = 21;
             this.BtnDescuento.Text = "0 % Descuento";
             this.BtnDescuento.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -251,11 +253,11 @@
             this.BtnMenos.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
             this.BtnMenos.FlatAppearance.BorderSize = 3;
             this.BtnMenos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMenos.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMenos.Image = global::Cupediarum.Properties.Resources.Icono_Menos;
-            this.BtnMenos.Location = new System.Drawing.Point(115, 87);
+            this.BtnMenos.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMenos.Image = global::Cupediarum.Properties.Resources.Icono_Menos32;
+            this.BtnMenos.Location = new System.Drawing.Point(110, 65);
             this.BtnMenos.Name = "BtnMenos";
-            this.BtnMenos.Size = new System.Drawing.Size(106, 78);
+            this.BtnMenos.Size = new System.Drawing.Size(101, 56);
             this.BtnMenos.TabIndex = 15;
             this.BtnMenos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnMenos.UseVisualStyleBackColor = false;
@@ -268,11 +270,11 @@
             this.BtnMas.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
             this.BtnMas.FlatAppearance.BorderSize = 3;
             this.BtnMas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMas.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMas.Image = global::Cupediarum.Properties.Resources.Icono_Mas;
-            this.BtnMas.Location = new System.Drawing.Point(227, 87);
+            this.BtnMas.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMas.Image = global::Cupediarum.Properties.Resources.Icono_Mas32;
+            this.BtnMas.Location = new System.Drawing.Point(217, 65);
             this.BtnMas.Name = "BtnMas";
-            this.BtnMas.Size = new System.Drawing.Size(106, 78);
+            this.BtnMas.Size = new System.Drawing.Size(86, 56);
             this.BtnMas.TabIndex = 16;
             this.BtnMas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnMas.UseVisualStyleBackColor = false;
@@ -280,10 +282,11 @@
             // TxtCantProducto
             // 
             this.TxtCantProducto.BackColor = System.Drawing.Color.Gainsboro;
-            this.TxtCantProducto.Location = new System.Drawing.Point(339, 87);
+            this.TxtCantProducto.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCantProducto.Location = new System.Drawing.Point(309, 65);
             this.TxtCantProducto.Multiline = true;
             this.TxtCantProducto.Name = "TxtCantProducto";
-            this.TxtCantProducto.Size = new System.Drawing.Size(106, 78);
+            this.TxtCantProducto.Size = new System.Drawing.Size(85, 56);
             this.TxtCantProducto.TabIndex = 17;
             // 
             // BtnBorrarTodo
@@ -292,14 +295,14 @@
             this.BtnBorrarTodo.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
             this.BtnBorrarTodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnBorrarTodo.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnBorrarTodo.FlatAppearance.BorderSize = 5;
+            this.BtnBorrarTodo.FlatAppearance.BorderSize = 3;
             this.BtnBorrarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBorrarTodo.Font = new System.Drawing.Font("Modern No. 20", 7.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBorrarTodo.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBorrarTodo.Image = global::Cupediarum.Properties.Resources.Icono_Delete;
             this.BtnBorrarTodo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnBorrarTodo.Location = new System.Drawing.Point(3, 171);
+            this.BtnBorrarTodo.Location = new System.Drawing.Point(3, 127);
             this.BtnBorrarTodo.Name = "BtnBorrarTodo";
-            this.BtnBorrarTodo.Size = new System.Drawing.Size(162, 78);
+            this.BtnBorrarTodo.Size = new System.Drawing.Size(147, 68);
             this.BtnBorrarTodo.TabIndex = 18;
             this.BtnBorrarTodo.Text = "Borrar Todo";
             this.BtnBorrarTodo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -311,14 +314,14 @@
             this.BtnBorrarProducto.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
             this.BtnBorrarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnBorrarProducto.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnBorrarProducto.FlatAppearance.BorderSize = 5;
+            this.BtnBorrarProducto.FlatAppearance.BorderSize = 3;
             this.BtnBorrarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBorrarProducto.Font = new System.Drawing.Font("Modern No. 20", 7.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBorrarProducto.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBorrarProducto.Image = global::Cupediarum.Properties.Resources.Icono_Delete;
             this.BtnBorrarProducto.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnBorrarProducto.Location = new System.Drawing.Point(171, 171);
+            this.BtnBorrarProducto.Location = new System.Drawing.Point(156, 127);
             this.BtnBorrarProducto.Name = "BtnBorrarProducto";
-            this.BtnBorrarProducto.Size = new System.Drawing.Size(162, 78);
+            this.BtnBorrarProducto.Size = new System.Drawing.Size(147, 68);
             this.BtnBorrarProducto.TabIndex = 19;
             this.BtnBorrarProducto.Text = "Borrar Producto";
             this.BtnBorrarProducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -337,7 +340,7 @@
             this.PRECIO,
             this.DESCUENTO});
             this.DgvComanda.GridColor = System.Drawing.Color.Black;
-            this.DgvComanda.Location = new System.Drawing.Point(3, 255);
+            this.DgvComanda.Location = new System.Drawing.Point(3, 201);
             this.DgvComanda.MultiSelect = false;
             this.DgvComanda.Name = "DgvComanda";
             this.DgvComanda.ReadOnly = true;
@@ -345,7 +348,7 @@
             this.DgvComanda.RowHeadersWidth = 62;
             this.DgvComanda.RowTemplate.Height = 28;
             this.DgvComanda.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvComanda.Size = new System.Drawing.Size(442, 462);
+            this.DgvComanda.Size = new System.Drawing.Size(392, 380);
             this.DgvComanda.TabIndex = 20;
             // 
             // COMANDA
@@ -395,9 +398,9 @@
             this.FlpCategorias.Controls.Add(this.BtnPostres);
             this.FlpCategorias.Controls.Add(this.BtnBebidas);
             this.FlpCategorias.Controls.Add(this.BtnOtros);
-            this.FlpCategorias.Location = new System.Drawing.Point(602, 36);
+            this.FlpCategorias.Location = new System.Drawing.Point(540, 40);
             this.FlpCategorias.Name = "FlpCategorias";
-            this.FlpCategorias.Size = new System.Drawing.Size(826, 91);
+            this.FlpCategorias.Size = new System.Drawing.Size(515, 74);
             this.FlpCategorias.TabIndex = 2;
             // 
             // BtnComida
@@ -408,17 +411,16 @@
             this.BtnComida.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
             this.BtnComida.FlatAppearance.BorderSize = 3;
             this.BtnComida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnComida.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnComida.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnComida.Image = global::Cupediarum.Properties.Resources.Icono_Food;
             this.BtnComida.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnComida.Location = new System.Drawing.Point(3, 3);
             this.BtnComida.Name = "BtnComida";
-            this.BtnComida.Size = new System.Drawing.Size(165, 77);
+            this.BtnComida.Size = new System.Drawing.Size(133, 67);
             this.BtnComida.TabIndex = 13;
             this.BtnComida.Text = "Comida";
             this.BtnComida.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnComida.UseVisualStyleBackColor = false;
-           
             // 
             // BtnPostres
             // 
@@ -428,12 +430,12 @@
             this.BtnPostres.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
             this.BtnPostres.FlatAppearance.BorderSize = 3;
             this.BtnPostres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPostres.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPostres.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPostres.Image = global::Cupediarum.Properties.Resources.Icono_Postres;
             this.BtnPostres.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnPostres.Location = new System.Drawing.Point(174, 3);
+            this.BtnPostres.Location = new System.Drawing.Point(142, 3);
             this.BtnPostres.Name = "BtnPostres";
-            this.BtnPostres.Size = new System.Drawing.Size(147, 77);
+            this.BtnPostres.Size = new System.Drawing.Size(115, 67);
             this.BtnPostres.TabIndex = 11;
             this.BtnPostres.Text = "Postres";
             this.BtnPostres.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -447,12 +449,12 @@
             this.BtnBebidas.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
             this.BtnBebidas.FlatAppearance.BorderSize = 3;
             this.BtnBebidas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBebidas.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBebidas.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBebidas.Image = global::Cupediarum.Properties.Resources.Icono_Drink;
             this.BtnBebidas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnBebidas.Location = new System.Drawing.Point(327, 3);
+            this.BtnBebidas.Location = new System.Drawing.Point(263, 3);
             this.BtnBebidas.Name = "BtnBebidas";
-            this.BtnBebidas.Size = new System.Drawing.Size(157, 77);
+            this.BtnBebidas.Size = new System.Drawing.Size(125, 67);
             this.BtnBebidas.TabIndex = 12;
             this.BtnBebidas.Text = "Bebidas";
             this.BtnBebidas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -466,12 +468,12 @@
             this.BtnOtros.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
             this.BtnOtros.FlatAppearance.BorderSize = 3;
             this.BtnOtros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnOtros.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnOtros.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnOtros.Image = global::Cupediarum.Properties.Resources.Icono_Otros;
             this.BtnOtros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnOtros.Location = new System.Drawing.Point(490, 3);
+            this.BtnOtros.Location = new System.Drawing.Point(394, 3);
             this.BtnOtros.Name = "BtnOtros";
-            this.BtnOtros.Size = new System.Drawing.Size(143, 77);
+            this.BtnOtros.Size = new System.Drawing.Size(111, 67);
             this.BtnOtros.TabIndex = 14;
             this.BtnOtros.Text = "Otros";
             this.BtnOtros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -510,9 +512,9 @@
             this.FlpProductos.Controls.Add(this.button44);
             this.FlpProductos.Controls.Add(this.button45);
             this.FlpProductos.Controls.Add(this.BtnSiguiente);
-            this.FlpProductos.Location = new System.Drawing.Point(481, 340);
+            this.FlpProductos.Location = new System.Drawing.Point(415, 279);
             this.FlpProductos.Name = "FlpProductos";
-            this.FlpProductos.Size = new System.Drawing.Size(940, 429);
+            this.FlpProductos.Size = new System.Drawing.Size(766, 348);
             this.FlpProductos.TabIndex = 4;
             // 
             // BtnAtras
@@ -523,12 +525,12 @@
             this.BtnAtras.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.BtnAtras.FlatAppearance.BorderSize = 5;
             this.BtnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAtras.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAtras.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAtras.Image = global::Cupediarum.Properties.Resources.Icono_Left;
             this.BtnAtras.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAtras.Location = new System.Drawing.Point(3, 3);
             this.BtnAtras.Name = "BtnAtras";
-            this.BtnAtras.Size = new System.Drawing.Size(150, 78);
+            this.BtnAtras.Size = new System.Drawing.Size(121, 63);
             this.BtnAtras.TabIndex = 43;
             this.BtnAtras.Text = "Atras";
             this.BtnAtras.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -543,9 +545,9 @@
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button20.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button20.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button20.Location = new System.Drawing.Point(159, 3);
+            this.button20.Location = new System.Drawing.Point(130, 3);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(150, 78);
+            this.button20.Size = new System.Drawing.Size(121, 63);
             this.button20.TabIndex = 13;
             this.button20.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button20.UseVisualStyleBackColor = false;
@@ -559,9 +561,9 @@
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button21.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button21.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button21.Location = new System.Drawing.Point(315, 3);
+            this.button21.Location = new System.Drawing.Point(257, 3);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(150, 78);
+            this.button21.Size = new System.Drawing.Size(121, 63);
             this.button21.TabIndex = 14;
             this.button21.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button21.UseVisualStyleBackColor = false;
@@ -575,9 +577,9 @@
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button22.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button22.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button22.Location = new System.Drawing.Point(471, 3);
+            this.button22.Location = new System.Drawing.Point(384, 3);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(150, 78);
+            this.button22.Size = new System.Drawing.Size(121, 63);
             this.button22.TabIndex = 15;
             this.button22.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button22.UseVisualStyleBackColor = false;
@@ -591,9 +593,9 @@
             this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button23.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button23.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button23.Location = new System.Drawing.Point(627, 3);
+            this.button23.Location = new System.Drawing.Point(511, 3);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(150, 78);
+            this.button23.Size = new System.Drawing.Size(121, 63);
             this.button23.TabIndex = 16;
             this.button23.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button23.UseVisualStyleBackColor = false;
@@ -607,9 +609,9 @@
             this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button24.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button24.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button24.Location = new System.Drawing.Point(783, 3);
+            this.button24.Location = new System.Drawing.Point(638, 3);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(150, 78);
+            this.button24.Size = new System.Drawing.Size(121, 63);
             this.button24.TabIndex = 17;
             this.button24.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button24.UseVisualStyleBackColor = false;
@@ -623,9 +625,9 @@
             this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button25.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button25.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button25.Location = new System.Drawing.Point(3, 87);
+            this.button25.Location = new System.Drawing.Point(3, 72);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(150, 78);
+            this.button25.Size = new System.Drawing.Size(121, 63);
             this.button25.TabIndex = 18;
             this.button25.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button25.UseVisualStyleBackColor = false;
@@ -639,9 +641,9 @@
             this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button26.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button26.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button26.Location = new System.Drawing.Point(159, 87);
+            this.button26.Location = new System.Drawing.Point(130, 72);
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(150, 78);
+            this.button26.Size = new System.Drawing.Size(121, 63);
             this.button26.TabIndex = 19;
             this.button26.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button26.UseVisualStyleBackColor = false;
@@ -655,9 +657,9 @@
             this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button27.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button27.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button27.Location = new System.Drawing.Point(315, 87);
+            this.button27.Location = new System.Drawing.Point(257, 72);
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(150, 78);
+            this.button27.Size = new System.Drawing.Size(121, 63);
             this.button27.TabIndex = 20;
             this.button27.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button27.UseVisualStyleBackColor = false;
@@ -671,9 +673,9 @@
             this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button28.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button28.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button28.Location = new System.Drawing.Point(471, 87);
+            this.button28.Location = new System.Drawing.Point(384, 72);
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(150, 78);
+            this.button28.Size = new System.Drawing.Size(121, 63);
             this.button28.TabIndex = 21;
             this.button28.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button28.UseVisualStyleBackColor = false;
@@ -687,9 +689,9 @@
             this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button29.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button29.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button29.Location = new System.Drawing.Point(627, 87);
+            this.button29.Location = new System.Drawing.Point(511, 72);
             this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(150, 78);
+            this.button29.Size = new System.Drawing.Size(121, 63);
             this.button29.TabIndex = 22;
             this.button29.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button29.UseVisualStyleBackColor = false;
@@ -703,9 +705,9 @@
             this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button30.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button30.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button30.Location = new System.Drawing.Point(783, 87);
+            this.button30.Location = new System.Drawing.Point(638, 72);
             this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(150, 78);
+            this.button30.Size = new System.Drawing.Size(121, 63);
             this.button30.TabIndex = 23;
             this.button30.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button30.UseVisualStyleBackColor = false;
@@ -719,9 +721,9 @@
             this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button31.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button31.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button31.Location = new System.Drawing.Point(3, 171);
+            this.button31.Location = new System.Drawing.Point(3, 141);
             this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(150, 78);
+            this.button31.Size = new System.Drawing.Size(121, 63);
             this.button31.TabIndex = 24;
             this.button31.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button31.UseVisualStyleBackColor = false;
@@ -735,9 +737,9 @@
             this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button32.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button32.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button32.Location = new System.Drawing.Point(159, 171);
+            this.button32.Location = new System.Drawing.Point(130, 141);
             this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(150, 78);
+            this.button32.Size = new System.Drawing.Size(121, 63);
             this.button32.TabIndex = 25;
             this.button32.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button32.UseVisualStyleBackColor = false;
@@ -751,9 +753,9 @@
             this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button33.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button33.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button33.Location = new System.Drawing.Point(315, 171);
+            this.button33.Location = new System.Drawing.Point(257, 141);
             this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(150, 78);
+            this.button33.Size = new System.Drawing.Size(121, 63);
             this.button33.TabIndex = 26;
             this.button33.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button33.UseVisualStyleBackColor = false;
@@ -767,9 +769,9 @@
             this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button34.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button34.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button34.Location = new System.Drawing.Point(471, 171);
+            this.button34.Location = new System.Drawing.Point(384, 141);
             this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(150, 78);
+            this.button34.Size = new System.Drawing.Size(121, 63);
             this.button34.TabIndex = 27;
             this.button34.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button34.UseVisualStyleBackColor = false;
@@ -783,9 +785,9 @@
             this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button35.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button35.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button35.Location = new System.Drawing.Point(627, 171);
+            this.button35.Location = new System.Drawing.Point(511, 141);
             this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(150, 78);
+            this.button35.Size = new System.Drawing.Size(121, 63);
             this.button35.TabIndex = 28;
             this.button35.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button35.UseVisualStyleBackColor = false;
@@ -799,9 +801,9 @@
             this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button36.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button36.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button36.Location = new System.Drawing.Point(783, 171);
+            this.button36.Location = new System.Drawing.Point(638, 141);
             this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(150, 78);
+            this.button36.Size = new System.Drawing.Size(121, 63);
             this.button36.TabIndex = 29;
             this.button36.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button36.UseVisualStyleBackColor = false;
@@ -815,9 +817,9 @@
             this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button37.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button37.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button37.Location = new System.Drawing.Point(3, 255);
+            this.button37.Location = new System.Drawing.Point(3, 210);
             this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(150, 78);
+            this.button37.Size = new System.Drawing.Size(121, 63);
             this.button37.TabIndex = 30;
             this.button37.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button37.UseVisualStyleBackColor = false;
@@ -831,9 +833,9 @@
             this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button38.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button38.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button38.Location = new System.Drawing.Point(159, 255);
+            this.button38.Location = new System.Drawing.Point(130, 210);
             this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(150, 78);
+            this.button38.Size = new System.Drawing.Size(121, 63);
             this.button38.TabIndex = 31;
             this.button38.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button38.UseVisualStyleBackColor = false;
@@ -847,9 +849,9 @@
             this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button39.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button39.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button39.Location = new System.Drawing.Point(315, 255);
+            this.button39.Location = new System.Drawing.Point(257, 210);
             this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(150, 78);
+            this.button39.Size = new System.Drawing.Size(121, 63);
             this.button39.TabIndex = 32;
             this.button39.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button39.UseVisualStyleBackColor = false;
@@ -863,9 +865,9 @@
             this.button40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button40.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button40.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button40.Location = new System.Drawing.Point(471, 255);
+            this.button40.Location = new System.Drawing.Point(384, 210);
             this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(150, 78);
+            this.button40.Size = new System.Drawing.Size(121, 63);
             this.button40.TabIndex = 33;
             this.button40.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button40.UseVisualStyleBackColor = false;
@@ -879,9 +881,9 @@
             this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button41.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button41.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button41.Location = new System.Drawing.Point(627, 255);
+            this.button41.Location = new System.Drawing.Point(511, 210);
             this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(150, 78);
+            this.button41.Size = new System.Drawing.Size(121, 63);
             this.button41.TabIndex = 34;
             this.button41.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button41.UseVisualStyleBackColor = false;
@@ -895,9 +897,9 @@
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button18.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button18.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button18.Location = new System.Drawing.Point(783, 255);
+            this.button18.Location = new System.Drawing.Point(638, 210);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(150, 78);
+            this.button18.Size = new System.Drawing.Size(121, 63);
             this.button18.TabIndex = 44;
             this.button18.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button18.UseVisualStyleBackColor = false;
@@ -911,9 +913,9 @@
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button19.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button19.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button19.Location = new System.Drawing.Point(3, 339);
+            this.button19.Location = new System.Drawing.Point(3, 279);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(150, 78);
+            this.button19.Size = new System.Drawing.Size(121, 63);
             this.button19.TabIndex = 45;
             this.button19.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button19.UseVisualStyleBackColor = false;
@@ -927,9 +929,9 @@
             this.button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button42.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button42.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button42.Location = new System.Drawing.Point(159, 339);
+            this.button42.Location = new System.Drawing.Point(130, 279);
             this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(150, 78);
+            this.button42.Size = new System.Drawing.Size(121, 63);
             this.button42.TabIndex = 46;
             this.button42.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button42.UseVisualStyleBackColor = false;
@@ -943,9 +945,9 @@
             this.button43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button43.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button43.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button43.Location = new System.Drawing.Point(315, 339);
+            this.button43.Location = new System.Drawing.Point(257, 279);
             this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(150, 78);
+            this.button43.Size = new System.Drawing.Size(121, 63);
             this.button43.TabIndex = 47;
             this.button43.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button43.UseVisualStyleBackColor = false;
@@ -959,9 +961,9 @@
             this.button44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button44.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button44.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button44.Location = new System.Drawing.Point(471, 339);
+            this.button44.Location = new System.Drawing.Point(384, 279);
             this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(150, 78);
+            this.button44.Size = new System.Drawing.Size(121, 63);
             this.button44.TabIndex = 48;
             this.button44.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button44.UseVisualStyleBackColor = false;
@@ -975,9 +977,9 @@
             this.button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button45.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button45.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button45.Location = new System.Drawing.Point(627, 339);
+            this.button45.Location = new System.Drawing.Point(511, 279);
             this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(150, 78);
+            this.button45.Size = new System.Drawing.Size(121, 63);
             this.button45.TabIndex = 49;
             this.button45.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button45.UseVisualStyleBackColor = false;
@@ -990,12 +992,12 @@
             this.BtnSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.BtnSiguiente.FlatAppearance.BorderSize = 5;
             this.BtnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSiguiente.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSiguiente.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSiguiente.Image = global::Cupediarum.Properties.Resources.Icono_Right;
             this.BtnSiguiente.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnSiguiente.Location = new System.Drawing.Point(783, 339);
+            this.BtnSiguiente.Location = new System.Drawing.Point(638, 279);
             this.BtnSiguiente.Name = "BtnSiguiente";
-            this.BtnSiguiente.Size = new System.Drawing.Size(150, 78);
+            this.BtnSiguiente.Size = new System.Drawing.Size(121, 63);
             this.BtnSiguiente.TabIndex = 61;
             this.BtnSiguiente.Text = "Siguiente";
             this.BtnSiguiente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1016,11 +1018,10 @@
             this.FlpSubCategorias.Controls.Add(this.button15);
             this.FlpSubCategorias.Controls.Add(this.button16);
             this.FlpSubCategorias.Controls.Add(this.BtnSiguienteTipos);
-            this.FlpSubCategorias.Location = new System.Drawing.Point(481, 149);
+            this.FlpSubCategorias.Location = new System.Drawing.Point(416, 123);
             this.FlpSubCategorias.Name = "FlpSubCategorias";
-            this.FlpSubCategorias.Size = new System.Drawing.Size(940, 176);
+            this.FlpSubCategorias.Size = new System.Drawing.Size(766, 142);
             this.FlpSubCategorias.TabIndex = 3;
-        
             // 
             // BtnAtrasTipos
             // 
@@ -1030,12 +1031,12 @@
             this.BtnAtrasTipos.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.BtnAtrasTipos.FlatAppearance.BorderSize = 5;
             this.BtnAtrasTipos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAtrasTipos.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAtrasTipos.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAtrasTipos.Image = global::Cupediarum.Properties.Resources.Icono_Left;
             this.BtnAtrasTipos.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAtrasTipos.Location = new System.Drawing.Point(3, 3);
             this.BtnAtrasTipos.Name = "BtnAtrasTipos";
-            this.BtnAtrasTipos.Size = new System.Drawing.Size(150, 78);
+            this.BtnAtrasTipos.Size = new System.Drawing.Size(121, 63);
             this.BtnAtrasTipos.TabIndex = 44;
             this.BtnAtrasTipos.Text = "Atras";
             this.BtnAtrasTipos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1050,9 +1051,9 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button8.Location = new System.Drawing.Point(159, 3);
+            this.button8.Location = new System.Drawing.Point(130, 3);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(150, 78);
+            this.button8.Size = new System.Drawing.Size(121, 63);
             this.button8.TabIndex = 50;
             this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button8.UseVisualStyleBackColor = false;
@@ -1066,9 +1067,9 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button7.Location = new System.Drawing.Point(315, 3);
+            this.button7.Location = new System.Drawing.Point(257, 3);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(150, 78);
+            this.button7.Size = new System.Drawing.Size(121, 63);
             this.button7.TabIndex = 51;
             this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button7.UseVisualStyleBackColor = false;
@@ -1082,9 +1083,9 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button9.Location = new System.Drawing.Point(471, 3);
+            this.button9.Location = new System.Drawing.Point(384, 3);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(150, 78);
+            this.button9.Size = new System.Drawing.Size(121, 63);
             this.button9.TabIndex = 52;
             this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button9.UseVisualStyleBackColor = false;
@@ -1098,9 +1099,9 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button10.Location = new System.Drawing.Point(627, 3);
+            this.button10.Location = new System.Drawing.Point(511, 3);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(150, 78);
+            this.button10.Size = new System.Drawing.Size(121, 63);
             this.button10.TabIndex = 53;
             this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button10.UseVisualStyleBackColor = false;
@@ -1114,9 +1115,9 @@
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button11.Location = new System.Drawing.Point(783, 3);
+            this.button11.Location = new System.Drawing.Point(638, 3);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(150, 78);
+            this.button11.Size = new System.Drawing.Size(121, 63);
             this.button11.TabIndex = 54;
             this.button11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button11.UseVisualStyleBackColor = false;
@@ -1130,9 +1131,9 @@
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button12.Location = new System.Drawing.Point(3, 87);
+            this.button12.Location = new System.Drawing.Point(3, 72);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(150, 78);
+            this.button12.Size = new System.Drawing.Size(121, 63);
             this.button12.TabIndex = 55;
             this.button12.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button12.UseVisualStyleBackColor = false;
@@ -1146,9 +1147,9 @@
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button13.Location = new System.Drawing.Point(159, 87);
+            this.button13.Location = new System.Drawing.Point(130, 72);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(150, 78);
+            this.button13.Size = new System.Drawing.Size(121, 63);
             this.button13.TabIndex = 56;
             this.button13.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button13.UseVisualStyleBackColor = false;
@@ -1162,9 +1163,9 @@
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button14.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button14.Location = new System.Drawing.Point(315, 87);
+            this.button14.Location = new System.Drawing.Point(257, 72);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(150, 78);
+            this.button14.Size = new System.Drawing.Size(121, 63);
             this.button14.TabIndex = 57;
             this.button14.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button14.UseVisualStyleBackColor = false;
@@ -1178,9 +1179,9 @@
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button15.Location = new System.Drawing.Point(471, 87);
+            this.button15.Location = new System.Drawing.Point(384, 72);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(150, 78);
+            this.button15.Size = new System.Drawing.Size(121, 63);
             this.button15.TabIndex = 58;
             this.button15.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button15.UseVisualStyleBackColor = false;
@@ -1194,9 +1195,9 @@
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button16.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button16.Location = new System.Drawing.Point(627, 87);
+            this.button16.Location = new System.Drawing.Point(511, 72);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(150, 78);
+            this.button16.Size = new System.Drawing.Size(121, 63);
             this.button16.TabIndex = 59;
             this.button16.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button16.UseVisualStyleBackColor = false;
@@ -1209,12 +1210,12 @@
             this.BtnSiguienteTipos.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.BtnSiguienteTipos.FlatAppearance.BorderSize = 5;
             this.BtnSiguienteTipos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSiguienteTipos.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSiguienteTipos.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSiguienteTipos.Image = global::Cupediarum.Properties.Resources.Icono_Right;
             this.BtnSiguienteTipos.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnSiguienteTipos.Location = new System.Drawing.Point(783, 87);
+            this.BtnSiguienteTipos.Location = new System.Drawing.Point(638, 72);
             this.BtnSiguienteTipos.Name = "BtnSiguienteTipos";
-            this.BtnSiguienteTipos.Size = new System.Drawing.Size(150, 78);
+            this.BtnSiguienteTipos.Size = new System.Drawing.Size(121, 63);
             this.BtnSiguienteTipos.TabIndex = 60;
             this.BtnSiguienteTipos.Text = "Siguiente";
             this.BtnSiguienteTipos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1222,10 +1223,11 @@
             // 
             // FrmCapturaProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1428, 792);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(1196, 637);
             this.Controls.Add(this.FlpProductos);
             this.Controls.Add(this.FlpSubCategorias);
             this.Controls.Add(this.FlpCategorias);
@@ -1233,9 +1235,9 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "FrmCapturaProductos";
             this.Text = "Captura de Productos";
-          
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.FlpComanda.ResumeLayout(false);

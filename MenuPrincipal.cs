@@ -28,5 +28,12 @@ namespace Cupediarum
             frm.Show();
             this.Hide();
         }
+
+        private void BtnMesas_Click(object sender, EventArgs e)
+        {
+            FrmMesas frm = new FrmMesas();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

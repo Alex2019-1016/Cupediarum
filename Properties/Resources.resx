@@ -133,14 +133,11 @@
   <data name="Icono_Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_Mesas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_Mesas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Reloj_Abierto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Reloj_Abierto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_Reservas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_Reservas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Mesero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Mesero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_Menos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Menos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,11 +154,20 @@
   <data name="Icono_Comentario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Comentario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_Mesero" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_Mesero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Mas32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_Mas32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_Menos32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_Menos32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_Caja" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Caja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_CorteCaja48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_CorteCaja48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_Table48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_Table48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_Aceptar48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Aceptar48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,14 +178,32 @@
   <data name="Icono_Food" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Icono_Drink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Drink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icono_RDCancelar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_RDCancelar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_Reservas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Reservas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_AbrirTurno48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_AbrirTurno481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_AbrirCuenta48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_AbrirCuenta48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FBNaranja" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\FBNaranja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Icono_Cancelar48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_Cancelar48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icono_Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_CerrarTurno48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_CerrarTurno48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Reloj_Cerrado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Reloj_Cerrado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,17 +211,20 @@
   <data name="Icono_Comandas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Comandas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Icono_People" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_People.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icono_Postres" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Postres.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icono_Cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_Cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_Aceptar64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Aceptar64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CupediarumLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\CupediarumLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_Personas48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_Personas48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FBAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\FBAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,8 +247,8 @@
   <data name="Icono_Borrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Borrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_People" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_People.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_Pedidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Pedidos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,7 +256,7 @@
   <data name="Icono_RDAceptar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_RDAceptar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_Drink" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_Drink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Pagar48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_Pagar48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -99,7 +99,7 @@
             this.panel1.Controls.Add(this.BtnAgregarCuenta);
             this.panel1.Location = new System.Drawing.Point(4, 36);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(752, 107);
+            this.panel1.Size = new System.Drawing.Size(294, 107);
             this.panel1.TabIndex = 0;
             // 
             // BtnPrecios
@@ -110,12 +110,12 @@
             this.BtnPrecios.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnPrecios.FlatAppearance.BorderSize = 3;
             this.BtnPrecios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPrecios.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPrecios.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPrecios.Image = global::Cupediarum.Properties.Resources.Icono_Precios;
             this.BtnPrecios.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPrecios.Location = new System.Drawing.Point(575, 1);
+            this.BtnPrecios.Location = new System.Drawing.Point(153, 2);
             this.BtnPrecios.Name = "BtnPrecios";
-            this.BtnPrecios.Size = new System.Drawing.Size(166, 96);
+            this.BtnPrecios.Size = new System.Drawing.Size(132, 96);
             this.BtnPrecios.TabIndex = 11;
             this.BtnPrecios.Text = "Precios";
             this.BtnPrecios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -129,12 +129,12 @@
             this.BtnAgregarCuenta.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnAgregarCuenta.FlatAppearance.BorderSize = 3;
             this.BtnAgregarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAgregarCuenta.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregarCuenta.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAgregarCuenta.Image = global::Cupediarum.Properties.Resources.Icono_AbrirCuenta;
             this.BtnAgregarCuenta.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnAgregarCuenta.Location = new System.Drawing.Point(7, 3);
             this.BtnAgregarCuenta.Name = "BtnAgregarCuenta";
-            this.BtnAgregarCuenta.Size = new System.Drawing.Size(166, 96);
+            this.BtnAgregarCuenta.Size = new System.Drawing.Size(140, 96);
             this.BtnAgregarCuenta.TabIndex = 9;
             this.BtnAgregarCuenta.Text = "Agregar Cuenta";
             this.BtnAgregarCuenta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -272,11 +272,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(50, 87);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 30);
+            this.label2.Size = new System.Drawing.Size(71, 32);
             this.label2.TabIndex = 3;
             this.label2.Text = "Area";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -300,11 +300,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(11, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 24);
+            this.label1.Size = new System.Drawing.Size(89, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mesero";
             // 
@@ -362,7 +362,7 @@
             this.BtnAtras.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.BtnAtras.FlatAppearance.BorderSize = 5;
             this.BtnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAtras.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAtras.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAtras.Image = global::Cupediarum.Properties.Resources.Icono_Left;
             this.BtnAtras.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAtras.Location = new System.Drawing.Point(3, 3);
@@ -789,7 +789,7 @@
             this.BtnSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.BtnSiguiente.FlatAppearance.BorderSize = 5;
             this.BtnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSiguiente.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSiguiente.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSiguiente.Image = global::Cupediarum.Properties.Resources.Icono_Right;
             this.BtnSiguiente.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnSiguiente.Location = new System.Drawing.Point(623, 393);
@@ -802,8 +802,7 @@
             // 
             // FrmCuentas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(957, 633);
             this.Controls.Add(this.FlpCuentas);
@@ -811,6 +810,7 @@
             this.Controls.Add(this.MnuPedidos);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FrmCuentas";
             this.Text = "Cuentas";
             this.Load += new System.EventHandler(this.Pedidos_Load);

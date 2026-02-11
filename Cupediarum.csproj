@@ -155,14 +155,33 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Imagenes\Icono_AbrirCuenta48.png" />
+    <Content Include="Imagenes\Icono_AbrirTurno48.png" />
     <Content Include="Imagenes\Icono_Aceptar48.png" />
     <Content Include="Imagenes\Icono_Aceptar64.png" />
     <Content Include="Imagenes\Icono_Agregar.png" />
     <Content Include="Imagenes\Icono_Bebidas.png" />
+    <Content Include="Imagenes\Icono_Cancelar48.png" />
     <Content Include="Imagenes\Icono_Cancelar64.png" />
+    <Content Include="Imagenes\Icono_CerrarTurno48.png" />
     <Content Include="Imagenes\Icono_Cliente.png" />
     <Content Include="Imagenes\Icono_Comandas.png" />
+    <None Include="Resources\Icono_Pagar48.png" />
+    <None Include="Resources\Icono_AbrirCuenta48.png" />
+    <None Include="Resources\Icono_Cancelar48.png" />
+    <None Include="Resources\Icono_Personas48.png" />
+    <None Include="Resources\Icono_CorteCaja48.png" />
+    <None Include="Resources\Icono_CerrarTurno48.png" />
+    <None Include="Resources\Icono_AbrirTurno481.png" />
+    <None Include="Resources\Icono_CerrarTurno64.png" />
+    <None Include="Resources\Icono_AbrirTurno.png" />
+    <None Include="Resources\Icono_AbrirTurno48.png" />
+    <None Include="Resources\Icono_Table48.png" />
+    <None Include="Resources\Icono_Table32.png" />
+    <None Include="Resources\Icono_Mas32.png" />
+    <None Include="Resources\Icono_Menos32.png" />
     <None Include="Imagenes\Icono_Delete.png" />
+    <Content Include="Imagenes\Icono_CorteCaja48.png" />
     <Content Include="Imagenes\Icono_Descuento.png" />
     <Content Include="Imagenes\Icono_Drink.png" />
     <Content Include="Imagenes\Icono_Food.png" />
@@ -170,11 +189,16 @@
     <Content Include="Imagenes\Icono_Comentario.png" />
     <Content Include="Imagenes\Icono_Imprimir.png" />
     <Content Include="Imagenes\Icono_Mas.png" />
+    <Content Include="Imagenes\Icono_Mas32.png" />
     <Content Include="Imagenes\Icono_Menos.png" />
+    <Content Include="Imagenes\Icono_Menos32.png" />
     <Content Include="Imagenes\Icono_Otros.png" />
+    <Content Include="Imagenes\Icono_Pagar48.png" />
     <Content Include="Imagenes\Icono_PagarCuenta.png" />
     <Content Include="Imagenes\Icono_People.png" />
+    <Content Include="Imagenes\Icono_Personas48.png" />
     <Content Include="Imagenes\Icono_Postres.png" />
+    <Content Include="Imagenes\Icono_Table48.png" />
     <Content Include="Imagenes\Ico_AbrirCuenta.ico" />
     <Content Include="Imagenes\Ico_Datos.ico" />
     <Content Include="Imagenes\Ico_Pedidos.ico" />
@@ -189,7 +213,6 @@
     <Content Include="Imagenes\Icono_Left.png" />
     <Content Include="Imagenes\Icono_Mesero.png" />
     <Content Include="Imagenes\Icono_Cancelar32.png" />
-    <Content Include="Imagenes\Icono_Mesas.png" />
     <Content Include="Imagenes\Icono_Monitor.png" />
     <None Include="Resources\Icono_Bebidas.png" />
     <None Include="Imagenes\Icono_RDAceptar32.png" />

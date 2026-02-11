@@ -18,6 +18,17 @@ namespace Cupediarum
             InitializeComponent();
         }
 
+        private void FlpComanda_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BtnAceptar_Click(object sender, EventArgs e)
+        {
+            FrmCuentas frm = new FrmCuentas();
+            frm.Show();
+            this.Hide();
+        }
     }
 }
 

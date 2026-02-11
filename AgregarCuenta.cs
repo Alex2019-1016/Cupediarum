@@ -43,5 +43,12 @@ namespace Cupediarum
             frm.Show();
             this.Hide();
         }
+
+        private void BtnAceptar_Click_1(object sender, EventArgs e)
+        {
+            FrmCantidadPersonas frm = new FrmCantidadPersonas();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

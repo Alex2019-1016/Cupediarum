@@ -7,15 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace Cupediarum
 {
     public partial class FrmCantidadPersonas : Form
     {
-        public FrmCantidadPersonas()
+        public FrmCantidadPersonas(int idCuentaRecibida)
         {
             InitializeComponent();
+            idCuenta = idCuentaRecibida;
         }
+
+        private int idCuenta;
 
         private void TxtPersonas_TextChanged(object sender, EventArgs e)
         {

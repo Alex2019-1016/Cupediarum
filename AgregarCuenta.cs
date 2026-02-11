@@ -41,9 +41,7 @@ namespace Cupediarum
 
         private void BtnAceptar_Click(object sender, EventArgs e)
         {
-            FrmCantidadPersonas frm = new FrmCantidadPersonas();
-            frm.Show();
-            this.Hide();
+           
         }
 
         private void BtnAceptar_Click_1(object sender, EventArgs e)
@@ -66,6 +64,7 @@ namespace Cupediarum
 
             string query = @"INSERT INTO CUENTAS 
                      (Nomb_Cuenta, Cantidad_Personas, Id_Mesa, Id_Usuario)
+                     OUTPUT INSERTED.Id_Cuenta
                      VALUES 
                      (@nombre, @cantidad, @mesa, @usuario)";
 
@@ -73,19 +72,23 @@ namespace Cupediarum
             using (SqlCommand cmd = new SqlCommand(query, conn))
             {
                 cmd.Parameters.AddWithValue("@nombre", nombreCuenta);
-                cmd.Parameters.AddWithValue("@cantidad", 1); // provisional
-                cmd.Parameters.AddWithValue("@mesa", DBNull.Value); // ToGo por ahora
+                cmd.Parameters.AddWithValue("@cantidad", 1);
+                cmd.Parameters.AddWithValue("@mesa", DBNull.Value);
                 cmd.Parameters.AddWithValue("@usuario", Sesion.IdUsuario);
 
                 try
                 {
                     conn.Open();
-                    cmd.ExecuteNonQuery();
+
+                    int idCuentaCreada = (int)cmd.ExecuteScalar();
 
                     MessageBox.Show("Cuenta creada correctamente ✔",
                                     "Éxito",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
+
+                    FrmCantidadPersonas frm = new FrmCantidadPersonas(idCuentaCreada);
+                    frm.Show();
 
                     this.Close();
                 }
@@ -95,7 +98,7 @@ namespace Cupediarum
                 }
             }
 
-            
+
         }
 
         private void RtbCuenta_TextChanged(object sender, EventArgs e)

@@ -120,6 +120,7 @@
             this.BtnPrecios.Text = "Precios";
             this.BtnPrecios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnPrecios.UseVisualStyleBackColor = false;
+            this.BtnPrecios.Click += new System.EventHandler(this.BtnPrecios_Click);
             // 
             // BtnAgregarCuenta
             // 
@@ -143,27 +144,26 @@
             // 
             // MnuPedidos
             // 
-            this.MnuPedidos.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.MnuPedidos.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.MnuPedidos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.configurarToolStripMenuItem,
             this.acercaDeToolStripMenuItem});
             this.MnuPedidos.Location = new System.Drawing.Point(0, 0);
             this.MnuPedidos.Name = "MnuPedidos";
-            this.MnuPedidos.Size = new System.Drawing.Size(957, 40);
+            this.MnuPedidos.Size = new System.Drawing.Size(957, 24);
             this.MnuPedidos.TabIndex = 3;
             this.MnuPedidos.Text = "menuStrip1";
             // 
             // configurarToolStripMenuItem
             // 
             this.configurarToolStripMenuItem.Name = "configurarToolStripMenuItem";
-            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(147, 36);
+            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
             this.configurarToolStripMenuItem.Text = "Configurar";
             // 
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(138, 36);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // PnlDatosMesero
@@ -276,7 +276,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(50, 87);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 43);
+            this.label2.Size = new System.Drawing.Size(50, 22);
             this.label2.TabIndex = 3;
             this.label2.Text = "Area";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -286,7 +286,8 @@
             this.TxtNombMesero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNombMesero.Location = new System.Drawing.Point(15, 49);
             this.TxtNombMesero.Name = "TxtNombMesero";
-            this.TxtNombMesero.Size = new System.Drawing.Size(134, 50);
+            this.TxtNombMesero.ReadOnly = true;
+            this.TxtNombMesero.Size = new System.Drawing.Size(134, 29);
             this.TxtNombMesero.TabIndex = 2;
             this.TxtNombMesero.TextChanged += new System.EventHandler(this.TxtNombMesero_TextChanged);
             // 
@@ -295,8 +296,9 @@
             this.TxtIDMesero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtIDMesero.Location = new System.Drawing.Point(107, 3);
             this.TxtIDMesero.Name = "TxtIDMesero";
-            this.TxtIDMesero.Size = new System.Drawing.Size(43, 50);
+            this.TxtIDMesero.Size = new System.Drawing.Size(43, 29);
             this.TxtIDMesero.TabIndex = 1;
+            this.TxtIDMesero.TextChanged += new System.EventHandler(this.TxtIDMesero_TextChanged);
             // 
             // label1
             // 
@@ -305,7 +307,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(11, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 36);
+            this.label1.Size = new System.Drawing.Size(62, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mesero";
             // 
@@ -385,6 +387,7 @@
             this.button4.Size = new System.Drawing.Size(118, 72);
             this.button4.TabIndex = 13;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -397,6 +400,7 @@
             this.button5.Size = new System.Drawing.Size(118, 72);
             this.button5.TabIndex = 14;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -409,6 +413,7 @@
             this.button6.Size = new System.Drawing.Size(118, 72);
             this.button6.TabIndex = 15;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -421,6 +426,7 @@
             this.button7.Size = new System.Drawing.Size(118, 72);
             this.button7.TabIndex = 16;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -433,6 +439,7 @@
             this.button8.Size = new System.Drawing.Size(118, 72);
             this.button8.TabIndex = 17;
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -445,6 +452,7 @@
             this.button9.Size = new System.Drawing.Size(118, 72);
             this.button9.TabIndex = 18;
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -457,6 +465,7 @@
             this.button10.Size = new System.Drawing.Size(118, 72);
             this.button10.TabIndex = 19;
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -469,6 +478,7 @@
             this.button11.Size = new System.Drawing.Size(118, 72);
             this.button11.TabIndex = 20;
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -481,6 +491,7 @@
             this.button12.Size = new System.Drawing.Size(118, 72);
             this.button12.TabIndex = 21;
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 
@@ -493,6 +504,7 @@
             this.button13.Size = new System.Drawing.Size(118, 72);
             this.button13.TabIndex = 22;
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button14
             // 
@@ -505,6 +517,7 @@
             this.button14.Size = new System.Drawing.Size(118, 72);
             this.button14.TabIndex = 23;
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 

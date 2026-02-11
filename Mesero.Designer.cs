@@ -94,6 +94,7 @@
             this.BtnSalir = new System.Windows.Forms.Button();
             this.BtnMonitor = new System.Windows.Forms.Button();
             this.Cuentas = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.MnuMesero.SuspendLayout();
             this.PnlTecladoNum.SuspendLayout();
             this.PnlDatosMesero.SuspendLayout();
@@ -102,27 +103,26 @@
             // 
             // MnuMesero
             // 
-            this.MnuMesero.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.MnuMesero.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.MnuMesero.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.configurarToolStripMenuItem,
             this.acercaDeToolStripMenuItem});
             this.MnuMesero.Location = new System.Drawing.Point(0, 0);
             this.MnuMesero.Name = "MnuMesero";
-            this.MnuMesero.Size = new System.Drawing.Size(884, 40);
+            this.MnuMesero.Size = new System.Drawing.Size(884, 24);
             this.MnuMesero.TabIndex = 17;
             this.MnuMesero.Text = "menuStrip1";
             // 
             // configurarToolStripMenuItem
             // 
             this.configurarToolStripMenuItem.Name = "configurarToolStripMenuItem";
-            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(147, 36);
+            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
             this.configurarToolStripMenuItem.Text = "Configurar";
             // 
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(138, 36);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // PnlTecladoNum
@@ -441,7 +441,7 @@
             this.TxtClave.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtClave.Location = new System.Drawing.Point(166, 81);
             this.TxtClave.Name = "TxtClave";
-            this.TxtClave.Size = new System.Drawing.Size(225, 81);
+            this.TxtClave.Size = new System.Drawing.Size(225, 44);
             this.TxtClave.TabIndex = 11;
             // 
             // label1
@@ -451,18 +451,19 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 95);
+            this.label1.Location = new System.Drawing.Point(34, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 45);
+            this.label1.Size = new System.Drawing.Size(107, 24);
             this.label1.TabIndex = 10;
             this.label1.Text = "Contraseña";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // TxtIDMesero
             // 
             this.TxtIDMesero.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtIDMesero.Location = new System.Drawing.Point(166, 10);
             this.TxtIDMesero.Name = "TxtIDMesero";
-            this.TxtIDMesero.Size = new System.Drawing.Size(80, 81);
+            this.TxtIDMesero.Size = new System.Drawing.Size(225, 44);
             this.TxtIDMesero.TabIndex = 9;
             // 
             // BtnMesero
@@ -1157,12 +1158,24 @@
             this.Cuentas.UseVisualStyleBackColor = false;
             this.Cuentas.Click += new System.EventHandler(this.Cuentas_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label2.Location = new System.Drawing.Point(46, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 54;
+            this.label2.Text = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // FrmMesero
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(884, 615);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.PnlDatosMesero);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.PnlTecladoAlf);
@@ -1252,5 +1265,6 @@
         private System.Windows.Forms.Panel PnlTecladoAlf;
         private System.Windows.Forms.Button BtnAceptar;
         private System.Windows.Forms.Button BtnCancelar;
+        private System.Windows.Forms.Label label2;
     }
 }

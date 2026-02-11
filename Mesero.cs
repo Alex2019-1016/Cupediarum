@@ -20,10 +20,121 @@ namespace Cupediarum
             InitializeComponent();
         }
 
+        private void CargarCuentas()
+        {
+            string connStr = ConfigurationManager
+                .ConnectionStrings["ConexionRestaurante"]
+                .ConnectionString;
+
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                conn.Open();
+
+                string query;
+
+                if (Sesion.IdRol == 1) // ADMIN
+                {
+                    query = @"SELECT Id_Cuenta, FechaApertura, EstadoCuenta
+                              FROM CUENTAS
+                              WHERE EstadoCuenta = 'Abierta'
+                              ORDER BY FechaApertura DESC";
+                }
+                else // MESERO
+                {
+                    query = @"SELECT Id_Cuenta, FechaApertura, EstadoCuenta
+                              FROM CUENTAS
+                              WHERE Id_Usuario = @IdUsuario
+                                AND EstadoCuenta = 'Abierta'
+                              ORDER BY FechaApertura DESC";
+                }
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    if (Sesion.IdRol != 1)
+                        cmd.Parameters.AddWithValue("@IdUsuario", Sesion.IdUsuario);
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+
+                    //dgvCuentas.DataSource = dt;
+                }
+            }
+        }
+
         private void Mesero_Load(object sender, EventArgs e)
         {
+            ConfigurarPlaceholder(TxtIDMesero, "Ingrese ID del mesero");
+            ConfigurarPlaceholderPassword(TxtClave, "Ingrese contraseña");
 
+            label2.Text = "Mesero: " + Sesion.NombreUsuario;
+            CargarCuentas();
         }
+
+        private void ConfigurarPlaceholderPassword(TextBox txt, string texto)
+        {
+            Font fuenteNormal = new Font("Times New Roman", 24, FontStyle.Bold);
+            Font fuentePlaceholder = new Font("Times New Roman", 14, FontStyle.Italic);
+
+            txt.Text = texto;
+            txt.ForeColor = Color.Gray;
+            txt.Font = fuentePlaceholder;
+            txt.UseSystemPasswordChar = false;
+
+            txt.Enter += (s, e) =>
+            {
+                if (txt.Text == texto)
+                {
+                    txt.Text = "";
+                    txt.ForeColor = Color.Black;
+                    txt.Font = fuenteNormal;
+                    txt.UseSystemPasswordChar = true;
+                }
+            };
+
+            txt.Leave += (s, e) =>
+            {
+                if (string.IsNullOrWhiteSpace(txt.Text))
+                {
+                    txt.UseSystemPasswordChar = false;
+                    txt.Text = texto;
+                    txt.ForeColor = Color.Gray;
+                    txt.Font = fuentePlaceholder;
+                }
+            };
+        }
+
+        private void ConfigurarPlaceholder(TextBox txt, string texto)
+        {
+            Font fuenteNormal = new Font("Times New Roman", 24, FontStyle.Bold);
+            Font fuentePlaceholder = new Font("Times New Roman", 14, FontStyle.Italic);
+
+            txt.Text = texto;
+            txt.ForeColor = Color.Gray;
+            txt.Font = fuentePlaceholder;
+
+            txt.Enter += (s, e) =>
+            {
+                if (txt.Text == texto)
+                {
+                    txt.Text = "";
+                    txt.ForeColor = Color.Black;
+                    txt.Font = fuenteNormal;
+                }
+            };
+
+            txt.Leave += (s, e) =>
+            {
+                if (string.IsNullOrWhiteSpace(txt.Text))
+                {
+                    txt.Text = texto;
+                    txt.ForeColor = Color.Gray;
+                    txt.Font = fuentePlaceholder;
+                }
+            };
+        }
+
+        
 
         private void Cuentas_Click(object sender, EventArgs e)
         {
@@ -54,17 +165,25 @@ namespace Cupediarum
 
         private void BtnAceptar_Click(object sender, EventArgs e)
         {
-            string idMesero = TxtIDMesero.Text.Trim();
-            string clave = TxtClave.Text.Trim();
-
-            if (string.IsNullOrEmpty(idMesero) || string.IsNullOrEmpty(clave))
+            if (TxtIDMesero.ForeColor == Color.Gray || TxtClave.ForeColor == Color.Gray)
             {
-                MessageBox.Show("Ingrese ID y contraseña",
+                MessageBox.Show("Debe completar los campos",
                                 "Atención",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Warning);
                 return;
             }
+
+            if (!int.TryParse(TxtIDMesero.Text.Trim(), out int idMesero))
+            {
+                MessageBox.Show("El ID debe ser numérico",
+                                "Error",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+            string clave = TxtClave.Text.Trim();
 
             string connStr = ConfigurationManager
                 .ConnectionStrings["ConexionRestaurante"]
@@ -90,19 +209,19 @@ namespace Cupediarum
                     {
                         if (reader.Read())
                         {
-                            // Guardar sesión
                             Sesion.IdUsuario = reader.GetInt32(0);
                             Sesion.NombreUsuario = reader.GetString(1);
                             Sesion.IdRol = reader.GetInt32(2);
 
                             meseroAutenticado = true;
 
+                            label2.Text = "Mesero: " + Sesion.NombreUsuario;
+
                             MessageBox.Show("Mesero autenticado ✔",
                                             "Correcto",
                                             MessageBoxButtons.OK,
                                             MessageBoxIcon.Information);
 
-                            // Activar botones
                             Cuentas.Enabled = true;
                             BtnMonitor.Enabled = true;
 
@@ -123,6 +242,16 @@ namespace Cupediarum
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

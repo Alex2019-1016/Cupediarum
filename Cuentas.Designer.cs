@@ -150,20 +150,20 @@
             this.acercaDeToolStripMenuItem});
             this.MnuPedidos.Location = new System.Drawing.Point(0, 0);
             this.MnuPedidos.Name = "MnuPedidos";
-            this.MnuPedidos.Size = new System.Drawing.Size(957, 33);
+            this.MnuPedidos.Size = new System.Drawing.Size(957, 40);
             this.MnuPedidos.TabIndex = 3;
             this.MnuPedidos.Text = "menuStrip1";
             // 
             // configurarToolStripMenuItem
             // 
             this.configurarToolStripMenuItem.Name = "configurarToolStripMenuItem";
-            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
+            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(147, 36);
             this.configurarToolStripMenuItem.Text = "Configurar";
             // 
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(138, 36);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // PnlDatosMesero
@@ -191,7 +191,7 @@
             this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.BtnSalir.FlatAppearance.BorderSize = 5;
             this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSalir.Font = new System.Drawing.Font("Modern No. 20", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalir.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
             this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnSalir.Location = new System.Drawing.Point(25, 526);
@@ -276,7 +276,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(50, 87);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 32);
+            this.label2.Size = new System.Drawing.Size(98, 43);
             this.label2.TabIndex = 3;
             this.label2.Text = "Area";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -286,15 +286,16 @@
             this.TxtNombMesero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNombMesero.Location = new System.Drawing.Point(15, 49);
             this.TxtNombMesero.Name = "TxtNombMesero";
-            this.TxtNombMesero.Size = new System.Drawing.Size(134, 39);
+            this.TxtNombMesero.Size = new System.Drawing.Size(134, 50);
             this.TxtNombMesero.TabIndex = 2;
+            this.TxtNombMesero.TextChanged += new System.EventHandler(this.TxtNombMesero_TextChanged);
             // 
             // TxtIDMesero
             // 
             this.TxtIDMesero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtIDMesero.Location = new System.Drawing.Point(107, 3);
             this.TxtIDMesero.Name = "TxtIDMesero";
-            this.TxtIDMesero.Size = new System.Drawing.Size(43, 39);
+            this.TxtIDMesero.Size = new System.Drawing.Size(43, 50);
             this.TxtIDMesero.TabIndex = 1;
             // 
             // label1
@@ -304,7 +305,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(11, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 26);
+            this.label1.Size = new System.Drawing.Size(115, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mesero";
             // 

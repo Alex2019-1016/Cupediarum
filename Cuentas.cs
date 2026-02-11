@@ -43,5 +43,10 @@ namespace Cupediarum
             frm.Show();
             this.Hide();
         }
+
+        private void TxtNombMesero_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

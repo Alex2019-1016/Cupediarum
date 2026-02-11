@@ -26,7 +26,6 @@ namespace Cupediarum
 
         private void BtnAceptar_Click(object sender, EventArgs e)
         {
-
             string usuario = TxtUsuario.Text.Trim();
             string clave = TxtClave.Text.Trim();
 
@@ -43,7 +42,7 @@ namespace Cupediarum
                 .ConnectionStrings["ConexionRestaurante"]
                 .ConnectionString;
 
-            string query = @"SELECT COUNT(*)
+            string query = @"SELECT Id_Usuario, Nomb_Usuario, Id_Rol
                      FROM dbo.USUARIOS
                      WHERE Nomb_Usuario = @usuario
                        AND Clave = @clave
@@ -58,25 +57,45 @@ namespace Cupediarum
                 try
                 {
                     conn.Open();
-                    int existe = (int)cmd.ExecuteScalar();
 
-                    if (existe > 0)
+                    using (SqlDataReader reader = cmd.ExecuteReader())
                     {
-                        MessageBox.Show("Bienvenido ✔",
-                                        "Acceso concedido",
-                                        MessageBoxButtons.OK,
-                                        MessageBoxIcon.Information);
+                        if (reader.Read())
+                        {
+                            // Si ya hay sesión activa
+                            if (Sesion.HaySesionActiva())
+                            {
+                                DialogResult r = MessageBox.Show(
+                                    $"Ya hay un usuario logeado: {Sesion.NombreUsuario}\n¿Desea reemplazarlo?",
+                                    "Reemplazar sesión",
+                                    MessageBoxButtons.YesNo,
+                                    MessageBoxIcon.Warning);
 
-                        FrmMenuPrincipal frm = new FrmMenuPrincipal();
-                        frm.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Usuario o contraseña incorrectos",
-                                        "Error",
-                                        MessageBoxButtons.OK,
-                                        MessageBoxIcon.Error);
+                                if (r == DialogResult.No)
+                                    return;
+                            }
+
+                            // Guardar sesión
+                            Sesion.IdUsuario = reader.GetInt32(0);
+                            Sesion.NombreUsuario = reader.GetString(1);
+                            Sesion.IdRol = reader.GetInt32(2);
+
+                            MessageBox.Show("Bienvenido ✔",
+                                            "Acceso concedido",
+                                            MessageBoxButtons.OK,
+                                            MessageBoxIcon.Information);
+
+                            FrmMesero frm = new FrmMesero();
+                            frm.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Usuario o contraseña incorrectos",
+                                            "Error",
+                                            MessageBoxButtons.OK,
+                                            MessageBoxIcon.Error);
+                        }
                     }
                 }
                 catch (Exception ex)

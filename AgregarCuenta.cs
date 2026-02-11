@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cupediarum
 {
-    public partial class AgregarCuenta : Form
+    public partial class FrmAgregarCuenta : Form
     {
-        public AgregarCuenta()
+        public FrmAgregarCuenta()
         {
             InitializeComponent();
         }
@@ -35,6 +35,13 @@ namespace Cupediarum
         private void PnlLetras_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void BtnAceptar_Click(object sender, EventArgs e)
+        {
+            FrmCantidadPersonas frm = new FrmCantidadPersonas();
+            frm.Show();
+            this.Hide();
         }
     }
 }

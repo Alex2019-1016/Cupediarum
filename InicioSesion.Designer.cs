@@ -101,6 +101,7 @@ namespace Cupediarum
             this.BtnAceptar.Text = "Aceptar";
             this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAceptar.UseVisualStyleBackColor = false;
+            this.BtnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
             // 
             // BtnCancelar
             // 
@@ -137,7 +138,7 @@ namespace Cupediarum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 527);
+            this.ClientSize = new System.Drawing.Size(585, 530);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnAceptar);
             this.Controls.Add(this.BtnCancelar);
@@ -159,7 +160,7 @@ namespace Cupediarum
 
         private void TxtUsuario_TextChanged(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+        
         }
 
         #endregion

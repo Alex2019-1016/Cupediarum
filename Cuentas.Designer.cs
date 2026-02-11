@@ -139,6 +139,7 @@
             this.BtnAgregarCuenta.Text = "Agregar Cuenta";
             this.BtnAgregarCuenta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAgregarCuenta.UseVisualStyleBackColor = false;
+            this.BtnAgregarCuenta.Click += new System.EventHandler(this.BtnAgregarCuenta_Click);
             // 
             // MnuPedidos
             // 

@@ -1,6 +1,6 @@
 ﻿namespace Cupediarum
 {
-    partial class AgregarCuenta
+    partial class FrmAgregarCuenta
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarCuenta));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgregarCuenta));
             this.RtbCuenta = new System.Windows.Forms.RichTextBox();
             this.PnlTecladoNum = new System.Windows.Forms.Panel();
             this.BtnMas = new System.Windows.Forms.Button();
@@ -457,6 +457,7 @@
             this.BtnAceptar.Text = "Aceptar";
             this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAceptar.UseVisualStyleBackColor = false;
+            this.BtnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
             // 
             // BtnCancelar
             // 
@@ -1007,7 +1008,7 @@
             this.BtnLetraQ.Text = "Q";
             this.BtnLetraQ.UseVisualStyleBackColor = false;
             // 
-            // AgregarCuenta
+            // FrmAgregarCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1020,7 +1021,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "AgregarCuenta";
+            this.Name = "FrmAgregarCuenta";
             this.Text = "Agregar Cuenta";
             this.Load += new System.EventHandler(this.AbrirCuenta_Load);
             this.PnlTecladoNum.ResumeLayout(false);

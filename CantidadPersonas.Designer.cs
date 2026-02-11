@@ -1,6 +1,6 @@
 ﻿namespace Cupediarum
 {
-    partial class CantidadPersonas
+    partial class FrmCantidadPersonas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CantidadPersonas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCantidadPersonas));
             this.PnlCantidadPersonas = new System.Windows.Forms.Panel();
             this.TxtCantPersonas = new System.Windows.Forms.TextBox();
             this.BtnCancelar = new System.Windows.Forms.Button();
@@ -118,6 +118,7 @@
             this.BtnAceptar.Text = "Aceptar";
             this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAceptar.UseVisualStyleBackColor = false;
+            this.BtnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
             // 
             // BtnBorrar
             // 
@@ -313,7 +314,7 @@
             this.BtnNum7.Text = "7";
             this.BtnNum7.UseVisualStyleBackColor = false;
             // 
-            // CantidadPersonas
+            // FrmCantidadPersonas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -323,7 +324,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "CantidadPersonas";
+            this.Name = "FrmCantidadPersonas";
             this.Text = "Cantidad de Personas";
             this.PnlCantidadPersonas.ResumeLayout(false);
             this.PnlCantidadPersonas.PerformLayout();

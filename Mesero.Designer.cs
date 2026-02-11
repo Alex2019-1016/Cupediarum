@@ -1152,6 +1152,7 @@
             this.Cuentas.Text = "Cuentas";
             this.Cuentas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Cuentas.UseVisualStyleBackColor = false;
+            this.Cuentas.Click += new System.EventHandler(this.Cuentas_Click);
             // 
             // FrmMesero
             // 

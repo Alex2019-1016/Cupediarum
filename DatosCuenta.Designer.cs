@@ -1,6 +1,6 @@
 ﻿namespace Cupediarum
 {
-    partial class DatosCuenta
+    partial class FrmDatosCuenta
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DatosCuenta));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDatosCuenta));
             this.PnlDatosC = new System.Windows.Forms.Panel();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnAbrirMesa = new System.Windows.Forms.Button();
             this.BtnPersonas = new System.Windows.Forms.Button();
             this.BtnCuenta = new System.Windows.Forms.Button();
             this.PnlDatosCuenta = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
             this.TxtIDMesa = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.TxtNombMesero = new System.Windows.Forms.TextBox();
@@ -44,8 +46,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.PnlDatosC.SuspendLayout();
             this.PnlDatosCuenta.SuspendLayout();
             this.SuspendLayout();
@@ -101,6 +101,7 @@
             this.BtnAbrirMesa.Text = "Abrir Mesa";
             this.BtnAbrirMesa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAbrirMesa.UseVisualStyleBackColor = false;
+            this.BtnAbrirMesa.Click += new System.EventHandler(this.BtnAbrirMesa_Click);
             // 
             // BtnPersonas
             // 
@@ -155,6 +156,26 @@
             this.PnlDatosCuenta.Name = "PnlDatosCuenta";
             this.PnlDatosCuenta.Size = new System.Drawing.Size(635, 186);
             this.PnlDatosCuenta.TabIndex = 1;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Mongolian Baiti", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(188, 134);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(141, 33);
+            this.dateTimePicker1.TabIndex = 23;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(7, 146);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(94, 22);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "FECHA :";
             // 
             // TxtIDMesa
             // 
@@ -250,33 +271,13 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Personas";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(7, 146);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 22);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "FECHA :";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Mongolian Baiti", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(188, 134);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(141, 33);
-            this.dateTimePicker1.TabIndex = 23;
-            // 
-            // DatosCuenta
+            // FrmDatosCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(645, 347);
+            this.ClientSize = new System.Drawing.Size(645, 346);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PnlDatosCuenta);
@@ -284,7 +285,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "DatosCuenta";
+            this.Name = "FrmDatosCuenta";
             this.Text = "Datos de Cuenta";
             this.Load += new System.EventHandler(this.DatosCuenta_Load);
             this.PnlDatosC.ResumeLayout(false);

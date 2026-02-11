@@ -21,5 +21,12 @@ namespace Cupediarum
         {
 
         }
+
+        private void Cuentas_Click(object sender, EventArgs e)
+        {
+            FrmCuentas frm = new FrmCuentas();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

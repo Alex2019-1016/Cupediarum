@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cupediarum
 {
-    public partial class CantidadPersonas : Form
+    public partial class FrmCantidadPersonas : Form
     {
-        public CantidadPersonas()
+        public FrmCantidadPersonas()
         {
             InitializeComponent();
         }
@@ -20,6 +20,13 @@ namespace Cupediarum
         private void TxtPersonas_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnAceptar_Click(object sender, EventArgs e)
+        {
+            FrmDatosCuenta frm = new FrmDatosCuenta();
+            frm.Show();
+            this.Hide();
         }
     }
 }

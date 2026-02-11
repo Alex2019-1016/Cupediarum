@@ -36,5 +36,12 @@ namespace Cupediarum
         {
 
         }
+
+        private void BtnAgregarCuenta_Click(object sender, EventArgs e)
+        {
+            FrmAgregarCuenta frm = new FrmAgregarCuenta();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

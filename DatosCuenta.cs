@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cupediarum
 {
-    public partial class DatosCuenta : Form
+    public partial class FrmDatosCuenta : Form
     {
-        public DatosCuenta()
+        public FrmDatosCuenta()
         {
             InitializeComponent();
         }
@@ -35,6 +35,13 @@ namespace Cupediarum
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnAbrirMesa_Click(object sender, EventArgs e)
+        {
+            FrmCapturaProductos frm = new FrmCapturaProductos();
+            frm.Show();
+            this.Hide();
         }
     }
 }

@@ -19,6 +19,8 @@ namespace Cupediarum
             InitializeComponent();
         }
 
+        private int cuentaSeleccionada = 0;
+
         private void Pedidos_Load(object sender, EventArgs e)
         {
             TxtNombMesero.Text = Sesion.NombreUsuario;
@@ -93,11 +95,195 @@ namespace Cupediarum
         private void BtnCuenta_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            int idCuenta = (int)btn.Tag;
+            cuentaSeleccionada = (int)btn.Tag;
 
-            MessageBox.Show("Abrir cuenta: " + idCuenta);
-
+            CargarAreas();
             // Aquí luego abrirás FrmPedidos
+        }
+
+        private void CargarAreas()
+        {
+            if (cuentaSeleccionada == 0)
+                return;
+
+            string connStr = ConfigurationManager
+                .ConnectionStrings["ConexionRestaurante"]
+                .ConnectionString;
+
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                conn.Open();
+
+                int? areaActualId = null;
+                string nombreAreaActual = "";
+
+                // 🔹 Obtener área actual
+                string queryAreaActual = @"
+            SELECT A.Id_Area, A.Nomb_Area
+            FROM CUENTAS C
+            LEFT JOIN MESAS M ON C.Id_Mesa = M.Id_Mesa
+            LEFT JOIN AREAS A ON M.Id_Area = A.Id_Area
+            WHERE C.Id_Cuenta = @IdCuenta";
+
+                using (SqlCommand cmd = new SqlCommand(queryAreaActual, conn))
+                {
+                    cmd.Parameters.AddWithValue("@IdCuenta", cuentaSeleccionada);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read() && !reader.IsDBNull(0))
+                        {
+                            areaActualId = reader.GetInt32(0);
+                            nombreAreaActual = reader.GetString(1);
+                        }
+                    }
+                }
+
+                RtbNombArea.Text = areaActualId == null ? "TO GO" : nombreAreaActual;
+
+                // 🔹 Cargar áreas
+                string queryAreas = "SELECT Id_Area, Nomb_Area FROM AREAS WHERE Estado = 1";
+
+                using (SqlCommand cmd = new SqlCommand(queryAreas, conn))
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    Button[] botones = { BtnArea1, BtnArea2, BtnArea3, BtnArea4 };
+                    int i = 0;
+
+                    while (reader.Read() && i < botones.Length)
+                    {
+                        int idArea = reader.GetInt32(0);
+                        string nombre = reader.GetString(1);
+
+                        botones[i].Text = nombre;
+                        botones[i].Tag = idArea;
+                        botones[i].BackColor = Color.DarkGray;
+
+                        if (areaActualId != null && idArea == areaActualId)
+                            botones[i].BackColor = Color.LightGreen;
+
+                        botones[i].Click -= BtnArea_Click;
+                        botones[i].Click += BtnArea_Click;
+
+                        i++;
+                    }
+                }
+            }
+        }
+
+        private void BtnArea_Click(object sender, EventArgs e)
+        {
+            if (cuentaSeleccionada == 0)
+            {
+                MessageBox.Show("Seleccione una cuenta primero");
+                return;
+            }
+
+            Button btn = sender as Button;
+            int idArea = (int)btn.Tag;
+
+            string connStr = ConfigurationManager
+                .ConnectionStrings["ConexionRestaurante"]
+                .ConnectionString;
+
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                conn.Open();
+                SqlTransaction transaction = conn.BeginTransaction();
+
+                try
+                {
+                    int? mesaAnterior = null;
+
+                    // 🔹 Obtener mesa actual
+                    string queryMesaAnterior = @"
+                SELECT Id_Mesa
+                FROM CUENTAS
+                WHERE Id_Cuenta = @IdCuenta";
+
+                    using (SqlCommand cmdPrev = new SqlCommand(queryMesaAnterior, conn, transaction))
+                    {
+                        cmdPrev.Parameters.AddWithValue("@IdCuenta", cuentaSeleccionada);
+                        object result = cmdPrev.ExecuteScalar();
+
+                        if (result != null && result != DBNull.Value)
+                            mesaAnterior = Convert.ToInt32(result);
+                    }
+
+                    // 🔹 Buscar mesa disponible
+                    string queryMesaNueva = @"
+                SELECT TOP 1 Id_Mesa
+                FROM MESAS
+                WHERE Id_Area = @IdArea
+                  AND Estado = 'Disponible'";
+
+                    int idMesaNueva;
+
+                    using (SqlCommand cmdNueva = new SqlCommand(queryMesaNueva, conn, transaction))
+                    {
+                        cmdNueva.Parameters.AddWithValue("@IdArea", idArea);
+                        object result = cmdNueva.ExecuteScalar();
+
+                        if (result == null)
+                        {
+                            MessageBox.Show("No hay mesas disponibles en esta área");
+                            transaction.Rollback();
+                            return;
+                        }
+
+                        idMesaNueva = Convert.ToInt32(result);
+                    }
+
+                    // 🔹 Liberar mesa anterior
+                    if (mesaAnterior != null)
+                    {
+                        string liberar = @"
+                    UPDATE MESAS
+                    SET Estado = 'Disponible'
+                    WHERE Id_Mesa = @IdMesa";
+
+                        using (SqlCommand cmd = new SqlCommand(liberar, conn, transaction))
+                        {
+                            cmd.Parameters.AddWithValue("@IdMesa", mesaAnterior);
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
+
+                    // 🔹 Asignar nueva mesa a la cuenta
+                    string updateCuenta = @"
+                UPDATE CUENTAS
+                SET Id_Mesa = @IdMesa
+                WHERE Id_Cuenta = @IdCuenta";
+
+                    using (SqlCommand cmd = new SqlCommand(updateCuenta, conn, transaction))
+                    {
+                        cmd.Parameters.AddWithValue("@IdMesa", idMesaNueva);
+                        cmd.Parameters.AddWithValue("@IdCuenta", cuentaSeleccionada);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    // 🔹 Marcar mesa como Ocupada
+                    string ocuparMesa = @"
+                UPDATE MESAS
+                SET Estado = 'Ocupada'
+                WHERE Id_Mesa = @IdMesa";
+
+                    using (SqlCommand cmd = new SqlCommand(ocuparMesa, conn, transaction))
+                    {
+                        cmd.Parameters.AddWithValue("@IdMesa", idMesaNueva);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    transaction.Commit();
+
+                    CargarAreas();
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -196,6 +382,31 @@ namespace Cupediarum
         }
 
         private void flowLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void RtbNombArea_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnArea1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnArea2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnArea3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnArea4_Click(object sender, EventArgs e)
         {
 
         }

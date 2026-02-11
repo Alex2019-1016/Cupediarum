@@ -224,6 +224,7 @@
             this.BtnArea1.Size = new System.Drawing.Size(118, 72);
             this.BtnArea1.TabIndex = 14;
             this.BtnArea1.UseVisualStyleBackColor = false;
+            this.BtnArea1.Click += new System.EventHandler(this.BtnArea1_Click);
             // 
             // BtnArea2
             // 
@@ -236,6 +237,7 @@
             this.BtnArea2.Size = new System.Drawing.Size(118, 72);
             this.BtnArea2.TabIndex = 15;
             this.BtnArea2.UseVisualStyleBackColor = false;
+            this.BtnArea2.Click += new System.EventHandler(this.BtnArea2_Click);
             // 
             // BtnArea3
             // 
@@ -248,6 +250,7 @@
             this.BtnArea3.Size = new System.Drawing.Size(118, 72);
             this.BtnArea3.TabIndex = 16;
             this.BtnArea3.UseVisualStyleBackColor = false;
+            this.BtnArea3.Click += new System.EventHandler(this.BtnArea3_Click);
             // 
             // BtnArea4
             // 
@@ -260,6 +263,7 @@
             this.BtnArea4.Size = new System.Drawing.Size(118, 72);
             this.BtnArea4.TabIndex = 17;
             this.BtnArea4.UseVisualStyleBackColor = false;
+            this.BtnArea4.Click += new System.EventHandler(this.BtnArea4_Click);
             // 
             // RtbNombArea
             // 
@@ -268,6 +272,7 @@
             this.RtbNombArea.Size = new System.Drawing.Size(134, 81);
             this.RtbNombArea.TabIndex = 4;
             this.RtbNombArea.Text = "";
+            this.RtbNombArea.TextChanged += new System.EventHandler(this.RtbNombArea_TextChanged);
             // 
             // label2
             // 

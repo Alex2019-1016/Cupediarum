@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDatosCuenta));
             this.PnlDatosC = new System.Windows.Forms.Panel();
+            this.BtnCancelar = new System.Windows.Forms.Button();
+            this.BtnAbrirMesa = new System.Windows.Forms.Button();
+            this.BtnPersonas = new System.Windows.Forms.Button();
+            this.BtnCuenta = new System.Windows.Forms.Button();
             this.PnlDatosCuenta = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
@@ -38,14 +42,10 @@
             this.TxtNombMesero = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.TxtIDArea = new System.Windows.Forms.TextBox();
-            this.LblNombArea = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.BtnCancelar = new System.Windows.Forms.Button();
-            this.BtnAbrirMesa = new System.Windows.Forms.Button();
-            this.BtnPersonas = new System.Windows.Forms.Button();
-            this.BtnCuenta = new System.Windows.Forms.Button();
+            this.CboxAreaSelector = new System.Windows.Forms.ComboBox();
             this.PnlDatosC.SuspendLayout();
             this.PnlDatosCuenta.SuspendLayout();
             this.SuspendLayout();
@@ -63,138 +63,6 @@
             this.PnlDatosC.Size = new System.Drawing.Size(639, 84);
             this.PnlDatosC.TabIndex = 0;
             this.PnlDatosC.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // PnlDatosCuenta
-            // 
-            this.PnlDatosCuenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PnlDatosCuenta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PnlDatosCuenta.Controls.Add(this.dateTimePicker1);
-            this.PnlDatosCuenta.Controls.Add(this.label6);
-            this.PnlDatosCuenta.Controls.Add(this.TxtIDMesa);
-            this.PnlDatosCuenta.Controls.Add(this.label5);
-            this.PnlDatosCuenta.Controls.Add(this.TxtNombMesero);
-            this.PnlDatosCuenta.Controls.Add(this.label3);
-            this.PnlDatosCuenta.Controls.Add(this.TxtIDArea);
-            this.PnlDatosCuenta.Controls.Add(this.LblNombArea);
-            this.PnlDatosCuenta.Controls.Add(this.label4);
-            this.PnlDatosCuenta.Location = new System.Drawing.Point(5, 124);
-            this.PnlDatosCuenta.Name = "PnlDatosCuenta";
-            this.PnlDatosCuenta.Size = new System.Drawing.Size(635, 186);
-            this.PnlDatosCuenta.TabIndex = 1;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Mongolian Baiti", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(188, 134);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(141, 33);
-            this.dateTimePicker1.TabIndex = 23;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(7, 146);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 23);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "FECHA :";
-            // 
-            // TxtIDMesa
-            // 
-            this.TxtIDMesa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtIDMesa.Location = new System.Drawing.Point(187, 93);
-            this.TxtIDMesa.Name = "TxtIDMesa";
-            this.TxtIDMesa.Size = new System.Drawing.Size(44, 35);
-            this.TxtIDMesa.TabIndex = 21;
-            this.TxtIDMesa.UseSystemPasswordChar = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(7, 102);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 23);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "MESA :";
-            this.label5.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // TxtNombMesero
-            // 
-            this.TxtNombMesero.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombMesero.Location = new System.Drawing.Point(187, 8);
-            this.TxtNombMesero.Name = "TxtNombMesero";
-            this.TxtNombMesero.Size = new System.Drawing.Size(177, 35);
-            this.TxtNombMesero.TabIndex = 19;
-            this.TxtNombMesero.UseSystemPasswordChar = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(7, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 23);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "MESERO :";
-            // 
-            // TxtIDArea
-            // 
-            this.TxtIDArea.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtIDArea.Location = new System.Drawing.Point(187, 51);
-            this.TxtIDArea.Name = "TxtIDArea";
-            this.TxtIDArea.Size = new System.Drawing.Size(44, 35);
-            this.TxtIDArea.TabIndex = 17;
-            this.TxtIDArea.UseSystemPasswordChar = true;
-            // 
-            // LblNombArea
-            // 
-            this.LblNombArea.BackColor = System.Drawing.Color.Gray;
-            this.LblNombArea.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNombArea.Location = new System.Drawing.Point(237, 52);
-            this.LblNombArea.Name = "LblNombArea";
-            this.LblNombArea.Size = new System.Drawing.Size(206, 33);
-            this.LblNombArea.TabIndex = 15;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(7, 60);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 23);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "AREA :";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(16, 95);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 26);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Cuenta";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(134, 95);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 26);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Personas";
             // 
             // BtnCancelar
             // 
@@ -214,6 +82,7 @@
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnCancelar.UseVisualStyleBackColor = false;
+           // this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnAbrirMesa
             // 
@@ -243,7 +112,7 @@
             this.BtnPersonas.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnPersonas.FlatAppearance.BorderSize = 3;
             this.BtnPersonas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPersonas.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPersonas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPersonas.Image = global::Cupediarum.Properties.Resources.Icono_Personas48;
             this.BtnPersonas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnPersonas.Location = new System.Drawing.Point(124, 4);
@@ -261,7 +130,7 @@
             this.BtnCuenta.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnCuenta.FlatAppearance.BorderSize = 3;
             this.BtnCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCuenta.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCuenta.Image = global::Cupediarum.Properties.Resources.Icono_Table48;
             this.BtnCuenta.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnCuenta.Location = new System.Drawing.Point(3, 4);
@@ -270,6 +139,144 @@
             this.BtnCuenta.TabIndex = 10;
             this.BtnCuenta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnCuenta.UseVisualStyleBackColor = false;
+            // 
+            // PnlDatosCuenta
+            // 
+            this.PnlDatosCuenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PnlDatosCuenta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.PnlDatosCuenta.Controls.Add(this.CboxAreaSelector);
+            this.PnlDatosCuenta.Controls.Add(this.dateTimePicker1);
+            this.PnlDatosCuenta.Controls.Add(this.label6);
+            this.PnlDatosCuenta.Controls.Add(this.TxtIDMesa);
+            this.PnlDatosCuenta.Controls.Add(this.label5);
+            this.PnlDatosCuenta.Controls.Add(this.TxtNombMesero);
+            this.PnlDatosCuenta.Controls.Add(this.label3);
+            this.PnlDatosCuenta.Controls.Add(this.TxtIDArea);
+            this.PnlDatosCuenta.Controls.Add(this.label4);
+            this.PnlDatosCuenta.Location = new System.Drawing.Point(5, 124);
+            this.PnlDatosCuenta.Name = "PnlDatosCuenta";
+            this.PnlDatosCuenta.Size = new System.Drawing.Size(635, 186);
+            this.PnlDatosCuenta.TabIndex = 1;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Mongolian Baiti", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(188, 134);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(141, 24);
+            this.dateTimePicker1.TabIndex = 23;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(7, 146);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 17);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "FECHA :";
+            // 
+            // TxtIDMesa
+            // 
+            this.TxtIDMesa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtIDMesa.Location = new System.Drawing.Point(187, 93);
+            this.TxtIDMesa.Name = "TxtIDMesa";
+            this.TxtIDMesa.Size = new System.Drawing.Size(44, 26);
+            this.TxtIDMesa.TabIndex = 21;
+            this.TxtIDMesa.UseSystemPasswordChar = true;
+            this.TxtIDMesa.TextChanged += new System.EventHandler(this.TxtIDMesa_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(7, 102);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 17);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "MESA :";
+            this.label5.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // TxtNombMesero
+            // 
+            this.TxtNombMesero.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNombMesero.Location = new System.Drawing.Point(187, 8);
+            this.TxtNombMesero.Name = "TxtNombMesero";
+            this.TxtNombMesero.Size = new System.Drawing.Size(177, 26);
+            this.TxtNombMesero.TabIndex = 19;
+            this.TxtNombMesero.UseSystemPasswordChar = true;
+            this.TxtNombMesero.TextChanged += new System.EventHandler(this.TxtNombMesero_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(7, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 17);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "MESERO :";
+            // 
+            // TxtIDArea
+            // 
+            this.TxtIDArea.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtIDArea.Location = new System.Drawing.Point(187, 51);
+            this.TxtIDArea.Name = "TxtIDArea";
+            this.TxtIDArea.Size = new System.Drawing.Size(44, 26);
+            this.TxtIDArea.TabIndex = 17;
+            this.TxtIDArea.UseSystemPasswordChar = true;
+            this.TxtIDArea.TextChanged += new System.EventHandler(this.TxtIDArea_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(7, 60);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 17);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "AREA :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(16, 95);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 19);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Cuenta";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(134, 95);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 19);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Personas";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // CboxAreaSelector
+            // 
+            this.CboxAreaSelector.FormattingEnabled = true;
+            this.CboxAreaSelector.Location = new System.Drawing.Point(256, 55);
+            this.CboxAreaSelector.Name = "CboxAreaSelector";
+            this.CboxAreaSelector.Size = new System.Drawing.Size(136, 21);
+            this.CboxAreaSelector.TabIndex = 24;
+            this.CboxAreaSelector.SelectedIndexChanged += new System.EventHandler(this.CboxAreaSelector_SelectedIndexChanged);
             // 
             // FrmDatosCuenta
             // 
@@ -306,7 +313,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnCancelar;
-        private System.Windows.Forms.Label LblNombArea;
         private System.Windows.Forms.TextBox TxtNombMesero;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TxtIDArea;
@@ -314,5 +320,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox CboxAreaSelector;
     }
 }

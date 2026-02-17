@@ -62,13 +62,13 @@ namespace Cupediarum
                             if (reader["Id_Area"] != DBNull.Value)
                             {
                                 TxtIDArea.Text = reader["Id_Area"].ToString();
-                                TxtNombArea.Text = reader["Nomb_Area"].ToString();
-                                TxtIDMesa.Text = reader["Id_Mesa"].ToString();
+                                LblNombArea.Text = reader["Nomb_Area"].ToString();
+                                TxtIDMesa.Text = reader["Id_Cuenta"].ToString();
                             }
                             else
                             {
                                 TxtIDArea.Text = "0";
-                                TxtNombArea.Text = "Sin asignar";
+                                LblNombArea.Text = "Sin asignar";
                             }
 
                             if (reader["FechaApertura"] != DBNull.Value)
@@ -79,7 +79,6 @@ namespace Cupediarum
 
                             TxtNombMesero.ReadOnly = true;
                             TxtIDArea.ReadOnly = true;
-                            TxtNombArea.ReadOnly = true;
                         }
                     }
                 }

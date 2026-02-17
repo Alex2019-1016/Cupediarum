@@ -44,11 +44,7 @@
             this.BtnBorrarTodo = new System.Windows.Forms.Button();
             this.BtnBorrarProducto = new System.Windows.Forms.Button();
             this.DgvComanda = new System.Windows.Forms.DataGridView();
-            this.COMANDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CANTIDAD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DESCRIPCION = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRECIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DESCUENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LblTotal = new System.Windows.Forms.Label();
             this.FlpCategorias = new System.Windows.Forms.FlowLayoutPanel();
             this.BtnComida = new System.Windows.Forms.Button();
             this.BtnPostres = new System.Windows.Forms.Button();
@@ -99,6 +95,12 @@
             this.button16 = new System.Windows.Forms.Button();
             this.BtnSiguienteTipos = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.IDPRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.COMANDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CANT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DESCRIPCION = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PRECIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DESCUENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.FlpComanda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvComanda)).BeginInit();
@@ -145,6 +147,7 @@
             this.FlpComanda.Controls.Add(this.BtnBorrarTodo);
             this.FlpComanda.Controls.Add(this.BtnBorrarProducto);
             this.FlpComanda.Controls.Add(this.DgvComanda);
+            this.FlpComanda.Controls.Add(this.LblTotal);
             this.FlpComanda.Location = new System.Drawing.Point(0, 40);
             this.FlpComanda.Name = "FlpComanda";
             this.FlpComanda.Size = new System.Drawing.Size(406, 587);
@@ -244,6 +247,7 @@
             this.BtnDescuento.Text = "0 % Descuento";
             this.BtnDescuento.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnDescuento.UseVisualStyleBackColor = false;
+            this.BtnDescuento.Click += new System.EventHandler(this.BtnDescuento_Click);
             // 
             // BtnMenos
             // 
@@ -261,6 +265,7 @@
             this.BtnMenos.TabIndex = 15;
             this.BtnMenos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnMenos.UseVisualStyleBackColor = false;
+            this.BtnMenos.Click += new System.EventHandler(this.BtnMenos_Click);
             // 
             // BtnMas
             // 
@@ -278,6 +283,7 @@
             this.BtnMas.TabIndex = 16;
             this.BtnMas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnMas.UseVisualStyleBackColor = false;
+            this.BtnMas.Click += new System.EventHandler(this.BtnMas_Click);
             // 
             // TxtCantProducto
             // 
@@ -307,6 +313,7 @@
             this.BtnBorrarTodo.Text = "Borrar Todo";
             this.BtnBorrarTodo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnBorrarTodo.UseVisualStyleBackColor = false;
+            this.BtnBorrarTodo.Click += new System.EventHandler(this.BtnBorrarTodo_Click);
             // 
             // BtnBorrarProducto
             // 
@@ -326,6 +333,7 @@
             this.BtnBorrarProducto.Text = "Borrar Producto";
             this.BtnBorrarProducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnBorrarProducto.UseVisualStyleBackColor = false;
+            this.BtnBorrarProducto.Click += new System.EventHandler(this.BtnBorrarProducto_Click);
             // 
             // DgvComanda
             // 
@@ -334,8 +342,9 @@
             this.DgvComanda.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.DgvComanda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvComanda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDPRODUCTO,
             this.COMANDA,
-            this.CANTIDAD,
+            this.CANT,
             this.DESCRIPCION,
             this.PRECIO,
             this.DESCUENTO});
@@ -348,48 +357,19 @@
             this.DgvComanda.RowHeadersWidth = 62;
             this.DgvComanda.RowTemplate.Height = 28;
             this.DgvComanda.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvComanda.Size = new System.Drawing.Size(392, 380);
+            this.DgvComanda.Size = new System.Drawing.Size(392, 350);
             this.DgvComanda.TabIndex = 20;
+            this.DgvComanda.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvComanda_CellContentClick);
             // 
-            // COMANDA
+            // LblTotal
             // 
-            this.COMANDA.HeaderText = "COMANDA";
-            this.COMANDA.MinimumWidth = 8;
-            this.COMANDA.Name = "COMANDA";
-            this.COMANDA.ReadOnly = true;
-            this.COMANDA.Width = 150;
-            // 
-            // CANTIDAD
-            // 
-            this.CANTIDAD.HeaderText = "CANT.";
-            this.CANTIDAD.MinimumWidth = 8;
-            this.CANTIDAD.Name = "CANTIDAD";
-            this.CANTIDAD.ReadOnly = true;
-            this.CANTIDAD.Width = 60;
-            // 
-            // DESCRIPCION
-            // 
-            this.DESCRIPCION.HeaderText = "DESCRIPCION";
-            this.DESCRIPCION.MinimumWidth = 8;
-            this.DESCRIPCION.Name = "DESCRIPCION";
-            this.DESCRIPCION.ReadOnly = true;
-            this.DESCRIPCION.Width = 150;
-            // 
-            // PRECIO
-            // 
-            this.PRECIO.HeaderText = "PRECIO";
-            this.PRECIO.MinimumWidth = 8;
-            this.PRECIO.Name = "PRECIO";
-            this.PRECIO.ReadOnly = true;
-            this.PRECIO.Width = 80;
-            // 
-            // DESCUENTO
-            // 
-            this.DESCUENTO.HeaderText = "DESCUENTO";
-            this.DESCUENTO.MinimumWidth = 8;
-            this.DESCUENTO.Name = "DESCUENTO";
-            this.DESCUENTO.ReadOnly = true;
-            this.DESCUENTO.Width = 80;
+            this.LblTotal.AutoSize = true;
+            this.LblTotal.Location = new System.Drawing.Point(3, 554);
+            this.LblTotal.Name = "LblTotal";
+            this.LblTotal.Size = new System.Drawing.Size(35, 13);
+            this.LblTotal.TabIndex = 22;
+            this.LblTotal.Text = "label2";
+            this.LblTotal.Click += new System.EventHandler(this.label2_Click);
             // 
             // FlpCategorias
             // 
@@ -421,7 +401,6 @@
             this.BtnComida.Text = "Comida";
             this.BtnComida.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnComida.UseVisualStyleBackColor = false;
-            this.BtnComida.Click += new System.EventHandler(this.BtnComida_Click);
             // 
             // BtnPostres
             // 
@@ -460,7 +439,6 @@
             this.BtnBebidas.Text = "Bebidas";
             this.BtnBebidas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnBebidas.UseVisualStyleBackColor = false;
-            this.BtnBebidas.Click += new System.EventHandler(this.BtnBebidas_Click);
             // 
             // BtnOtros
             // 
@@ -1233,7 +1211,54 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 19);
             this.label1.TabIndex = 11;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // IDPRODUCTO
+            // 
+            this.IDPRODUCTO.HeaderText = "IDPRODUCTO";
+            this.IDPRODUCTO.Name = "IDPRODUCTO";
+            this.IDPRODUCTO.ReadOnly = true;
+            this.IDPRODUCTO.Visible = false;
+            // 
+            // COMANDA
+            // 
+            this.COMANDA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.COMANDA.HeaderText = "COMANDA";
+            this.COMANDA.MinimumWidth = 8;
+            this.COMANDA.Name = "COMANDA";
+            this.COMANDA.ReadOnly = true;
+            this.COMANDA.Width = 86;
+            // 
+            // CANT
+            // 
+            this.CANT.HeaderText = "CANT";
+            this.CANT.Name = "CANT";
+            this.CANT.ReadOnly = true;
+            // 
+            // DESCRIPCION
+            // 
+            this.DESCRIPCION.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.DESCRIPCION.HeaderText = "DESCRIPCION";
+            this.DESCRIPCION.MinimumWidth = 8;
+            this.DESCRIPCION.Name = "DESCRIPCION";
+            this.DESCRIPCION.ReadOnly = true;
+            this.DESCRIPCION.Width = 105;
+            // 
+            // PRECIO
+            // 
+            this.PRECIO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.PRECIO.HeaderText = "PRECIO";
+            this.PRECIO.MinimumWidth = 8;
+            this.PRECIO.Name = "PRECIO";
+            this.PRECIO.ReadOnly = true;
+            this.PRECIO.Width = 72;
+            // 
+            // DESCUENTO
+            // 
+            this.DESCUENTO.HeaderText = "DESCUENTO";
+            this.DESCUENTO.MinimumWidth = 8;
+            this.DESCUENTO.Name = "DESCUENTO";
+            this.DESCUENTO.ReadOnly = true;
+            this.DESCUENTO.Width = 80;
             // 
             // FrmCapturaProductos
             // 
@@ -1253,6 +1278,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmCapturaProductos";
             this.Text = "Captura de Productos";
+            this.Load += new System.EventHandler(this.FrmCapturaProductos_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.FlpComanda.ResumeLayout(false);
@@ -1307,11 +1333,6 @@
         private System.Windows.Forms.Button button40;
         private System.Windows.Forms.Button button41;
         private System.Windows.Forms.DataGridView DgvComanda;
-        private System.Windows.Forms.DataGridViewTextBoxColumn COMANDA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CANTIDAD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DESCRIPCION;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PRECIO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DESCUENTO;
         private System.Windows.Forms.Button BtnDescuento;
         private System.Windows.Forms.Button BtnBebidas;
         private System.Windows.Forms.Button BtnComida;
@@ -1338,5 +1359,12 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button BtnSiguienteTipos;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LblTotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDPRODUCTO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn COMANDA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CANT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DESCRIPCION;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PRECIO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DESCUENTO;
     }
 }

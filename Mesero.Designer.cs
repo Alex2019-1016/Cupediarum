@@ -518,6 +518,7 @@
             this.BtnAceptar.Text = "Aceptar";
             this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAceptar.UseVisualStyleBackColor = false;
+            this.BtnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click_1);
             // 
             // BtnCancelar
             // 
@@ -1083,7 +1084,6 @@
             this.MaximizeBox = false;
             this.Name = "FrmMesero";
             this.Text = "Mesero";
-            this.Load += new System.EventHandler(this.FrmMesero_Load);
             this.MnuMesero.ResumeLayout(false);
             this.MnuMesero.PerformLayout();
             this.PnlTecladoNum.ResumeLayout(false);

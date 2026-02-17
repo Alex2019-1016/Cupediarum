@@ -81,7 +81,7 @@ namespace Cupediarum
                                             MessageBoxButtons.OK,
                                             MessageBoxIcon.Information);
 
-                            FrmMesero frm = new FrmMesero();
+                            FrmMenuPrincipal frm = new FrmMenuPrincipal();
                             frm.Show();
                             this.Hide();
                         }

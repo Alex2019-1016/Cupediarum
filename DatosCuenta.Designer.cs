@@ -110,7 +110,7 @@
             this.BtnPersonas.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnPersonas.FlatAppearance.BorderSize = 3;
             this.BtnPersonas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPersonas.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPersonas.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPersonas.Image = global::Cupediarum.Properties.Resources.Icono_Personas48;
             this.BtnPersonas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnPersonas.Location = new System.Drawing.Point(124, 4);
@@ -128,7 +128,7 @@
             this.BtnCuenta.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnCuenta.FlatAppearance.BorderSize = 3;
             this.BtnCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCuenta.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCuenta.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCuenta.Image = global::Cupediarum.Properties.Resources.Icono_Table48;
             this.BtnCuenta.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnCuenta.Location = new System.Drawing.Point(3, 4);
@@ -183,7 +183,6 @@
             this.TxtIDMesa.Name = "TxtIDMesa";
             this.TxtIDMesa.Size = new System.Drawing.Size(44, 35);
             this.TxtIDMesa.TabIndex = 21;
-            this.TxtIDMesa.UseSystemPasswordChar = true;
             // 
             // label5
             // 
@@ -203,7 +202,6 @@
             this.TxtNombMesero.Name = "TxtNombMesero";
             this.TxtNombMesero.Size = new System.Drawing.Size(177, 35);
             this.TxtNombMesero.TabIndex = 19;
-            this.TxtNombMesero.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -223,12 +221,11 @@
             this.TxtIDArea.Name = "TxtIDArea";
             this.TxtIDArea.Size = new System.Drawing.Size(44, 35);
             this.TxtIDArea.TabIndex = 17;
-            this.TxtIDArea.UseSystemPasswordChar = true;
             // 
             // LblNombArea
             // 
             this.LblNombArea.BackColor = System.Drawing.Color.Gray;
-            this.LblNombArea.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNombArea.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblNombArea.Location = new System.Drawing.Point(237, 52);
             this.LblNombArea.Name = "LblNombArea";
             this.LblNombArea.Size = new System.Drawing.Size(206, 33);
@@ -251,7 +248,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(16, 95);
+            this.label1.Location = new System.Drawing.Point(16, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 26);
             this.label1.TabIndex = 2;
@@ -263,7 +260,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(134, 95);
+            this.label2.Location = new System.Drawing.Point(137, 88);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 26);
             this.label2.TabIndex = 3;

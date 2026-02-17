@@ -9,8 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Collections.Specialized.BitVector32;
-
+using System.Collections.Specialized;
 namespace Cupediarum
 {
     public partial class FrmMesero : Form
@@ -33,14 +32,14 @@ namespace Cupediarum
 
                 string query;
 
-                if (Sesion.IdRol == 1) 
+                if (Sesion.IdRol == 1) // ADMIN
                 {
                     query = @"SELECT Id_Cuenta, FechaApertura, EstadoCuenta
                               FROM CUENTAS
                               WHERE EstadoCuenta = 'Abierta'
                               ORDER BY FechaApertura DESC";
                 }
-                else 
+                else // MESERO
                 {
                     query = @"SELECT Id_Cuenta, FechaApertura, EstadoCuenta
                               FROM CUENTAS
@@ -58,6 +57,7 @@ namespace Cupediarum
                     DataTable dt = new DataTable();
                     da.Fill(dt);
 
+                    //dgvCuentas.DataSource = dt;
                 }
             }
         }
@@ -125,7 +125,7 @@ namespace Cupediarum
             };
         }
 
-        private void BtnAceptar_Click(object sender, EventArgs e)
+        private void BtnAceptar_Click_1(object sender, EventArgs e)
         {
             if (TxtClave.ForeColor == Color.Gray || string.IsNullOrWhiteSpace(TxtClave.Text))
             {
@@ -164,7 +164,7 @@ namespace Cupediarum
                             Sesion.NombreUsuario = reader.GetString(1);
                             Sesion.IdRol = reader.GetInt32(2);
 
-                            meseroAutenticado = true;
+
 
                             MessageBox.Show("Mesero autenticado ✔",
                                             "Correcto",
@@ -194,4 +194,3 @@ namespace Cupediarum
         }
     }
 }
-

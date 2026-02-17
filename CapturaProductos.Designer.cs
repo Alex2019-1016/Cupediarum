@@ -98,6 +98,7 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.BtnSiguienteTipos = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.FlpComanda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvComanda)).BeginInit();
@@ -109,25 +110,24 @@
             // configurarToolStripMenuItem
             // 
             this.configurarToolStripMenuItem.Name = "configurarToolStripMenuItem";
-            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
+            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
             this.configurarToolStripMenuItem.Text = "Configurar";
             // 
             // acercaToolStripMenuItem
             // 
             this.acercaToolStripMenuItem.Name = "acercaToolStripMenuItem";
-            this.acercaToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
+            this.acercaToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.acercaToolStripMenuItem.Text = "Acerca de";
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.configurarToolStripMenuItem,
             this.acercaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1196, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1196, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -149,7 +149,7 @@
             this.FlpComanda.Name = "FlpComanda";
             this.FlpComanda.Size = new System.Drawing.Size(406, 587);
             this.FlpComanda.TabIndex = 1;
-        
+            // 
             // BtnComentario
             // 
             this.BtnComentario.BackColor = System.Drawing.Color.LightCoral;
@@ -226,6 +226,7 @@
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnCancelar.UseVisualStyleBackColor = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnDescuento
             // 
@@ -420,6 +421,7 @@
             this.BtnComida.Text = "Comida";
             this.BtnComida.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnComida.UseVisualStyleBackColor = false;
+            this.BtnComida.Click += new System.EventHandler(this.BtnComida_Click);
             // 
             // BtnPostres
             // 
@@ -458,6 +460,7 @@
             this.BtnBebidas.Text = "Bebidas";
             this.BtnBebidas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnBebidas.UseVisualStyleBackColor = false;
+            this.BtnBebidas.Click += new System.EventHandler(this.BtnBebidas_Click);
             // 
             // BtnOtros
             // 
@@ -542,7 +545,7 @@
             this.button20.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button20.FlatAppearance.BorderSize = 3;
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button20.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button20.Location = new System.Drawing.Point(130, 3);
             this.button20.Name = "button20";
@@ -558,7 +561,7 @@
             this.button21.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button21.FlatAppearance.BorderSize = 3;
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button21.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button21.Location = new System.Drawing.Point(257, 3);
             this.button21.Name = "button21";
@@ -574,7 +577,7 @@
             this.button22.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button22.FlatAppearance.BorderSize = 3;
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button22.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button22.Location = new System.Drawing.Point(384, 3);
             this.button22.Name = "button22";
@@ -590,7 +593,7 @@
             this.button23.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button23.FlatAppearance.BorderSize = 3;
             this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button23.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button23.Location = new System.Drawing.Point(511, 3);
             this.button23.Name = "button23";
@@ -606,7 +609,7 @@
             this.button24.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button24.FlatAppearance.BorderSize = 3;
             this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button24.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button24.Location = new System.Drawing.Point(638, 3);
             this.button24.Name = "button24";
@@ -622,7 +625,7 @@
             this.button25.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button25.FlatAppearance.BorderSize = 3;
             this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button25.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button25.Location = new System.Drawing.Point(3, 72);
             this.button25.Name = "button25";
@@ -638,7 +641,7 @@
             this.button26.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button26.FlatAppearance.BorderSize = 3;
             this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button26.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button26.Location = new System.Drawing.Point(130, 72);
             this.button26.Name = "button26";
@@ -654,7 +657,7 @@
             this.button27.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button27.FlatAppearance.BorderSize = 3;
             this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button27.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button27.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button27.Location = new System.Drawing.Point(257, 72);
             this.button27.Name = "button27";
@@ -670,7 +673,7 @@
             this.button28.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button28.FlatAppearance.BorderSize = 3;
             this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button28.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button28.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button28.Location = new System.Drawing.Point(384, 72);
             this.button28.Name = "button28";
@@ -686,7 +689,7 @@
             this.button29.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button29.FlatAppearance.BorderSize = 3;
             this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button29.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button29.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button29.Location = new System.Drawing.Point(511, 72);
             this.button29.Name = "button29";
@@ -702,7 +705,7 @@
             this.button30.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button30.FlatAppearance.BorderSize = 3;
             this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button30.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button30.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button30.Location = new System.Drawing.Point(638, 72);
             this.button30.Name = "button30";
@@ -718,7 +721,7 @@
             this.button31.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button31.FlatAppearance.BorderSize = 3;
             this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button31.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button31.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button31.Location = new System.Drawing.Point(3, 141);
             this.button31.Name = "button31";
@@ -734,7 +737,7 @@
             this.button32.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button32.FlatAppearance.BorderSize = 3;
             this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button32.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button32.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button32.Location = new System.Drawing.Point(130, 141);
             this.button32.Name = "button32";
@@ -750,7 +753,7 @@
             this.button33.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button33.FlatAppearance.BorderSize = 3;
             this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button33.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button33.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button33.Location = new System.Drawing.Point(257, 141);
             this.button33.Name = "button33";
@@ -766,7 +769,7 @@
             this.button34.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button34.FlatAppearance.BorderSize = 3;
             this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button34.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button34.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button34.Location = new System.Drawing.Point(384, 141);
             this.button34.Name = "button34";
@@ -782,7 +785,7 @@
             this.button35.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button35.FlatAppearance.BorderSize = 3;
             this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button35.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button35.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button35.Location = new System.Drawing.Point(511, 141);
             this.button35.Name = "button35";
@@ -798,7 +801,7 @@
             this.button36.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button36.FlatAppearance.BorderSize = 3;
             this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button36.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button36.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button36.Location = new System.Drawing.Point(638, 141);
             this.button36.Name = "button36";
@@ -814,7 +817,7 @@
             this.button37.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button37.FlatAppearance.BorderSize = 3;
             this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button37.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button37.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button37.Location = new System.Drawing.Point(3, 210);
             this.button37.Name = "button37";
@@ -830,7 +833,7 @@
             this.button38.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button38.FlatAppearance.BorderSize = 3;
             this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button38.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button38.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button38.Location = new System.Drawing.Point(130, 210);
             this.button38.Name = "button38";
@@ -846,7 +849,7 @@
             this.button39.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button39.FlatAppearance.BorderSize = 3;
             this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button39.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button39.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button39.Location = new System.Drawing.Point(257, 210);
             this.button39.Name = "button39";
@@ -862,7 +865,7 @@
             this.button40.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button40.FlatAppearance.BorderSize = 3;
             this.button40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button40.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button40.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button40.Location = new System.Drawing.Point(384, 210);
             this.button40.Name = "button40";
@@ -878,7 +881,7 @@
             this.button41.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button41.FlatAppearance.BorderSize = 3;
             this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button41.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button41.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button41.Location = new System.Drawing.Point(511, 210);
             this.button41.Name = "button41";
@@ -894,7 +897,7 @@
             this.button18.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button18.FlatAppearance.BorderSize = 3;
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button18.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button18.Location = new System.Drawing.Point(638, 210);
             this.button18.Name = "button18";
@@ -910,7 +913,7 @@
             this.button19.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button19.FlatAppearance.BorderSize = 3;
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button19.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button19.Location = new System.Drawing.Point(3, 279);
             this.button19.Name = "button19";
@@ -926,7 +929,7 @@
             this.button42.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button42.FlatAppearance.BorderSize = 3;
             this.button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button42.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button42.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button42.Location = new System.Drawing.Point(130, 279);
             this.button42.Name = "button42";
@@ -942,7 +945,7 @@
             this.button43.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button43.FlatAppearance.BorderSize = 3;
             this.button43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button43.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button43.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button43.Location = new System.Drawing.Point(257, 279);
             this.button43.Name = "button43";
@@ -958,7 +961,7 @@
             this.button44.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button44.FlatAppearance.BorderSize = 3;
             this.button44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button44.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button44.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button44.Location = new System.Drawing.Point(384, 279);
             this.button44.Name = "button44";
@@ -974,7 +977,7 @@
             this.button45.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button45.FlatAppearance.BorderSize = 3;
             this.button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button45.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button45.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button45.Location = new System.Drawing.Point(511, 279);
             this.button45.Name = "button45";
@@ -1048,7 +1051,7 @@
             this.button8.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button8.FlatAppearance.BorderSize = 3;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button8.Location = new System.Drawing.Point(130, 3);
             this.button8.Name = "button8";
@@ -1064,7 +1067,7 @@
             this.button7.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button7.FlatAppearance.BorderSize = 3;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button7.Location = new System.Drawing.Point(257, 3);
             this.button7.Name = "button7";
@@ -1080,7 +1083,7 @@
             this.button9.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button9.FlatAppearance.BorderSize = 3;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button9.Location = new System.Drawing.Point(384, 3);
             this.button9.Name = "button9";
@@ -1096,7 +1099,7 @@
             this.button10.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button10.FlatAppearance.BorderSize = 3;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button10.Location = new System.Drawing.Point(511, 3);
             this.button10.Name = "button10";
@@ -1112,7 +1115,7 @@
             this.button11.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button11.FlatAppearance.BorderSize = 3;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button11.Location = new System.Drawing.Point(638, 3);
             this.button11.Name = "button11";
@@ -1128,7 +1131,7 @@
             this.button12.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button12.FlatAppearance.BorderSize = 3;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button12.Location = new System.Drawing.Point(3, 72);
             this.button12.Name = "button12";
@@ -1144,7 +1147,7 @@
             this.button13.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button13.FlatAppearance.BorderSize = 3;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button13.Location = new System.Drawing.Point(130, 72);
             this.button13.Name = "button13";
@@ -1160,7 +1163,7 @@
             this.button14.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button14.FlatAppearance.BorderSize = 3;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button14.Location = new System.Drawing.Point(257, 72);
             this.button14.Name = "button14";
@@ -1176,7 +1179,7 @@
             this.button15.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button15.FlatAppearance.BorderSize = 3;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button15.Location = new System.Drawing.Point(384, 72);
             this.button15.Name = "button15";
@@ -1192,7 +1195,7 @@
             this.button16.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button16.FlatAppearance.BorderSize = 3;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button16.Location = new System.Drawing.Point(511, 72);
             this.button16.Name = "button16";
@@ -1220,6 +1223,18 @@
             this.BtnSiguienteTipos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnSiguienteTipos.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(448, 92);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 19);
+            this.label1.TabIndex = 11;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // FrmCapturaProductos
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1227,6 +1242,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1196, 637);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.FlpProductos);
             this.Controls.Add(this.FlpSubCategorias);
             this.Controls.Add(this.FlpCategorias);
@@ -1237,7 +1253,6 @@
             this.MaximizeBox = false;
             this.Name = "FrmCapturaProductos";
             this.Text = "Captura de Productos";
-         
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.FlpComanda.ResumeLayout(false);
@@ -1322,5 +1337,6 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button BtnSiguienteTipos;
+        private System.Windows.Forms.Label label1;
     }
 }

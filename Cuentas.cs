@@ -98,8 +98,9 @@ namespace Cupediarum
             Button btn = sender as Button;
             cuentaSeleccionada = (int)btn.Tag;
 
-            CargarAreas();
-            // Aquí luego abrirás FrmPedidos
+            FrmCapturaProductos frm = new FrmCapturaProductos(cuentaSeleccionada, this);
+            frm.Show();
+            this.Hide();
         }
 
         private void CargarAreas()
@@ -289,9 +290,21 @@ namespace Cupediarum
 
         private void BtnAgregarCuenta_Click(object sender, EventArgs e)
         {
-            FrmAgregarCuenta frm = new FrmAgregarCuenta();
+            FrmAgregarCuenta frm = new FrmAgregarCuenta(this);
             frm.Show();
             this.Hide();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            FrmMenuPrincipal frm = new FrmMenuPrincipal();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

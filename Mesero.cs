@@ -15,9 +15,12 @@ namespace Cupediarum
     public partial class FrmMesero : Form
     {
         private bool meseroAutenticado = false;
-        public FrmMesero()
+        private Form formularioAnterior;
+
+        public FrmMesero(Form anterior)
         {
             InitializeComponent();
+            formularioAnterior = anterior;
         }
 
         private void CargarCuentas()
@@ -191,6 +194,12 @@ namespace Cupediarum
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            formularioAnterior.Show();
+            this.Close();
         }
     }
 }

@@ -137,6 +137,7 @@
             this.BtnCuenta.TabIndex = 10;
             this.BtnCuenta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnCuenta.UseVisualStyleBackColor = false;
+            this.BtnCuenta.Click += new System.EventHandler(this.BtnCuenta_Click);
             // 
             // PnlDatosCuenta
             // 
@@ -161,7 +162,7 @@
             this.TxtNombArea.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNombArea.Location = new System.Drawing.Point(237, 51);
             this.TxtNombArea.Name = "TxtNombArea";
-            this.TxtNombArea.Size = new System.Drawing.Size(201, 35);
+            this.TxtNombArea.Size = new System.Drawing.Size(201, 26);
             this.TxtNombArea.TabIndex = 24;
             // 
             // DtpFecha
@@ -170,7 +171,7 @@
             this.DtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DtpFecha.Location = new System.Drawing.Point(188, 134);
             this.DtpFecha.Name = "DtpFecha";
-            this.DtpFecha.Size = new System.Drawing.Size(141, 33);
+            this.DtpFecha.Size = new System.Drawing.Size(141, 24);
             this.DtpFecha.TabIndex = 23;
             // 
             // label6
@@ -180,7 +181,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(7, 146);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 23);
+            this.label6.Size = new System.Drawing.Size(62, 17);
             this.label6.TabIndex = 22;
             this.label6.Text = "FECHA :";
             // 
@@ -189,7 +190,7 @@
             this.TxtIDMesa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtIDMesa.Location = new System.Drawing.Point(187, 93);
             this.TxtIDMesa.Name = "TxtIDMesa";
-            this.TxtIDMesa.Size = new System.Drawing.Size(44, 35);
+            this.TxtIDMesa.Size = new System.Drawing.Size(44, 26);
             this.TxtIDMesa.TabIndex = 21;
             this.TxtIDMesa.UseSystemPasswordChar = true;
             // 
@@ -200,7 +201,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(7, 102);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 23);
+            this.label5.Size = new System.Drawing.Size(54, 17);
             this.label5.TabIndex = 20;
             this.label5.Text = "MESA :";
             // 
@@ -209,7 +210,7 @@
             this.TxtNombMesero.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNombMesero.Location = new System.Drawing.Point(187, 8);
             this.TxtNombMesero.Name = "TxtNombMesero";
-            this.TxtNombMesero.Size = new System.Drawing.Size(177, 35);
+            this.TxtNombMesero.Size = new System.Drawing.Size(177, 26);
             this.TxtNombMesero.TabIndex = 19;
             // 
             // label3
@@ -219,7 +220,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(7, 16);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 23);
+            this.label3.Size = new System.Drawing.Size(74, 17);
             this.label3.TabIndex = 18;
             this.label3.Text = "MESERO :";
             // 
@@ -228,7 +229,7 @@
             this.TxtIDArea.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtIDArea.Location = new System.Drawing.Point(187, 51);
             this.TxtIDArea.Name = "TxtIDArea";
-            this.TxtIDArea.Size = new System.Drawing.Size(44, 35);
+            this.TxtIDArea.Size = new System.Drawing.Size(44, 26);
             this.TxtIDArea.TabIndex = 17;
             // 
             // label4
@@ -238,7 +239,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(7, 60);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 23);
+            this.label4.Size = new System.Drawing.Size(54, 17);
             this.label4.TabIndex = 3;
             this.label4.Text = "AREA :";
             // 
@@ -250,7 +251,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(16, 95);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 26);
+            this.label1.Size = new System.Drawing.Size(57, 19);
             this.label1.TabIndex = 2;
             this.label1.Text = "Cuenta";
             // 
@@ -262,7 +263,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(134, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 26);
+            this.label2.Size = new System.Drawing.Size(70, 19);
             this.label2.TabIndex = 3;
             this.label2.Text = "Personas";
             // 
@@ -281,7 +282,6 @@
             this.MinimizeBox = false;
             this.Name = "FrmDatosCuenta";
             this.Text = "Datos de Cuenta";
-          
             this.PnlDatosC.ResumeLayout(false);
             this.PnlDatosCuenta.ResumeLayout(false);
             this.PnlDatosCuenta.PerformLayout();

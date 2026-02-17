@@ -15,6 +15,7 @@ namespace Cupediarum
     public partial class FrmDatosCuenta : Form
     {
         private int idCuenta;
+        private Form formularioAnterior;
 
         public FrmDatosCuenta(int idCuentaRecibida)
         {
@@ -88,9 +89,14 @@ namespace Cupediarum
 
         private void BtnAbrirMesa_Click(object sender, EventArgs e)
         {
-            FrmCapturaProductos frm = new FrmCapturaProductos();
+            FrmCapturaProductos frm = new FrmCapturaProductos(idCuenta, formularioAnterior);
             frm.Show();
             this.Hide();
+
+        }
+
+        private void BtnCuenta_Click(object sender, EventArgs e)
+        {
 
         }
     }

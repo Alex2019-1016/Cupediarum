@@ -13,9 +13,14 @@ namespace Cupediarum
 {
     public partial class FrmCapturaProductos : Form
     {
-        public FrmCapturaProductos()
+
+        private int idCuenta;
+        private Form formularioAnterior;
+        public FrmCapturaProductos(int idCuentaRecibida, Form anterior)
         {
             InitializeComponent();
+            idCuenta = idCuentaRecibida;
+            formularioAnterior = anterior;
         }
 
         private void BtnAceptar_Click(object sender, EventArgs e)
@@ -23,6 +28,27 @@ namespace Cupediarum
             FrmCuentas frm = new FrmCuentas();
             frm.Show();
             this.Hide();
+        }
+
+        private void BtnBebidas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnComida_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            formularioAnterior.Show();
+            this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

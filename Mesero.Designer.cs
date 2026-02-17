@@ -97,27 +97,26 @@
             // 
             // MnuMesero
             // 
-            this.MnuMesero.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.MnuMesero.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.MnuMesero.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.configurarToolStripMenuItem,
             this.acercaDeToolStripMenuItem});
             this.MnuMesero.Location = new System.Drawing.Point(0, 0);
             this.MnuMesero.Name = "MnuMesero";
-            this.MnuMesero.Size = new System.Drawing.Size(740, 33);
+            this.MnuMesero.Size = new System.Drawing.Size(740, 24);
             this.MnuMesero.TabIndex = 17;
             this.MnuMesero.Text = "menuStrip1";
             // 
             // configurarToolStripMenuItem
             // 
             this.configurarToolStripMenuItem.Name = "configurarToolStripMenuItem";
-            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
+            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
             this.configurarToolStripMenuItem.Text = "Configurar";
             // 
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // PnlTecladoNum
@@ -434,7 +433,7 @@
             this.TxtClave.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtClave.Location = new System.Drawing.Point(166, 7);
             this.TxtClave.Name = "TxtClave";
-            this.TxtClave.Size = new System.Drawing.Size(225, 63);
+            this.TxtClave.Size = new System.Drawing.Size(225, 44);
             this.TxtClave.TabIndex = 9;
             // 
             // BtnMesero
@@ -538,6 +537,7 @@
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnCancelar.UseVisualStyleBackColor = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnBorrar
             // 
@@ -1084,7 +1084,6 @@
             this.MaximizeBox = false;
             this.Name = "FrmMesero";
             this.Text = "Mesero";
-
             this.MnuMesero.ResumeLayout(false);
             this.MnuMesero.PerformLayout();
             this.PnlTecladoNum.ResumeLayout(false);

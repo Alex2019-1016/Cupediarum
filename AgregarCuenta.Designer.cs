@@ -97,7 +97,7 @@
             this.RtbCuenta.Size = new System.Drawing.Size(472, 313);
             this.RtbCuenta.TabIndex = 0;
             this.RtbCuenta.Text = "";
-            
+            // 
             // PnlTecladoNum
             // 
             this.PnlTecladoNum.BackColor = System.Drawing.Color.Transparent;
@@ -478,6 +478,7 @@
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnCancelar.UseVisualStyleBackColor = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnBorrar
             // 
@@ -1024,7 +1025,6 @@
             this.MinimizeBox = false;
             this.Name = "FrmAgregarCuenta";
             this.Text = "Agregar Cuenta";
-         
             this.PnlTecladoNum.ResumeLayout(false);
             this.PnlTecladoAlf.ResumeLayout(false);
             this.ResumeLayout(false);

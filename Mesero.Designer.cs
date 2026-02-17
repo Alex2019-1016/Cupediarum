@@ -52,8 +52,6 @@
             this.BtnNum0 = new System.Windows.Forms.Button();
             this.PnlDatosMesero = new System.Windows.Forms.Panel();
             this.TxtClave = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TxtIDMesero = new System.Windows.Forms.TextBox();
             this.BtnMesero = new System.Windows.Forms.Button();
             this.PnlTecladoAlf = new System.Windows.Forms.Panel();
             this.BtnAceptar = new System.Windows.Forms.Button();
@@ -91,10 +89,6 @@
             this.BtnLetraE = new System.Windows.Forms.Button();
             this.BtnLetraW = new System.Windows.Forms.Button();
             this.BtnLetraQ = new System.Windows.Forms.Button();
-            this.BtnSalir = new System.Windows.Forms.Button();
-            this.BtnMonitor = new System.Windows.Forms.Button();
-            this.Cuentas = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.MnuMesero.SuspendLayout();
             this.PnlTecladoNum.SuspendLayout();
             this.PnlDatosMesero.SuspendLayout();
@@ -103,26 +97,27 @@
             // 
             // MnuMesero
             // 
+            this.MnuMesero.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.MnuMesero.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.MnuMesero.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.configurarToolStripMenuItem,
             this.acercaDeToolStripMenuItem});
             this.MnuMesero.Location = new System.Drawing.Point(0, 0);
             this.MnuMesero.Name = "MnuMesero";
-            this.MnuMesero.Size = new System.Drawing.Size(884, 24);
+            this.MnuMesero.Size = new System.Drawing.Size(740, 33);
             this.MnuMesero.TabIndex = 17;
             this.MnuMesero.Text = "menuStrip1";
             // 
             // configurarToolStripMenuItem
             // 
             this.configurarToolStripMenuItem.Name = "configurarToolStripMenuItem";
-            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
             this.configurarToolStripMenuItem.Text = "Configurar";
             // 
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // PnlTecladoNum
@@ -428,43 +423,19 @@
             this.PnlDatosMesero.BackColor = System.Drawing.Color.Transparent;
             this.PnlDatosMesero.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PnlDatosMesero.Controls.Add(this.TxtClave);
-            this.PnlDatosMesero.Controls.Add(this.label1);
-            this.PnlDatosMesero.Controls.Add(this.TxtIDMesero);
             this.PnlDatosMesero.Controls.Add(this.BtnMesero);
             this.PnlDatosMesero.Location = new System.Drawing.Point(38, 119);
             this.PnlDatosMesero.Name = "PnlDatosMesero";
-            this.PnlDatosMesero.Size = new System.Drawing.Size(398, 154);
+            this.PnlDatosMesero.Size = new System.Drawing.Size(398, 83);
             this.PnlDatosMesero.TabIndex = 53;
             // 
             // TxtClave
             // 
             this.TxtClave.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtClave.Location = new System.Drawing.Point(166, 81);
+            this.TxtClave.Location = new System.Drawing.Point(166, 7);
             this.TxtClave.Name = "TxtClave";
-            this.TxtClave.Size = new System.Drawing.Size(225, 44);
-            this.TxtClave.TabIndex = 11;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(34, 96);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 24);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Contraseña";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // TxtIDMesero
-            // 
-            this.TxtIDMesero.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtIDMesero.Location = new System.Drawing.Point(166, 10);
-            this.TxtIDMesero.Name = "TxtIDMesero";
-            this.TxtIDMesero.Size = new System.Drawing.Size(225, 44);
-            this.TxtIDMesero.TabIndex = 9;
+            this.TxtClave.Size = new System.Drawing.Size(225, 63);
+            this.TxtClave.TabIndex = 9;
             // 
             // BtnMesero
             // 
@@ -1099,95 +1070,21 @@
             this.BtnLetraQ.Text = "Q";
             this.BtnLetraQ.UseVisualStyleBackColor = false;
             // 
-            // BtnSalir
-            // 
-            this.BtnSalir.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnSalir.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
-            this.BtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnSalir.FlatAppearance.BorderSize = 5;
-            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalir.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
-            this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSalir.Location = new System.Drawing.Point(750, 543);
-            this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(128, 60);
-            this.BtnSalir.TabIndex = 51;
-            this.BtnSalir.Text = "Salir";
-            this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSalir.UseVisualStyleBackColor = false;
-            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
-            // 
-            // BtnMonitor
-            // 
-            this.BtnMonitor.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnMonitor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMonitor.BackgroundImage")));
-            this.BtnMonitor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnMonitor.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.BtnMonitor.FlatAppearance.BorderSize = 3;
-            this.BtnMonitor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMonitor.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMonitor.Image = global::Cupediarum.Properties.Resources.Icono_Monitor;
-            this.BtnMonitor.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnMonitor.Location = new System.Drawing.Point(741, 38);
-            this.BtnMonitor.Name = "BtnMonitor";
-            this.BtnMonitor.Size = new System.Drawing.Size(137, 87);
-            this.BtnMonitor.TabIndex = 16;
-            this.BtnMonitor.Text = "Monitor Ventas";
-            this.BtnMonitor.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnMonitor.UseVisualStyleBackColor = false;
-            // 
-            // Cuentas
-            // 
-            this.Cuentas.BackColor = System.Drawing.Color.LightCoral;
-            this.Cuentas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Cuentas.BackgroundImage")));
-            this.Cuentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Cuentas.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.Cuentas.FlatAppearance.BorderSize = 3;
-            this.Cuentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cuentas.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cuentas.Image = global::Cupediarum.Properties.Resources.Icono_Pedidos;
-            this.Cuentas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Cuentas.Location = new System.Drawing.Point(741, 135);
-            this.Cuentas.Name = "Cuentas";
-            this.Cuentas.Size = new System.Drawing.Size(137, 90);
-            this.Cuentas.TabIndex = 15;
-            this.Cuentas.Text = "Cuentas";
-            this.Cuentas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Cuentas.UseVisualStyleBackColor = false;
-            this.Cuentas.Click += new System.EventHandler(this.Cuentas_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(46, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 54;
-            this.label2.Text = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
             // FrmMesero
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(884, 615);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(740, 615);
             this.Controls.Add(this.PnlDatosMesero);
-            this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.PnlTecladoAlf);
             this.Controls.Add(this.PnlTecladoNum);
             this.Controls.Add(this.MnuMesero);
-            this.Controls.Add(this.BtnMonitor);
-            this.Controls.Add(this.Cuentas);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmMesero";
             this.Text = "Mesero";
-            this.Load += new System.EventHandler(this.Mesero_Load);
+
             this.MnuMesero.ResumeLayout(false);
             this.MnuMesero.PerformLayout();
             this.PnlTecladoNum.ResumeLayout(false);
@@ -1200,8 +1097,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button BtnMonitor;
-        private System.Windows.Forms.Button Cuentas;
         private System.Windows.Forms.MenuStrip MnuMesero;
         private System.Windows.Forms.ToolStripMenuItem configurarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
@@ -1223,11 +1118,8 @@
         private System.Windows.Forms.Button BtnIntro;
         private System.Windows.Forms.Button BtnPunto;
         private System.Windows.Forms.Button BtnNum0;
-        private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Panel PnlDatosMesero;
         private System.Windows.Forms.TextBox TxtClave;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxtIDMesero;
         private System.Windows.Forms.Button BtnMesero;
         private System.Windows.Forms.Button BtnLetraQ;
         private System.Windows.Forms.Button BtnLetraW;
@@ -1265,6 +1157,5 @@
         private System.Windows.Forms.Panel PnlTecladoAlf;
         private System.Windows.Forms.Button BtnAceptar;
         private System.Windows.Forms.Button BtnCancelar;
-        private System.Windows.Forms.Label label2;
     }
 }

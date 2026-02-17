@@ -19,11 +19,6 @@ namespace Cupediarum
             InitializeComponent();
         }
 
-        private void FrmInicioSesion_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnAceptar_Click(object sender, EventArgs e)
         {
             string usuario = TxtUsuario.Text.Trim();

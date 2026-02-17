@@ -45,14 +45,14 @@ namespace Cupediarum
 
                 if (Sesion.IdRol == 1) // ADMIN
                 {
-                    query = @"SELECT Id_Cuenta, FechaApertura
+                    query = @"SELECT Id_Cuenta, Nomb_Cuenta
                       FROM CUENTAS
                       WHERE EstadoCuenta = 'Abierta'
                       ORDER BY FechaApertura DESC";
                 }
                 else
                 {
-                    query = @"SELECT Id_Cuenta, FechaApertura
+                    query = @"SELECT Id_Cuenta, Nomb_Cuenta
                       FROM CUENTAS
                       WHERE Id_Usuario = @IdUsuario
                         AND EstadoCuenta = 'Abierta'
@@ -69,7 +69,7 @@ namespace Cupediarum
                     while (reader.Read())
                     {
                         int idCuenta = reader.GetInt32(0);
-                        DateTime fecha = reader.GetDateTime(1);
+                        string nombreCuenta = reader.GetString(1);
 
                         Button btn = new Button();
                         btn.Width = 118;
@@ -79,10 +79,10 @@ namespace Cupediarum
                         btn.BackColor = Color.DarkGray;
                         btn.Font = new Font("Times New Roman", 10, FontStyle.Bold);
 
-                        btn.Text = "Cuenta #" + idCuenta +
-                                   "\n" + fecha.ToString("HH:mm");
+                        // 🔥 SOLO EL NOMBRE DE LA CUENTA
+                        btn.Text = nombreCuenta;
 
-                        btn.Tag = idCuenta;
+                        btn.Tag = idCuenta; // importante para saber qué cuenta se clickeó
 
                         btn.Click += BtnCuenta_Click;
 
@@ -91,6 +91,7 @@ namespace Cupediarum
                 }
             }
         }
+
 
         private void BtnCuenta_Click(object sender, EventArgs e)
         {
@@ -286,129 +287,11 @@ namespace Cupediarum
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void BtnAgregarCuenta_Click(object sender, EventArgs e)
         {
             FrmAgregarCuenta frm = new FrmAgregarCuenta();
             frm.Show();
             this.Hide();
-        }
-
-        private void TxtNombMesero_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtIDMesero_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnPrecios_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void RtbNombArea_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnArea1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnArea2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnArea3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnArea4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

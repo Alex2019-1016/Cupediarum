@@ -14,18 +14,14 @@ namespace Cupediarum
 {
     public partial class FrmCantidadPersonas : Form
     {
+        private int idCuenta;
+
         public FrmCantidadPersonas(int idCuentaRecibida)
         {
             InitializeComponent();
             idCuenta = idCuentaRecibida;
         }
 
-        private int idCuenta;
-
-        private void TxtPersonas_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void BtnAceptar_Click(object sender, EventArgs e)
         {

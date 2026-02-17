@@ -62,15 +62,6 @@ namespace Cupediarum
             }
         }
 
-        private void Mesero_Load(object sender, EventArgs e)
-        {
-            ConfigurarPlaceholder(TxtIDMesero, "Ingrese ID del mesero");
-            ConfigurarPlaceholderPassword(TxtClave, "Ingrese contraseña");
-
-            label2.Text = "Mesero: " + Sesion.NombreUsuario;
-            CargarCuentas();
-        }
-
         private void ConfigurarPlaceholderPassword(TextBox txt, string texto)
         {
             Font fuenteNormal = new Font("Times New Roman", 24, FontStyle.Bold);
@@ -134,50 +125,12 @@ namespace Cupediarum
             };
         }
 
-        
-
-        private void Cuentas_Click(object sender, EventArgs e)
-        {
-
-            if (!meseroAutenticado)
-            {
-                MessageBox.Show("Debe autenticarse primero",
-                                "Atención",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Warning);
-                return;
-            }
-
-            FrmCuentas frm = new FrmCuentas();
-            frm.ShowDialog();
-
-            /*
-            FrmCuentas frm = new FrmCuentas();
-            frm.Show();
-            this.Hide();
-            */
-        }
-
-        private void BtnSalir_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnAceptar_Click(object sender, EventArgs e)
         {
-            if (TxtIDMesero.ForeColor == Color.Gray || TxtClave.ForeColor == Color.Gray)
+            if (TxtClave.ForeColor == Color.Gray || string.IsNullOrWhiteSpace(TxtClave.Text))
             {
-                MessageBox.Show("Debe completar los campos",
+                MessageBox.Show("Debe ingresar la contraseña",
                                 "Atención",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Warning);
-                return;
-            }
-
-            if (!int.TryParse(TxtIDMesero.Text.Trim(), out int idMesero))
-            {
-                MessageBox.Show("El ID debe ser numérico",
-                                "Error",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Warning);
                 return;
@@ -191,14 +144,12 @@ namespace Cupediarum
 
             string query = @"SELECT Id_Usuario, Nomb_Usuario, Id_Rol
                      FROM USUARIOS
-                     WHERE Id_Usuario = @id
-                       AND Clave = @clave
+                     WHERE Clave = @clave
                        AND Estado = 1";
 
             using (SqlConnection conn = new SqlConnection(connStr))
             using (SqlCommand cmd = new SqlCommand(query, conn))
             {
-                cmd.Parameters.AddWithValue("@id", idMesero);
                 cmd.Parameters.AddWithValue("@clave", clave);
 
                 try
@@ -215,22 +166,20 @@ namespace Cupediarum
 
                             meseroAutenticado = true;
 
-                            label2.Text = "Mesero: " + Sesion.NombreUsuario;
-
                             MessageBox.Show("Mesero autenticado ✔",
                                             "Correcto",
                                             MessageBoxButtons.OK,
                                             MessageBoxIcon.Information);
 
-                            Cuentas.Enabled = true;
-                            BtnMonitor.Enabled = true;
-
-                            TxtIDMesero.Enabled = false;
                             TxtClave.Enabled = false;
+
+                            FrmCuentas frm = new FrmCuentas();
+                            frm.Show();
+                            this.Hide();
                         }
                         else
                         {
-                            MessageBox.Show("ID o contraseña incorrectos",
+                            MessageBox.Show("Contraseña incorrecta",
                                             "Error",
                                             MessageBoxButtons.OK,
                                             MessageBoxIcon.Error);
@@ -243,15 +192,7 @@ namespace Cupediarum
                 }
             }
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
+
+

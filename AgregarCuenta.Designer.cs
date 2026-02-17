@@ -97,8 +97,7 @@
             this.RtbCuenta.Size = new System.Drawing.Size(472, 313);
             this.RtbCuenta.TabIndex = 0;
             this.RtbCuenta.Text = "";
-            this.RtbCuenta.TextChanged += new System.EventHandler(this.RtbCuenta_TextChanged);
-            // 
+            
             // PnlTecladoNum
             // 
             this.PnlTecladoNum.BackColor = System.Drawing.Color.Transparent;
@@ -1025,7 +1024,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmAgregarCuenta";
             this.Text = "Agregar Cuenta";
-            this.Load += new System.EventHandler(this.AbrirCuenta_Load);
+         
             this.PnlTecladoNum.ResumeLayout(false);
             this.PnlTecladoAlf.ResumeLayout(false);
             this.ResumeLayout(false);

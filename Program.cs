@@ -16,7 +16,7 @@ namespace Cupediarum
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMesero());
+            Application.Run(new FrmMenuPrincipal());
         }
     }
 }

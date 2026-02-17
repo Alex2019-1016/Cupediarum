@@ -37,12 +37,12 @@
             this.cajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.PnOpciones = new System.Windows.Forms.Panel();
-            this.BtnSalir = new System.Windows.Forms.Button();
-            this.BtnMesero = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnCerrarTurno = new System.Windows.Forms.Button();
             this.BtnAbrirTurno = new System.Windows.Forms.Button();
             this.BtnMesas = new System.Windows.Forms.Button();
+            this.BtnSalir = new System.Windows.Forms.Button();
+            this.BtnMesero = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MnuPrincipal.SuspendLayout();
             this.PnOpciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,44 +62,44 @@
             this.ayudaToolStripMenuItem1});
             this.MnuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.MnuPrincipal.Name = "MnuPrincipal";
-            this.MnuPrincipal.Size = new System.Drawing.Size(727, 36);
+            this.MnuPrincipal.Size = new System.Drawing.Size(727, 33);
             this.MnuPrincipal.TabIndex = 2;
             this.MnuPrincipal.Text = "menuStrip1";
             // 
             // configuracionesToolStripMenuItem
             // 
             this.configuracionesToolStripMenuItem.Name = "configuracionesToolStripMenuItem";
-            this.configuracionesToolStripMenuItem.Size = new System.Drawing.Size(156, 30);
+            this.configuracionesToolStripMenuItem.Size = new System.Drawing.Size(156, 29);
             this.configuracionesToolStripMenuItem.Text = "Configuraciones";
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(73, 30);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(73, 29);
             this.editarToolStripMenuItem.Text = "Editar";
             // 
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(98, 30);
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(98, 29);
             this.reportesToolStripMenuItem.Text = "Reportes";
             // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(80, 30);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(80, 29);
             this.ayudaToolStripMenuItem.Text = "Ventas";
             // 
             // cajaToolStripMenuItem
             // 
             this.cajaToolStripMenuItem.Name = "cajaToolStripMenuItem";
-            this.cajaToolStripMenuItem.Size = new System.Drawing.Size(61, 30);
+            this.cajaToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.cajaToolStripMenuItem.Text = "Caja";
             // 
             // ayudaToolStripMenuItem1
             // 
             this.ayudaToolStripMenuItem1.Name = "ayudaToolStripMenuItem1";
-            this.ayudaToolStripMenuItem1.Size = new System.Drawing.Size(79, 30);
+            this.ayudaToolStripMenuItem1.Size = new System.Drawing.Size(79, 29);
             this.ayudaToolStripMenuItem1.Text = "Ayuda";
             // 
             // PnOpciones
@@ -113,56 +113,6 @@
             this.PnOpciones.Name = "PnOpciones";
             this.PnOpciones.Size = new System.Drawing.Size(126, 373);
             this.PnOpciones.TabIndex = 3;
-            // 
-            // BtnSalir
-            // 
-            this.BtnSalir.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnSalir.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
-            this.BtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnSalir.FlatAppearance.BorderSize = 5;
-            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSalir.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalir.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
-            this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSalir.Location = new System.Drawing.Point(582, 351);
-            this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(138, 60);
-            this.BtnSalir.TabIndex = 48;
-            this.BtnSalir.Text = "Salir";
-            this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSalir.UseVisualStyleBackColor = false;
-            // 
-            // BtnMesero
-            // 
-            this.BtnMesero.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnMesero.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
-            this.BtnMesero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnMesero.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.BtnMesero.FlatAppearance.BorderSize = 3;
-            this.BtnMesero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMesero.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMesero.Image = global::Cupediarum.Properties.Resources.Icono_Mesero;
-            this.BtnMesero.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BtnMesero.Location = new System.Drawing.Point(582, 38);
-            this.BtnMesero.Name = "BtnMesero";
-            this.BtnMesero.Size = new System.Drawing.Size(138, 73);
-            this.BtnMesero.TabIndex = 8;
-            this.BtnMesero.Text = "Mesero";
-            this.BtnMesero.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnMesero.UseVisualStyleBackColor = false;
-            this.BtnMesero.Click += new System.EventHandler(this.BtnMesero_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::Cupediarum.Properties.Resources.CupediarumLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(133, 38);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(443, 373);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // BtnCerrarTurno
             // 
@@ -222,7 +172,56 @@
             this.BtnMesas.Text = "Mesas";
             this.BtnMesas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnMesas.UseVisualStyleBackColor = false;
-            this.BtnMesas.Click += new System.EventHandler(this.BtnMesas_Click);
+            // 
+            // BtnSalir
+            // 
+            this.BtnSalir.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnSalir.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
+            this.BtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnSalir.FlatAppearance.BorderSize = 5;
+            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSalir.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSalir.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
+            this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnSalir.Location = new System.Drawing.Point(582, 351);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(138, 60);
+            this.BtnSalir.TabIndex = 48;
+            this.BtnSalir.Text = "Salir";
+            this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSalir.UseVisualStyleBackColor = false;
+            // 
+            // BtnMesero
+            // 
+            this.BtnMesero.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnMesero.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnMesero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnMesero.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.BtnMesero.FlatAppearance.BorderSize = 3;
+            this.BtnMesero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMesero.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMesero.Image = global::Cupediarum.Properties.Resources.Icono_Mesero;
+            this.BtnMesero.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BtnMesero.Location = new System.Drawing.Point(582, 38);
+            this.BtnMesero.Name = "BtnMesero";
+            this.BtnMesero.Size = new System.Drawing.Size(138, 73);
+            this.BtnMesero.TabIndex = 8;
+            this.BtnMesero.Text = "Mesero";
+            this.BtnMesero.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnMesero.UseVisualStyleBackColor = false;
+            this.BtnMesero.Click += new System.EventHandler(this.BtnMesero_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = global::Cupediarum.Properties.Resources.CupediarumLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(133, 38);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(443, 373);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmMenuPrincipal
             // 
@@ -239,7 +238,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmMenuPrincipal";
             this.Text = "Menu Principal";
-            this.Load += new System.EventHandler(this.FrmMenuPrincipal_Load);
+          
             this.MnuPrincipal.ResumeLayout(false);
             this.MnuPrincipal.PerformLayout();
             this.PnOpciones.ResumeLayout(false);

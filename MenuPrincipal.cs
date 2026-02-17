@@ -17,21 +17,9 @@ namespace Cupediarum
             InitializeComponent();
         }
 
-        private void FrmMenuPrincipal_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnMesero_Click(object sender, EventArgs e)
         {
             FrmMesero frm = new FrmMesero();
-            frm.Show();
-            this.Hide();
-        }
-
-        private void BtnMesas_Click(object sender, EventArgs e)
-        {
-            FrmMesas frm = new FrmMesas();
             frm.Show();
             this.Hide();
         }

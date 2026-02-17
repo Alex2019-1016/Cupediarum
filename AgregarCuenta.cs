@@ -19,31 +19,6 @@ namespace Cupediarum
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AbrirCuenta_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PnlLetras_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void BtnAceptar_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void BtnAceptar_Click_1(object sender, EventArgs e)
         {
 
@@ -97,13 +72,6 @@ namespace Cupediarum
                     MessageBox.Show("Error al crear cuenta: " + ex.Message);
                 }
             }
-
-
-        }
-
-        private void RtbCuenta_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

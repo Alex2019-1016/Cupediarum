@@ -1238,6 +1238,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmCapturaProductos";
             this.Text = "Captura de Productos";
+            this.Load += new System.EventHandler(this.FrmCapturaProductos_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.FlpComanda.ResumeLayout(false);

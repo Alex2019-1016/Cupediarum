@@ -97,6 +97,7 @@
             this.RtbCuenta.Size = new System.Drawing.Size(472, 313);
             this.RtbCuenta.TabIndex = 0;
             this.RtbCuenta.Text = "";
+            this.RtbCuenta.TextChanged += new System.EventHandler(this.RtbCuenta_TextChanged);
             // 
             // PnlTecladoNum
             // 

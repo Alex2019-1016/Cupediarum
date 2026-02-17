@@ -181,7 +181,6 @@
             this.PnlDatosMesero.Name = "PnlDatosMesero";
             this.PnlDatosMesero.Size = new System.Drawing.Size(164, 591);
             this.PnlDatosMesero.TabIndex = 4;
-            this.PnlDatosMesero.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // BtnSalir
             // 
@@ -279,7 +278,6 @@
             this.label2.Size = new System.Drawing.Size(71, 32);
             this.label2.TabIndex = 3;
             this.label2.Text = "Area";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // TxtNombMesero
             // 
@@ -352,8 +350,7 @@
             this.FlpCuentas.Name = "FlpCuentas";
             this.FlpCuentas.Size = new System.Drawing.Size(752, 473);
             this.FlpCuentas.TabIndex = 5;
-            this.FlpCuentas.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
-            // 
+           
             // BtnAtras
             // 
             this.BtnAtras.BackColor = System.Drawing.Color.LightCoral;

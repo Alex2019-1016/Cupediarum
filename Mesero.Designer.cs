@@ -33,13 +33,27 @@
             this.configurarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlTecladoNum = new System.Windows.Forms.Panel();
+            this.BtnMas = new System.Windows.Forms.Button();
+            this.BtnGuion = new System.Windows.Forms.Button();
+            this.BtnAsterisco = new System.Windows.Forms.Button();
+            this.BtnSlash = new System.Windows.Forms.Button();
+            this.BtnGuionBajo = new System.Windows.Forms.Button();
+            this.BtnNum9 = new System.Windows.Forms.Button();
+            this.BtnNum8 = new System.Windows.Forms.Button();
+            this.BtnNum7 = new System.Windows.Forms.Button();
+            this.BtnNum6 = new System.Windows.Forms.Button();
+            this.BtnNum5 = new System.Windows.Forms.Button();
+            this.BtnNum4 = new System.Windows.Forms.Button();
+            this.BtnNum3 = new System.Windows.Forms.Button();
+            this.BtnNum2 = new System.Windows.Forms.Button();
+            this.BtnNum1 = new System.Windows.Forms.Button();
+            this.BtnIntro = new System.Windows.Forms.Button();
+            this.BtnPunto = new System.Windows.Forms.Button();
+            this.BtnNum0 = new System.Windows.Forms.Button();
             this.PnlDatosMesero = new System.Windows.Forms.Panel();
             this.TxtClave = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TxtIDMesero = new System.Windows.Forms.TextBox();
-            this.PnlTecladoAlf = new System.Windows.Forms.Panel();
             this.BtnMesero = new System.Windows.Forms.Button();
-            this.BtnSalir = new System.Windows.Forms.Button();
+            this.PnlTecladoAlf = new System.Windows.Forms.Panel();
             this.BtnAceptar = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnBorrar = new System.Windows.Forms.Button();
@@ -75,25 +89,6 @@
             this.BtnLetraE = new System.Windows.Forms.Button();
             this.BtnLetraW = new System.Windows.Forms.Button();
             this.BtnLetraQ = new System.Windows.Forms.Button();
-            this.BtnMas = new System.Windows.Forms.Button();
-            this.BtnGuion = new System.Windows.Forms.Button();
-            this.BtnAsterisco = new System.Windows.Forms.Button();
-            this.BtnSlash = new System.Windows.Forms.Button();
-            this.BtnGuionBajo = new System.Windows.Forms.Button();
-            this.BtnNum9 = new System.Windows.Forms.Button();
-            this.BtnNum8 = new System.Windows.Forms.Button();
-            this.BtnNum7 = new System.Windows.Forms.Button();
-            this.BtnNum6 = new System.Windows.Forms.Button();
-            this.BtnNum5 = new System.Windows.Forms.Button();
-            this.BtnNum4 = new System.Windows.Forms.Button();
-            this.BtnNum3 = new System.Windows.Forms.Button();
-            this.BtnNum2 = new System.Windows.Forms.Button();
-            this.BtnNum1 = new System.Windows.Forms.Button();
-            this.BtnIntro = new System.Windows.Forms.Button();
-            this.BtnPunto = new System.Windows.Forms.Button();
-            this.BtnNum0 = new System.Windows.Forms.Button();
-            this.BtnMonitor = new System.Windows.Forms.Button();
-            this.Cuentas = new System.Windows.Forms.Button();
             this.MnuMesero.SuspendLayout();
             this.PnlTecladoNum.SuspendLayout();
             this.PnlDatosMesero.SuspendLayout();
@@ -109,7 +104,7 @@
             this.acercaDeToolStripMenuItem});
             this.MnuMesero.Location = new System.Drawing.Point(0, 0);
             this.MnuMesero.Name = "MnuMesero";
-            this.MnuMesero.Size = new System.Drawing.Size(884, 33);
+            this.MnuMesero.Size = new System.Drawing.Size(743, 33);
             this.MnuMesero.TabIndex = 17;
             this.MnuMesero.Text = "menuStrip1";
             // 
@@ -151,47 +146,315 @@
             this.PnlTecladoNum.Size = new System.Drawing.Size(253, 313);
             this.PnlTecladoNum.TabIndex = 49;
             // 
+            // BtnMas
+            // 
+            this.BtnMas.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnMas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMas.BackgroundImage")));
+            this.BtnMas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnMas.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnMas.FlatAppearance.BorderSize = 3;
+            this.BtnMas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMas.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMas.Location = new System.Drawing.Point(187, 66);
+            this.BtnMas.Name = "BtnMas";
+            this.BtnMas.Size = new System.Drawing.Size(60, 121);
+            this.BtnMas.TabIndex = 18;
+            this.BtnMas.Text = "+";
+            this.BtnMas.UseVisualStyleBackColor = false;
+            // 
+            // BtnGuion
+            // 
+            this.BtnGuion.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnGuion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnGuion.BackgroundImage")));
+            this.BtnGuion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnGuion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnGuion.FlatAppearance.BorderSize = 3;
+            this.BtnGuion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGuion.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGuion.Location = new System.Drawing.Point(187, 5);
+            this.BtnGuion.Name = "BtnGuion";
+            this.BtnGuion.Size = new System.Drawing.Size(60, 60);
+            this.BtnGuion.TabIndex = 17;
+            this.BtnGuion.Text = "-";
+            this.BtnGuion.UseVisualStyleBackColor = false;
+            // 
+            // BtnAsterisco
+            // 
+            this.BtnAsterisco.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAsterisco.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAsterisco.BackgroundImage")));
+            this.BtnAsterisco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnAsterisco.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnAsterisco.FlatAppearance.BorderSize = 3;
+            this.BtnAsterisco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAsterisco.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAsterisco.Location = new System.Drawing.Point(126, 5);
+            this.BtnAsterisco.Name = "BtnAsterisco";
+            this.BtnAsterisco.Size = new System.Drawing.Size(60, 60);
+            this.BtnAsterisco.TabIndex = 16;
+            this.BtnAsterisco.Text = "*";
+            this.BtnAsterisco.UseVisualStyleBackColor = false;
+            // 
+            // BtnSlash
+            // 
+            this.BtnSlash.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnSlash.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSlash.BackgroundImage")));
+            this.BtnSlash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnSlash.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnSlash.FlatAppearance.BorderSize = 3;
+            this.BtnSlash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSlash.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSlash.Location = new System.Drawing.Point(65, 5);
+            this.BtnSlash.Name = "BtnSlash";
+            this.BtnSlash.Size = new System.Drawing.Size(60, 60);
+            this.BtnSlash.TabIndex = 15;
+            this.BtnSlash.Text = "/";
+            this.BtnSlash.UseVisualStyleBackColor = false;
+            // 
+            // BtnGuionBajo
+            // 
+            this.BtnGuionBajo.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnGuionBajo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnGuionBajo.BackgroundImage")));
+            this.BtnGuionBajo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnGuionBajo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnGuionBajo.FlatAppearance.BorderSize = 3;
+            this.BtnGuionBajo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGuionBajo.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGuionBajo.Location = new System.Drawing.Point(4, 5);
+            this.BtnGuionBajo.Name = "BtnGuionBajo";
+            this.BtnGuionBajo.Size = new System.Drawing.Size(60, 60);
+            this.BtnGuionBajo.TabIndex = 14;
+            this.BtnGuionBajo.Text = "_";
+            this.BtnGuionBajo.UseVisualStyleBackColor = false;
+            // 
+            // BtnNum9
+            // 
+            this.BtnNum9.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum9.BackgroundImage")));
+            this.BtnNum9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum9.FlatAppearance.BorderSize = 3;
+            this.BtnNum9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum9.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum9.Location = new System.Drawing.Point(126, 66);
+            this.BtnNum9.Name = "BtnNum9";
+            this.BtnNum9.Size = new System.Drawing.Size(60, 60);
+            this.BtnNum9.TabIndex = 13;
+            this.BtnNum9.Text = "9";
+            this.BtnNum9.UseVisualStyleBackColor = false;
+            // 
+            // BtnNum8
+            // 
+            this.BtnNum8.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum8.BackgroundImage")));
+            this.BtnNum8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum8.FlatAppearance.BorderSize = 3;
+            this.BtnNum8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum8.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum8.Location = new System.Drawing.Point(65, 66);
+            this.BtnNum8.Name = "BtnNum8";
+            this.BtnNum8.Size = new System.Drawing.Size(60, 60);
+            this.BtnNum8.TabIndex = 12;
+            this.BtnNum8.Text = "8";
+            this.BtnNum8.UseVisualStyleBackColor = false;
+            // 
+            // BtnNum7
+            // 
+            this.BtnNum7.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum7.BackgroundImage")));
+            this.BtnNum7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum7.FlatAppearance.BorderSize = 3;
+            this.BtnNum7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum7.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum7.Location = new System.Drawing.Point(4, 66);
+            this.BtnNum7.Name = "BtnNum7";
+            this.BtnNum7.Size = new System.Drawing.Size(60, 60);
+            this.BtnNum7.TabIndex = 11;
+            this.BtnNum7.Text = "7";
+            this.BtnNum7.UseVisualStyleBackColor = false;
+            // 
+            // BtnNum6
+            // 
+            this.BtnNum6.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum6.BackgroundImage")));
+            this.BtnNum6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum6.FlatAppearance.BorderSize = 3;
+            this.BtnNum6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum6.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum6.Location = new System.Drawing.Point(126, 127);
+            this.BtnNum6.Name = "BtnNum6";
+            this.BtnNum6.Size = new System.Drawing.Size(60, 60);
+            this.BtnNum6.TabIndex = 10;
+            this.BtnNum6.Text = "6";
+            this.BtnNum6.UseVisualStyleBackColor = false;
+            // 
+            // BtnNum5
+            // 
+            this.BtnNum5.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum5.BackgroundImage")));
+            this.BtnNum5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum5.FlatAppearance.BorderSize = 3;
+            this.BtnNum5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum5.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum5.Location = new System.Drawing.Point(65, 127);
+            this.BtnNum5.Name = "BtnNum5";
+            this.BtnNum5.Size = new System.Drawing.Size(60, 60);
+            this.BtnNum5.TabIndex = 9;
+            this.BtnNum5.Text = "5";
+            this.BtnNum5.UseVisualStyleBackColor = false;
+            // 
+            // BtnNum4
+            // 
+            this.BtnNum4.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum4.BackgroundImage")));
+            this.BtnNum4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum4.FlatAppearance.BorderSize = 3;
+            this.BtnNum4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum4.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum4.Location = new System.Drawing.Point(4, 127);
+            this.BtnNum4.Name = "BtnNum4";
+            this.BtnNum4.Size = new System.Drawing.Size(60, 60);
+            this.BtnNum4.TabIndex = 8;
+            this.BtnNum4.Text = "4";
+            this.BtnNum4.UseVisualStyleBackColor = false;
+            // 
+            // BtnNum3
+            // 
+            this.BtnNum3.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum3.BackgroundImage")));
+            this.BtnNum3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum3.FlatAppearance.BorderSize = 3;
+            this.BtnNum3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum3.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum3.Location = new System.Drawing.Point(126, 188);
+            this.BtnNum3.Name = "BtnNum3";
+            this.BtnNum3.Size = new System.Drawing.Size(60, 60);
+            this.BtnNum3.TabIndex = 7;
+            this.BtnNum3.Text = "3";
+            this.BtnNum3.UseVisualStyleBackColor = false;
+            // 
+            // BtnNum2
+            // 
+            this.BtnNum2.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum2.BackgroundImage")));
+            this.BtnNum2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum2.FlatAppearance.BorderSize = 3;
+            this.BtnNum2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum2.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum2.Location = new System.Drawing.Point(65, 188);
+            this.BtnNum2.Name = "BtnNum2";
+            this.BtnNum2.Size = new System.Drawing.Size(60, 60);
+            this.BtnNum2.TabIndex = 6;
+            this.BtnNum2.Text = "2";
+            this.BtnNum2.UseVisualStyleBackColor = false;
+            // 
+            // BtnNum1
+            // 
+            this.BtnNum1.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum1.BackgroundImage")));
+            this.BtnNum1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum1.FlatAppearance.BorderSize = 3;
+            this.BtnNum1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum1.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum1.Location = new System.Drawing.Point(4, 188);
+            this.BtnNum1.Name = "BtnNum1";
+            this.BtnNum1.Size = new System.Drawing.Size(60, 60);
+            this.BtnNum1.TabIndex = 5;
+            this.BtnNum1.Text = "1";
+            this.BtnNum1.UseVisualStyleBackColor = false;
+            // 
+            // BtnIntro
+            // 
+            this.BtnIntro.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnIntro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnIntro.BackgroundImage")));
+            this.BtnIntro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnIntro.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnIntro.FlatAppearance.BorderSize = 3;
+            this.BtnIntro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnIntro.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnIntro.Location = new System.Drawing.Point(187, 188);
+            this.BtnIntro.Name = "BtnIntro";
+            this.BtnIntro.Size = new System.Drawing.Size(60, 121);
+            this.BtnIntro.TabIndex = 4;
+            this.BtnIntro.Text = "Intro";
+            this.BtnIntro.UseVisualStyleBackColor = false;
+            // 
+            // BtnPunto
+            // 
+            this.BtnPunto.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnPunto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPunto.BackgroundImage")));
+            this.BtnPunto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnPunto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnPunto.FlatAppearance.BorderSize = 3;
+            this.BtnPunto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPunto.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPunto.Location = new System.Drawing.Point(126, 249);
+            this.BtnPunto.Name = "BtnPunto";
+            this.BtnPunto.Size = new System.Drawing.Size(60, 60);
+            this.BtnPunto.TabIndex = 3;
+            this.BtnPunto.Text = ".";
+            this.BtnPunto.UseVisualStyleBackColor = false;
+            // 
+            // BtnNum0
+            // 
+            this.BtnNum0.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum0.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum0.BackgroundImage")));
+            this.BtnNum0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNum0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNum0.FlatAppearance.BorderSize = 3;
+            this.BtnNum0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNum0.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNum0.Location = new System.Drawing.Point(5, 249);
+            this.BtnNum0.Name = "BtnNum0";
+            this.BtnNum0.Size = new System.Drawing.Size(120, 60);
+            this.BtnNum0.TabIndex = 2;
+            this.BtnNum0.Text = "0";
+            this.BtnNum0.UseVisualStyleBackColor = false;
+            // 
             // PnlDatosMesero
             // 
             this.PnlDatosMesero.BackColor = System.Drawing.Color.Transparent;
             this.PnlDatosMesero.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PnlDatosMesero.Controls.Add(this.TxtClave);
-            this.PnlDatosMesero.Controls.Add(this.label1);
-            this.PnlDatosMesero.Controls.Add(this.TxtIDMesero);
             this.PnlDatosMesero.Controls.Add(this.BtnMesero);
-            this.PnlDatosMesero.Location = new System.Drawing.Point(38, 119);
+            this.PnlDatosMesero.Location = new System.Drawing.Point(58, 156);
             this.PnlDatosMesero.Name = "PnlDatosMesero";
-            this.PnlDatosMesero.Size = new System.Drawing.Size(398, 154);
+            this.PnlDatosMesero.Size = new System.Drawing.Size(382, 83);
             this.PnlDatosMesero.TabIndex = 53;
             // 
             // TxtClave
             // 
             this.TxtClave.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtClave.Location = new System.Drawing.Point(166, 81);
+            this.TxtClave.Location = new System.Drawing.Point(147, 9);
             this.TxtClave.Name = "TxtClave";
             this.TxtClave.Size = new System.Drawing.Size(225, 63);
             this.TxtClave.TabIndex = 11;
             // 
-            // label1
+            // BtnMesero
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 95);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 34);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Contraseña";
-            // 
-            // TxtIDMesero
-            // 
-            this.TxtIDMesero.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtIDMesero.Location = new System.Drawing.Point(166, 10);
-            this.TxtIDMesero.Name = "TxtIDMesero";
-            this.TxtIDMesero.Size = new System.Drawing.Size(80, 63);
-            this.TxtIDMesero.TabIndex = 9;
+            this.BtnMesero.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnMesero.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnMesero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnMesero.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.BtnMesero.FlatAppearance.BorderSize = 3;
+            this.BtnMesero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMesero.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMesero.Image = global::Cupediarum.Properties.Resources.Icono_Mesero;
+            this.BtnMesero.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnMesero.Location = new System.Drawing.Point(9, 4);
+            this.BtnMesero.Name = "BtnMesero";
+            this.BtnMesero.Size = new System.Drawing.Size(132, 72);
+            this.BtnMesero.TabIndex = 8;
+            this.BtnMesero.Text = "Mesero";
+            this.BtnMesero.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnMesero.UseVisualStyleBackColor = false;
             // 
             // PnlTecladoAlf
             // 
@@ -236,44 +499,6 @@
             this.PnlTecladoAlf.Name = "PnlTecladoAlf";
             this.PnlTecladoAlf.Size = new System.Drawing.Size(726, 253);
             this.PnlTecladoAlf.TabIndex = 50;
-            // 
-            // BtnMesero
-            // 
-            this.BtnMesero.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnMesero.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
-            this.BtnMesero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnMesero.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.BtnMesero.FlatAppearance.BorderSize = 3;
-            this.BtnMesero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMesero.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMesero.Image = global::Cupediarum.Properties.Resources.Icono_Mesero;
-            this.BtnMesero.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnMesero.Location = new System.Drawing.Point(9, 4);
-            this.BtnMesero.Name = "BtnMesero";
-            this.BtnMesero.Size = new System.Drawing.Size(132, 72);
-            this.BtnMesero.TabIndex = 8;
-            this.BtnMesero.Text = "Mesero";
-            this.BtnMesero.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnMesero.UseVisualStyleBackColor = false;
-            // 
-            // BtnSalir
-            // 
-            this.BtnSalir.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnSalir.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
-            this.BtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnSalir.FlatAppearance.BorderSize = 5;
-            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSalir.Font = new System.Drawing.Font("Modern No. 20", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalir.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
-            this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSalir.Location = new System.Drawing.Point(750, 543);
-            this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(128, 60);
-            this.BtnSalir.TabIndex = 51;
-            this.BtnSalir.Text = "Salir";
-            this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSalir.UseVisualStyleBackColor = false;
             // 
             // BtnAceptar
             // 
@@ -844,335 +1069,21 @@
             this.BtnLetraQ.Text = "Q";
             this.BtnLetraQ.UseVisualStyleBackColor = false;
             // 
-            // BtnMas
-            // 
-            this.BtnMas.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnMas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMas.BackgroundImage")));
-            this.BtnMas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnMas.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnMas.FlatAppearance.BorderSize = 3;
-            this.BtnMas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMas.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMas.Location = new System.Drawing.Point(187, 66);
-            this.BtnMas.Name = "BtnMas";
-            this.BtnMas.Size = new System.Drawing.Size(60, 121);
-            this.BtnMas.TabIndex = 18;
-            this.BtnMas.Text = "+";
-            this.BtnMas.UseVisualStyleBackColor = false;
-            // 
-            // BtnGuion
-            // 
-            this.BtnGuion.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnGuion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnGuion.BackgroundImage")));
-            this.BtnGuion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnGuion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnGuion.FlatAppearance.BorderSize = 3;
-            this.BtnGuion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGuion.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGuion.Location = new System.Drawing.Point(187, 5);
-            this.BtnGuion.Name = "BtnGuion";
-            this.BtnGuion.Size = new System.Drawing.Size(60, 60);
-            this.BtnGuion.TabIndex = 17;
-            this.BtnGuion.Text = "-";
-            this.BtnGuion.UseVisualStyleBackColor = false;
-            // 
-            // BtnAsterisco
-            // 
-            this.BtnAsterisco.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnAsterisco.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAsterisco.BackgroundImage")));
-            this.BtnAsterisco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnAsterisco.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnAsterisco.FlatAppearance.BorderSize = 3;
-            this.BtnAsterisco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAsterisco.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAsterisco.Location = new System.Drawing.Point(126, 5);
-            this.BtnAsterisco.Name = "BtnAsterisco";
-            this.BtnAsterisco.Size = new System.Drawing.Size(60, 60);
-            this.BtnAsterisco.TabIndex = 16;
-            this.BtnAsterisco.Text = "*";
-            this.BtnAsterisco.UseVisualStyleBackColor = false;
-            // 
-            // BtnSlash
-            // 
-            this.BtnSlash.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnSlash.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSlash.BackgroundImage")));
-            this.BtnSlash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnSlash.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnSlash.FlatAppearance.BorderSize = 3;
-            this.BtnSlash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSlash.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSlash.Location = new System.Drawing.Point(65, 5);
-            this.BtnSlash.Name = "BtnSlash";
-            this.BtnSlash.Size = new System.Drawing.Size(60, 60);
-            this.BtnSlash.TabIndex = 15;
-            this.BtnSlash.Text = "/";
-            this.BtnSlash.UseVisualStyleBackColor = false;
-            // 
-            // BtnGuionBajo
-            // 
-            this.BtnGuionBajo.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnGuionBajo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnGuionBajo.BackgroundImage")));
-            this.BtnGuionBajo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnGuionBajo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnGuionBajo.FlatAppearance.BorderSize = 3;
-            this.BtnGuionBajo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGuionBajo.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGuionBajo.Location = new System.Drawing.Point(4, 5);
-            this.BtnGuionBajo.Name = "BtnGuionBajo";
-            this.BtnGuionBajo.Size = new System.Drawing.Size(60, 60);
-            this.BtnGuionBajo.TabIndex = 14;
-            this.BtnGuionBajo.Text = "_";
-            this.BtnGuionBajo.UseVisualStyleBackColor = false;
-            // 
-            // BtnNum9
-            // 
-            this.BtnNum9.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnNum9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum9.BackgroundImage")));
-            this.BtnNum9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnNum9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnNum9.FlatAppearance.BorderSize = 3;
-            this.BtnNum9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum9.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNum9.Location = new System.Drawing.Point(126, 66);
-            this.BtnNum9.Name = "BtnNum9";
-            this.BtnNum9.Size = new System.Drawing.Size(60, 60);
-            this.BtnNum9.TabIndex = 13;
-            this.BtnNum9.Text = "9";
-            this.BtnNum9.UseVisualStyleBackColor = false;
-            // 
-            // BtnNum8
-            // 
-            this.BtnNum8.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnNum8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum8.BackgroundImage")));
-            this.BtnNum8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnNum8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnNum8.FlatAppearance.BorderSize = 3;
-            this.BtnNum8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum8.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNum8.Location = new System.Drawing.Point(65, 66);
-            this.BtnNum8.Name = "BtnNum8";
-            this.BtnNum8.Size = new System.Drawing.Size(60, 60);
-            this.BtnNum8.TabIndex = 12;
-            this.BtnNum8.Text = "8";
-            this.BtnNum8.UseVisualStyleBackColor = false;
-            // 
-            // BtnNum7
-            // 
-            this.BtnNum7.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnNum7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum7.BackgroundImage")));
-            this.BtnNum7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnNum7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnNum7.FlatAppearance.BorderSize = 3;
-            this.BtnNum7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum7.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNum7.Location = new System.Drawing.Point(4, 66);
-            this.BtnNum7.Name = "BtnNum7";
-            this.BtnNum7.Size = new System.Drawing.Size(60, 60);
-            this.BtnNum7.TabIndex = 11;
-            this.BtnNum7.Text = "7";
-            this.BtnNum7.UseVisualStyleBackColor = false;
-            // 
-            // BtnNum6
-            // 
-            this.BtnNum6.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnNum6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum6.BackgroundImage")));
-            this.BtnNum6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnNum6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnNum6.FlatAppearance.BorderSize = 3;
-            this.BtnNum6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum6.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNum6.Location = new System.Drawing.Point(126, 127);
-            this.BtnNum6.Name = "BtnNum6";
-            this.BtnNum6.Size = new System.Drawing.Size(60, 60);
-            this.BtnNum6.TabIndex = 10;
-            this.BtnNum6.Text = "6";
-            this.BtnNum6.UseVisualStyleBackColor = false;
-            // 
-            // BtnNum5
-            // 
-            this.BtnNum5.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnNum5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum5.BackgroundImage")));
-            this.BtnNum5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnNum5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnNum5.FlatAppearance.BorderSize = 3;
-            this.BtnNum5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum5.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNum5.Location = new System.Drawing.Point(65, 127);
-            this.BtnNum5.Name = "BtnNum5";
-            this.BtnNum5.Size = new System.Drawing.Size(60, 60);
-            this.BtnNum5.TabIndex = 9;
-            this.BtnNum5.Text = "5";
-            this.BtnNum5.UseVisualStyleBackColor = false;
-            // 
-            // BtnNum4
-            // 
-            this.BtnNum4.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnNum4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum4.BackgroundImage")));
-            this.BtnNum4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnNum4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnNum4.FlatAppearance.BorderSize = 3;
-            this.BtnNum4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum4.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNum4.Location = new System.Drawing.Point(4, 127);
-            this.BtnNum4.Name = "BtnNum4";
-            this.BtnNum4.Size = new System.Drawing.Size(60, 60);
-            this.BtnNum4.TabIndex = 8;
-            this.BtnNum4.Text = "4";
-            this.BtnNum4.UseVisualStyleBackColor = false;
-            // 
-            // BtnNum3
-            // 
-            this.BtnNum3.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnNum3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum3.BackgroundImage")));
-            this.BtnNum3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnNum3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnNum3.FlatAppearance.BorderSize = 3;
-            this.BtnNum3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum3.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNum3.Location = new System.Drawing.Point(126, 188);
-            this.BtnNum3.Name = "BtnNum3";
-            this.BtnNum3.Size = new System.Drawing.Size(60, 60);
-            this.BtnNum3.TabIndex = 7;
-            this.BtnNum3.Text = "3";
-            this.BtnNum3.UseVisualStyleBackColor = false;
-            // 
-            // BtnNum2
-            // 
-            this.BtnNum2.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnNum2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum2.BackgroundImage")));
-            this.BtnNum2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnNum2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnNum2.FlatAppearance.BorderSize = 3;
-            this.BtnNum2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum2.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNum2.Location = new System.Drawing.Point(65, 188);
-            this.BtnNum2.Name = "BtnNum2";
-            this.BtnNum2.Size = new System.Drawing.Size(60, 60);
-            this.BtnNum2.TabIndex = 6;
-            this.BtnNum2.Text = "2";
-            this.BtnNum2.UseVisualStyleBackColor = false;
-            // 
-            // BtnNum1
-            // 
-            this.BtnNum1.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnNum1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum1.BackgroundImage")));
-            this.BtnNum1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnNum1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnNum1.FlatAppearance.BorderSize = 3;
-            this.BtnNum1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum1.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNum1.Location = new System.Drawing.Point(4, 188);
-            this.BtnNum1.Name = "BtnNum1";
-            this.BtnNum1.Size = new System.Drawing.Size(60, 60);
-            this.BtnNum1.TabIndex = 5;
-            this.BtnNum1.Text = "1";
-            this.BtnNum1.UseVisualStyleBackColor = false;
-            // 
-            // BtnIntro
-            // 
-            this.BtnIntro.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnIntro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnIntro.BackgroundImage")));
-            this.BtnIntro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnIntro.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnIntro.FlatAppearance.BorderSize = 3;
-            this.BtnIntro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnIntro.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnIntro.Location = new System.Drawing.Point(187, 188);
-            this.BtnIntro.Name = "BtnIntro";
-            this.BtnIntro.Size = new System.Drawing.Size(60, 121);
-            this.BtnIntro.TabIndex = 4;
-            this.BtnIntro.Text = "Intro";
-            this.BtnIntro.UseVisualStyleBackColor = false;
-            // 
-            // BtnPunto
-            // 
-            this.BtnPunto.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnPunto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPunto.BackgroundImage")));
-            this.BtnPunto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnPunto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnPunto.FlatAppearance.BorderSize = 3;
-            this.BtnPunto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPunto.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPunto.Location = new System.Drawing.Point(126, 249);
-            this.BtnPunto.Name = "BtnPunto";
-            this.BtnPunto.Size = new System.Drawing.Size(60, 60);
-            this.BtnPunto.TabIndex = 3;
-            this.BtnPunto.Text = ".";
-            this.BtnPunto.UseVisualStyleBackColor = false;
-            // 
-            // BtnNum0
-            // 
-            this.BtnNum0.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnNum0.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum0.BackgroundImage")));
-            this.BtnNum0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnNum0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnNum0.FlatAppearance.BorderSize = 3;
-            this.BtnNum0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNum0.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNum0.Location = new System.Drawing.Point(5, 249);
-            this.BtnNum0.Name = "BtnNum0";
-            this.BtnNum0.Size = new System.Drawing.Size(120, 60);
-            this.BtnNum0.TabIndex = 2;
-            this.BtnNum0.Text = "0";
-            this.BtnNum0.UseVisualStyleBackColor = false;
-            // 
-            // BtnMonitor
-            // 
-            this.BtnMonitor.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnMonitor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMonitor.BackgroundImage")));
-            this.BtnMonitor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnMonitor.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.BtnMonitor.FlatAppearance.BorderSize = 3;
-            this.BtnMonitor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMonitor.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMonitor.Image = global::Cupediarum.Properties.Resources.Icono_Monitor;
-            this.BtnMonitor.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnMonitor.Location = new System.Drawing.Point(741, 38);
-            this.BtnMonitor.Name = "BtnMonitor";
-            this.BtnMonitor.Size = new System.Drawing.Size(137, 87);
-            this.BtnMonitor.TabIndex = 16;
-            this.BtnMonitor.Text = "Monitor Ventas";
-            this.BtnMonitor.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnMonitor.UseVisualStyleBackColor = false;
-            // 
-            // Cuentas
-            // 
-            this.Cuentas.BackColor = System.Drawing.Color.LightCoral;
-            this.Cuentas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Cuentas.BackgroundImage")));
-            this.Cuentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Cuentas.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.Cuentas.FlatAppearance.BorderSize = 3;
-            this.Cuentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cuentas.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cuentas.Image = global::Cupediarum.Properties.Resources.Icono_Pedidos;
-            this.Cuentas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Cuentas.Location = new System.Drawing.Point(741, 135);
-            this.Cuentas.Name = "Cuentas";
-            this.Cuentas.Size = new System.Drawing.Size(137, 90);
-            this.Cuentas.TabIndex = 15;
-            this.Cuentas.Text = "Cuentas";
-            this.Cuentas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Cuentas.UseVisualStyleBackColor = false;
-            this.Cuentas.Click += new System.EventHandler(this.Cuentas_Click);
-            // 
             // FrmMesero
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(884, 615);
+            this.ClientSize = new System.Drawing.Size(743, 615);
             this.Controls.Add(this.PnlDatosMesero);
-            this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.PnlTecladoAlf);
             this.Controls.Add(this.PnlTecladoNum);
             this.Controls.Add(this.MnuMesero);
-            this.Controls.Add(this.BtnMonitor);
-            this.Controls.Add(this.Cuentas);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmMesero";
             this.Text = "Mesero";
-            this.Load += new System.EventHandler(this.Mesero_Load);
+       
             this.MnuMesero.ResumeLayout(false);
             this.MnuMesero.PerformLayout();
             this.PnlTecladoNum.ResumeLayout(false);
@@ -1185,8 +1096,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button BtnMonitor;
-        private System.Windows.Forms.Button Cuentas;
         private System.Windows.Forms.MenuStrip MnuMesero;
         private System.Windows.Forms.ToolStripMenuItem configurarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
@@ -1208,11 +1117,8 @@
         private System.Windows.Forms.Button BtnIntro;
         private System.Windows.Forms.Button BtnPunto;
         private System.Windows.Forms.Button BtnNum0;
-        private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Panel PnlDatosMesero;
         private System.Windows.Forms.TextBox TxtClave;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxtIDMesero;
         private System.Windows.Forms.Button BtnMesero;
         private System.Windows.Forms.Button BtnLetraQ;
         private System.Windows.Forms.Button BtnLetraW;

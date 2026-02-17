@@ -62,7 +62,7 @@
             this.PnlDatosC.Name = "PnlDatosC";
             this.PnlDatosC.Size = new System.Drawing.Size(639, 84);
             this.PnlDatosC.TabIndex = 0;
-            this.PnlDatosC.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+          
             // 
             // PnlDatosCuenta
             // 
@@ -121,7 +121,7 @@
             this.label5.Size = new System.Drawing.Size(77, 23);
             this.label5.TabIndex = 20;
             this.label5.Text = "MESA :";
-            this.label5.Click += new System.EventHandler(this.label3_Click);
+          
             // 
             // TxtNombMesero
             // 
@@ -286,7 +286,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmDatosCuenta";
             this.Text = "Datos de Cuenta";
-            this.Load += new System.EventHandler(this.DatosCuenta_Load);
+           
             this.PnlDatosC.ResumeLayout(false);
             this.PnlDatosCuenta.ResumeLayout(false);
             this.PnlDatosCuenta.PerformLayout();

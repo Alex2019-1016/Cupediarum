@@ -149,7 +149,7 @@
             this.FlpComanda.Name = "FlpComanda";
             this.FlpComanda.Size = new System.Drawing.Size(406, 587);
             this.FlpComanda.TabIndex = 1;
-            this.FlpComanda.Paint += new System.Windows.Forms.PaintEventHandler(this.FlpComanda_Paint);
+            
             // 
             // BtnComentario
             // 

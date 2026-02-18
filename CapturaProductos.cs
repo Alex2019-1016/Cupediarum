@@ -366,7 +366,7 @@ namespace Cupediarum
         // =============================
         // ACEPTAR
         // =============================
-        private void BtnAceptar_Click(object sender, EventArgs e)
+        private void BtnAceptar_Click_1(object sender, EventArgs e)
         {
             if (DgvComanda.Rows.Count == 0)
             {

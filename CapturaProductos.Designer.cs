@@ -49,6 +49,7 @@
             this.DESCRIPCION = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PRECIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DESCUENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LblTotal = new System.Windows.Forms.Label();
             this.FlpCategorias = new System.Windows.Forms.FlowLayoutPanel();
             this.BtnComida = new System.Windows.Forms.Button();
             this.BtnPostres = new System.Windows.Forms.Button();
@@ -98,7 +99,6 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.BtnSiguienteTipos = new System.Windows.Forms.Button();
-            this.LblTotal = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.FlpComanda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvComanda)).BeginInit();
@@ -110,13 +110,13 @@
             // configurarToolStripMenuItem
             // 
             this.configurarToolStripMenuItem.Name = "configurarToolStripMenuItem";
-            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(112, 32);
+            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
             this.configurarToolStripMenuItem.Text = "Configurar";
             // 
             // acercaToolStripMenuItem
             // 
             this.acercaToolStripMenuItem.Name = "acercaToolStripMenuItem";
-            this.acercaToolStripMenuItem.Size = new System.Drawing.Size(105, 32);
+            this.acercaToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
             this.acercaToolStripMenuItem.Text = "Acerca de";
             // 
             // menuStrip1
@@ -128,7 +128,7 @@
             this.acercaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1196, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1196, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -146,9 +146,10 @@
             this.FlpComanda.Controls.Add(this.BtnBorrarTodo);
             this.FlpComanda.Controls.Add(this.BtnBorrarProducto);
             this.FlpComanda.Controls.Add(this.DgvComanda);
+            this.FlpComanda.Controls.Add(this.LblTotal);
             this.FlpComanda.Location = new System.Drawing.Point(0, 40);
             this.FlpComanda.Name = "FlpComanda";
-            this.FlpComanda.Size = new System.Drawing.Size(406, 587);
+            this.FlpComanda.Size = new System.Drawing.Size(406, 626);
             this.FlpComanda.TabIndex = 1;
             // 
             // BtnComentario
@@ -207,7 +208,6 @@
             this.BtnAceptar.Text = "Aceptar";
             this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAceptar.UseVisualStyleBackColor = false;
-            this.BtnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
             // 
             // BtnCancelar
             // 
@@ -329,8 +329,6 @@
             // 
             // DgvComanda
             // 
-            this.DgvComanda.AllowUserToAddRows = false;
-            this.DgvComanda.AllowUserToDeleteRows = false;
             this.DgvComanda.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.DgvComanda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvComanda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -390,6 +388,16 @@
             this.DESCUENTO.Name = "DESCUENTO";
             this.DESCUENTO.ReadOnly = true;
             this.DESCUENTO.Width = 80;
+            // 
+            // LblTotal
+            // 
+            this.LblTotal.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTotal.ForeColor = System.Drawing.Color.White;
+            this.LblTotal.Location = new System.Drawing.Point(3, 584);
+            this.LblTotal.Name = "LblTotal";
+            this.LblTotal.Size = new System.Drawing.Size(166, 30);
+            this.LblTotal.TabIndex = 22;
+            this.LblTotal.Text = "Total";
             // 
             // FlpCategorias
             // 
@@ -1221,17 +1229,6 @@
             this.BtnSiguienteTipos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnSiguienteTipos.UseVisualStyleBackColor = false;
             // 
-            // LblTotal
-            // 
-            this.LblTotal.AutoSize = true;
-            this.LblTotal.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTotal.ForeColor = System.Drawing.Color.White;
-            this.LblTotal.Location = new System.Drawing.Point(6, 633);
-            this.LblTotal.Name = "LblTotal";
-            this.LblTotal.Size = new System.Drawing.Size(56, 25);
-            this.LblTotal.TabIndex = 5;
-            this.LblTotal.Text = "Total";
-            // 
             // FrmCapturaProductos
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1239,7 +1236,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1196, 678);
-            this.Controls.Add(this.LblTotal);
             this.Controls.Add(this.FlpProductos);
             this.Controls.Add(this.FlpSubCategorias);
             this.Controls.Add(this.FlpCategorias);
@@ -1250,7 +1246,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmCapturaProductos";
             this.Text = "Captura de Productos";
-            this.Load += new System.EventHandler(this.FrmCapturaProductos_Load);
+            this.Load += new System.EventHandler(this.FrmCapturaProductos_Load_1);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.FlpComanda.ResumeLayout(false);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlClient;
+
+
 
 
 namespace Cupediarum
@@ -29,7 +32,7 @@ namespace Cupediarum
             formularioAnterior = anterior;
         }
 
-        private void FrmCapturaProductos_Load(object sender, EventArgs e)
+        private void FrmCapturaProductos_Load_1(object sender, EventArgs e)
         {
             ConfigurarDgv();
             CargarCategoriasPrincipales();
@@ -348,7 +351,12 @@ namespace Cupediarum
             {
                 if (row.Cells["PRECIO"].Value != null)
                 {
-                    totalCuenta += Convert.ToDecimal(row.Cells["PRECIO"].Value);
+                    decimal precio;
+
+                    if (decimal.TryParse(row.Cells["PRECIO"].Value.ToString(), out precio))
+                    {
+                        totalCuenta += precio;
+                    }
                 }
             }
 
@@ -527,4 +535,3 @@ namespace Cupediarum
         public decimal Precio { get; set; }
     }
 }
-

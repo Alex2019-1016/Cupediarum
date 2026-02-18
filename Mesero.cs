@@ -9,15 +9,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Collections.Specialized;
+
 namespace Cupediarum
 {
     public partial class FrmMesero : Form
     {
         private bool meseroAutenticado = false;
-        public FrmMesero()
+        private Form formularioAnterior;
+
+        public FrmMesero(Form anterior)
         {
             InitializeComponent();
+            formularioAnterior = anterior;
         }
 
         private void CargarCuentas()
@@ -32,14 +35,14 @@ namespace Cupediarum
 
                 string query;
 
-                if (Sesion.IdRol == 1) // ADMIN
+                if (Sesion.IdRol == 1) 
                 {
                     query = @"SELECT Id_Cuenta, FechaApertura, EstadoCuenta
                               FROM CUENTAS
                               WHERE EstadoCuenta = 'Abierta'
                               ORDER BY FechaApertura DESC";
                 }
-                else // MESERO
+                else 
                 {
                     query = @"SELECT Id_Cuenta, FechaApertura, EstadoCuenta
                               FROM CUENTAS
@@ -57,7 +60,7 @@ namespace Cupediarum
                     DataTable dt = new DataTable();
                     da.Fill(dt);
 
-                    //dgvCuentas.DataSource = dt;
+                   
                 }
             }
         }
@@ -164,6 +167,7 @@ namespace Cupediarum
                             Sesion.NombreUsuario = reader.GetString(1);
                             Sesion.IdRol = reader.GetInt32(2);
 
+                            meseroAutenticado = true;
 
 
                             MessageBox.Show("Mesero autenticado ✔",
@@ -191,6 +195,12 @@ namespace Cupediarum
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            formularioAnterior.Show();
+            this.Close();
         }
     }
 }

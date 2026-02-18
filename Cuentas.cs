@@ -9,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Collections.Specialized.BitVector32;
 
 namespace Cupediarum
 {
@@ -44,7 +43,7 @@ namespace Cupediarum
 
                 string query;
 
-                if (Sesion.IdRol == 1) 
+                if (Sesion.IdRol == 1)
                 {
                     query = @"SELECT Id_Cuenta, Nomb_Cuenta
                       FROM CUENTAS
@@ -80,7 +79,7 @@ namespace Cupediarum
                         btn.BackColor = Color.DarkGray;
                         btn.Font = new Font("Times New Roman", 10, FontStyle.Bold);
 
-                      
+                        
                         btn.Text = nombreCuenta;
 
                         btn.Tag = idCuenta; 
@@ -97,10 +96,11 @@ namespace Cupediarum
         private void BtnCuenta_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            cuentaSeleccionada = (int)btn.Tag;
+            cuentaSeleccionada = (int) btn.Tag;
 
-            CargarAreas();
-         
+            FrmCapturaProductos frm = new FrmCapturaProductos(cuentaSeleccionada, this);
+            frm.Show();
+            this.Hide();
         }
 
         private void CargarAreas()
@@ -119,7 +119,7 @@ namespace Cupediarum
                 int? areaActualId = null;
                 string nombreAreaActual = "";
 
-              
+
                 string queryAreaActual = @"
             SELECT A.Id_Area, A.Nomb_Area
             FROM CUENTAS C
@@ -143,7 +143,7 @@ namespace Cupediarum
 
                 RtbNombArea.Text = areaActualId == null ? "TO GO" : nombreAreaActual;
 
-            
+              
                 string queryAreas = "SELECT Id_Area, Nomb_Area FROM AREAS WHERE Estado = 1";
 
                 using (SqlCommand cmd = new SqlCommand(queryAreas, conn))
@@ -197,7 +197,7 @@ namespace Cupediarum
                 {
                     int? mesaAnterior = null;
 
-               
+                 
                     string queryMesaAnterior = @"
                 SELECT Id_Mesa
                 FROM CUENTAS
@@ -212,7 +212,7 @@ namespace Cupediarum
                             mesaAnterior = Convert.ToInt32(result);
                     }
 
-                   
+         
                     string queryMesaNueva = @"
                 SELECT TOP 1 Id_Mesa
                 FROM MESAS
@@ -236,7 +236,7 @@ namespace Cupediarum
                         idMesaNueva = Convert.ToInt32(result);
                     }
 
-                    
+
                     if (mesaAnterior != null)
                     {
                         string liberar = @"
@@ -251,6 +251,7 @@ namespace Cupediarum
                         }
                     }
 
+                    
                     string updateCuenta = @"
                 UPDATE CUENTAS
                 SET Id_Mesa = @IdMesa
@@ -263,7 +264,7 @@ namespace Cupediarum
                         cmd.ExecuteNonQuery();
                     }
 
-                  
+                    
                     string ocuparMesa = @"
                 UPDATE MESAS
                 SET Estado = 'Ocupada'
@@ -289,10 +290,16 @@ namespace Cupediarum
 
         private void BtnAgregarCuenta_Click(object sender, EventArgs e)
         {
-            FrmAgregarCuenta frm = new FrmAgregarCuenta();
+            FrmAgregarCuenta frm = new FrmAgregarCuenta(this);
+            frm.Show();
+            this.Hide();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            FrmMenuPrincipal frm = new FrmMenuPrincipal();
             frm.Show();
             this.Hide();
         }
     }
 }
-

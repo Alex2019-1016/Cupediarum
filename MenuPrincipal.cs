@@ -19,12 +19,12 @@ namespace Cupediarum
 
         private void BtnMesero_Click(object sender, EventArgs e)
         {
-            FrmMesero frm = new FrmMesero();
+            FrmMesero frm = new FrmMesero(this);
             frm.Show();
             this.Hide();
         }
 
-        private void BtnMesas_Click(object sender, EventArgs e)
+private void BtnMesas_Click(object sender, EventArgs e)
         {
             FrmMesas frm = new FrmMesas();
             frm.Show();

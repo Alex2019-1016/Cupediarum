@@ -132,7 +132,7 @@
             this.BtnAgregarCuenta.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAgregarCuenta.Image = global::Cupediarum.Properties.Resources.Icono_AbrirCuenta;
             this.BtnAgregarCuenta.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnAgregarCuenta.Location = new System.Drawing.Point(7, 3);
+            this.BtnAgregarCuenta.Location = new System.Drawing.Point(7, 2);
             this.BtnAgregarCuenta.Name = "BtnAgregarCuenta";
             this.BtnAgregarCuenta.Size = new System.Drawing.Size(140, 96);
             this.BtnAgregarCuenta.TabIndex = 9;
@@ -350,7 +350,7 @@
             this.FlpCuentas.Name = "FlpCuentas";
             this.FlpCuentas.Size = new System.Drawing.Size(752, 473);
             this.FlpCuentas.TabIndex = 5;
-           
+            // 
             // BtnAtras
             // 
             this.BtnAtras.BackColor = System.Drawing.Color.LightCoral;

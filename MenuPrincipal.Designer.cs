@@ -62,7 +62,7 @@
             this.ayudaToolStripMenuItem1});
             this.MnuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.MnuPrincipal.Name = "MnuPrincipal";
-            this.MnuPrincipal.Size = new System.Drawing.Size(727, 33);
+            this.MnuPrincipal.Size = new System.Drawing.Size(985, 33);
             this.MnuPrincipal.TabIndex = 2;
             this.MnuPrincipal.Text = "menuStrip1";
             // 
@@ -111,7 +111,7 @@
             this.PnOpciones.Controls.Add(this.BtnMesas);
             this.PnOpciones.Location = new System.Drawing.Point(4, 35);
             this.PnOpciones.Name = "PnOpciones";
-            this.PnOpciones.Size = new System.Drawing.Size(126, 373);
+            this.PnOpciones.Size = new System.Drawing.Size(126, 617);
             this.PnOpciones.TabIndex = 3;
             // 
             // BtnCerrarTurno
@@ -125,7 +125,7 @@
             this.BtnCerrarTurno.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCerrarTurno.Image = global::Cupediarum.Properties.Resources.Icono_CerrarTurno48;
             this.BtnCerrarTurno.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnCerrarTurno.Location = new System.Drawing.Point(3, 288);
+            this.BtnCerrarTurno.Location = new System.Drawing.Point(1, 530);
             this.BtnCerrarTurno.Name = "BtnCerrarTurno";
             this.BtnCerrarTurno.Size = new System.Drawing.Size(118, 80);
             this.BtnCerrarTurno.TabIndex = 8;
@@ -145,7 +145,7 @@
             this.BtnAbrirTurno.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BtnAbrirTurno.Image = ((System.Drawing.Image)(resources.GetObject("BtnAbrirTurno.Image")));
             this.BtnAbrirTurno.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnAbrirTurno.Location = new System.Drawing.Point(3, 139);
+            this.BtnAbrirTurno.Location = new System.Drawing.Point(1, 261);
             this.BtnAbrirTurno.Name = "BtnAbrirTurno";
             this.BtnAbrirTurno.Size = new System.Drawing.Size(118, 83);
             this.BtnAbrirTurno.TabIndex = 7;
@@ -185,7 +185,7 @@
             this.BtnSalir.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalir.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
             this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSalir.Location = new System.Drawing.Point(582, 351);
+            this.BtnSalir.Location = new System.Drawing.Point(843, 592);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(138, 60);
             this.BtnSalir.TabIndex = 48;
@@ -204,7 +204,7 @@
             this.BtnMesero.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMesero.Image = global::Cupediarum.Properties.Resources.Icono_Mesero;
             this.BtnMesero.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BtnMesero.Location = new System.Drawing.Point(582, 38);
+            this.BtnMesero.Location = new System.Drawing.Point(843, 38);
             this.BtnMesero.Name = "BtnMesero";
             this.BtnMesero.Size = new System.Drawing.Size(138, 73);
             this.BtnMesero.TabIndex = 8;
@@ -219,7 +219,7 @@
             this.pictureBox1.Image = global::Cupediarum.Properties.Resources.CupediarumLogo;
             this.pictureBox1.Location = new System.Drawing.Point(133, 38);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(443, 373);
+            this.pictureBox1.Size = new System.Drawing.Size(704, 614);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -229,7 +229,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(727, 417);
+            this.ClientSize = new System.Drawing.Size(985, 664);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnMesero);
             this.Controls.Add(this.pictureBox1);
@@ -239,7 +239,6 @@
             this.MaximizeBox = false;
             this.Name = "FrmMenuPrincipal";
             this.Text = "Menu Principal";
-           
             this.MnuPrincipal.ResumeLayout(false);
             this.MnuPrincipal.PerformLayout();
             this.PnOpciones.ResumeLayout(false);

@@ -58,7 +58,7 @@ namespace Cupediarum
                     {
                         if (reader.Read())
                         {
-                            // Si ya hay sesión activa
+                            
                             if (Sesion.HaySesionActiva())
                             {
                                 DialogResult r = MessageBox.Show(
@@ -71,7 +71,7 @@ namespace Cupediarum
                                     return;
                             }
 
-                            // Guardar sesión
+                           
                             Sesion.IdUsuario = reader.GetInt32(0);
                             Sesion.NombreUsuario = reader.GetString(1);
                             Sesion.IdRol = reader.GetInt32(2);
@@ -104,9 +104,4 @@ namespace Cupediarum
             }
         }
     }
-
 }
-
-
-
-

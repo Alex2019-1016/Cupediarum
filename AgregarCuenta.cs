@@ -14,9 +14,12 @@ namespace Cupediarum
 {
     public partial class FrmAgregarCuenta : Form
     {
-        public FrmAgregarCuenta()
+        private Form formularioAnterior;
+
+        public FrmAgregarCuenta(Form anterior)
         {
             InitializeComponent();
+            formularioAnterior = anterior;
         }
 
         private void BtnAceptar_Click_1(object sender, EventArgs e)
@@ -73,6 +76,11 @@ namespace Cupediarum
                 }
             }
         }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            formularioAnterior.Show();
+            this.Close();
+        }
     }
 }
-

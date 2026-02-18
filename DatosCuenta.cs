@@ -94,11 +94,6 @@ namespace Cupediarum
             this.Hide();
 
         }
-
-        private void BtnCuenta_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

@@ -238,7 +238,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmMenuPrincipal";
             this.Text = "Menu Principal";
-          
+            
             this.MnuPrincipal.ResumeLayout(false);
             this.MnuPrincipal.PerformLayout();
             this.PnOpciones.ResumeLayout(false);

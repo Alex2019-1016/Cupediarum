@@ -1025,6 +1025,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmAgregarCuenta";
             this.Text = "Agregar Cuenta";
+            this.Load += new System.EventHandler(this.FrmAgregarCuenta_Load);
             this.PnlTecladoNum.ResumeLayout(false);
             this.PnlTecladoAlf.ResumeLayout(false);
             this.ResumeLayout(false);

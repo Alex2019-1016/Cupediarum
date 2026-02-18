@@ -82,5 +82,10 @@ namespace Cupediarum
             formularioAnterior.Show();
             this.Close();
         }
+
+        private void FrmAgregarCuenta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

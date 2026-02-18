@@ -150,7 +150,7 @@ namespace Cupediarum
             this.MinimizeBox = false;
             this.Name = "FrmInicioSesion";
             this.Text = "Inicio de Sesion";
-           
+        
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

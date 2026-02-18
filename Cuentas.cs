@@ -43,7 +43,7 @@ namespace Cupediarum
 
                 string query;
 
-                if (Sesion.IdRol == 1) // ADMIN
+                if (Sesion.IdRol == 1) 
                 {
                     query = @"SELECT Id_Cuenta, Nomb_Cuenta
                       FROM CUENTAS

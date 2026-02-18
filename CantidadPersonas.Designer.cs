@@ -325,7 +325,6 @@
             this.MinimizeBox = false;
             this.Name = "FrmCantidadPersonas";
             this.Text = "Cantidad de Personas";
-
             this.PnlCantidadPersonas.ResumeLayout(false);
             this.PnlCantidadPersonas.PerformLayout();
             this.ResumeLayout(false);

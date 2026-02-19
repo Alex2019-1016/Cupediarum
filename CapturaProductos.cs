@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlClient;
+using Cupediarum.Properties;
 
 
 
@@ -132,12 +133,12 @@ namespace Cupediarum
 
                 while (reader.Read())
                 {
-                    Button btn = new Button();
-                    btn.Text = reader.GetString(1);
-                    btn.Tag = reader.GetInt32(0);
-                    btn.Width = 120;
-                    btn.Height = 60;
-                    btn.BackColor = Color.DarkGray;
+                    Button btn = new Button(); 
+                    btn.Text = reader.GetString(1); 
+                    btn.Tag = reader.GetInt32(0); 
+                    btn.Width = 120; 
+                    btn.Height = 60; 
+                    btn.BackColor = Color.DarkGray; 
                     btn.Font = new Font("Times New Roman", 10, FontStyle.Bold);
 
                     btn.Click += BtnCategoria_Click;

@@ -426,9 +426,9 @@
             this.FlpCategorias.Controls.Add(this.BtnPostres);
             this.FlpCategorias.Controls.Add(this.BtnBebidas);
             this.FlpCategorias.Controls.Add(this.BtnOtros);
-            this.FlpCategorias.Location = new System.Drawing.Point(540, 40);
+            this.FlpCategorias.Location = new System.Drawing.Point(416, 40);
             this.FlpCategorias.Name = "FlpCategorias";
-            this.FlpCategorias.Size = new System.Drawing.Size(515, 74);
+            this.FlpCategorias.Size = new System.Drawing.Size(765, 74);
             this.FlpCategorias.TabIndex = 2;
             // 
             // BtnComida

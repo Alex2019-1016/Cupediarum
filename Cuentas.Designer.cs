@@ -200,6 +200,7 @@
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click_1);
             // 
             // flowLayoutPanel2
             // 

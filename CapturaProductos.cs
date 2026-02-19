@@ -184,9 +184,11 @@ namespace Cupediarum
                     Button btn = new Button();
                     btn.Text = reader.GetString(1);
                     btn.Tag = reader.GetInt32(0);
+                    btn.ForeColor = Color.Black;
                     btn.Width = 120;
                     btn.Height = 50;
                     btn.BackColor = Color.LightGray;
+                    btn.FlatStyle = FlatStyle.Flat;
 
                     btn.Click += BtnSubCategoria_Click;
 
@@ -235,6 +237,7 @@ namespace Cupediarum
                     Button btn = new Button();
                     btn.Width = 150;
                     btn.Height = 80;
+                    btn.ForeColor = Color.White;
                     btn.Text = nombre + "\n$" + precio.ToString("N2");
 
                     btn.Tag = new ProductoTemp
@@ -380,8 +383,9 @@ namespace Cupediarum
 
                 MessageBox.Show("Comanda guardada correctamente ✔");
 
-                formularioAnterior.Show();
-                this.Close();
+                FrmCuentas frm = new FrmCuentas();
+                frm.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {
@@ -392,10 +396,11 @@ namespace Cupediarum
         // =============================
         // CANCELAR
         // =============================
-        private void BtnCancelar_Click(object sender, EventArgs e)
+        private void BtnCancelar_Click_1(object sender, EventArgs e)
         {
-            formularioAnterior.Show();
-            this.Close();
+            FrmMesero frm = new FrmMesero(this);
+            frm.Show();
+            this.Hide();
         }
 
 

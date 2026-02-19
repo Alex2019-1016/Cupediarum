@@ -197,10 +197,11 @@ namespace Cupediarum
             }
         }
 
-        private void BtnCancelar_Click(object sender, EventArgs e)
+        private void BtnCancelar_Click_1(object sender, EventArgs e)
         {
-            formularioAnterior.Show();
-            this.Close();
+            FrmMenuPrincipal frm = new FrmMenuPrincipal();
+            frm.Show();
+            this.Hide();
         }
     }
 }

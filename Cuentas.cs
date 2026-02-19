@@ -295,9 +295,9 @@ namespace Cupediarum
             this.Hide();
         }
 
-        private void BtnSalir_Click(object sender, EventArgs e)
+        private void BtnSalir_Click_1(object sender, EventArgs e)
         {
-            FrmMenuPrincipal frm = new FrmMenuPrincipal();
+            FrmMesero frm = new FrmMesero(this);
             frm.Show();
             this.Hide();
         }

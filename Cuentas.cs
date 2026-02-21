@@ -76,8 +76,11 @@ namespace Cupediarum
                         btn.Height = 72;
                         btn.FlatStyle = FlatStyle.Flat;
                         btn.FlatAppearance.BorderSize = 3;
-                        btn.BackColor = Color.DarkGray;
-                        btn.Font = new Font("Times New Roman", 10, FontStyle.Bold);
+                        btn.FlatAppearance.BorderColor = Color.Cyan;
+                        btn.BackgroundImage = Properties.Resources.FBAzul;
+                        btn.BackgroundImageLayout = ImageLayout.Stretch;
+                        btn.BackColor = Color.LightCoral;
+                        btn.Font = new Font("Times New Roman", 12, FontStyle.Bold);
 
                         
                         btn.Text = nombreCuenta;

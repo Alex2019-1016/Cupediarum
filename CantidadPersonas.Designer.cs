@@ -80,7 +80,6 @@
             this.TxtCantPersonas.Name = "TxtCantPersonas";
             this.TxtCantPersonas.Size = new System.Drawing.Size(77, 53);
             this.TxtCantPersonas.TabIndex = 51;
-          
             // 
             // BtnCancelar
             // 
@@ -325,8 +324,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmCantidadPersonas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cantidad de Personas";
-          
             this.PnlCantidadPersonas.ResumeLayout(false);
             this.PnlCantidadPersonas.PerformLayout();
             this.ResumeLayout(false);

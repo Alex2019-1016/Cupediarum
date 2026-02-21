@@ -280,6 +280,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmDatosCuenta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datos de Cuenta";
             this.PnlDatosC.ResumeLayout(false);
             this.PnlDatosCuenta.ResumeLayout(false);

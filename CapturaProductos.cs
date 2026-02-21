@@ -33,7 +33,7 @@ namespace Cupediarum
             formularioAnterior = anterior;
         }
 
-        private void FrmCapturaProductos_Load_1(object sender, EventArgs e)
+        private void FrmCapturaProductos_Load(object sender, EventArgs e)
         {
             ConfigurarDgv();
             CargarCategoriasPrincipales();
@@ -118,7 +118,6 @@ namespace Cupediarum
 
         private void CargarCategoriasPrincipales()
         {
-            FlpCategorias.Controls.Clear();
 
             string query = @"SELECT Id_Categoria, Nomb_Categoria
                      FROM CATEGORIAS
@@ -133,17 +132,25 @@ namespace Cupediarum
 
                 while (reader.Read())
                 {
-                    Button btn = new Button(); 
-                    btn.Text = reader.GetString(1); 
-                    btn.Tag = reader.GetInt32(0); 
-                    btn.Width = 120; 
-                    btn.Height = 60; 
-                    btn.BackColor = Color.DarkGray; 
-                    btn.Font = new Font("Times New Roman", 10, FontStyle.Bold);
+                    int id = reader.GetInt32(0);
+                    string nombre = reader.GetString(1).ToLower();
 
-                    btn.Click += BtnCategoria_Click;
+                    if (nombre == "postres")
+                        BtnPostres.Tag = id;
 
-                    FlpCategorias.Controls.Add(btn);
+                    else if (nombre == "bebidas")
+                        BtnBebidas.Tag = id;
+
+                    else if (nombre == "comidas")
+                        BtnComida.Tag = id;
+
+                    else if (nombre == "otros")
+                        BtnOtros.Tag = id;
+
+                    BtnPostres.Click += BtnCategoria_Click;
+                    BtnBebidas.Click += BtnCategoria_Click;
+                    BtnComida.Click += BtnCategoria_Click;
+                    BtnOtros.Click += BtnCategoria_Click;
                 }
             }
         }
@@ -153,6 +160,7 @@ namespace Cupediarum
         // =============================
         private void BtnCategoria_Click(object sender, EventArgs e)
         {
+
             Button btn = sender as Button;
             idCategoriaSeleccionada = (int)btn.Tag;
 
@@ -182,18 +190,25 @@ namespace Cupediarum
 
                 while (reader.Read())
                 {
-                    Button btn = new Button();
-                    btn.Text = reader.GetString(1);
-                    btn.Tag = reader.GetInt32(0);
-                    btn.ForeColor = Color.Black;
-                    btn.Width = 120;
-                    btn.Height = 50;
-                    btn.BackColor = Color.LightGray;
-                    btn.FlatStyle = FlatStyle.Flat;
+                    int idSub = reader.GetInt32(0);
+                    string nombreSub = reader.GetString(1);
 
-                    btn.Click += BtnSubCategoria_Click;
+                    Button btnSub = new Button();
+                    btnSub.Text = nombreSub;
+                    btnSub.Tag = idSub;
+                    btnSub.Width = 133;
+                    btnSub.Height = 55;
+                    btnSub.Margin = new Padding(5);
+                    btnSub.BackColor = Color.LightCoral;
+                    btnSub.Font = new Font("Times New Roman", 10, FontStyle.Bold);
+                    btnSub.BackgroundImage = Properties.Resources.FBAzul;
+                    btnSub.BackgroundImageLayout = ImageLayout.Stretch;
 
-                    FlpSubCategorias.Controls.Add(btn);
+                    btnSub.FlatStyle = FlatStyle.Flat;
+
+                    btnSub.Click += BtnSubCategoria_Click;
+
+                    FlpSubCategorias.Controls.Add(btnSub);
                 }
             }
         }
@@ -238,8 +253,11 @@ namespace Cupediarum
                     Button btn = new Button();
                     btn.Width = 150;
                     btn.Height = 80;
-                    btn.ForeColor = Color.White;
                     btn.Text = nombre + "\n$" + precio.ToString("N2");
+                    btn.BackColor = Color.LightCoral;
+                    btn.Font = new Font("Times New Roman", 10, FontStyle.Bold);
+                    btn.BackgroundImage = Properties.Resources.FBNaranja;
+                    btn.BackgroundImageLayout = ImageLayout.Stretch;
 
                     btn.Tag = new ProductoTemp
                     {
@@ -355,12 +373,7 @@ namespace Cupediarum
             {
                 if (row.Cells["PRECIO"].Value != null)
                 {
-                    decimal precio;
-
-                    if (decimal.TryParse(row.Cells["PRECIO"].Value.ToString(), out precio))
-                    {
-                        totalCuenta += precio;
-                    }
+                    totalCuenta += Convert.ToDecimal(row.Cells["PRECIO"].Value);
                 }
             }
 
@@ -384,9 +397,8 @@ namespace Cupediarum
 
                 MessageBox.Show("Comanda guardada correctamente ✔");
 
-                FrmCuentas frm = new FrmCuentas();
-                frm.Show();
-                this.Hide();
+                formularioAnterior.Show();
+                this.Close();
             }
             catch (Exception ex)
             {
@@ -399,9 +411,8 @@ namespace Cupediarum
         // =============================
         private void BtnCancelar_Click_1(object sender, EventArgs e)
         {
-            FrmMesero frm = new FrmMesero(this);
-            frm.Show();
-            this.Hide();
+            formularioAnterior.Show();
+            this.Close();
         }
 
 
@@ -473,7 +484,7 @@ namespace Cupediarum
         }
 
 
-        private void BtnBorrarProducto_Click(object sender, EventArgs e)
+        private void BtnBorrarProducto_Click_1(object sender, EventArgs e)
         {
             if (DgvComanda.CurrentRow == null)
                 return;

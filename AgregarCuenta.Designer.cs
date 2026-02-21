@@ -97,7 +97,6 @@
             this.RtbCuenta.Size = new System.Drawing.Size(472, 313);
             this.RtbCuenta.TabIndex = 0;
             this.RtbCuenta.Text = "";
-          
             // 
             // PnlTecladoNum
             // 
@@ -1024,8 +1023,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmAgregarCuenta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Cuenta";
-            
             this.PnlTecladoNum.ResumeLayout(false);
             this.PnlTecladoAlf.ResumeLayout(false);
             this.ResumeLayout(false);

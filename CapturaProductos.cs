@@ -1,19 +1,10 @@
 ﻿
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlClient;
-using Cupediarum.Properties;
-
-
-
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace Cupediarum
 {
@@ -33,7 +24,7 @@ namespace Cupediarum
             formularioAnterior = anterior;
         }
 
-        private void FrmCapturaProductos_Load(object sender, EventArgs e)
+        private void FrmCapturaProductos_Load_1(object sender, EventArgs e)
         {
             ConfigurarDgv();
             CargarCategoriasPrincipales();
@@ -165,6 +156,7 @@ namespace Cupediarum
             idCategoriaSeleccionada = (int)btn.Tag;
 
             CargarSubCategorias(idCategoriaSeleccionada);
+
         }
 
         // =============================
@@ -397,8 +389,9 @@ namespace Cupediarum
 
                 MessageBox.Show("Comanda guardada correctamente ✔");
 
-                formularioAnterior.Show();
-                this.Close();
+                FrmMesero frm = new FrmMesero(this);
+                frm.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {
@@ -482,7 +475,6 @@ namespace Cupediarum
             DgvComanda.Rows.Clear();
             CargarDetalleExistente();
         }
-
 
         private void BtnBorrarProducto_Click_1(object sender, EventArgs e)
         {

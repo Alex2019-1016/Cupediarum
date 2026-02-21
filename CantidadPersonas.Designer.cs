@@ -324,6 +324,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmCantidadPersonas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cantidad de Personas";
             this.PnlCantidadPersonas.ResumeLayout(false);
             this.PnlCantidadPersonas.PerformLayout();

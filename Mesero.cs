@@ -14,7 +14,7 @@ namespace Cupediarum
 {
     public partial class FrmMesero : Form
     {
-        private bool meseroAutenticado = false;
+
         private Form formularioAnterior;
 
         public FrmMesero(Form anterior)
@@ -167,7 +167,7 @@ namespace Cupediarum
                             Sesion.NombreUsuario = reader.GetString(1);
                             Sesion.IdRol = reader.GetInt32(2);
 
-                            meseroAutenticado = true;
+
 
                             MessageBox.Show("Mesero autenticado ✔",
                                             "Correcto",

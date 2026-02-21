@@ -75,9 +75,12 @@ namespace Cupediarum
                         btn.Width = 118;
                         btn.Height = 72;
                         btn.FlatStyle = FlatStyle.Flat;
+                        btn.FlatAppearance.BorderColor = Color.Cyan;
                         btn.FlatAppearance.BorderSize = 3;
-                        btn.BackColor = Color.DarkGray;
-                        btn.Font = new Font("Times New Roman", 10, FontStyle.Bold);
+                        btn.BackColor = Color.LightCoral;
+                        btn.Font = new Font("Times New Roman", 12, FontStyle.Bold);
+                        btn.BackgroundImage = Properties.Resources.FBAzul;
+                        btn.BackgroundImageLayout = ImageLayout.Stretch;
 
                         // 🔥 SOLO EL NOMBRE DE LA CUENTA
                         btn.Text = nombreCuenta;

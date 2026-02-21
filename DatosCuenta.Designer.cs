@@ -110,7 +110,7 @@
             this.BtnPersonas.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnPersonas.FlatAppearance.BorderSize = 3;
             this.BtnPersonas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPersonas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPersonas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPersonas.Image = global::Cupediarum.Properties.Resources.Icono_Personas48;
             this.BtnPersonas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnPersonas.Location = new System.Drawing.Point(124, 4);
@@ -128,7 +128,7 @@
             this.BtnCuenta.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnCuenta.FlatAppearance.BorderSize = 3;
             this.BtnCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCuenta.Image = global::Cupediarum.Properties.Resources.Icono_Table48;
             this.BtnCuenta.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnCuenta.Location = new System.Drawing.Point(3, 4);
@@ -136,7 +136,7 @@
             this.BtnCuenta.Size = new System.Drawing.Size(115, 72);
             this.BtnCuenta.TabIndex = 10;
             this.BtnCuenta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-
+            this.BtnCuenta.UseVisualStyleBackColor = false;
             // 
             // PnlDatosCuenta
             // 
@@ -280,6 +280,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmDatosCuenta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datos de Cuenta";
             this.PnlDatosC.ResumeLayout(false);
             this.PnlDatosCuenta.ResumeLayout(false);

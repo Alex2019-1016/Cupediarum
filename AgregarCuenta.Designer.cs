@@ -1024,6 +1024,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmAgregarCuenta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Cuenta";
             this.Load += new System.EventHandler(this.FrmAgregarCuenta_Load);
             this.PnlTecladoNum.ResumeLayout(false);

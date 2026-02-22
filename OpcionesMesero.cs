@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cupediarum
 {
-    public partial class FrmMesas : Form
+    public partial class FrmOpcionesMesero : Form
     {
-        public FrmMesas()
+        public FrmOpcionesMesero()
         {
             InitializeComponent();
         }

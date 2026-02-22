@@ -243,6 +243,16 @@ namespace Cupediarum.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Icono_Consultar64 {
+            get {
+                object obj = ResourceManager.GetObject("Icono_Consultar64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icono_CorteCaja48 {
             get {
                 object obj = ResourceManager.GetObject("Icono_CorteCaja48", resourceCulture);
@@ -306,6 +316,16 @@ namespace Cupediarum.Properties {
         internal static System.Drawing.Bitmap Icono_Imprimir {
             get {
                 object obj = ResourceManager.GetObject("Icono_Imprimir", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icono_Imprimir64 {
+            get {
+                object obj = ResourceManager.GetObject("Icono_Imprimir64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -476,6 +496,16 @@ namespace Cupediarum.Properties {
         internal static System.Drawing.Bitmap Icono_RDCancelar32 {
             get {
                 object obj = ResourceManager.GetObject("Icono_RDCancelar32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icono_Reabrir64 {
+            get {
+                object obj = ResourceManager.GetObject("Icono_Reabrir64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -247,16 +247,16 @@
             this.FlpOpciones.BackColor = System.Drawing.Color.Transparent;
             this.FlpOpciones.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.FlpOpciones.Controls.Add(this.BtnAbrirCuenta);
-            this.FlpOpciones.Controls.Add(this.BtnEliminarProducto);
             this.FlpOpciones.Controls.Add(this.BtnCambiarMesero);
+            this.FlpOpciones.Controls.Add(this.BtnEliminarProducto);
             this.FlpOpciones.Controls.Add(this.BtnImprimir);
-            this.FlpOpciones.Controls.Add(this.BtnPagarCuenta);
             this.FlpOpciones.Controls.Add(this.BtnCerrar);
             this.FlpOpciones.Controls.Add(this.BtnAgregar);
+            this.FlpOpciones.Controls.Add(this.BtnPagarCuenta);
             this.FlpOpciones.Controls.Add(this.BtnDescuento);
-            this.FlpOpciones.Location = new System.Drawing.Point(379, -2);
+            this.FlpOpciones.Location = new System.Drawing.Point(379, 3);
             this.FlpOpciones.Name = "FlpOpciones";
-            this.FlpOpciones.Size = new System.Drawing.Size(728, 155);
+            this.FlpOpciones.Size = new System.Drawing.Size(728, 164);
             this.FlpOpciones.TabIndex = 19;
             // 
             // BtnAbrirCuenta
@@ -269,13 +269,13 @@
             this.BtnAbrirCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAbrirCuenta.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAbrirCuenta.Image = global::Cupediarum.Properties.Resources.Icono_AbrirCuenta48;
-            this.BtnAbrirCuenta.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnAbrirCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAbrirCuenta.Location = new System.Drawing.Point(3, 3);
             this.BtnAbrirCuenta.Name = "BtnAbrirCuenta";
-            this.BtnAbrirCuenta.Size = new System.Drawing.Size(111, 71);
+            this.BtnAbrirCuenta.Size = new System.Drawing.Size(125, 71);
             this.BtnAbrirCuenta.TabIndex = 11;
             this.BtnAbrirCuenta.Text = "Abrir Cuenta";
-            this.BtnAbrirCuenta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnAbrirCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnAbrirCuenta.UseVisualStyleBackColor = false;
             // 
             // BtnEliminarProducto
@@ -288,13 +288,13 @@
             this.BtnEliminarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEliminarProducto.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEliminarProducto.Image = global::Cupediarum.Properties.Resources.Icono_Delete;
-            this.BtnEliminarProducto.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnEliminarProducto.Location = new System.Drawing.Point(120, 3);
+            this.BtnEliminarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnEliminarProducto.Location = new System.Drawing.Point(265, 3);
             this.BtnEliminarProducto.Name = "BtnEliminarProducto";
             this.BtnEliminarProducto.Size = new System.Drawing.Size(125, 71);
             this.BtnEliminarProducto.TabIndex = 12;
             this.BtnEliminarProducto.Text = "Elim. Producto";
-            this.BtnEliminarProducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnEliminarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnEliminarProducto.UseVisualStyleBackColor = false;
             // 
             // BtnCambiarMesero
@@ -308,9 +308,9 @@
             this.BtnCambiarMesero.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCambiarMesero.Image = global::Cupediarum.Properties.Resources.Icono_Mesero;
             this.BtnCambiarMesero.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCambiarMesero.Location = new System.Drawing.Point(251, 3);
+            this.BtnCambiarMesero.Location = new System.Drawing.Point(134, 3);
             this.BtnCambiarMesero.Name = "BtnCambiarMesero";
-            this.BtnCambiarMesero.Size = new System.Drawing.Size(111, 71);
+            this.BtnCambiarMesero.Size = new System.Drawing.Size(125, 71);
             this.BtnCambiarMesero.TabIndex = 16;
             this.BtnCambiarMesero.Text = "Cambiar Mesero";
             this.BtnCambiarMesero.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -327,9 +327,9 @@
             this.BtnImprimir.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnImprimir.Image = global::Cupediarum.Properties.Resources.Icono_Imprimir;
             this.BtnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnImprimir.Location = new System.Drawing.Point(368, 3);
+            this.BtnImprimir.Location = new System.Drawing.Point(396, 3);
             this.BtnImprimir.Name = "BtnImprimir";
-            this.BtnImprimir.Size = new System.Drawing.Size(111, 71);
+            this.BtnImprimir.Size = new System.Drawing.Size(125, 71);
             this.BtnImprimir.TabIndex = 15;
             this.BtnImprimir.Text = "Imprim.";
             this.BtnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -345,13 +345,13 @@
             this.BtnPagarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPagarCuenta.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPagarCuenta.Image = global::Cupediarum.Properties.Resources.Icono_Pagar48;
-            this.BtnPagarCuenta.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPagarCuenta.Location = new System.Drawing.Point(485, 3);
+            this.BtnPagarCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnPagarCuenta.Location = new System.Drawing.Point(134, 80);
             this.BtnPagarCuenta.Name = "BtnPagarCuenta";
-            this.BtnPagarCuenta.Size = new System.Drawing.Size(111, 71);
+            this.BtnPagarCuenta.Size = new System.Drawing.Size(125, 71);
             this.BtnPagarCuenta.TabIndex = 17;
             this.BtnPagarCuenta.Text = "Pagar Cuenta";
-            this.BtnPagarCuenta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnPagarCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnPagarCuenta.UseVisualStyleBackColor = false;
             // 
             // BtnCerrar
@@ -364,13 +364,13 @@
             this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCerrar.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCerrar.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
-            this.BtnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCerrar.Location = new System.Drawing.Point(602, 3);
+            this.BtnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCerrar.Location = new System.Drawing.Point(527, 3);
             this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.Size = new System.Drawing.Size(111, 71);
+            this.BtnCerrar.Size = new System.Drawing.Size(125, 71);
             this.BtnCerrar.TabIndex = 18;
             this.BtnCerrar.Text = "Cerrar";
-            this.BtnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnCerrar.UseVisualStyleBackColor = false;
             // 
             // BtnAgregar
@@ -386,7 +386,7 @@
             this.BtnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAgregar.Location = new System.Drawing.Point(3, 80);
             this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(111, 71);
+            this.BtnAgregar.Size = new System.Drawing.Size(125, 71);
             this.BtnAgregar.TabIndex = 14;
             this.BtnAgregar.Text = "Agregar";
             this.BtnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -403,9 +403,9 @@
             this.BtnDescuento.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDescuento.Image = global::Cupediarum.Properties.Resources.Icono_Descuento;
             this.BtnDescuento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDescuento.Location = new System.Drawing.Point(120, 80);
+            this.BtnDescuento.Location = new System.Drawing.Point(265, 80);
             this.BtnDescuento.Name = "BtnDescuento";
-            this.BtnDescuento.Size = new System.Drawing.Size(111, 71);
+            this.BtnDescuento.Size = new System.Drawing.Size(125, 71);
             this.BtnDescuento.TabIndex = 19;
             this.BtnDescuento.Text = "Desc.";
             this.BtnDescuento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -429,11 +429,10 @@
             this.PnlDatosCuenta.Controls.Add(this.label7);
             this.PnlDatosCuenta.Controls.Add(this.label6);
             this.PnlDatosCuenta.Controls.Add(this.LblCuenta);
-            this.PnlDatosCuenta.Location = new System.Drawing.Point(381, 159);
+            this.PnlDatosCuenta.Location = new System.Drawing.Point(381, 173);
             this.PnlDatosCuenta.Name = "PnlDatosCuenta";
             this.PnlDatosCuenta.Size = new System.Drawing.Size(726, 132);
             this.PnlDatosCuenta.TabIndex = 20;
-            this.PnlDatosCuenta.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // LblNomMesero
             // 
@@ -835,6 +834,7 @@
             this.Controls.Add(this.FlpOpciones);
             this.Controls.Add(this.DgvCuentas);
             this.Controls.Add(this.PnlCuenta);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMesas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mesas";

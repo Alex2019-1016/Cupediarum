@@ -30,10 +30,10 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMesas));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMesas));
             this.PnlCuenta = new System.Windows.Forms.Panel();
             this.LblNombArea = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,14 +47,6 @@
             this.IMPRESA = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.MESERO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FlpOpciones = new System.Windows.Forms.FlowLayoutPanel();
-            this.BtnAbrirCuenta = new System.Windows.Forms.Button();
-            this.BtnEliminarProducto = new System.Windows.Forms.Button();
-            this.BtnCambiarMesero = new System.Windows.Forms.Button();
-            this.BtnImprimir = new System.Windows.Forms.Button();
-            this.BtnPagarCuenta = new System.Windows.Forms.Button();
-            this.BtnCerrar = new System.Windows.Forms.Button();
-            this.BtnAgregar = new System.Windows.Forms.Button();
-            this.BtnDescuento = new System.Windows.Forms.Button();
             this.PnlDatosCuenta = new System.Windows.Forms.Panel();
             this.LblNomMesero = new System.Windows.Forms.Label();
             this.LblNomArea = new System.Windows.Forms.Label();
@@ -89,6 +81,14 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.BtnAbrirCuenta = new System.Windows.Forms.Button();
+            this.BtnEliminarProducto = new System.Windows.Forms.Button();
+            this.BtnCambiarMesero = new System.Windows.Forms.Button();
+            this.BtnImprimir = new System.Windows.Forms.Button();
+            this.BtnPagarCuenta = new System.Windows.Forms.Button();
+            this.BtnCerrar = new System.Windows.Forms.Button();
+            this.BtnAgregar = new System.Windows.Forms.Button();
+            this.BtnDescuento = new System.Windows.Forms.Button();
             this.PnlCuenta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCuentas)).BeginInit();
             this.FlpOpciones.SuspendLayout();
@@ -256,160 +256,8 @@
             this.FlpOpciones.Controls.Add(this.BtnDescuento);
             this.FlpOpciones.Location = new System.Drawing.Point(379, -2);
             this.FlpOpciones.Name = "FlpOpciones";
-            this.FlpOpciones.Size = new System.Drawing.Size(728, 155);
+            this.FlpOpciones.Size = new System.Drawing.Size(728, 162);
             this.FlpOpciones.TabIndex = 19;
-            // 
-            // BtnAbrirCuenta
-            // 
-            this.BtnAbrirCuenta.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnAbrirCuenta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAbrirCuenta.BackgroundImage")));
-            this.BtnAbrirCuenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnAbrirCuenta.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnAbrirCuenta.FlatAppearance.BorderSize = 3;
-            this.BtnAbrirCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAbrirCuenta.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAbrirCuenta.Image = global::Cupediarum.Properties.Resources.Icono_AbrirCuenta48;
-            this.BtnAbrirCuenta.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnAbrirCuenta.Location = new System.Drawing.Point(3, 3);
-            this.BtnAbrirCuenta.Name = "BtnAbrirCuenta";
-            this.BtnAbrirCuenta.Size = new System.Drawing.Size(111, 71);
-            this.BtnAbrirCuenta.TabIndex = 11;
-            this.BtnAbrirCuenta.Text = "Abrir Cuenta";
-            this.BtnAbrirCuenta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnAbrirCuenta.UseVisualStyleBackColor = false;
-            // 
-            // BtnEliminarProducto
-            // 
-            this.BtnEliminarProducto.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnEliminarProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnEliminarProducto.BackgroundImage")));
-            this.BtnEliminarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnEliminarProducto.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnEliminarProducto.FlatAppearance.BorderSize = 3;
-            this.BtnEliminarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEliminarProducto.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEliminarProducto.Image = global::Cupediarum.Properties.Resources.Icono_Delete;
-            this.BtnEliminarProducto.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnEliminarProducto.Location = new System.Drawing.Point(120, 3);
-            this.BtnEliminarProducto.Name = "BtnEliminarProducto";
-            this.BtnEliminarProducto.Size = new System.Drawing.Size(125, 71);
-            this.BtnEliminarProducto.TabIndex = 12;
-            this.BtnEliminarProducto.Text = "Elim. Producto";
-            this.BtnEliminarProducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnEliminarProducto.UseVisualStyleBackColor = false;
-            // 
-            // BtnCambiarMesero
-            // 
-            this.BtnCambiarMesero.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnCambiarMesero.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCambiarMesero.BackgroundImage")));
-            this.BtnCambiarMesero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnCambiarMesero.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnCambiarMesero.FlatAppearance.BorderSize = 3;
-            this.BtnCambiarMesero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCambiarMesero.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCambiarMesero.Image = global::Cupediarum.Properties.Resources.Icono_Mesero;
-            this.BtnCambiarMesero.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCambiarMesero.Location = new System.Drawing.Point(251, 3);
-            this.BtnCambiarMesero.Name = "BtnCambiarMesero";
-            this.BtnCambiarMesero.Size = new System.Drawing.Size(111, 71);
-            this.BtnCambiarMesero.TabIndex = 16;
-            this.BtnCambiarMesero.Text = "Cambiar Mesero";
-            this.BtnCambiarMesero.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCambiarMesero.UseVisualStyleBackColor = false;
-            // 
-            // BtnImprimir
-            // 
-            this.BtnImprimir.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnImprimir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnImprimir.BackgroundImage")));
-            this.BtnImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnImprimir.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnImprimir.FlatAppearance.BorderSize = 3;
-            this.BtnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnImprimir.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnImprimir.Image = global::Cupediarum.Properties.Resources.Icono_Imprimir;
-            this.BtnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnImprimir.Location = new System.Drawing.Point(368, 3);
-            this.BtnImprimir.Name = "BtnImprimir";
-            this.BtnImprimir.Size = new System.Drawing.Size(111, 71);
-            this.BtnImprimir.TabIndex = 15;
-            this.BtnImprimir.Text = "Imprim.";
-            this.BtnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnImprimir.UseVisualStyleBackColor = false;
-            // 
-            // BtnPagarCuenta
-            // 
-            this.BtnPagarCuenta.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnPagarCuenta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPagarCuenta.BackgroundImage")));
-            this.BtnPagarCuenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnPagarCuenta.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnPagarCuenta.FlatAppearance.BorderSize = 3;
-            this.BtnPagarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPagarCuenta.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPagarCuenta.Image = global::Cupediarum.Properties.Resources.Icono_Pagar48;
-            this.BtnPagarCuenta.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnPagarCuenta.Location = new System.Drawing.Point(485, 3);
-            this.BtnPagarCuenta.Name = "BtnPagarCuenta";
-            this.BtnPagarCuenta.Size = new System.Drawing.Size(111, 71);
-            this.BtnPagarCuenta.TabIndex = 17;
-            this.BtnPagarCuenta.Text = "Pagar Cuenta";
-            this.BtnPagarCuenta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnPagarCuenta.UseVisualStyleBackColor = false;
-            // 
-            // BtnCerrar
-            // 
-            this.BtnCerrar.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnCerrar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
-            this.BtnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.BtnCerrar.FlatAppearance.BorderSize = 5;
-            this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCerrar.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCerrar.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
-            this.BtnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCerrar.Location = new System.Drawing.Point(602, 3);
-            this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.Size = new System.Drawing.Size(111, 71);
-            this.BtnCerrar.TabIndex = 18;
-            this.BtnCerrar.Text = "Cerrar";
-            this.BtnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCerrar.UseVisualStyleBackColor = false;
-            // 
-            // BtnAgregar
-            // 
-            this.BtnAgregar.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnAgregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAgregar.BackgroundImage")));
-            this.BtnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnAgregar.FlatAppearance.BorderSize = 3;
-            this.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAgregar.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregar.Image = global::Cupediarum.Properties.Resources.Icono_Agregar;
-            this.BtnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregar.Location = new System.Drawing.Point(3, 80);
-            this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(111, 71);
-            this.BtnAgregar.TabIndex = 14;
-            this.BtnAgregar.Text = "Agregar";
-            this.BtnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAgregar.UseVisualStyleBackColor = false;
-            // 
-            // BtnDescuento
-            // 
-            this.BtnDescuento.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnDescuento.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnDescuento.BackgroundImage")));
-            this.BtnDescuento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnDescuento.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnDescuento.FlatAppearance.BorderSize = 3;
-            this.BtnDescuento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDescuento.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDescuento.Image = global::Cupediarum.Properties.Resources.Icono_Descuento;
-            this.BtnDescuento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDescuento.Location = new System.Drawing.Point(120, 80);
-            this.BtnDescuento.Name = "BtnDescuento";
-            this.BtnDescuento.Size = new System.Drawing.Size(111, 71);
-            this.BtnDescuento.TabIndex = 19;
-            this.BtnDescuento.Text = "Desc.";
-            this.BtnDescuento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnDescuento.UseVisualStyleBackColor = false;
             // 
             // PnlDatosCuenta
             // 
@@ -429,7 +277,7 @@
             this.PnlDatosCuenta.Controls.Add(this.label7);
             this.PnlDatosCuenta.Controls.Add(this.label6);
             this.PnlDatosCuenta.Controls.Add(this.LblCuenta);
-            this.PnlDatosCuenta.Location = new System.Drawing.Point(381, 159);
+            this.PnlDatosCuenta.Location = new System.Drawing.Point(381, 166);
             this.PnlDatosCuenta.Name = "PnlDatosCuenta";
             this.PnlDatosCuenta.Size = new System.Drawing.Size(726, 132);
             this.PnlDatosCuenta.TabIndex = 20;
@@ -819,6 +667,158 @@
             this.richTextBox1.Size = new System.Drawing.Size(273, 166);
             this.richTextBox1.TabIndex = 24;
             this.richTextBox1.Text = "";
+            // 
+            // BtnAbrirCuenta
+            // 
+            this.BtnAbrirCuenta.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAbrirCuenta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAbrirCuenta.BackgroundImage")));
+            this.BtnAbrirCuenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnAbrirCuenta.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnAbrirCuenta.FlatAppearance.BorderSize = 3;
+            this.BtnAbrirCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAbrirCuenta.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAbrirCuenta.Image = global::Cupediarum.Properties.Resources.Icono_AbrirCuenta48;
+            this.BtnAbrirCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAbrirCuenta.Location = new System.Drawing.Point(3, 3);
+            this.BtnAbrirCuenta.Name = "BtnAbrirCuenta";
+            this.BtnAbrirCuenta.Size = new System.Drawing.Size(111, 71);
+            this.BtnAbrirCuenta.TabIndex = 11;
+            this.BtnAbrirCuenta.Text = "Abrir Cuenta";
+            this.BtnAbrirCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnAbrirCuenta.UseVisualStyleBackColor = false;
+            // 
+            // BtnEliminarProducto
+            // 
+            this.BtnEliminarProducto.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnEliminarProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnEliminarProducto.BackgroundImage")));
+            this.BtnEliminarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnEliminarProducto.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnEliminarProducto.FlatAppearance.BorderSize = 3;
+            this.BtnEliminarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEliminarProducto.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEliminarProducto.Image = global::Cupediarum.Properties.Resources.Icono_Delete;
+            this.BtnEliminarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnEliminarProducto.Location = new System.Drawing.Point(120, 3);
+            this.BtnEliminarProducto.Name = "BtnEliminarProducto";
+            this.BtnEliminarProducto.Size = new System.Drawing.Size(125, 71);
+            this.BtnEliminarProducto.TabIndex = 12;
+            this.BtnEliminarProducto.Text = "Elim. Producto";
+            this.BtnEliminarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnEliminarProducto.UseVisualStyleBackColor = false;
+            // 
+            // BtnCambiarMesero
+            // 
+            this.BtnCambiarMesero.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnCambiarMesero.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCambiarMesero.BackgroundImage")));
+            this.BtnCambiarMesero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnCambiarMesero.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnCambiarMesero.FlatAppearance.BorderSize = 3;
+            this.BtnCambiarMesero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCambiarMesero.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCambiarMesero.Image = global::Cupediarum.Properties.Resources.Icono_Mesero;
+            this.BtnCambiarMesero.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCambiarMesero.Location = new System.Drawing.Point(251, 3);
+            this.BtnCambiarMesero.Name = "BtnCambiarMesero";
+            this.BtnCambiarMesero.Size = new System.Drawing.Size(111, 71);
+            this.BtnCambiarMesero.TabIndex = 16;
+            this.BtnCambiarMesero.Text = "Cambiar Mesero";
+            this.BtnCambiarMesero.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCambiarMesero.UseVisualStyleBackColor = false;
+            // 
+            // BtnImprimir
+            // 
+            this.BtnImprimir.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnImprimir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnImprimir.BackgroundImage")));
+            this.BtnImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnImprimir.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnImprimir.FlatAppearance.BorderSize = 3;
+            this.BtnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnImprimir.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnImprimir.Image = global::Cupediarum.Properties.Resources.Icono_Imprimir;
+            this.BtnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnImprimir.Location = new System.Drawing.Point(368, 3);
+            this.BtnImprimir.Name = "BtnImprimir";
+            this.BtnImprimir.Size = new System.Drawing.Size(111, 71);
+            this.BtnImprimir.TabIndex = 15;
+            this.BtnImprimir.Text = "Imprim.";
+            this.BtnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnImprimir.UseVisualStyleBackColor = false;
+            // 
+            // BtnPagarCuenta
+            // 
+            this.BtnPagarCuenta.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnPagarCuenta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPagarCuenta.BackgroundImage")));
+            this.BtnPagarCuenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnPagarCuenta.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnPagarCuenta.FlatAppearance.BorderSize = 3;
+            this.BtnPagarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPagarCuenta.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPagarCuenta.Image = global::Cupediarum.Properties.Resources.Icono_Pagar48;
+            this.BtnPagarCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnPagarCuenta.Location = new System.Drawing.Point(485, 3);
+            this.BtnPagarCuenta.Name = "BtnPagarCuenta";
+            this.BtnPagarCuenta.Size = new System.Drawing.Size(111, 71);
+            this.BtnPagarCuenta.TabIndex = 17;
+            this.BtnPagarCuenta.Text = "Pagar Cuenta";
+            this.BtnPagarCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnPagarCuenta.UseVisualStyleBackColor = false;
+            // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnCerrar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.BtnCerrar.FlatAppearance.BorderSize = 5;
+            this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCerrar.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCerrar.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
+            this.BtnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCerrar.Location = new System.Drawing.Point(602, 3);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(111, 71);
+            this.BtnCerrar.TabIndex = 18;
+            this.BtnCerrar.Text = "Cerrar";
+            this.BtnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCerrar.UseVisualStyleBackColor = false;
+            // 
+            // BtnAgregar
+            // 
+            this.BtnAgregar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAgregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAgregar.BackgroundImage")));
+            this.BtnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnAgregar.FlatAppearance.BorderSize = 3;
+            this.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAgregar.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregar.Image = global::Cupediarum.Properties.Resources.Icono_Agregar;
+            this.BtnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAgregar.Location = new System.Drawing.Point(3, 80);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.Size = new System.Drawing.Size(111, 71);
+            this.BtnAgregar.TabIndex = 14;
+            this.BtnAgregar.Text = "Agregar";
+            this.BtnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnAgregar.UseVisualStyleBackColor = false;
+            // 
+            // BtnDescuento
+            // 
+            this.BtnDescuento.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnDescuento.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnDescuento.BackgroundImage")));
+            this.BtnDescuento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnDescuento.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnDescuento.FlatAppearance.BorderSize = 3;
+            this.BtnDescuento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDescuento.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDescuento.Image = global::Cupediarum.Properties.Resources.Icono_Descuento;
+            this.BtnDescuento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnDescuento.Location = new System.Drawing.Point(120, 80);
+            this.BtnDescuento.Name = "BtnDescuento";
+            this.BtnDescuento.Size = new System.Drawing.Size(111, 71);
+            this.BtnDescuento.TabIndex = 19;
+            this.BtnDescuento.Text = "Desc.";
+            this.BtnDescuento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnDescuento.UseVisualStyleBackColor = false;
             // 
             // FrmMesas
             // 

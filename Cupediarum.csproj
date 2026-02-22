@@ -119,6 +119,12 @@
     <Compile Include="Cuentas.Designer.cs">
       <DependentUpon>Cuentas.cs</DependentUpon>
     </Compile>
+    <Compile Include="OpcionesMesero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionesMesero.Designer.cs">
+      <DependentUpon>OpcionesMesero.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sesion.cs" />
@@ -148,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cuentas.resx">
       <DependentUpon>Cuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionesMesero.resx">
+      <DependentUpon>OpcionesMesero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -196,6 +205,9 @@
     <Content Include="Imagenes\Icono_CerrarTurno48.png" />
     <Content Include="Imagenes\Icono_Cliente.png" />
     <Content Include="Imagenes\Icono_Comandas.png" />
+    <None Include="Resources\Icono_Reabrir64.png" />
+    <None Include="Resources\Icono_Imprimir64.png" />
+    <None Include="Resources\Icono_Consultar64.png" />
     <None Include="Resources\Icono_Pagar48.png" />
     <None Include="Resources\Icono_AbrirCuenta48.png" />
     <None Include="Resources\Icono_Cancelar48.png" />
@@ -211,6 +223,7 @@
     <None Include="Resources\Icono_Mas32.png" />
     <None Include="Resources\Icono_Menos32.png" />
     <None Include="Imagenes\Icono_Delete.png" />
+    <Content Include="Imagenes\Icono_Consultar64.png" />
     <Content Include="Imagenes\Icono_CorteCaja48.png" />
     <Content Include="Imagenes\Icono_Descuento.png" />
     <Content Include="Imagenes\Icono_Drink.png" />
@@ -218,6 +231,7 @@
     <Content Include="Imagenes\Icono_Favorito.png" />
     <Content Include="Imagenes\Icono_Comentario.png" />
     <Content Include="Imagenes\Icono_Imprimir.png" />
+    <Content Include="Imagenes\Icono_Imprimir64.png" />
     <Content Include="Imagenes\Icono_Mas.png" />
     <Content Include="Imagenes\Icono_Mas32.png" />
     <Content Include="Imagenes\Icono_Menos.png" />
@@ -228,9 +242,11 @@
     <Content Include="Imagenes\Icono_People.png" />
     <Content Include="Imagenes\Icono_Personas48.png" />
     <Content Include="Imagenes\Icono_Postres.png" />
+    <Content Include="Imagenes\Icono_Reabrir64.png" />
     <Content Include="Imagenes\Icono_Table48.png" />
     <Content Include="Imagenes\Ico_AbrirCuenta.ico" />
     <Content Include="Imagenes\Ico_Datos.ico" />
+    <Content Include="Imagenes\Ico_Opciones.ico" />
     <Content Include="Imagenes\Ico_Pedidos.ico" />
     <Content Include="Imagenes\FBAzul.png" />
     <Content Include="Imagenes\FBNaranja.png" />

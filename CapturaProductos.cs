@@ -386,7 +386,7 @@ namespace Cupediarum
 
                 MessageBox.Show("Comanda guardada correctamente ✔");
 
-                FrmMesero frm = new FrmMesero(this);
+                FrmCuentas frm = new FrmCuentas();
                 frm.Show();
                 this.Hide();
             }

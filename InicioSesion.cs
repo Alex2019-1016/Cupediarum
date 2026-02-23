@@ -80,7 +80,7 @@ namespace Cupediarum
                                             MessageBoxButtons.OK,
                                             MessageBoxIcon.Information);
 
-                            FrmMenuPrincipal frm = new FrmMenuPrincipal();
+                            FrmMesero frm = new FrmMesero();
                             frm.Show();
                             this.Hide();
                         }
@@ -101,6 +101,11 @@ namespace Cupediarum
                                     MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

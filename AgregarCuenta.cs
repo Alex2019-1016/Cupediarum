@@ -83,9 +83,77 @@ namespace Cupediarum
             this.Close();
         }
 
+        private void EscribirTexto(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            RtbCuenta.Text += btn.Text;
+        }
+
         private void FrmAgregarCuenta_Load(object sender, EventArgs e)
         {
+            AsignarEventos(this);
+        }
 
+        private void AsignarEventos(Control contenedor)
+        {
+            foreach (Control ctrl in contenedor.Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    // Ignorar botones especiales
+                    if (btn.Text != "Borrar" && btn.Text != "Aceptar" && btn.Text != "Cancelar" && btn.Text != "Minuscula")
+                    {
+                        btn.Click += EscribirTexto;
+                    }
+                }
+
+                if (ctrl.HasChildren)
+                    AsignarEventos(ctrl);
+            }
+        }
+        private void BtnBorrar_Click(object sender, EventArgs e)
+        {
+            if (RtbCuenta.Text.Length > 0)
+                RtbCuenta.Text = RtbCuenta.Text.Substring(0, RtbCuenta.Text.Length - 1);
+        }
+
+        bool mayuscula = true;
+        private void BtnMinuscula_Click(object sender, EventArgs e)
+        {
+            mayuscula = !mayuscula;
+
+            CambiarMayusculas(this);
+        }
+
+        private void CambiarMayusculas(Control contenedor)
+        {
+            foreach (Control ctrl in contenedor.Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    if (btn.Text.Length == 1 && char.IsLetter(btn.Text[0]))
+                    {
+                        btn.Text = mayuscula ? btn.Text.ToUpper() : btn.Text.ToLower();
+                    }
+                }
+
+                if (ctrl.HasChildren)
+                    CambiarMayusculas(ctrl);
+            }
+        }
+
+        private void BtnEspacio_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+
+            if (btn.Name == "BtnEspacio")
+            {
+                RtbCuenta.Text += " ";
+            }
+            else
+            {
+                RtbCuenta.Text += btn.Text;
+            }
         }
     }
 }

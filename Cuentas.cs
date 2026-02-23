@@ -21,12 +21,26 @@ namespace Cupediarum
 
         private int cuentaSeleccionada = 0;
 
-        private void Pedidos_Load(object sender, EventArgs e)
-        {
-            TxtNombMesero.Text = Sesion.NombreUsuario;
-            TxtIDMesero.Text = Sesion.IdUsuario.ToString();
+        public int idMeseroSeleccionado = 0;
+        public string nombreMeseroSeleccionado = "";
 
+        public int idAreaSeleccionada = 0;
+
+        string ConexionRestaurante = ConfigurationManager
+            .ConnectionStrings["ConexionRestaurante"]
+            .ConnectionString;
+
+        private void MostrarDatosMesero()
+        {
+            TxtIDMesero.Text = idMeseroSeleccionado.ToString();
+            TxtNombMesero.Text = nombreMeseroSeleccionado;
+        }
+
+        private void FrmCuentas_Load(object sender, EventArgs e)
+        {
+            MostrarDatosMesero();
             CargarCuentas();
+            CargarAreas();
         }
 
         private void CargarCuentas()
@@ -108,189 +122,35 @@ namespace Cupediarum
 
         private void CargarAreas()
         {
-            if (cuentaSeleccionada == 0)
-                return;
+            FlpArea.Controls.Clear();
 
-            string connStr = ConfigurationManager
-                .ConnectionStrings["ConexionRestaurante"]
-                .ConnectionString;
-
-            using (SqlConnection conn = new SqlConnection(connStr))
+            using (SqlConnection cn = new SqlConnection(ConexionRestaurante))
             {
-                conn.Open();
+                cn.Open();
+                string query = "SELECT IdArea, NombreArea FROM Areas";
 
-                int? areaActualId = null;
-                string nombreAreaActual = "";
+                SqlCommand cmd = new SqlCommand(query, cn);
+                SqlDataReader dr = cmd.ExecuteReader();
 
-                // 🔹 Obtener área actual
-                string queryAreaActual = @"
-            SELECT A.Id_Area, A.Nomb_Area
-            FROM CUENTAS C
-            LEFT JOIN MESAS M ON C.Id_Mesa = M.Id_Mesa
-            LEFT JOIN AREAS A ON M.Id_Area = A.Id_Area
-            WHERE C.Id_Cuenta = @IdCuenta";
-
-                using (SqlCommand cmd = new SqlCommand(queryAreaActual, conn))
+                while (dr.Read())
                 {
-                    cmd.Parameters.AddWithValue("@IdCuenta", cuentaSeleccionada);
+                    Button btn = new Button();
+                    btn.Width = 120;
+                    btn.Height = 60;
 
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        if (reader.Read() && !reader.IsDBNull(0))
-                        {
-                            areaActualId = reader.GetInt32(0);
-                            nombreAreaActual = reader.GetString(1);
-                        }
-                    }
-                }
+                    btn.Text = dr["NombreArea"].ToString();
+                    btn.Tag = Convert.ToInt32(dr["IdArea"]);
 
-                RtbNombArea.Text = areaActualId == null ? "TO GO" : nombreAreaActual;
+                    btn.BackColor = Color.FromArgb(64, 64, 64);
+                    btn.ForeColor = Color.White;
+                    btn.FlatStyle = FlatStyle.Flat;
 
-                // 🔹 Cargar áreas
-                string queryAreas = "SELECT Id_Area, Nomb_Area FROM AREAS WHERE Estado = 1";
+                    btn.Click += BtnArea_Click;
 
-                using (SqlCommand cmd = new SqlCommand(queryAreas, conn))
-                using (SqlDataReader reader = cmd.ExecuteReader())
-                {
-                    Button[] botones = { BtnArea1, BtnArea2, BtnArea3, BtnArea4 };
-                    int i = 0;
-
-                    while (reader.Read() && i < botones.Length)
-                    {
-                        int idArea = reader.GetInt32(0);
-                        string nombre = reader.GetString(1);
-
-                        botones[i].Text = nombre;
-                        botones[i].Tag = idArea;
-                        botones[i].BackColor = Color.DarkGray;
-
-                        if (areaActualId != null && idArea == areaActualId)
-                            botones[i].BackColor = Color.LightGreen;
-
-                        botones[i].Click -= BtnArea_Click;
-                        botones[i].Click += BtnArea_Click;
-
-                        i++;
-                    }
+                    FlpArea.Controls.Add(btn);
                 }
             }
         }
-
-        private void BtnArea_Click(object sender, EventArgs e)
-        {
-            if (cuentaSeleccionada == 0)
-            {
-                MessageBox.Show("Seleccione una cuenta primero");
-                return;
-            }
-
-            Button btn = sender as Button;
-            int idArea = (int)btn.Tag;
-
-            string connStr = ConfigurationManager
-                .ConnectionStrings["ConexionRestaurante"]
-                .ConnectionString;
-
-            using (SqlConnection conn = new SqlConnection(connStr))
-            {
-                conn.Open();
-                SqlTransaction transaction = conn.BeginTransaction();
-
-                try
-                {
-                    int? mesaAnterior = null;
-
-                    // 🔹 Obtener mesa actual
-                    string queryMesaAnterior = @"
-                SELECT Id_Mesa
-                FROM CUENTAS
-                WHERE Id_Cuenta = @IdCuenta";
-
-                    using (SqlCommand cmdPrev = new SqlCommand(queryMesaAnterior, conn, transaction))
-                    {
-                        cmdPrev.Parameters.AddWithValue("@IdCuenta", cuentaSeleccionada);
-                        object result = cmdPrev.ExecuteScalar();
-
-                        if (result != null && result != DBNull.Value)
-                            mesaAnterior = Convert.ToInt32(result);
-                    }
-
-                    // 🔹 Buscar mesa disponible
-                    string queryMesaNueva = @"
-                SELECT TOP 1 Id_Mesa
-                FROM MESAS
-                WHERE Id_Area = @IdArea
-                  AND Estado = 'Disponible'";
-
-                    int idMesaNueva;
-
-                    using (SqlCommand cmdNueva = new SqlCommand(queryMesaNueva, conn, transaction))
-                    {
-                        cmdNueva.Parameters.AddWithValue("@IdArea", idArea);
-                        object result = cmdNueva.ExecuteScalar();
-
-                        if (result == null)
-                        {
-                            MessageBox.Show("No hay mesas disponibles en esta área");
-                            transaction.Rollback();
-                            return;
-                        }
-
-                        idMesaNueva = Convert.ToInt32(result);
-                    }
-
-                    // 🔹 Liberar mesa anterior
-                    if (mesaAnterior != null)
-                    {
-                        string liberar = @"
-                    UPDATE MESAS
-                    SET Estado = 'Disponible'
-                    WHERE Id_Mesa = @IdMesa";
-
-                        using (SqlCommand cmd = new SqlCommand(liberar, conn, transaction))
-                        {
-                            cmd.Parameters.AddWithValue("@IdMesa", mesaAnterior);
-                            cmd.ExecuteNonQuery();
-                        }
-                    }
-
-                    // 🔹 Asignar nueva mesa a la cuenta
-                    string updateCuenta = @"
-                UPDATE CUENTAS
-                SET Id_Mesa = @IdMesa
-                WHERE Id_Cuenta = @IdCuenta";
-
-                    using (SqlCommand cmd = new SqlCommand(updateCuenta, conn, transaction))
-                    {
-                        cmd.Parameters.AddWithValue("@IdMesa", idMesaNueva);
-                        cmd.Parameters.AddWithValue("@IdCuenta", cuentaSeleccionada);
-                        cmd.ExecuteNonQuery();
-                    }
-
-                    // 🔹 Marcar mesa como Ocupada
-                    string ocuparMesa = @"
-                UPDATE MESAS
-                SET Estado = 'Ocupada'
-                WHERE Id_Mesa = @IdMesa";
-
-                    using (SqlCommand cmd = new SqlCommand(ocuparMesa, conn, transaction))
-                    {
-                        cmd.Parameters.AddWithValue("@IdMesa", idMesaNueva);
-                        cmd.ExecuteNonQuery();
-                    }
-
-                    transaction.Commit();
-
-                    CargarAreas();
-                }
-                catch (Exception ex)
-                {
-                    transaction.Rollback();
-                    MessageBox.Show("Error: " + ex.Message);
-                }
-            }
-        }
-
         private void BtnAgregarCuenta_Click(object sender, EventArgs e)
         {
             FrmAgregarCuenta frm = new FrmAgregarCuenta(this);
@@ -300,14 +160,17 @@ namespace Cupediarum
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
-            FrmMenuPrincipal frm = new FrmMenuPrincipal();
+            FrmMesero frm = new FrmMesero();
             frm.Show();
             this.Hide();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void BtnArea_Click(object sender, EventArgs e)
         {
+            Button btn = sender as Button;
 
+            idAreaSeleccionada = (int)btn.Tag;
+            RtbNombArea.Text = btn.Text;
         }
     }
 }

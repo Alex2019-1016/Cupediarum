@@ -94,6 +94,12 @@ namespace Cupediarum
             this.Hide();
 
         }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            FrmCuentas.Show(this);
+            this.Close();
+        }
     }
 }
 

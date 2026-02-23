@@ -45,7 +45,6 @@
             this.BtnNum3 = new System.Windows.Forms.Button();
             this.BtnNum2 = new System.Windows.Forms.Button();
             this.BtnNum1 = new System.Windows.Forms.Button();
-            this.BtnIntro = new System.Windows.Forms.Button();
             this.BtnPunto = new System.Windows.Forms.Button();
             this.BtnNum0 = new System.Windows.Forms.Button();
             this.PnlTecladoAlf = new System.Windows.Forms.Panel();
@@ -116,7 +115,6 @@
             this.PnlTecladoNum.Controls.Add(this.BtnNum3);
             this.PnlTecladoNum.Controls.Add(this.BtnNum2);
             this.PnlTecladoNum.Controls.Add(this.BtnNum1);
-            this.PnlTecladoNum.Controls.Add(this.BtnIntro);
             this.PnlTecladoNum.Controls.Add(this.BtnPunto);
             this.PnlTecladoNum.Controls.Add(this.BtnNum0);
             this.PnlTecladoNum.Location = new System.Drawing.Point(476, 3);
@@ -133,9 +131,9 @@
             this.BtnMas.FlatAppearance.BorderSize = 3;
             this.BtnMas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMas.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMas.Location = new System.Drawing.Point(187, 66);
+            this.BtnMas.Location = new System.Drawing.Point(187, 154);
             this.BtnMas.Name = "BtnMas";
-            this.BtnMas.Size = new System.Drawing.Size(60, 121);
+            this.BtnMas.Size = new System.Drawing.Size(60, 152);
             this.BtnMas.TabIndex = 18;
             this.BtnMas.Text = "+";
             this.BtnMas.UseVisualStyleBackColor = false;
@@ -151,7 +149,7 @@
             this.BtnGuion.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGuion.Location = new System.Drawing.Point(187, 5);
             this.BtnGuion.Name = "BtnGuion";
-            this.BtnGuion.Size = new System.Drawing.Size(60, 60);
+            this.BtnGuion.Size = new System.Drawing.Size(60, 148);
             this.BtnGuion.TabIndex = 17;
             this.BtnGuion.Text = "-";
             this.BtnGuion.UseVisualStyleBackColor = false;
@@ -348,22 +346,6 @@
             this.BtnNum1.Text = "1";
             this.BtnNum1.UseVisualStyleBackColor = false;
             // 
-            // BtnIntro
-            // 
-            this.BtnIntro.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnIntro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnIntro.BackgroundImage")));
-            this.BtnIntro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnIntro.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnIntro.FlatAppearance.BorderSize = 3;
-            this.BtnIntro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnIntro.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnIntro.Location = new System.Drawing.Point(187, 188);
-            this.BtnIntro.Name = "BtnIntro";
-            this.BtnIntro.Size = new System.Drawing.Size(60, 121);
-            this.BtnIntro.TabIndex = 4;
-            this.BtnIntro.Text = "Intro";
-            this.BtnIntro.UseVisualStyleBackColor = false;
-            // 
             // BtnPunto
             // 
             this.BtnPunto.BackColor = System.Drawing.Color.LightCoral;
@@ -498,6 +480,7 @@
             this.BtnBorrar.Text = "Borrar";
             this.BtnBorrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnBorrar.UseVisualStyleBackColor = false;
+            this.BtnBorrar.Click += new System.EventHandler(this.BtnBorrar_Click);
             // 
             // BtnMinuscula
             // 
@@ -514,6 +497,7 @@
             this.BtnMinuscula.TabIndex = 45;
             this.BtnMinuscula.Text = "Minuscula";
             this.BtnMinuscula.UseVisualStyleBackColor = false;
+            this.BtnMinuscula.Click += new System.EventHandler(this.BtnMinuscula_Click);
             // 
             // BtnEspacio
             // 
@@ -529,6 +513,7 @@
             this.BtnEspacio.Size = new System.Drawing.Size(350, 60);
             this.BtnEspacio.TabIndex = 37;
             this.BtnEspacio.UseVisualStyleBackColor = false;
+            this.BtnEspacio.Click += new System.EventHandler(this.BtnEspacio_Click);
             // 
             // BtnPunto2
             // 
@@ -1051,7 +1036,6 @@
         private System.Windows.Forms.Button BtnNum3;
         private System.Windows.Forms.Button BtnNum2;
         private System.Windows.Forms.Button BtnNum1;
-        private System.Windows.Forms.Button BtnIntro;
         private System.Windows.Forms.Button BtnPunto;
         private System.Windows.Forms.Button BtnNum0;
         private System.Windows.Forms.Panel PnlTecladoAlf;

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cupediarum
 {
-    public partial class FrmMenuPrincipal : Form
+    public partial class FrmMesero : Form
     {
-        public FrmMenuPrincipal()
+        public FrmMesero()
         {
             InitializeComponent();
         }
@@ -27,6 +27,13 @@ namespace Cupediarum
         private void BtnMesas_Click(object sender, EventArgs e)
         {
             FrmMesas frm = new FrmMesas();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            FrmInicioSesion frm = new FrmInicioSesion();
             frm.Show();
             this.Hide();
         }

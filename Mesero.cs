@@ -128,7 +128,7 @@ namespace Cupediarum
             };
         }
 
-        private void BtnAceptar_Click(object sender, EventArgs e)
+        private void BtnAceptar_Click_1(object sender, EventArgs e)
         {
             if (TxtClave.ForeColor == Color.Gray || string.IsNullOrWhiteSpace(TxtClave.Text))
             {
@@ -196,10 +196,39 @@ namespace Cupediarum
             }
         }
 
-        private void BtnCancelar_Click(object sender, EventArgs e)
+        private void BtnCancelar_Click_1(object sender, EventArgs e)
         {
             formularioAnterior.Show();
             this.Close();
+        }
+
+        private void TecladoNumerico_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            TxtClave.Text += btn.Text;
+        }
+
+        private void FrmMesero_Load(object sender, EventArgs e)
+        {
+            AsignarEventosNumericos(this);
+        }
+
+        private void AsignarEventosNumericos(Control contenedor)
+        {
+            foreach (Control ctrl in contenedor.Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    // ignoramos los botones especiales
+                    if (btn.Name != "btnAceptar" && btn.Name != "btnCancelar")
+                    {
+                        btn.Click += TecladoNumerico_Click;
+                    }
+                }
+
+                if (ctrl.HasChildren)
+                    AsignarEventosNumericos(ctrl);
+            }
         }
     }
 }

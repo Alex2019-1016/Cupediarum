@@ -406,9 +406,8 @@ namespace Cupediarum
         // =============================
         private void BtnCancelar_Click_1(object sender, EventArgs e)
         {
-            FrmCuentas frm = new FrmCuentas(this);
-            frm.Show();
-            this.Hide();
+            formularioAnterior.Show();
+            this.Close();
         }
 
 

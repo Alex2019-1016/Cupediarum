@@ -16,5 +16,14 @@ namespace Cupediarum
         {
             InitializeComponent();
         }
+
+        private void FrmOpcionesMesero_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

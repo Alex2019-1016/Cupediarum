@@ -101,9 +101,8 @@ namespace Cupediarum
             Button btn = sender as Button;
             cuentaSeleccionada = (int) btn.Tag;
 
-            FrmCapturaProductos frm = new FrmCapturaProductos(cuentaSeleccionada, this);
+            FrmOpcionesMesero frm = new FrmOpcionesMesero();
             frm.Show();
-            this.Hide();
         }
 
         private void CargarAreas()

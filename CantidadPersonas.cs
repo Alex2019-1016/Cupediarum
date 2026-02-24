@@ -14,12 +14,16 @@ namespace Cupediarum
 {
     public partial class FrmCantidadPersonas : Form
     {
-        private int idCuenta;
+        private readonly int idCuenta;
 
-        public FrmCantidadPersonas(int idCuentaRecibida)
+        private readonly Form formularioAnterior;
+
+        public FrmCantidadPersonas(int idCuentaRecibida, Form anterior)
         {
             InitializeComponent();
             idCuenta = idCuentaRecibida;
+            formularioAnterior = anterior;
+
         }
 
 
@@ -64,5 +68,46 @@ namespace Cupediarum
                 }
             }
         }
+
+        private void TecladoNumerico_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            TxtCantPersonas.Text += btn.Text;
+        }
+
+        private void FrmCantidadPersonas_Load(object sender, EventArgs e)
+        {
+            AsignarEventosNumericos(this);
+        }
+        private void AsignarEventosNumericos(Control contenedor)
+        {
+            foreach (Control ctrl in contenedor.Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    // ignoramos los botones especiales
+                    if (btn.Name != "BtnAceptar" && btn.Name != "BtnCancelar" && btn.Name != "BtnBorrar")
+                    {
+                        btn.Click += TecladoNumerico_Click;
+                    }
+                }
+
+                if (ctrl.HasChildren)
+                    AsignarEventosNumericos(ctrl);
+            }
+        }
+
+        private void BtnBorrar_Click(object sender, EventArgs e)
+        {
+            if (TxtCantPersonas.Text.Length > 0)
+                TxtCantPersonas.Text = TxtCantPersonas.Text.Substring(0, TxtCantPersonas.Text.Length - 1);
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            formularioAnterior.Show();
+            this.Close();
+        }
     }
 }
+

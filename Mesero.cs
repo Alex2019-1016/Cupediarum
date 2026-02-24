@@ -15,7 +15,7 @@ namespace Cupediarum
     public partial class FrmMesero : Form
     {
         private bool meseroAutenticado = false;
-        private Form formularioAnterior;
+        private readonly Form formularioAnterior;
 
         public FrmMesero(Form anterior)
         {
@@ -35,14 +35,14 @@ namespace Cupediarum
 
                 string query;
 
-                if (Sesion.IdRol == 1) 
+                if (Sesion.IdRol == 1)
                 {
                     query = @"SELECT Id_Cuenta, FechaApertura, EstadoCuenta
                               FROM CUENTAS
                               WHERE EstadoCuenta = 'Abierta'
                               ORDER BY FechaApertura DESC";
                 }
-                else 
+                else
                 {
                     query = @"SELECT Id_Cuenta, FechaApertura, EstadoCuenta
                               FROM CUENTAS
@@ -60,7 +60,7 @@ namespace Cupediarum
                     DataTable dt = new DataTable();
                     da.Fill(dt);
 
-                   
+
                 }
             }
         }
@@ -128,7 +128,7 @@ namespace Cupediarum
             };
         }
 
-        private void BtnAceptar_Click_1(object sender, EventArgs e)
+        private void BtnAceptar_Click(object sender, EventArgs e)
         {
             if (TxtClave.ForeColor == Color.Gray || string.IsNullOrWhiteSpace(TxtClave.Text))
             {
@@ -177,7 +177,7 @@ namespace Cupediarum
 
                             TxtClave.Enabled = false;
 
-                            FrmCuentas frm = new FrmCuentas();
+                            FrmCuentas frm = new FrmCuentas(this);
                             frm.Show();
                             this.Hide();
                         }
@@ -197,11 +197,44 @@ namespace Cupediarum
             }
         }
 
-        private void BtnCancelar_Click_1(object sender, EventArgs e)
+        private void BtnCancelar_Click(object sender, EventArgs e)
         {
             FrmMenuPrincipal frm = new FrmMenuPrincipal();
             frm.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void TecladoNumerico_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            TxtClave.Text += btn.Text;
+        }
+
+        private void FrmMesero_Load(object sender, EventArgs e)
+        {
+            AsignarEventosNumericos(this);
+        }
+
+        private void AsignarEventosNumericos(Control contenedor)
+        {
+            foreach (Control ctrl in contenedor.Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    if (btn.Name != "BtnAceptar" && btn.Name != "BtnCancelar" && btn.Name != "BtnBorrar")
+                    {
+                        btn.Click += TecladoNumerico_Click;
+                    }
+                }
+                if (ctrl.HasChildren)
+                    AsignarEventosNumericos(ctrl);
+            }
+        }
+
+        private void BtnBorrar_Click(object sender, EventArgs e)
+        {
+            if (TxtClave.Text.Length > 0)
+                TxtClave.Text = TxtClave.Text.Substring(0, TxtClave.Text.Length - 1);
         }
     }
 }

@@ -30,23 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCuentas));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnPrecios = new System.Windows.Forms.Button();
-            this.BtnAgregarCuenta = new System.Windows.Forms.Button();
             this.MnuPedidos = new System.Windows.Forms.MenuStrip();
             this.configurarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PnlDatosMesero = new System.Windows.Forms.Panel();
-            this.BtnSalir = new System.Windows.Forms.Button();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.BtnArea1 = new System.Windows.Forms.Button();
-            this.BtnArea2 = new System.Windows.Forms.Button();
-            this.BtnArea3 = new System.Windows.Forms.Button();
-            this.BtnArea4 = new System.Windows.Forms.Button();
-            this.RtbNombArea = new System.Windows.Forms.RichTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.TxtNombMesero = new System.Windows.Forms.TextBox();
-            this.TxtIDMesero = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.FlpCuentas = new System.Windows.Forms.FlowLayoutPanel();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -84,11 +70,23 @@
             this.button41 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.TxtNombMesero = new System.Windows.Forms.TextBox();
+            this.TxtIDMesero = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.RtbNombArea = new System.Windows.Forms.RichTextBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.BtnArea1 = new System.Windows.Forms.Button();
+            this.BtnArea2 = new System.Windows.Forms.Button();
+            this.BtnArea3 = new System.Windows.Forms.Button();
+            this.BtnArea4 = new System.Windows.Forms.Button();
+            this.BtnSalir = new System.Windows.Forms.Button();
+            this.BtnPrecios = new System.Windows.Forms.Button();
+            this.BtnAgregarCuenta = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.MnuPedidos.SuspendLayout();
-            this.PnlDatosMesero.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
             this.FlpCuentas.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -99,47 +97,8 @@
             this.panel1.Controls.Add(this.BtnAgregarCuenta);
             this.panel1.Location = new System.Drawing.Point(4, 36);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(290, 80);
+            this.panel1.Size = new System.Drawing.Size(298, 69);
             this.panel1.TabIndex = 0;
-            // 
-            // BtnPrecios
-            // 
-            this.BtnPrecios.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnPrecios.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPrecios.BackgroundImage")));
-            this.BtnPrecios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnPrecios.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.BtnPrecios.FlatAppearance.BorderSize = 3;
-            this.BtnPrecios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPrecios.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPrecios.Image = global::Cupediarum.Properties.Resources.Icono_Precios;
-            this.BtnPrecios.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BtnPrecios.Location = new System.Drawing.Point(147, 2);
-            this.BtnPrecios.Name = "BtnPrecios";
-            this.BtnPrecios.Size = new System.Drawing.Size(135, 71);
-            this.BtnPrecios.TabIndex = 11;
-            this.BtnPrecios.Text = "Precios";
-            this.BtnPrecios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnPrecios.UseVisualStyleBackColor = false;
-            // 
-            // BtnAgregarCuenta
-            // 
-            this.BtnAgregarCuenta.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnAgregarCuenta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAgregarCuenta.BackgroundImage")));
-            this.BtnAgregarCuenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnAgregarCuenta.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.BtnAgregarCuenta.FlatAppearance.BorderSize = 3;
-            this.BtnAgregarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAgregarCuenta.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregarCuenta.Image = global::Cupediarum.Properties.Resources.Icono_AbrirCuenta;
-            this.BtnAgregarCuenta.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BtnAgregarCuenta.Location = new System.Drawing.Point(1, 2);
-            this.BtnAgregarCuenta.Name = "BtnAgregarCuenta";
-            this.BtnAgregarCuenta.Size = new System.Drawing.Size(143, 71);
-            this.BtnAgregarCuenta.TabIndex = 9;
-            this.BtnAgregarCuenta.Text = "Agregar Cuenta";
-            this.BtnAgregarCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAgregarCuenta.UseVisualStyleBackColor = false;
-            this.BtnAgregarCuenta.Click += new System.EventHandler(this.BtnAgregarCuenta_Click);
             // 
             // MnuPedidos
             // 
@@ -150,162 +109,21 @@
             this.acercaDeToolStripMenuItem});
             this.MnuPedidos.Location = new System.Drawing.Point(0, 0);
             this.MnuPedidos.Name = "MnuPedidos";
-            this.MnuPedidos.Size = new System.Drawing.Size(957, 33);
+            this.MnuPedidos.Size = new System.Drawing.Size(957, 36);
             this.MnuPedidos.TabIndex = 3;
             this.MnuPedidos.Text = "menuStrip1";
             // 
             // configurarToolStripMenuItem
             // 
             this.configurarToolStripMenuItem.Name = "configurarToolStripMenuItem";
-            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
+            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(112, 32);
             this.configurarToolStripMenuItem.Text = "Configurar";
             // 
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(105, 32);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
-            // 
-            // PnlDatosMesero
-            // 
-            this.PnlDatosMesero.BackColor = System.Drawing.Color.Transparent;
-            this.PnlDatosMesero.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PnlDatosMesero.Controls.Add(this.BtnSalir);
-            this.PnlDatosMesero.Controls.Add(this.flowLayoutPanel2);
-            this.PnlDatosMesero.Controls.Add(this.RtbNombArea);
-            this.PnlDatosMesero.Controls.Add(this.label2);
-            this.PnlDatosMesero.Controls.Add(this.TxtNombMesero);
-            this.PnlDatosMesero.Controls.Add(this.TxtIDMesero);
-            this.PnlDatosMesero.Controls.Add(this.label1);
-            this.PnlDatosMesero.Location = new System.Drawing.Point(787, 39);
-            this.PnlDatosMesero.Name = "PnlDatosMesero";
-            this.PnlDatosMesero.Size = new System.Drawing.Size(164, 591);
-            this.PnlDatosMesero.TabIndex = 4;
-            // 
-            // BtnSalir
-            // 
-            this.BtnSalir.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnSalir.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
-            this.BtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnSalir.FlatAppearance.BorderSize = 5;
-            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSalir.Font = new System.Drawing.Font("Modern No. 20", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalir.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
-            this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSalir.Location = new System.Drawing.Point(25, 526);
-            this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(118, 61);
-            this.BtnSalir.TabIndex = 47;
-            this.BtnSalir.Text = "Salir";
-            this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSalir.UseVisualStyleBackColor = false;
-            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click_1);
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.BtnArea1);
-            this.flowLayoutPanel2.Controls.Add(this.BtnArea2);
-            this.flowLayoutPanel2.Controls.Add(this.BtnArea3);
-            this.flowLayoutPanel2.Controls.Add(this.BtnArea4);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(22, 208);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(122, 312);
-            this.flowLayoutPanel2.TabIndex = 5;
-            // 
-            // BtnArea1
-            // 
-            this.BtnArea1.BackColor = System.Drawing.Color.Transparent;
-            this.BtnArea1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnArea1.FlatAppearance.BorderSize = 3;
-            this.BtnArea1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnArea1.Location = new System.Drawing.Point(3, 3);
-            this.BtnArea1.Name = "BtnArea1";
-            this.BtnArea1.Size = new System.Drawing.Size(118, 72);
-            this.BtnArea1.TabIndex = 14;
-            this.BtnArea1.UseVisualStyleBackColor = false;
-            // 
-            // BtnArea2
-            // 
-            this.BtnArea2.BackColor = System.Drawing.Color.Transparent;
-            this.BtnArea2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnArea2.FlatAppearance.BorderSize = 3;
-            this.BtnArea2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnArea2.Location = new System.Drawing.Point(3, 81);
-            this.BtnArea2.Name = "BtnArea2";
-            this.BtnArea2.Size = new System.Drawing.Size(118, 72);
-            this.BtnArea2.TabIndex = 15;
-            this.BtnArea2.UseVisualStyleBackColor = false;
-            // 
-            // BtnArea3
-            // 
-            this.BtnArea3.BackColor = System.Drawing.Color.Transparent;
-            this.BtnArea3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnArea3.FlatAppearance.BorderSize = 3;
-            this.BtnArea3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnArea3.Location = new System.Drawing.Point(3, 159);
-            this.BtnArea3.Name = "BtnArea3";
-            this.BtnArea3.Size = new System.Drawing.Size(118, 72);
-            this.BtnArea3.TabIndex = 16;
-            this.BtnArea3.UseVisualStyleBackColor = false;
-            // 
-            // BtnArea4
-            // 
-            this.BtnArea4.BackColor = System.Drawing.Color.Transparent;
-            this.BtnArea4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnArea4.FlatAppearance.BorderSize = 3;
-            this.BtnArea4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnArea4.Location = new System.Drawing.Point(3, 237);
-            this.BtnArea4.Name = "BtnArea4";
-            this.BtnArea4.Size = new System.Drawing.Size(118, 72);
-            this.BtnArea4.TabIndex = 17;
-            this.BtnArea4.UseVisualStyleBackColor = false;
-            // 
-            // RtbNombArea
-            // 
-            this.RtbNombArea.Location = new System.Drawing.Point(15, 120);
-            this.RtbNombArea.Name = "RtbNombArea";
-            this.RtbNombArea.Size = new System.Drawing.Size(134, 81);
-            this.RtbNombArea.TabIndex = 4;
-            this.RtbNombArea.Text = "";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(50, 87);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 32);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Area";
-            // 
-            // TxtNombMesero
-            // 
-            this.TxtNombMesero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombMesero.Location = new System.Drawing.Point(15, 49);
-            this.TxtNombMesero.Name = "TxtNombMesero";
-            this.TxtNombMesero.Size = new System.Drawing.Size(134, 39);
-            this.TxtNombMesero.TabIndex = 2;
-            // 
-            // TxtIDMesero
-            // 
-            this.TxtIDMesero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtIDMesero.Location = new System.Drawing.Point(107, 3);
-            this.TxtIDMesero.Name = "TxtIDMesero";
-            this.TxtIDMesero.Size = new System.Drawing.Size(43, 39);
-            this.TxtIDMesero.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(11, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 26);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mesero";
             // 
             // FlpCuentas
             // 
@@ -784,13 +602,184 @@
             this.button2.TabIndex = 48;
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(853, 125);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 25);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "AREA";
+            // 
+            // TxtNombMesero
+            // 
+            this.TxtNombMesero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNombMesero.Location = new System.Drawing.Point(818, 83);
+            this.TxtNombMesero.Name = "TxtNombMesero";
+            this.TxtNombMesero.Size = new System.Drawing.Size(134, 39);
+            this.TxtNombMesero.TabIndex = 8;
+            // 
+            // TxtIDMesero
+            // 
+            this.TxtIDMesero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtIDMesero.Location = new System.Drawing.Point(910, 37);
+            this.TxtIDMesero.Name = "TxtIDMesero";
+            this.TxtIDMesero.Size = new System.Drawing.Size(43, 39);
+            this.TxtIDMesero.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(814, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 23);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "MESERO";
+            // 
+            // RtbNombArea
+            // 
+            this.RtbNombArea.Location = new System.Drawing.Point(819, 153);
+            this.RtbNombArea.Name = "RtbNombArea";
+            this.RtbNombArea.Size = new System.Drawing.Size(134, 81);
+            this.RtbNombArea.TabIndex = 10;
+            this.RtbNombArea.Text = "";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.flowLayoutPanel1.Controls.Add(this.BtnArea1);
+            this.flowLayoutPanel1.Controls.Add(this.BtnArea2);
+            this.flowLayoutPanel1.Controls.Add(this.BtnArea3);
+            this.flowLayoutPanel1.Controls.Add(this.BtnArea4);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(821, 240);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(130, 323);
+            this.flowLayoutPanel1.TabIndex = 49;
+            // 
+            // BtnArea1
+            // 
+            this.BtnArea1.BackColor = System.Drawing.Color.Transparent;
+            this.BtnArea1.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.BtnArea1.FlatAppearance.BorderSize = 3;
+            this.BtnArea1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnArea1.Location = new System.Drawing.Point(3, 3);
+            this.BtnArea1.Name = "BtnArea1";
+            this.BtnArea1.Size = new System.Drawing.Size(118, 72);
+            this.BtnArea1.TabIndex = 19;
+            this.BtnArea1.UseVisualStyleBackColor = false;
+            // 
+            // BtnArea2
+            // 
+            this.BtnArea2.BackColor = System.Drawing.Color.Transparent;
+            this.BtnArea2.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.BtnArea2.FlatAppearance.BorderSize = 3;
+            this.BtnArea2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnArea2.Location = new System.Drawing.Point(3, 81);
+            this.BtnArea2.Name = "BtnArea2";
+            this.BtnArea2.Size = new System.Drawing.Size(118, 72);
+            this.BtnArea2.TabIndex = 20;
+            this.BtnArea2.UseVisualStyleBackColor = false;
+            // 
+            // BtnArea3
+            // 
+            this.BtnArea3.BackColor = System.Drawing.Color.Transparent;
+            this.BtnArea3.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.BtnArea3.FlatAppearance.BorderSize = 3;
+            this.BtnArea3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnArea3.Location = new System.Drawing.Point(3, 159);
+            this.BtnArea3.Name = "BtnArea3";
+            this.BtnArea3.Size = new System.Drawing.Size(118, 72);
+            this.BtnArea3.TabIndex = 21;
+            this.BtnArea3.UseVisualStyleBackColor = false;
+            // 
+            // BtnArea4
+            // 
+            this.BtnArea4.BackColor = System.Drawing.Color.Transparent;
+            this.BtnArea4.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.BtnArea4.FlatAppearance.BorderSize = 3;
+            this.BtnArea4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnArea4.Location = new System.Drawing.Point(3, 237);
+            this.BtnArea4.Name = "BtnArea4";
+            this.BtnArea4.Size = new System.Drawing.Size(118, 72);
+            this.BtnArea4.TabIndex = 22;
+            this.BtnArea4.UseVisualStyleBackColor = false;
+            // 
+            // BtnSalir
+            // 
+            this.BtnSalir.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnSalir.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
+            this.BtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnSalir.FlatAppearance.BorderSize = 5;
+            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSalir.Font = new System.Drawing.Font("Modern No. 20", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSalir.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
+            this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnSalir.Location = new System.Drawing.Point(821, 569);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(131, 61);
+            this.BtnSalir.TabIndex = 48;
+            this.BtnSalir.Text = "SALIR";
+            this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
+            // BtnPrecios
+            // 
+            this.BtnPrecios.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnPrecios.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPrecios.BackgroundImage")));
+            this.BtnPrecios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnPrecios.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnPrecios.FlatAppearance.BorderSize = 3;
+            this.BtnPrecios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPrecios.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPrecios.Image = global::Cupediarum.Properties.Resources.Icono_Precios48;
+            this.BtnPrecios.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BtnPrecios.Location = new System.Drawing.Point(147, 2);
+            this.BtnPrecios.Name = "BtnPrecios";
+            this.BtnPrecios.Size = new System.Drawing.Size(143, 60);
+            this.BtnPrecios.TabIndex = 11;
+            this.BtnPrecios.Text = "PRECIOS";
+            this.BtnPrecios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnPrecios.UseVisualStyleBackColor = false;
+            // 
+            // BtnAgregarCuenta
+            // 
+            this.BtnAgregarCuenta.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAgregarCuenta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAgregarCuenta.BackgroundImage")));
+            this.BtnAgregarCuenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnAgregarCuenta.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnAgregarCuenta.FlatAppearance.BorderSize = 3;
+            this.BtnAgregarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAgregarCuenta.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregarCuenta.Image = global::Cupediarum.Properties.Resources.Icono_AgregarCuenta48;
+            this.BtnAgregarCuenta.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BtnAgregarCuenta.Location = new System.Drawing.Point(1, 2);
+            this.BtnAgregarCuenta.Name = "BtnAgregarCuenta";
+            this.BtnAgregarCuenta.Size = new System.Drawing.Size(143, 60);
+            this.BtnAgregarCuenta.TabIndex = 9;
+            this.BtnAgregarCuenta.Text = "AGREGAR CUENTA";
+            this.BtnAgregarCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnAgregarCuenta.UseVisualStyleBackColor = false;
+            this.BtnAgregarCuenta.Click += new System.EventHandler(this.BtnAgregarCuenta_Click);
+            // 
             // FrmCuentas
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(957, 633);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.BtnSalir);
+            this.Controls.Add(this.RtbNombArea);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.TxtNombMesero);
+            this.Controls.Add(this.TxtIDMesero);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.FlpCuentas);
-            this.Controls.Add(this.PnlDatosMesero);
             this.Controls.Add(this.MnuPedidos);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -802,10 +791,8 @@
             this.panel1.ResumeLayout(false);
             this.MnuPedidos.ResumeLayout(false);
             this.MnuPedidos.PerformLayout();
-            this.PnlDatosMesero.ResumeLayout(false);
-            this.PnlDatosMesero.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
             this.FlpCuentas.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -819,12 +806,8 @@
         private System.Windows.Forms.MenuStrip MnuPedidos;
         private System.Windows.Forms.ToolStripMenuItem configurarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
-        private System.Windows.Forms.Panel PnlDatosMesero;
         private System.Windows.Forms.FlowLayoutPanel FlpCuentas;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox TxtNombMesero;
-        private System.Windows.Forms.TextBox TxtIDMesero;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
@@ -852,21 +835,24 @@
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button button30;
         private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.RichTextBox RtbNombArea;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Button button36;
         private System.Windows.Forms.Button button37;
         private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Button button39;
         private System.Windows.Forms.Button button40;
         private System.Windows.Forms.Button button41;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox TxtNombMesero;
+        private System.Windows.Forms.TextBox TxtIDMesero;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox RtbNombArea;
+        private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button BtnArea1;
         private System.Windows.Forms.Button BtnArea2;
         private System.Windows.Forms.Button BtnArea3;
         private System.Windows.Forms.Button BtnArea4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
     }
 }

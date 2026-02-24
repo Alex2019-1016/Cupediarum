@@ -14,9 +14,11 @@ namespace Cupediarum
 {
     public partial class FrmCuentas : Form
     {
-        public FrmCuentas()
+        private readonly Form formularioAnterior;
+        public FrmCuentas(Form anterior)
         {
             InitializeComponent();
+            formularioAnterior = anterior;
         }
 
         private int cuentaSeleccionada = 0;
@@ -71,21 +73,19 @@ namespace Cupediarum
                         int idCuenta = reader.GetInt32(0);
                         string nombreCuenta = reader.GetString(1);
 
-                        Button btn = new Button();
-                        btn.Width = 118;
-                        btn.Height = 72;
-                        btn.FlatStyle = FlatStyle.Flat;
-                        btn.FlatAppearance.BorderSize = 3;
-                        btn.FlatAppearance.BorderColor = Color.Cyan;
-                        btn.BackgroundImage = Properties.Resources.FBAzul;
-                        btn.BackgroundImageLayout = ImageLayout.Stretch;
-                        btn.BackColor = Color.LightCoral;
-                        btn.Font = new Font("Times New Roman", 12, FontStyle.Bold);
-
-                        
-                        btn.Text = nombreCuenta;
-
-                        btn.Tag = idCuenta; 
+                        Button btn = new Button
+                        {
+                            Width = 118,
+                            Height = 72,
+                            FlatStyle = FlatStyle.Flat,
+                            Font = new Font("Times New Roman", 12, FontStyle.Bold),
+                            FlatAppearance = { BorderSize = 3, BorderColor = Color.Cyan },
+                            BackgroundImage = Properties.Resources.FBAzul,
+                            BackgroundImageLayout = ImageLayout.Stretch,
+                            BackColor = Color.LightCoral,
+                            Text = nombreCuenta,
+                            Tag = idCuenta
+                        };
 
                         btn.Click += BtnCuenta_Click;
 
@@ -303,6 +303,12 @@ namespace Cupediarum
             FrmMesero frm = new FrmMesero(this);
             frm.Show();
             this.Hide();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            formularioAnterior.Show();
+            this.Close();
         }
     }
 }

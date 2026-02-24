@@ -170,6 +170,7 @@
     <Content Include="Imagenes\Icono_Aceptar48.png" />
     <Content Include="Imagenes\Icono_Aceptar64.png" />
     <Content Include="Imagenes\Icono_Agregar.png" />
+    <None Include="Imagenes\Icono_AgregarCuenta48.png" />
     <Content Include="Imagenes\Icono_Bebidas.png" />
     <Content Include="Imagenes\Icono_Cancelar48.png" />
     <Content Include="Imagenes\Icono_Cancelar64.png" />
@@ -196,6 +197,7 @@
     <None Include="Imagenes\Icono_Delete.png" />
     <Content Include="Imagenes\Icono_CorteCaja48.png" />
     <Content Include="Imagenes\Icono_Descuento.png" />
+    <None Include="Imagenes\Icono_Descuento48.png" />
     <Content Include="Imagenes\Icono_Drink.png" />
     <Content Include="Imagenes\Icono_Food.png" />
     <Content Include="Imagenes\Icono_Favorito.png" />
@@ -211,6 +213,7 @@
     <Content Include="Imagenes\Icono_People.png" />
     <Content Include="Imagenes\Icono_Personas48.png" />
     <Content Include="Imagenes\Icono_Postres.png" />
+    <None Include="Imagenes\Icono_Precios48.png" />
     <Content Include="Imagenes\Icono_Table48.png" />
     <Content Include="Imagenes\Ico_AbrirCuenta.ico" />
     <Content Include="Imagenes\Ico_Datos.ico" />

@@ -14,8 +14,8 @@ namespace Cupediarum
         private int idSubCategoriaSeleccionada = 0;
         private decimal totalCuenta = 0;
 
-        private int idCuenta;
-        private Form formularioAnterior;
+        private readonly int idCuenta;
+        private readonly Form formularioAnterior;
 
         public FrmCapturaProductos(int idCuentaRecibida, Form anterior)
         {
@@ -185,18 +185,19 @@ namespace Cupediarum
                     int idSub = reader.GetInt32(0);
                     string nombreSub = reader.GetString(1);
 
-                    Button btnSub = new Button();
-                    btnSub.Text = nombreSub;
-                    btnSub.Tag = idSub;
-                    btnSub.Width = 133;
-                    btnSub.Height = 55;
-                    btnSub.Margin = new Padding(5);
-                    btnSub.BackColor = Color.LightCoral;
-                    btnSub.Font = new Font("Times New Roman", 10, FontStyle.Bold);
-                    btnSub.BackgroundImage = Properties.Resources.FBAzul;
-                    btnSub.BackgroundImageLayout = ImageLayout.Stretch;
-
-                    btnSub.FlatStyle = FlatStyle.Flat;
+                    Button btnSub = new Button
+                    {
+                        Text = nombreSub,
+                        Tag = idSub,
+                        Width = 133,
+                        Height = 55,
+                        Margin = new Padding(5),
+                        BackColor = Color.LightCoral,
+                        Font = new Font("Times New Roman", 10, FontStyle.Bold),
+                        BackgroundImage = Properties.Resources.FBAzul,
+                        BackgroundImageLayout = ImageLayout.Stretch,
+                        FlatStyle = FlatStyle.Flat
+                    };
 
                     btnSub.Click += BtnSubCategoria_Click;
 
@@ -242,20 +243,21 @@ namespace Cupediarum
                     string nombre = reader.GetString(1);
                     decimal precio = reader.GetDecimal(2);
 
-                    Button btn = new Button();
-                    btn.Width = 150;
-                    btn.Height = 80;
-                    btn.Text = nombre + "\n$" + precio.ToString("N2");
-                    btn.BackColor = Color.LightCoral;
-                    btn.Font = new Font("Times New Roman", 10, FontStyle.Bold);
-                    btn.BackgroundImage = Properties.Resources.FBNaranja;
-                    btn.BackgroundImageLayout = ImageLayout.Stretch;
-
-                    btn.Tag = new ProductoTemp
+                    Button btn = new Button
                     {
-                        Id = idProducto,
-                        Nombre = nombre,
-                        Precio = precio
+                        Width = 150,
+                        Height = 80,
+                        Text = nombre + "\n$" + precio.ToString("N2"),
+                        BackColor = Color.LightCoral,
+                        Font = new Font("Times New Roman", 10, FontStyle.Bold),
+                        BackgroundImage = Properties.Resources.FBNaranja,
+                        BackgroundImageLayout = ImageLayout.Stretch,
+                        Tag = new ProductoTemp
+                        {
+                            Id = idProducto,
+                            Nombre = nombre,
+                            Precio = precio
+                        }
                     };
 
                     btn.Click += BtnProducto_Click;
@@ -389,7 +391,7 @@ namespace Cupediarum
 
                 MessageBox.Show("Comanda guardada correctamente ✔");
 
-                FrmMesero frm = new FrmMesero(this);
+                FrmCuentas frm = new FrmCuentas(this);
                 frm.Show();
                 this.Hide();
             }
@@ -404,8 +406,9 @@ namespace Cupediarum
         // =============================
         private void BtnCancelar_Click_1(object sender, EventArgs e)
         {
-            formularioAnterior.Show();
-            this.Close();
+            FrmCuentas frm = new FrmCuentas(this);
+            frm.Show();
+            this.Hide();
         }
 
 
@@ -448,6 +451,7 @@ namespace Cupediarum
             DgvComanda.CurrentRow.Cells["PRECIO"].Value = cantidad * precioUnitario;
 
             CalcularTotal();
+
         }
 
         private void ActualizarCantidad(int idProducto, int nuevaCantidad)

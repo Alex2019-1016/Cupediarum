@@ -23,10 +23,17 @@ namespace Cupediarum
             frm.Show();
             this.Hide();
         }
-
-private void BtnMesas_Click(object sender, EventArgs e)
+        
+        private void BtnMesas_Click(object sender, EventArgs e)
         {
             FrmMesas frm = new FrmMesas();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            FrmInicioSesion frm = new FrmInicioSesion();
             frm.Show();
             this.Hide();
         }

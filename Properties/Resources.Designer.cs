@@ -153,6 +153,16 @@ namespace Cupediarum.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Icono_AgregarCuenta48 {
+            get {
+                object obj = ResourceManager.GetObject("Icono_AgregarCuenta48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icono_Borrar {
             get {
                 object obj = ResourceManager.GetObject("Icono_Borrar", resourceCulture);
@@ -276,6 +286,16 @@ namespace Cupediarum.Properties {
         internal static System.Drawing.Bitmap Icono_Descuento {
             get {
                 object obj = ResourceManager.GetObject("Icono_Descuento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icono_Descuento48 {
+            get {
+                object obj = ResourceManager.GetObject("Icono_Descuento48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -476,6 +496,16 @@ namespace Cupediarum.Properties {
         internal static System.Drawing.Bitmap Icono_Precios {
             get {
                 object obj = ResourceManager.GetObject("Icono_Precios", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icono_Precios48 {
+            get {
+                object obj = ResourceManager.GetObject("Icono_Precios48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

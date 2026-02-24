@@ -111,7 +111,7 @@
             this.PnOpciones.Controls.Add(this.BtnMesas);
             this.PnOpciones.Location = new System.Drawing.Point(4, 35);
             this.PnOpciones.Name = "PnOpciones";
-            this.PnOpciones.Size = new System.Drawing.Size(126, 593);
+            this.PnOpciones.Size = new System.Drawing.Size(150, 593);
             this.PnOpciones.TabIndex = 3;
             // 
             // BtnCerrarTurno
@@ -125,11 +125,11 @@
             this.BtnCerrarTurno.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCerrarTurno.Image = global::Cupediarum.Properties.Resources.Icono_CerrarTurno48;
             this.BtnCerrarTurno.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnCerrarTurno.Location = new System.Drawing.Point(3, 507);
+            this.BtnCerrarTurno.Location = new System.Drawing.Point(2, 501);
             this.BtnCerrarTurno.Name = "BtnCerrarTurno";
-            this.BtnCerrarTurno.Size = new System.Drawing.Size(118, 80);
+            this.BtnCerrarTurno.Size = new System.Drawing.Size(141, 83);
             this.BtnCerrarTurno.TabIndex = 8;
-            this.BtnCerrarTurno.Text = "Cerrar Turno";
+            this.BtnCerrarTurno.Text = "CERRAR TURNO";
             this.BtnCerrarTurno.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnCerrarTurno.UseVisualStyleBackColor = false;
             // 
@@ -147,9 +147,9 @@
             this.BtnAbrirTurno.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnAbrirTurno.Location = new System.Drawing.Point(1, 261);
             this.BtnAbrirTurno.Name = "BtnAbrirTurno";
-            this.BtnAbrirTurno.Size = new System.Drawing.Size(118, 83);
+            this.BtnAbrirTurno.Size = new System.Drawing.Size(142, 83);
             this.BtnAbrirTurno.TabIndex = 7;
-            this.BtnAbrirTurno.Text = "Abrir Turno";
+            this.BtnAbrirTurno.Text = "ABRIR TURNO";
             this.BtnAbrirTurno.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAbrirTurno.UseVisualStyleBackColor = false;
             // 
@@ -167,9 +167,9 @@
             this.BtnMesas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnMesas.Location = new System.Drawing.Point(3, 1);
             this.BtnMesas.Name = "BtnMesas";
-            this.BtnMesas.Size = new System.Drawing.Size(118, 73);
+            this.BtnMesas.Size = new System.Drawing.Size(140, 73);
             this.BtnMesas.TabIndex = 6;
-            this.BtnMesas.Text = "Mesas";
+            this.BtnMesas.Text = "MESAS";
             this.BtnMesas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnMesas.UseVisualStyleBackColor = false;
             this.BtnMesas.Click += new System.EventHandler(this.BtnMesas_Click);
@@ -185,13 +185,14 @@
             this.BtnSalir.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalir.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
             this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSalir.Location = new System.Drawing.Point(773, 568);
+            this.BtnSalir.Location = new System.Drawing.Point(775, 565);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(138, 60);
             this.BtnSalir.TabIndex = 48;
-            this.BtnSalir.Text = "Salir";
+            this.BtnSalir.Text = "SALIR";
             this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // BtnMesero
             // 
@@ -204,11 +205,11 @@
             this.BtnMesero.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMesero.Image = global::Cupediarum.Properties.Resources.Icono_Mesero;
             this.BtnMesero.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BtnMesero.Location = new System.Drawing.Point(773, 38);
+            this.BtnMesero.Location = new System.Drawing.Point(773, 36);
             this.BtnMesero.Name = "BtnMesero";
             this.BtnMesero.Size = new System.Drawing.Size(138, 73);
             this.BtnMesero.TabIndex = 8;
-            this.BtnMesero.Text = "Mesero";
+            this.BtnMesero.Text = "MESERO";
             this.BtnMesero.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnMesero.UseVisualStyleBackColor = false;
             this.BtnMesero.Click += new System.EventHandler(this.BtnMesero_Click);
@@ -217,9 +218,9 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = global::Cupediarum.Properties.Resources.CupediarumLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(133, 38);
+            this.pictureBox1.Location = new System.Drawing.Point(160, 35);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(634, 590);
+            this.pictureBox1.Size = new System.Drawing.Size(607, 590);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;

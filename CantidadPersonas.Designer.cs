@@ -95,9 +95,9 @@
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(76, 67);
             this.BtnCancelar.TabIndex = 50;
-            this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnCancelar.UseVisualStyleBackColor = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnAceptar
             // 
@@ -114,7 +114,6 @@
             this.BtnAceptar.Name = "BtnAceptar";
             this.BtnAceptar.Size = new System.Drawing.Size(73, 67);
             this.BtnAceptar.TabIndex = 49;
-            this.BtnAceptar.Text = "Aceptar";
             this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAceptar.UseVisualStyleBackColor = false;
             this.BtnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
@@ -127,16 +126,17 @@
             this.BtnBorrar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnBorrar.FlatAppearance.BorderSize = 5;
             this.BtnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBorrar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBorrar.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBorrar.Image = global::Cupediarum.Properties.Resources.Icono_Borrar;
             this.BtnBorrar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnBorrar.Location = new System.Drawing.Point(4, 236);
             this.BtnBorrar.Name = "BtnBorrar";
             this.BtnBorrar.Size = new System.Drawing.Size(76, 75);
             this.BtnBorrar.TabIndex = 47;
-            this.BtnBorrar.Text = "Borrar";
-            this.BtnBorrar.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.BtnBorrar.Text = "BORRAR";
+            this.BtnBorrar.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BtnBorrar.UseVisualStyleBackColor = false;
+            this.BtnBorrar.Click += new System.EventHandler(this.BtnBorrar_Click);
             // 
             // BtnPunto
             // 
@@ -326,6 +326,7 @@
             this.Name = "FrmCantidadPersonas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cantidad de Personas";
+            this.Load += new System.EventHandler(this.FrmCantidadPersonas_Load);
             this.PnlCantidadPersonas.ResumeLayout(false);
             this.PnlCantidadPersonas.PerformLayout();
             this.ResumeLayout(false);

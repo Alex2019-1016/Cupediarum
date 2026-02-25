@@ -57,9 +57,8 @@ namespace Cupediarum
                     conn.Open();
                     cmd.ExecuteNonQuery();
 
-                    FrmDatosCuenta frm = new FrmDatosCuenta(idCuenta);
+                    FrmDatosCuenta frm = new FrmDatosCuenta(idCuenta,this);
                     frm.Show();
-
                     this.Close();
                 }
                 catch (Exception ex)

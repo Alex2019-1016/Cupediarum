@@ -9,17 +9,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.MonthCalendar;
 
 namespace Cupediarum
 {
     public partial class FrmAgregarCuenta : Form
     {
         private readonly Form formularioAnterior;
+        private readonly int idAreaSeleccionada;
 
-        public FrmAgregarCuenta(Form anterior)
+        public FrmAgregarCuenta(Form anterior, int idArea)
         {
             InitializeComponent();
             formularioAnterior = anterior;
+            idAreaSeleccionada = idArea;
         }
 
         private void BtnAceptar_Click_1(object sender, EventArgs e)
@@ -41,10 +44,10 @@ namespace Cupediarum
                 .ConnectionString;
 
             string query = @"INSERT INTO CUENTAS 
-                     (Nomb_Cuenta, Cantidad_Personas, Id_Mesa, Id_Usuario)
-                     OUTPUT INSERTED.Id_Cuenta
-                     VALUES 
-                     (@nombre, @cantidad, @mesa, @usuario)";
+         (Nomb_Cuenta, Cantidad_Personas, Id_Mesa, Id_Usuario, Id_Area)
+         OUTPUT INSERTED.Id_Cuenta
+         VALUES 
+         (@nombre, @cantidad, @mesa, @usuario, @area)";
 
             using (SqlConnection conn = new SqlConnection(connStr))
             using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -53,6 +56,7 @@ namespace Cupediarum
                 cmd.Parameters.AddWithValue("@cantidad", 1);
                 cmd.Parameters.AddWithValue("@mesa", DBNull.Value);
                 cmd.Parameters.AddWithValue("@usuario", Sesion.IdUsuario);
+                cmd.Parameters.AddWithValue("@area", idAreaSeleccionada);
 
                 try
                 {
@@ -77,7 +81,7 @@ namespace Cupediarum
             }
         }
 
-        private void BtnCancelar_Click(object sender, EventArgs e)
+        private void BtnCancelar_Click_1(object sender, EventArgs e)
         {
             formularioAnterior.Show();
             this.Close();
@@ -155,12 +159,6 @@ namespace Cupediarum
             {
                 RtbCuenta.Text += btn.Text;
             }
-        }
-
-        private void BtnCancelar_Click_1(object sender, EventArgs e)
-        {
-            formularioAnterior.Show();
-            this.Close();
         }
     }
 }

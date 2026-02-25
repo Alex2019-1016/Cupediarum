@@ -98,7 +98,7 @@
             // TxtClave
             // 
             this.TxtClave.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtClave.Location = new System.Drawing.Point(147, 9);
+            this.TxtClave.Location = new System.Drawing.Point(147, 13);
             this.TxtClave.Name = "TxtClave";
             this.TxtClave.Size = new System.Drawing.Size(225, 63);
             this.TxtClave.TabIndex = 11;

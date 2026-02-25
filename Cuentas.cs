@@ -9,12 +9,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.MonthCalendar;
 
 namespace Cupediarum
 {
     public partial class FrmCuentas : Form
     {
         private readonly Form formularioAnterior;
+        
         public FrmCuentas(Form anterior)
         {
             InitializeComponent();
@@ -22,6 +24,8 @@ namespace Cupediarum
         }
 
         private int cuentaSeleccionada = 0;
+        private int idAreaSeleccionada = 0;
+       
 
         private void Pedidos_Load(object sender, EventArgs e)
         {
@@ -29,6 +33,7 @@ namespace Cupediarum
             TxtIDMesero.Text = Sesion.IdUsuario.ToString();
 
             CargarCuentas();
+            CargarAreasEnPanel();
         }
 
         private void CargarCuentas()
@@ -101,14 +106,13 @@ namespace Cupediarum
             Button btn = sender as Button;
             cuentaSeleccionada = (int) btn.Tag;
 
-            FrmOpcionesMesero frm = new FrmOpcionesMesero();
+            FrmOpcionesMesero frm = new FrmOpcionesMesero(cuentaSeleccionada, this);
             frm.Show();
         }
 
-        private void CargarAreas()
+        private void CargarAreasEnPanel()
         {
-            if (cuentaSeleccionada == 0)
-                return;
+            FlpAreas.Controls.Clear();
 
             string connStr = ConfigurationManager
                 .ConnectionStrings["ConexionRestaurante"]
@@ -118,196 +122,81 @@ namespace Cupediarum
             {
                 conn.Open();
 
-                int? areaActualId = null;
-                string nombreAreaActual = "";
+                string query = @"SELECT Id_Area, Nomb_Area 
+                         FROM AREAS 
+                         WHERE Estado = 1
+                         ORDER BY Id_Area";
 
-
-                string queryAreaActual = @"
-            SELECT A.Id_Area, A.Nomb_Area
-            FROM CUENTAS C
-            LEFT JOIN MESAS M ON C.Id_Mesa = M.Id_Mesa
-            LEFT JOIN AREAS A ON M.Id_Area = A.Id_Area
-            WHERE C.Id_Cuenta = @IdCuenta";
-
-                using (SqlCommand cmd = new SqlCommand(queryAreaActual, conn))
-                {
-                    cmd.Parameters.AddWithValue("@IdCuenta", cuentaSeleccionada);
-
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        if (reader.Read() && !reader.IsDBNull(0))
-                        {
-                            areaActualId = reader.GetInt32(0);
-                            nombreAreaActual = reader.GetString(1);
-                        }
-                    }
-                }
-
-                RtbNombArea.Text = areaActualId == null ? "TO GO" : nombreAreaActual;
-
-              
-                string queryAreas = "SELECT Id_Area, Nomb_Area FROM AREAS WHERE Estado = 1";
-
-                using (SqlCommand cmd = new SqlCommand(queryAreas, conn))
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    Button[] botones = { BtnArea1, BtnArea2, BtnArea3, BtnArea4 };
-                    int i = 0;
-
-                    while (reader.Read() && i < botones.Length)
+                    while (reader.Read())
                     {
                         int idArea = reader.GetInt32(0);
-                        string nombre = reader.GetString(1);
+                        string nombreArea = reader.GetString(1);
 
-                        botones[i].Text = nombre;
-                        botones[i].Tag = idArea;
-                        botones[i].BackColor = Color.DarkGray;
+                        Button btnArea = new Button
+                        {
+                            Width = 120,
+                            Height = 60,
+                            Text = nombreArea,
+                            Tag = idArea,
+                            BackgroundImage = Properties.Resources.FBNaranja,
+                            BackgroundImageLayout = ImageLayout.Stretch,
+                            BackColor = Color.LightCoral,
+                            FlatStyle = FlatStyle.Flat,
+                            FlatAppearance = { BorderSize = 3, BorderColor = Color.Cyan },
+                            Font = new Font("Times New Roman", 12, FontStyle.Bold),
+                        };
 
-                        if (areaActualId != null && idArea == areaActualId)
-                            botones[i].BackColor = Color.LightGreen;
+                        btnArea.Click += BtnAreaPanel_Click;
 
-                        botones[i].Click -= BtnArea_Click;
-                        botones[i].Click += BtnArea_Click;
-
-                        i++;
+                        FlpAreas.Controls.Add(btnArea);
                     }
                 }
             }
         }
 
-        private void BtnArea_Click(object sender, EventArgs e)
+        private void BtnAreaPanel_Click(object sender, EventArgs e)
         {
-            if (cuentaSeleccionada == 0)
-            {
-                MessageBox.Show("Seleccione una cuenta primero");
-                return;
-            }
-
             Button btn = sender as Button;
-            int idArea = (int)btn.Tag;
 
-            string connStr = ConfigurationManager
-                .ConnectionStrings["ConexionRestaurante"]
-                .ConnectionString;
+            idAreaSeleccionada = (int)btn.Tag;
+            string nombreArea = btn.Text;
 
-            using (SqlConnection conn = new SqlConnection(connStr))
-            {
-                conn.Open();
-                SqlTransaction transaction = conn.BeginTransaction();
-
-                try
-                {
-                    int? mesaAnterior = null;
-
-                 
-                    string queryMesaAnterior = @"
-                SELECT Id_Mesa
-                FROM CUENTAS
-                WHERE Id_Cuenta = @IdCuenta";
-
-                    using (SqlCommand cmdPrev = new SqlCommand(queryMesaAnterior, conn, transaction))
-                    {
-                        cmdPrev.Parameters.AddWithValue("@IdCuenta", cuentaSeleccionada);
-                        object result = cmdPrev.ExecuteScalar();
-
-                        if (result != null && result != DBNull.Value)
-                            mesaAnterior = Convert.ToInt32(result);
-                    }
-
-         
-                    string queryMesaNueva = @"
-                SELECT TOP 1 Id_Mesa
-                FROM MESAS
-                WHERE Id_Area = @IdArea
-                  AND Estado = 'Disponible'";
-
-                    int idMesaNueva;
-
-                    using (SqlCommand cmdNueva = new SqlCommand(queryMesaNueva, conn, transaction))
-                    {
-                        cmdNueva.Parameters.AddWithValue("@IdArea", idArea);
-                        object result = cmdNueva.ExecuteScalar();
-
-                        if (result == null)
-                        {
-                            MessageBox.Show("No hay mesas disponibles en esta área");
-                            transaction.Rollback();
-                            return;
-                        }
-
-                        idMesaNueva = Convert.ToInt32(result);
-                    }
+            
+            RtbArea.Text = nombreArea;
+            RtbArea.ReadOnly = true;
+            RtbArea.SelectionAlignment = HorizontalAlignment.Center;
 
 
-                    if (mesaAnterior != null)
-                    {
-                        string liberar = @"
-                    UPDATE MESAS
-                    SET Estado = 'Disponible'
-                    WHERE Id_Mesa = @IdMesa";
+            foreach (Button b in FlpAreas.Controls)
+                b.BackColor = Color.DarkGray;
 
-                        using (SqlCommand cmd = new SqlCommand(liberar, conn, transaction))
-                        {
-                            cmd.Parameters.AddWithValue("@IdMesa", mesaAnterior);
-                            cmd.ExecuteNonQuery();
-                        }
-                    }
-
-                    
-                    string updateCuenta = @"
-                UPDATE CUENTAS
-                SET Id_Mesa = @IdMesa
-                WHERE Id_Cuenta = @IdCuenta";
-
-                    using (SqlCommand cmd = new SqlCommand(updateCuenta, conn, transaction))
-                    {
-                        cmd.Parameters.AddWithValue("@IdMesa", idMesaNueva);
-                        cmd.Parameters.AddWithValue("@IdCuenta", cuentaSeleccionada);
-                        cmd.ExecuteNonQuery();
-                    }
-
-                    
-                    string ocuparMesa = @"
-                UPDATE MESAS
-                SET Estado = 'Ocupada'
-                WHERE Id_Mesa = @IdMesa";
-
-                    using (SqlCommand cmd = new SqlCommand(ocuparMesa, conn, transaction))
-                    {
-                        cmd.Parameters.AddWithValue("@IdMesa", idMesaNueva);
-                        cmd.ExecuteNonQuery();
-                    }
-
-                    transaction.Commit();
-
-                    CargarAreas();
-                }
-                catch (Exception ex)
-                {
-                    transaction.Rollback();
-                    MessageBox.Show("Error: " + ex.Message);
-                }
-            }
+            btn.BackColor = Color.LightGreen;
         }
 
         private void BtnAgregarCuenta_Click(object sender, EventArgs e)
         {
-            FrmAgregarCuenta frm = new FrmAgregarCuenta(this);
-            frm.Show();
-            this.Hide();
-        }
+            if (idAreaSeleccionada == 0)
+            {
+                MessageBox.Show("Seleccione un área primero",
+                                "Atención",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
 
-        private void BtnSalir_Click_1(object sender, EventArgs e)
-        {
-            FrmMesero frm = new FrmMesero(this);
+            FrmAgregarCuenta frm = new FrmAgregarCuenta(this, idAreaSeleccionada);
             frm.Show();
             this.Hide();
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
-            formularioAnterior.Show();
-            this.Close();
+            FrmMesero frm = new FrmMesero(this);
+            frm.Show();
+            this.Hide();
         }
     }
 }

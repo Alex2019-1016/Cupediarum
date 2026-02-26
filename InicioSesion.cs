@@ -58,7 +58,20 @@ namespace Cupediarum
                     {
                         if (reader.Read())
                         {
-                            
+                            int idUsuario = reader.GetInt32(0);
+                            string nombreUsuario = reader.GetString(1);
+                            int idRol = reader.GetInt32(2);
+
+                            // SOLO ADMIN (1) Y CAJERO (2)
+                            if (idRol != 1 && idRol != 2)
+                            {
+                                MessageBox.Show("Este usuario no tiene permisos para iniciar el sistema.",
+                                                "Acceso denegado",
+                                                MessageBoxButtons.OK,
+                                                MessageBoxIcon.Stop);
+                                return;
+                            }
+
                             if (Sesion.HaySesionActiva())
                             {
                                 DialogResult r = MessageBox.Show(
@@ -71,10 +84,10 @@ namespace Cupediarum
                                     return;
                             }
 
-                           
-                            Sesion.IdUsuario = reader.GetInt32(0);
-                            Sesion.NombreUsuario = reader.GetString(1);
-                            Sesion.IdRol = reader.GetInt32(2);
+                          
+                            Sesion.IdUsuario = idUsuario;
+                            Sesion.NombreUsuario = nombreUsuario;
+                            Sesion.IdRol = idRol;
 
                             MessageBox.Show("Bienvenido ✔",
                                             "Acceso concedido",

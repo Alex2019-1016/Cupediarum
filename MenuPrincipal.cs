@@ -17,7 +17,7 @@ namespace Cupediarum
             InitializeComponent();
         }
 
-        private void BtnMesero_Click(object sender, EventArgs e)
+        private void BtnMesero_Click_1(object sender, EventArgs e)
         {
             FrmMesero frm = new FrmMesero(this);
             frm.Show();
@@ -31,7 +31,7 @@ namespace Cupediarum
             this.Hide();
         }
 
-        private void BtnSalir_Click(object sender, EventArgs e)
+        private void BtnSalir_Click_1(object sender, EventArgs e)
         {
             FrmInicioSesion frm = new FrmInicioSesion();
             frm.Show();

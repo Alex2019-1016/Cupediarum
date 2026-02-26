@@ -75,7 +75,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.TxtNombMesero = new System.Windows.Forms.TextBox();
             this.TxtIDMesero = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LblUsuario = new System.Windows.Forms.Label();
             this.RtbArea = new System.Windows.Forms.RichTextBox();
             this.FlpAreas = new System.Windows.Forms.FlowLayoutPanel();
             this.BtnArea1 = new System.Windows.Forms.Button();
@@ -148,7 +148,7 @@
             this.acercaDeToolStripMenuItem});
             this.MnuPedidos.Location = new System.Drawing.Point(0, 0);
             this.MnuPedidos.Name = "MnuPedidos";
-            this.MnuPedidos.Size = new System.Drawing.Size(957, 33);
+            this.MnuPedidos.Size = new System.Drawing.Size(957, 36);
             this.MnuPedidos.TabIndex = 3;
             this.MnuPedidos.Text = "menuStrip1";
             // 
@@ -655,32 +655,35 @@
             // TxtNombMesero
             // 
             this.TxtNombMesero.Font = new System.Drawing.Font("Modern No. 20", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombMesero.Location = new System.Drawing.Point(808, 83);
+            this.TxtNombMesero.Location = new System.Drawing.Point(819, 83);
             this.TxtNombMesero.Name = "TxtNombMesero";
-            this.TxtNombMesero.Size = new System.Drawing.Size(144, 37);
+            this.TxtNombMesero.Size = new System.Drawing.Size(133, 37);
             this.TxtNombMesero.TabIndex = 8;
             // 
             // TxtIDMesero
             // 
             this.TxtIDMesero.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtIDMesero.Location = new System.Drawing.Point(904, 38);
+            this.TxtIDMesero.Location = new System.Drawing.Point(923, 38);
             this.TxtIDMesero.Name = "TxtIDMesero";
-            this.TxtIDMesero.Size = new System.Drawing.Size(43, 40);
+            this.TxtIDMesero.Size = new System.Drawing.Size(29, 40);
             this.TxtIDMesero.TabIndex = 7;
+            this.TxtIDMesero.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label1
+            // LblUsuario
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(803, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 25);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "MESERO";
+            this.LblUsuario.BackColor = System.Drawing.Color.Black;
+            this.LblUsuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblUsuario.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblUsuario.ForeColor = System.Drawing.Color.White;
+            this.LblUsuario.Location = new System.Drawing.Point(819, 37);
+            this.LblUsuario.Name = "LblUsuario";
+            this.LblUsuario.Size = new System.Drawing.Size(98, 35);
+            this.LblUsuario.TabIndex = 6;
+            this.LblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // RtbArea
             // 
+            this.RtbArea.BackColor = System.Drawing.Color.Black;
             this.RtbArea.Font = new System.Drawing.Font("Modern No. 20", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RtbArea.ForeColor = System.Drawing.Color.Red;
             this.RtbArea.Location = new System.Drawing.Point(819, 153);
@@ -781,7 +784,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxtNombMesero);
             this.Controls.Add(this.TxtIDMesero);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LblUsuario);
             this.Controls.Add(this.FlpCuentas);
             this.Controls.Add(this.MnuPedidos);
             this.Controls.Add(this.panel1);
@@ -849,7 +852,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox TxtNombMesero;
         private System.Windows.Forms.TextBox TxtIDMesero;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LblUsuario;
         private System.Windows.Forms.RichTextBox RtbArea;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.FlowLayoutPanel FlpAreas;

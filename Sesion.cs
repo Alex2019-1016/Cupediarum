@@ -23,6 +23,20 @@ namespace Cupediarum
             NombreUsuario = "";
             IdRol = 0;
         }
+
+        public static string NombreRol
+        {
+            get
+            {
+                switch (IdRol)
+                {
+                    case 1: return "ADMIN";
+                    case 2: return "CAJERO";
+                    case 3: return "MESERO";
+                    default: return "USUARIO";
+                }
+            }
+        }
     }
 }
 

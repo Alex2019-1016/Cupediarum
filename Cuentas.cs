@@ -32,6 +32,15 @@ namespace Cupediarum
             TxtNombMesero.Text = Sesion.NombreUsuario;
             TxtIDMesero.Text = Sesion.IdUsuario.ToString();
 
+            LblUsuario.Text = Sesion.NombreRol;
+
+            if (Sesion.IdRol == 1) // Admin
+                LblUsuario.ForeColor = Color.Red;
+            else if (Sesion.IdRol == 2) // Cajero
+                LblUsuario.ForeColor = Color.Lime;
+            else if(Sesion.IdRol == 3) // Mesero
+                LblUsuario.ForeColor = Color.Yellow;
+
             CargarCuentas();
             CargarAreasEnPanel();
         }

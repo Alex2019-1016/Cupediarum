@@ -136,8 +136,8 @@
   <data name="Reloj_Abierto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Reloj_Abierto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_Mesero" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_Mesero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Cancelar48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_Cancelar48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_Menos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Menos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,8 +160,8 @@
   <data name="Icono_Menos32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icono_Menos32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_AgregarCuenta48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_AgregarCuenta48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Consultar64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_Consultar641.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_Caja" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Caja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,8 +184,8 @@
   <data name="Icono_Drink" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Drink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_RDCancelar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_RDCancelar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Mesero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Mesero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_Reabrir64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icono_Reabrir64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,8 +199,8 @@
   <data name="FBNaranja" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\FBNaranja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_Cancelar48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icono_Cancelar48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Descuento48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Descuento48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,6 +214,9 @@
   <data name="Reloj_Cerrado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Reloj_Cerrado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Icono_Buscar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Buscar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icono_AbrirCuenta48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icono_AbrirCuenta48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -226,8 +229,8 @@
   <data name="Icono_Reservas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Reservas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_Consultar64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icono_Consultar641.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_AgregarCuenta48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_AgregarCuenta48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_AbrirCuenta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_AbrirCuenta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -249,6 +252,9 @@
   </data>
   <data name="Icono_Precios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Precios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_RDCancelar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_RDCancelar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_Comandas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Comandas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -274,7 +280,7 @@
   <data name="Icono_RDAceptar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_RDAceptar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_Descuento48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_Descuento48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Search32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Search32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

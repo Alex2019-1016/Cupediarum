@@ -207,5 +207,12 @@ namespace Cupediarum
             frm.Show();
             this.Hide();
         }
+
+        private void BtnPrecios_Click(object sender, EventArgs e)
+        {
+            FrmPrecios frm = new FrmPrecios(this);
+            frm.Show();
+            this.Hide();
+        }
     }
 }

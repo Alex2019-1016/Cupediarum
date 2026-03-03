@@ -173,6 +173,16 @@ namespace Cupediarum.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Icono_Buscar32 {
+            get {
+                object obj = ResourceManager.GetObject("Icono_Buscar32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icono_Caja {
             get {
                 object obj = ResourceManager.GetObject("Icono_Caja", resourceCulture);
@@ -556,6 +566,16 @@ namespace Cupediarum.Properties {
         internal static System.Drawing.Bitmap Icono_Right {
             get {
                 object obj = ResourceManager.GetObject("Icono_Right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icono_Search32 {
+            get {
+                object obj = ResourceManager.GetObject("Icono_Search32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

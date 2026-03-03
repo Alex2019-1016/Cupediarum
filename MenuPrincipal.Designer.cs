@@ -37,13 +37,14 @@
             this.cajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.PnOpciones = new System.Windows.Forms.Panel();
+            this.BtnPrecios = new System.Windows.Forms.Button();
             this.BtnCerrarTurno = new System.Windows.Forms.Button();
             this.BtnAbrirTurno = new System.Windows.Forms.Button();
             this.BtnMesas = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnMesero = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
+            this.BtnMesero = new System.Windows.Forms.Button();
             this.MnuPrincipal.SuspendLayout();
             this.PnOpciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -108,6 +109,7 @@
             // 
             this.PnOpciones.BackColor = System.Drawing.Color.Transparent;
             this.PnOpciones.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.PnOpciones.Controls.Add(this.BtnPrecios);
             this.PnOpciones.Controls.Add(this.BtnCerrarTurno);
             this.PnOpciones.Controls.Add(this.BtnAbrirTurno);
             this.PnOpciones.Controls.Add(this.BtnMesas);
@@ -116,6 +118,26 @@
             this.PnOpciones.Name = "PnOpciones";
             this.PnOpciones.Size = new System.Drawing.Size(150, 602);
             this.PnOpciones.TabIndex = 3;
+            // 
+            // BtnPrecios
+            // 
+            this.BtnPrecios.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnPrecios.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPrecios.BackgroundImage")));
+            this.BtnPrecios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnPrecios.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.BtnPrecios.FlatAppearance.BorderSize = 3;
+            this.BtnPrecios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPrecios.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPrecios.Image = global::Cupediarum.Properties.Resources.Icono_Precios48;
+            this.BtnPrecios.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnPrecios.Location = new System.Drawing.Point(3, 175);
+            this.BtnPrecios.Name = "BtnPrecios";
+            this.BtnPrecios.Size = new System.Drawing.Size(142, 83);
+            this.BtnPrecios.TabIndex = 12;
+            this.BtnPrecios.Text = "PRECIOS";
+            this.BtnPrecios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnPrecios.UseVisualStyleBackColor = false;
+            this.BtnPrecios.Click += new System.EventHandler(this.BtnPrecios_Click);
             // 
             // BtnCerrarTurno
             // 
@@ -128,9 +150,9 @@
             this.BtnCerrarTurno.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCerrarTurno.Image = global::Cupediarum.Properties.Resources.Icono_CerrarTurno48;
             this.BtnCerrarTurno.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnCerrarTurno.Location = new System.Drawing.Point(2, 511);
+            this.BtnCerrarTurno.Location = new System.Drawing.Point(3, 511);
             this.BtnCerrarTurno.Name = "BtnCerrarTurno";
-            this.BtnCerrarTurno.Size = new System.Drawing.Size(141, 83);
+            this.BtnCerrarTurno.Size = new System.Drawing.Size(142, 83);
             this.BtnCerrarTurno.TabIndex = 8;
             this.BtnCerrarTurno.Text = "CERRAR TURNO";
             this.BtnCerrarTurno.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -148,7 +170,7 @@
             this.BtnAbrirTurno.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BtnAbrirTurno.Image = ((System.Drawing.Image)(resources.GetObject("BtnAbrirTurno.Image")));
             this.BtnAbrirTurno.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnAbrirTurno.Location = new System.Drawing.Point(1, 257);
+            this.BtnAbrirTurno.Location = new System.Drawing.Point(3, 340);
             this.BtnAbrirTurno.Name = "BtnAbrirTurno";
             this.BtnAbrirTurno.Size = new System.Drawing.Size(142, 83);
             this.BtnAbrirTurno.TabIndex = 7;
@@ -170,7 +192,7 @@
             this.BtnMesas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnMesas.Location = new System.Drawing.Point(3, 1);
             this.BtnMesas.Name = "BtnMesas";
-            this.BtnMesas.Size = new System.Drawing.Size(140, 73);
+            this.BtnMesas.Size = new System.Drawing.Size(142, 83);
             this.BtnMesas.TabIndex = 6;
             this.BtnMesas.Text = "MESAS";
             this.BtnMesas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -200,6 +222,25 @@
             this.panel1.Size = new System.Drawing.Size(139, 602);
             this.panel1.TabIndex = 49;
             // 
+            // BtnSalir
+            // 
+            this.BtnSalir.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnSalir.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
+            this.BtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnSalir.FlatAppearance.BorderSize = 5;
+            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSalir.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSalir.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
+            this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnSalir.Location = new System.Drawing.Point(-1, 534);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(138, 60);
+            this.BtnSalir.TabIndex = 49;
+            this.BtnSalir.Text = "SALIR";
+            this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSalir.UseVisualStyleBackColor = false;
+            // 
             // BtnMesero
             // 
             this.BtnMesero.BackColor = System.Drawing.Color.LightCoral;
@@ -219,26 +260,6 @@
             this.BtnMesero.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnMesero.UseVisualStyleBackColor = false;
             this.BtnMesero.Click += new System.EventHandler(this.BtnMesero_Click_1);
-            // 
-            // BtnSalir
-            // 
-            this.BtnSalir.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnSalir.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
-            this.BtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnSalir.FlatAppearance.BorderSize = 5;
-            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSalir.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalir.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
-            this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSalir.Location = new System.Drawing.Point(-1, 534);
-            this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(138, 60);
-            this.BtnSalir.TabIndex = 49;
-            this.BtnSalir.Text = "SALIR";
-            this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSalir.UseVisualStyleBackColor = false;
-            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click_1);
             // 
             // FrmMenuPrincipal
             // 
@@ -281,5 +302,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Button BtnMesero;
+        private System.Windows.Forms.Button BtnPrecios;
     }
 }

@@ -107,6 +107,12 @@
     <Compile Include="OpcionesMesero.Designer.cs">
       <DependentUpon>OpcionesMesero.cs</DependentUpon>
     </Compile>
+    <Compile Include="Precios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Precios.Designer.cs">
+      <DependentUpon>Precios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sesion.cs" />
@@ -140,6 +146,9 @@
     <EmbeddedResource Include="OpcionesMesero.resx">
       <DependentUpon>OpcionesMesero.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Precios.resx">
+      <DependentUpon>Precios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -172,6 +181,7 @@
     <Content Include="Imagenes\Icono_Agregar.png" />
     <None Include="Imagenes\Icono_AgregarCuenta48.png" />
     <Content Include="Imagenes\Icono_Bebidas.png" />
+    <None Include="Imagenes\Icono_Buscar32.png" />
     <Content Include="Imagenes\Icono_Cancelar48.png" />
     <Content Include="Imagenes\Icono_Cancelar64.png" />
     <Content Include="Imagenes\Icono_CerrarTurno48.png" />
@@ -214,6 +224,7 @@
     <Content Include="Imagenes\Icono_Personas48.png" />
     <Content Include="Imagenes\Icono_Postres.png" />
     <None Include="Imagenes\Icono_Precios48.png" />
+    <None Include="Imagenes\Icono_Search32.png" />
     <Content Include="Imagenes\Icono_Table48.png" />
     <Content Include="Imagenes\Ico_AbrirCuenta.ico" />
     <Content Include="Imagenes\Ico_Datos.ico" />

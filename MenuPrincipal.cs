@@ -31,9 +31,9 @@ namespace Cupediarum
             this.Hide();
         }
 
-        private void BtnSalir_Click_1(object sender, EventArgs e)
+        private void BtnPrecios_Click(object sender, EventArgs e)
         {
-            FrmInicioSesion frm = new FrmInicioSesion();
+            FrmPrecios frm = new FrmPrecios(this);
             frm.Show();
             this.Hide();
         }

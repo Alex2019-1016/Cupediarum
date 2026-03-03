@@ -126,16 +126,16 @@ namespace Cupediarum
                     int id = reader.GetInt32(0);
                     string nombre = reader.GetString(1).ToLower();
 
-                    if (nombre == "postres")
+                    if (nombre == "POSTRES")
                         BtnPostres.Tag = id;
 
-                    else if (nombre == "bebidas")
+                    else if (nombre == "BEBIDAS")
                         BtnBebidas.Tag = id;
 
-                    else if (nombre == "comidas")
+                    else if (nombre == "COMIDAS")
                         BtnComida.Tag = id;
 
-                    else if (nombre == "otros")
+                    else if (nombre == "OTROS")
                         BtnOtros.Tag = id;
 
                     BtnPostres.Click += BtnCategoria_Click;
@@ -169,7 +169,8 @@ namespace Cupediarum
 
             string query = @"SELECT Id_Categoria, Nomb_Categoria
                      FROM CATEGORIAS
-                     WHERE Id_CategoriaPadre = @IdCategoria";
+                     WHERE Id_CategoriaPadre = @IdCategoria
+                     ORDER BY Nomb_Categoria ASC";   // 👈 AQUÍ
 
             using (SqlConnection conn = new SqlConnection(
                 ConfigurationManager.ConnectionStrings["ConexionRestaurante"].ConnectionString))
@@ -226,7 +227,8 @@ namespace Cupediarum
 
             string query = @"SELECT IdProducto, Nomb_Producto, Precio
                      FROM PRODUCTOS
-                     WHERE Id_Categoria = @IdCategoria";
+                     WHERE Id_Categoria = @IdCategoria
+                     ORDER BY Nomb_Producto ASC";
 
             using (SqlConnection conn = new SqlConnection(
                 ConfigurationManager.ConnectionStrings["ConexionRestaurante"].ConnectionString))
@@ -265,6 +267,7 @@ namespace Cupediarum
                     FlpProductos.Controls.Add(btn);
                 }
             }
+            
         }
 
         // =============================

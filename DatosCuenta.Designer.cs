@@ -35,6 +35,7 @@
             this.BtnPersonas = new System.Windows.Forms.Button();
             this.BtnCuenta = new System.Windows.Forms.Button();
             this.PnlDatosCuenta = new System.Windows.Forms.Panel();
+            this.LblNombArea = new System.Windows.Forms.Label();
             this.DtpFecha = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.TxtIDMesa = new System.Windows.Forms.TextBox();
@@ -45,7 +46,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.LblNombArea = new System.Windows.Forms.Label();
             this.PnlDatosC.SuspendLayout();
             this.PnlDatosCuenta.SuspendLayout();
             this.SuspendLayout();
@@ -71,14 +71,14 @@
             this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.BtnCancelar.FlatAppearance.BorderSize = 3;
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancelar.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Icono_Cancelar48;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnCancelar.Location = new System.Drawing.Point(517, 6);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(115, 78);
             this.BtnCancelar.TabIndex = 14;
-            this.BtnCancelar.Text = "Cancelar";
+            this.BtnCancelar.Text = "CANCELAR";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnCancelar.UseVisualStyleBackColor = false;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
@@ -91,14 +91,14 @@
             this.BtnAbrirMesa.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.BtnAbrirMesa.FlatAppearance.BorderSize = 3;
             this.BtnAbrirMesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAbrirMesa.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAbrirMesa.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAbrirMesa.Image = global::Cupediarum.Properties.Resources.Icono_Aceptar48;
             this.BtnAbrirMesa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnAbrirMesa.Location = new System.Drawing.Point(396, 5);
             this.BtnAbrirMesa.Name = "BtnAbrirMesa";
             this.BtnAbrirMesa.Size = new System.Drawing.Size(115, 78);
             this.BtnAbrirMesa.TabIndex = 13;
-            this.BtnAbrirMesa.Text = "Abrir Mesa";
+            this.BtnAbrirMesa.Text = "ABRIR MESA";
             this.BtnAbrirMesa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAbrirMesa.UseVisualStyleBackColor = false;
             this.BtnAbrirMesa.Click += new System.EventHandler(this.BtnAbrirMesa_Click);
@@ -157,6 +157,16 @@
             this.PnlDatosCuenta.Name = "PnlDatosCuenta";
             this.PnlDatosCuenta.Size = new System.Drawing.Size(635, 186);
             this.PnlDatosCuenta.TabIndex = 1;
+            // 
+            // LblNombArea
+            // 
+            this.LblNombArea.BackColor = System.Drawing.Color.Gray;
+            this.LblNombArea.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNombArea.Location = new System.Drawing.Point(239, 52);
+            this.LblNombArea.Name = "LblNombArea";
+            this.LblNombArea.Size = new System.Drawing.Size(145, 25);
+            this.LblNombArea.TabIndex = 24;
+            this.LblNombArea.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DtpFecha
             // 
@@ -240,35 +250,25 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(21, 96);
+            this.label1.Location = new System.Drawing.Point(14, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 26);
+            this.label1.Size = new System.Drawing.Size(82, 20);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Cuenta";
+            this.label1.Text = "CUENTA";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(133, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 26);
+            this.label2.Size = new System.Drawing.Size(104, 20);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Personas";
-            // 
-            // LblNombArea
-            // 
-            this.LblNombArea.BackColor = System.Drawing.Color.Gray;
-            this.LblNombArea.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNombArea.Location = new System.Drawing.Point(239, 52);
-            this.LblNombArea.Name = "LblNombArea";
-            this.LblNombArea.Size = new System.Drawing.Size(145, 25);
-            this.LblNombArea.TabIndex = 24;
-            this.LblNombArea.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Text = "PERSONAS";
             // 
             // FrmDatosCuenta
             // 
@@ -285,7 +285,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmDatosCuenta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Datos de Cuenta";
+            this.Text = "DATOS DE CUENTA";
             this.PnlDatosC.ResumeLayout(false);
             this.PnlDatosCuenta.ResumeLayout(false);
             this.PnlDatosCuenta.PerformLayout();

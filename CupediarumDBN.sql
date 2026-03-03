@@ -28,7 +28,8 @@ REFERENCES ROLES(Id_Rol)
 INSERT INTO USUARIOS (Nomb_Usuario, Clave, Id_Rol) VALUES
 ('MARCOS','0000',2),
 ('GABRIEL','1111',3),
-('ALEX','1234',1);
+('ALEX','1234',1),
+('MARIA','2222',3);
 
 SELECT * FROM USUARIOS
 ---------------------------------------------------------------------------------------
@@ -43,7 +44,8 @@ INSERT INTO AREAS(Nomb_Area) VALUES
 ('SALON'),
 ('COMEDOR'),
 ('TERRAZA'),
-('BAR');
+('BAR'),
+('VIP');
 
 SELECT * FROM AREAS
 ---------------------------------------------------------------------------------------

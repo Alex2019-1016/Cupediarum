@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCuentas));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnPrecios = new System.Windows.Forms.Button();
+            this.BtnAgregarCuenta = new System.Windows.Forms.Button();
             this.MnuPedidos = new System.Windows.Forms.MenuStrip();
             this.configurarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,8 +83,6 @@
             this.BtnArea3 = new System.Windows.Forms.Button();
             this.BtnArea4 = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
-            this.BtnPrecios = new System.Windows.Forms.Button();
-            this.BtnAgregarCuenta = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.MnuPedidos.SuspendLayout();
             this.FlpCuentas.SuspendLayout();
@@ -100,6 +100,46 @@
             this.panel1.Size = new System.Drawing.Size(298, 69);
             this.panel1.TabIndex = 0;
             // 
+            // BtnPrecios
+            // 
+            this.BtnPrecios.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnPrecios.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPrecios.BackgroundImage")));
+            this.BtnPrecios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnPrecios.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnPrecios.FlatAppearance.BorderSize = 3;
+            this.BtnPrecios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPrecios.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPrecios.Image = global::Cupediarum.Properties.Resources.Icono_Precios48;
+            this.BtnPrecios.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BtnPrecios.Location = new System.Drawing.Point(147, 2);
+            this.BtnPrecios.Name = "BtnPrecios";
+            this.BtnPrecios.Size = new System.Drawing.Size(143, 60);
+            this.BtnPrecios.TabIndex = 11;
+            this.BtnPrecios.Text = "PRECIOS";
+            this.BtnPrecios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnPrecios.UseVisualStyleBackColor = false;
+            this.BtnPrecios.Click += new System.EventHandler(this.BtnPrecios_Click);
+            // 
+            // BtnAgregarCuenta
+            // 
+            this.BtnAgregarCuenta.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAgregarCuenta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAgregarCuenta.BackgroundImage")));
+            this.BtnAgregarCuenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnAgregarCuenta.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnAgregarCuenta.FlatAppearance.BorderSize = 3;
+            this.BtnAgregarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAgregarCuenta.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregarCuenta.Image = global::Cupediarum.Properties.Resources.Icono_AgregarCuenta48;
+            this.BtnAgregarCuenta.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BtnAgregarCuenta.Location = new System.Drawing.Point(1, 2);
+            this.BtnAgregarCuenta.Name = "BtnAgregarCuenta";
+            this.BtnAgregarCuenta.Size = new System.Drawing.Size(143, 60);
+            this.BtnAgregarCuenta.TabIndex = 9;
+            this.BtnAgregarCuenta.Text = "AGREGAR CUENTA";
+            this.BtnAgregarCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnAgregarCuenta.UseVisualStyleBackColor = false;
+            this.BtnAgregarCuenta.Click += new System.EventHandler(this.BtnAgregarCuenta_Click);
+            // 
             // MnuPedidos
             // 
             this.MnuPedidos.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
@@ -109,20 +149,20 @@
             this.acercaDeToolStripMenuItem});
             this.MnuPedidos.Location = new System.Drawing.Point(0, 0);
             this.MnuPedidos.Name = "MnuPedidos";
-            this.MnuPedidos.Size = new System.Drawing.Size(957, 36);
+            this.MnuPedidos.Size = new System.Drawing.Size(957, 33);
             this.MnuPedidos.TabIndex = 3;
             this.MnuPedidos.Text = "menuStrip1";
             // 
             // configurarToolStripMenuItem
             // 
             this.configurarToolStripMenuItem.Name = "configurarToolStripMenuItem";
-            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(112, 30);
+            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
             this.configurarToolStripMenuItem.Text = "Configurar";
             // 
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(105, 30);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // FlpCuentas
@@ -638,7 +678,7 @@
             this.LblUsuario.ForeColor = System.Drawing.Color.White;
             this.LblUsuario.Location = new System.Drawing.Point(819, 37);
             this.LblUsuario.Name = "LblUsuario";
-            this.LblUsuario.Size = new System.Drawing.Size(98, 35);
+            this.LblUsuario.Size = new System.Drawing.Size(98, 31);
             this.LblUsuario.TabIndex = 6;
             this.LblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -661,9 +701,9 @@
             this.FlpAreas.Controls.Add(this.BtnArea2);
             this.FlpAreas.Controls.Add(this.BtnArea3);
             this.FlpAreas.Controls.Add(this.BtnArea4);
-            this.FlpAreas.Location = new System.Drawing.Point(822, 215);
+            this.FlpAreas.Location = new System.Drawing.Point(822, 222);
             this.FlpAreas.Name = "FlpAreas";
-            this.FlpAreas.Size = new System.Drawing.Size(130, 317);
+            this.FlpAreas.Size = new System.Drawing.Size(130, 341);
             this.FlpAreas.TabIndex = 49;
             // 
             // BtnArea1
@@ -734,46 +774,6 @@
             this.BtnSalir.UseVisualStyleBackColor = false;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
-            // BtnPrecios
-            // 
-            this.BtnPrecios.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnPrecios.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPrecios.BackgroundImage")));
-            this.BtnPrecios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnPrecios.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnPrecios.FlatAppearance.BorderSize = 3;
-            this.BtnPrecios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPrecios.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPrecios.Image = global::Cupediarum.Properties.Resources.Icono_Precios48;
-            this.BtnPrecios.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BtnPrecios.Location = new System.Drawing.Point(147, 2);
-            this.BtnPrecios.Name = "BtnPrecios";
-            this.BtnPrecios.Size = new System.Drawing.Size(143, 60);
-            this.BtnPrecios.TabIndex = 11;
-            this.BtnPrecios.Text = "PRECIOS";
-            this.BtnPrecios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnPrecios.UseVisualStyleBackColor = false;
-            this.BtnPrecios.Click += new System.EventHandler(this.BtnPrecios_Click);
-            // 
-            // BtnAgregarCuenta
-            // 
-            this.BtnAgregarCuenta.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnAgregarCuenta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAgregarCuenta.BackgroundImage")));
-            this.BtnAgregarCuenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnAgregarCuenta.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnAgregarCuenta.FlatAppearance.BorderSize = 3;
-            this.BtnAgregarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAgregarCuenta.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregarCuenta.Image = global::Cupediarum.Properties.Resources.Icono_AgregarCuenta48;
-            this.BtnAgregarCuenta.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BtnAgregarCuenta.Location = new System.Drawing.Point(1, 2);
-            this.BtnAgregarCuenta.Name = "BtnAgregarCuenta";
-            this.BtnAgregarCuenta.Size = new System.Drawing.Size(143, 60);
-            this.BtnAgregarCuenta.TabIndex = 9;
-            this.BtnAgregarCuenta.Text = "AGREGAR CUENTA";
-            this.BtnAgregarCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAgregarCuenta.UseVisualStyleBackColor = false;
-            this.BtnAgregarCuenta.Click += new System.EventHandler(this.BtnAgregarCuenta_Click);
-            // 
             // FrmCuentas
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -793,7 +793,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmCuentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cuentas";
+            this.Text = "CUENTAS";
             this.Load += new System.EventHandler(this.Pedidos_Load);
             this.panel1.ResumeLayout(false);
             this.MnuPedidos.ResumeLayout(false);

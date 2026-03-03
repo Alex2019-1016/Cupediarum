@@ -65,7 +65,7 @@
             this.ayudaToolStripMenuItem1});
             this.MnuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.MnuPrincipal.Name = "MnuPrincipal";
-            this.MnuPrincipal.Size = new System.Drawing.Size(1107, 33);
+            this.MnuPrincipal.Size = new System.Drawing.Size(1106, 33);
             this.MnuPrincipal.TabIndex = 2;
             this.MnuPrincipal.Text = "menuStrip1";
             // 
@@ -217,7 +217,7 @@
             this.panel1.Controls.Add(this.BtnSalir);
             this.panel1.Controls.Add(this.BtnMesero);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(968, 33);
+            this.panel1.Location = new System.Drawing.Point(967, 33);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(139, 602);
             this.panel1.TabIndex = 49;
@@ -235,7 +235,7 @@
             this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnSalir.Location = new System.Drawing.Point(-1, 534);
             this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(138, 60);
+            this.BtnSalir.Size = new System.Drawing.Size(133, 60);
             this.BtnSalir.TabIndex = 49;
             this.BtnSalir.Text = "SALIR";
             this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -254,7 +254,7 @@
             this.BtnMesero.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BtnMesero.Location = new System.Drawing.Point(1, 0);
             this.BtnMesero.Name = "BtnMesero";
-            this.BtnMesero.Size = new System.Drawing.Size(138, 73);
+            this.BtnMesero.Size = new System.Drawing.Size(131, 73);
             this.BtnMesero.TabIndex = 9;
             this.BtnMesero.Text = "MESERO";
             this.BtnMesero.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -266,7 +266,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1107, 635);
+            this.ClientSize = new System.Drawing.Size(1106, 635);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.PnOpciones);
@@ -274,7 +274,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menu Principal";
+            this.Text = "MENU PRINCIPAL";
             this.MnuPrincipal.ResumeLayout(false);
             this.MnuPrincipal.PerformLayout();
             this.PnOpciones.ResumeLayout(false);

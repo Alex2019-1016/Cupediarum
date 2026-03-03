@@ -455,7 +455,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmMesero";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Mesero";
+            this.Text = "MESERO";
             this.Load += new System.EventHandler(this.FrmMesero_Load);
             this.MnuMesero.ResumeLayout(false);
             this.MnuMesero.PerformLayout();

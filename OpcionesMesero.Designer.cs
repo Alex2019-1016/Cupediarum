@@ -188,7 +188,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmOpcionesMesero";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Opciones";
+            this.Text = "OPCIONES";
             this.ResumeLayout(false);
 
         }

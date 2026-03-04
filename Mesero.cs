@@ -15,12 +15,11 @@ namespace Cupediarum
     public partial class FrmMesero : Form
     {
         private bool meseroAutenticado = false;
-        private readonly Form formularioAnterior;
 
-        public FrmMesero(Form anterior)
+        public FrmMesero()
         {
             InitializeComponent();
-            formularioAnterior = anterior;
+           
         }
 
         private void CargarCuentas()
@@ -177,7 +176,7 @@ namespace Cupediarum
 
                             TxtClave.Enabled = false;
 
-                            FrmCuentas frm = new FrmCuentas(this);
+                            FrmCuentas frm = new FrmCuentas();
                             frm.Show();
                             this.Hide();
                         }
@@ -201,7 +200,7 @@ namespace Cupediarum
         {
             FrmMenuPrincipal frm = new FrmMenuPrincipal();
             frm.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void TecladoNumerico_Click(object sender, EventArgs e)

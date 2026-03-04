@@ -107,16 +107,16 @@ namespace Cupediarum
 
         private void BtnAbrirMesa_Click(object sender, EventArgs e)
         {
-            FrmCapturaProductos frm = new FrmCapturaProductos(idCuenta, formularioAnterior);
+            FrmCapturaProductos frm = new FrmCapturaProductos(idCuenta);
             frm.Show();
             this.Hide();
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
-            FrmCuentas frm = new FrmCuentas(formularioAnterior);
+            FrmCuentas frm = new FrmCuentas();
             frm.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }

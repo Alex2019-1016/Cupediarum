@@ -19,7 +19,7 @@ namespace Cupediarum
 
         private void BtnMesero_Click_1(object sender, EventArgs e)
         {
-            FrmMesero frm = new FrmMesero(this);
+            FrmMesero frm = new FrmMesero();
             frm.Show();
             this.Hide();
         }
@@ -40,7 +40,9 @@ namespace Cupediarum
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
-
+            FrmInicioSesion frm = new FrmInicioSesion();
+            frm.Show();
+            this.Hide();
         }
     }
 }

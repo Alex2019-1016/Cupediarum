@@ -105,7 +105,7 @@ namespace Cupediarum
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
             formularioAnterior.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }

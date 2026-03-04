@@ -15,12 +15,11 @@ namespace Cupediarum
 {
     public partial class FrmCuentas : Form
     {
-        private readonly Form formularioAnterior;
         
-        public FrmCuentas(Form anterior)
+        public FrmCuentas()
         {
             InitializeComponent();
-            formularioAnterior = anterior;
+        
         }
 
         private int cuentaSeleccionada = 0;
@@ -115,7 +114,7 @@ namespace Cupediarum
             Button btn = sender as Button;
             cuentaSeleccionada = (int) btn.Tag;
 
-            FrmOpcionesMesero frm = new FrmOpcionesMesero(cuentaSeleccionada, this);
+            FrmOpcionesMesero frm = new FrmOpcionesMesero(cuentaSeleccionada);
             frm.Show();
         }
 
@@ -203,9 +202,9 @@ namespace Cupediarum
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
-            FrmMesero frm = new FrmMesero(this);
+            FrmMesero frm = new FrmMesero();
             frm.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void BtnPrecios_Click(object sender, EventArgs e)

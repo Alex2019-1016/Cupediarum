@@ -15,13 +15,12 @@ namespace Cupediarum
         private decimal totalCuenta = 0;
 
         private readonly int idCuenta;
-        private readonly Form formularioAnterior;
 
-        public FrmCapturaProductos(int idCuentaRecibida, Form anterior)
+        public FrmCapturaProductos(int idCuentaRecibida)
         {
             InitializeComponent();
             idCuenta = idCuentaRecibida;
-            formularioAnterior = anterior;
+          
         }
 
         private void FrmCapturaProductos_Load_1(object sender, EventArgs e)
@@ -397,7 +396,7 @@ namespace Cupediarum
 
                 MessageBox.Show("Comanda guardada correctamente ✔");
 
-                FrmCuentas frm = new FrmCuentas(this);
+                FrmCuentas frm = new FrmCuentas();
                 frm.Show();
                 this.Hide();
             }
@@ -412,7 +411,7 @@ namespace Cupediarum
         // =============================
         private void BtnCancelar_Click_1(object sender, EventArgs e)
         {
-            FrmCuentas frm = new FrmCuentas(this);
+            FrmCuentas frm = new FrmCuentas();
             frm.Show();
             this.Hide();
         }

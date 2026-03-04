@@ -13,19 +13,24 @@ namespace Cupediarum
     public partial class FrmOpcionesMesero : Form
     {
         private readonly int idCuenta;
-        private readonly Form formularioAnterior;
-        public FrmOpcionesMesero(int idCuentaRecibida, Form anterior)
+        
+        public FrmOpcionesMesero(int idCuentaRecibida)
         {
             InitializeComponent();
             idCuenta = idCuentaRecibida;
-            formularioAnterior = anterior;
+           
         }
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
-            FrmCapturaProductos frm = new FrmCapturaProductos(idCuenta, formularioAnterior);
+            FrmCapturaProductos frm = new FrmCapturaProductos(idCuenta);
             frm.Show();
-            this.Close();
+            this.Hide();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

@@ -37,5 +37,10 @@ namespace Cupediarum
             frm.Show();
             this.Hide();
         }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

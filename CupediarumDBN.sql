@@ -360,11 +360,13 @@ LEFT JOIN Categorias CP ON C.Id_CategoriaPadre = CP.Id_Categoria;
 CREATE TABLE CUENTAS (
     Id_Cuenta INT IDENTITY(1,1) PRIMARY KEY,
     Nomb_Cuenta VARCHAR(100) NOT NULL,
-    FechaApertura DATETIME DEFAULT GETDATE(),
-    EstadoCuenta VARCHAR(20) DEFAULT 'Abierta',
+    FechaApertura DATETIME NOT NULL DEFAULT GETDATE(),
+    EstadoCuenta VARCHAR(20) NOT NULL DEFAULT 'Abierta',
     Cantidad_Personas INT NOT NULL,
+    Impresa BIT NOT NULL DEFAULT 0,
+    Estado BIT NOT NULL DEFAULT 1,
 
-    Id_Area INT NULL,
+    Id_Area INT NOT NULL,
     Id_Mesa INT NULL,
     Id_Usuario INT NOT NULL,
 
@@ -377,9 +379,6 @@ CREATE TABLE CUENTAS (
     CONSTRAINT FK_Cuentas_Usuarios
         FOREIGN KEY (Id_Usuario) REFERENCES USUARIOS(Id_Usuario)
 );
- 
-SELECT Id_Cuenta, Nomb_Cuenta, Id_Area, Id_Mesa, Id_Usuario
-FROM CUENTAS;
 ---------------------------------------------------------------------------------------
 
 CREATE TABLE DETALLE_CUENTA (

@@ -28,17 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMesas));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PnlCuenta = new System.Windows.Forms.Panel();
-            this.LblNombArea = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.LblCantCuentas = new System.Windows.Forms.Label();
-            this.TxtBusarCuenta = new System.Windows.Forms.TextBox();
+            this.TxtBuscarCuentas = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.CbArea = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,12 +47,12 @@
             this.MESERO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FlpOpciones = new System.Windows.Forms.FlowLayoutPanel();
             this.BtnAbrirCuenta = new System.Windows.Forms.Button();
-            this.BtnEliminarProducto = new System.Windows.Forms.Button();
             this.BtnCambiarMesero = new System.Windows.Forms.Button();
+            this.BtnEliminarProducto = new System.Windows.Forms.Button();
             this.BtnImprimir = new System.Windows.Forms.Button();
-            this.BtnPagarCuenta = new System.Windows.Forms.Button();
             this.BtnCerrar = new System.Windows.Forms.Button();
             this.BtnAgregar = new System.Windows.Forms.Button();
+            this.BtnPagarCuenta = new System.Windows.Forms.Button();
             this.BtnDescuento = new System.Windows.Forms.Button();
             this.PnlDatosCuenta = new System.Windows.Forms.Panel();
             this.LblNomMesero = new System.Windows.Forms.Label();
@@ -101,10 +100,9 @@
             // 
             this.PnlCuenta.BackColor = System.Drawing.Color.Transparent;
             this.PnlCuenta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PnlCuenta.Controls.Add(this.LblNombArea);
             this.PnlCuenta.Controls.Add(this.label3);
             this.PnlCuenta.Controls.Add(this.LblCantCuentas);
-            this.PnlCuenta.Controls.Add(this.TxtBusarCuenta);
+            this.PnlCuenta.Controls.Add(this.TxtBuscarCuentas);
             this.PnlCuenta.Controls.Add(this.label2);
             this.PnlCuenta.Controls.Add(this.CbArea);
             this.PnlCuenta.Controls.Add(this.label1);
@@ -112,17 +110,6 @@
             this.PnlCuenta.Name = "PnlCuenta";
             this.PnlCuenta.Size = new System.Drawing.Size(365, 143);
             this.PnlCuenta.TabIndex = 0;
-            // 
-            // LblNombArea
-            // 
-            this.LblNombArea.BackColor = System.Drawing.Color.Gray;
-            this.LblNombArea.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LblNombArea.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNombArea.ForeColor = System.Drawing.Color.White;
-            this.LblNombArea.Location = new System.Drawing.Point(132, 34);
-            this.LblNombArea.Name = "LblNombArea";
-            this.LblNombArea.Size = new System.Drawing.Size(224, 33);
-            this.LblNombArea.TabIndex = 18;
             // 
             // label3
             // 
@@ -145,16 +132,17 @@
             this.LblCantCuentas.ForeColor = System.Drawing.Color.White;
             this.LblCantCuentas.Location = new System.Drawing.Point(256, 104);
             this.LblCantCuentas.Name = "LblCantCuentas";
-            this.LblCantCuentas.Size = new System.Drawing.Size(100, 30);
+            this.LblCantCuentas.Size = new System.Drawing.Size(87, 30);
             this.LblCantCuentas.TabIndex = 17;
             // 
-            // TxtBusarCuenta
+            // TxtBuscarCuentas
             // 
-            this.TxtBusarCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBusarCuenta.Location = new System.Drawing.Point(4, 105);
-            this.TxtBusarCuenta.Name = "TxtBusarCuenta";
-            this.TxtBusarCuenta.Size = new System.Drawing.Size(245, 30);
-            this.TxtBusarCuenta.TabIndex = 15;
+            this.TxtBuscarCuentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBuscarCuentas.Location = new System.Drawing.Point(4, 105);
+            this.TxtBuscarCuentas.Name = "TxtBuscarCuentas";
+            this.TxtBuscarCuentas.Size = new System.Drawing.Size(245, 30);
+            this.TxtBuscarCuentas.TabIndex = 15;
+            this.TxtBuscarCuentas.TextChanged += new System.EventHandler(this.TxtBuscarCuentas_TextChanged);
             // 
             // label2
             // 
@@ -176,8 +164,9 @@
             this.CbArea.FormattingEnabled = true;
             this.CbArea.Location = new System.Drawing.Point(4, 34);
             this.CbArea.Name = "CbArea";
-            this.CbArea.Size = new System.Drawing.Size(119, 33);
+            this.CbArea.Size = new System.Drawing.Size(245, 33);
             this.CbArea.TabIndex = 12;
+            this.CbArea.SelectedIndexChanged += new System.EventHandler(this.CbArea_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -205,15 +194,17 @@
             this.DgvCuentas.Location = new System.Drawing.Point(8, 159);
             this.DgvCuentas.Name = "DgvCuentas";
             this.DgvCuentas.ReadOnly = true;
+            this.DgvCuentas.RowHeadersVisible = false;
             this.DgvCuentas.RowHeadersWidth = 62;
             this.DgvCuentas.RowTemplate.Height = 28;
             this.DgvCuentas.Size = new System.Drawing.Size(365, 564);
             this.DgvCuentas.TabIndex = 18;
+            this.DgvCuentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvCuentas_CellContentClick);
             // 
             // CUENTA
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CUENTA.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CUENTA.DefaultCellStyle = dataGridViewCellStyle11;
             this.CUENTA.HeaderText = "CUENTA";
             this.CUENTA.MinimumWidth = 8;
             this.CUENTA.Name = "CUENTA";
@@ -222,10 +213,10 @@
             // 
             // IMPRESA
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.NullValue = false;
-            this.IMPRESA.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.NullValue = false;
+            this.IMPRESA.DefaultCellStyle = dataGridViewCellStyle12;
             this.IMPRESA.HeaderText = "IMPRESA";
             this.IMPRESA.MinimumWidth = 8;
             this.IMPRESA.Name = "IMPRESA";
@@ -278,25 +269,6 @@
             this.BtnAbrirCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnAbrirCuenta.UseVisualStyleBackColor = false;
             // 
-            // BtnEliminarProducto
-            // 
-            this.BtnEliminarProducto.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnEliminarProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnEliminarProducto.BackgroundImage")));
-            this.BtnEliminarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnEliminarProducto.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnEliminarProducto.FlatAppearance.BorderSize = 3;
-            this.BtnEliminarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEliminarProducto.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEliminarProducto.Image = global::Cupediarum.Properties.Resources.Icono_Delete;
-            this.BtnEliminarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEliminarProducto.Location = new System.Drawing.Point(265, 3);
-            this.BtnEliminarProducto.Name = "BtnEliminarProducto";
-            this.BtnEliminarProducto.Size = new System.Drawing.Size(125, 71);
-            this.BtnEliminarProducto.TabIndex = 12;
-            this.BtnEliminarProducto.Text = "Elim. Producto";
-            this.BtnEliminarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnEliminarProducto.UseVisualStyleBackColor = false;
-            // 
             // BtnCambiarMesero
             // 
             this.BtnCambiarMesero.BackColor = System.Drawing.Color.LightCoral;
@@ -316,6 +288,25 @@
             this.BtnCambiarMesero.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnCambiarMesero.UseVisualStyleBackColor = false;
             // 
+            // BtnEliminarProducto
+            // 
+            this.BtnEliminarProducto.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnEliminarProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnEliminarProducto.BackgroundImage")));
+            this.BtnEliminarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnEliminarProducto.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnEliminarProducto.FlatAppearance.BorderSize = 3;
+            this.BtnEliminarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEliminarProducto.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEliminarProducto.Image = global::Cupediarum.Properties.Resources.Icono_Delete;
+            this.BtnEliminarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnEliminarProducto.Location = new System.Drawing.Point(265, 3);
+            this.BtnEliminarProducto.Name = "BtnEliminarProducto";
+            this.BtnEliminarProducto.Size = new System.Drawing.Size(125, 71);
+            this.BtnEliminarProducto.TabIndex = 12;
+            this.BtnEliminarProducto.Text = "Elim. Producto";
+            this.BtnEliminarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnEliminarProducto.UseVisualStyleBackColor = false;
+            // 
             // BtnImprimir
             // 
             this.BtnImprimir.BackColor = System.Drawing.Color.LightCoral;
@@ -334,25 +325,6 @@
             this.BtnImprimir.Text = "Imprim.";
             this.BtnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnImprimir.UseVisualStyleBackColor = false;
-            // 
-            // BtnPagarCuenta
-            // 
-            this.BtnPagarCuenta.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnPagarCuenta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPagarCuenta.BackgroundImage")));
-            this.BtnPagarCuenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnPagarCuenta.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnPagarCuenta.FlatAppearance.BorderSize = 3;
-            this.BtnPagarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPagarCuenta.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPagarCuenta.Image = global::Cupediarum.Properties.Resources.Icono_Pagar48;
-            this.BtnPagarCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnPagarCuenta.Location = new System.Drawing.Point(134, 80);
-            this.BtnPagarCuenta.Name = "BtnPagarCuenta";
-            this.BtnPagarCuenta.Size = new System.Drawing.Size(125, 71);
-            this.BtnPagarCuenta.TabIndex = 17;
-            this.BtnPagarCuenta.Text = "Pagar Cuenta";
-            this.BtnPagarCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnPagarCuenta.UseVisualStyleBackColor = false;
             // 
             // BtnCerrar
             // 
@@ -391,6 +363,25 @@
             this.BtnAgregar.Text = "Agregar";
             this.BtnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnAgregar.UseVisualStyleBackColor = false;
+            // 
+            // BtnPagarCuenta
+            // 
+            this.BtnPagarCuenta.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnPagarCuenta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPagarCuenta.BackgroundImage")));
+            this.BtnPagarCuenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnPagarCuenta.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnPagarCuenta.FlatAppearance.BorderSize = 3;
+            this.BtnPagarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPagarCuenta.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPagarCuenta.Image = global::Cupediarum.Properties.Resources.Icono_Pagar48;
+            this.BtnPagarCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnPagarCuenta.Location = new System.Drawing.Point(134, 80);
+            this.BtnPagarCuenta.Name = "BtnPagarCuenta";
+            this.BtnPagarCuenta.Size = new System.Drawing.Size(125, 71);
+            this.BtnPagarCuenta.TabIndex = 17;
+            this.BtnPagarCuenta.Text = "Pagar Cuenta";
+            this.BtnPagarCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnPagarCuenta.UseVisualStyleBackColor = false;
             // 
             // BtnDescuento
             // 
@@ -440,9 +431,9 @@
             this.LblNomMesero.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.LblNomMesero.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblNomMesero.ForeColor = System.Drawing.Color.White;
-            this.LblNomMesero.Location = new System.Drawing.Point(496, 47);
+            this.LblNomMesero.Location = new System.Drawing.Point(460, 47);
             this.LblNomMesero.Name = "LblNomMesero";
-            this.LblNomMesero.Size = new System.Drawing.Size(104, 29);
+            this.LblNomMesero.Size = new System.Drawing.Size(140, 29);
             this.LblNomMesero.TabIndex = 40;
             // 
             // LblNomArea
@@ -451,9 +442,9 @@
             this.LblNomArea.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.LblNomArea.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblNomArea.ForeColor = System.Drawing.Color.White;
-            this.LblNomArea.Location = new System.Drawing.Point(496, 6);
+            this.LblNomArea.Location = new System.Drawing.Point(460, 6);
             this.LblNomArea.Name = "LblNomArea";
-            this.LblNomArea.Size = new System.Drawing.Size(104, 29);
+            this.LblNomArea.Size = new System.Drawing.Size(140, 29);
             this.LblNomArea.TabIndex = 39;
             // 
             // LblNumMesero
@@ -464,7 +455,7 @@
             this.LblNumMesero.ForeColor = System.Drawing.Color.White;
             this.LblNumMesero.Location = new System.Drawing.Point(426, 47);
             this.LblNumMesero.Name = "LblNumMesero";
-            this.LblNumMesero.Size = new System.Drawing.Size(64, 29);
+            this.LblNumMesero.Size = new System.Drawing.Size(28, 29);
             this.LblNumMesero.TabIndex = 38;
             // 
             // label16
@@ -488,7 +479,7 @@
             this.LblNumArea.ForeColor = System.Drawing.Color.White;
             this.LblNumArea.Location = new System.Drawing.Point(426, 6);
             this.LblNumArea.Name = "LblNumArea";
-            this.LblNumArea.Size = new System.Drawing.Size(64, 29);
+            this.LblNumArea.Size = new System.Drawing.Size(28, 29);
             this.LblNumArea.TabIndex = 36;
             // 
             // label14
@@ -545,7 +536,7 @@
             this.LblMesa.ForeColor = System.Drawing.Color.White;
             this.LblMesa.Location = new System.Drawing.Point(105, 45);
             this.LblMesa.Name = "LblMesa";
-            this.LblMesa.Size = new System.Drawing.Size(136, 29);
+            this.LblMesa.Size = new System.Drawing.Size(59, 29);
             this.LblMesa.TabIndex = 22;
             // 
             // LblDCuenta
@@ -602,8 +593,8 @@
             // 
             this.DgvComanda.AllowUserToAddRows = false;
             this.DgvComanda.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.DgvComanda.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DgvComanda.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.DgvComanda.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.DgvComanda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvComanda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -616,6 +607,7 @@
             this.DgvComanda.Location = new System.Drawing.Point(381, 312);
             this.DgvComanda.Name = "DgvComanda";
             this.DgvComanda.ReadOnly = true;
+            this.DgvComanda.RowHeadersVisible = false;
             this.DgvComanda.RowHeadersWidth = 62;
             this.DgvComanda.RowTemplate.Height = 28;
             this.DgvComanda.Size = new System.Drawing.Size(726, 211);
@@ -623,8 +615,8 @@
             // 
             // COMANDA
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.COMANDA.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.COMANDA.DefaultCellStyle = dataGridViewCellStyle14;
             this.COMANDA.HeaderText = "COMANDA";
             this.COMANDA.MinimumWidth = 8;
             this.COMANDA.Name = "COMANDA";
@@ -633,8 +625,8 @@
             // 
             // CANTIDAD
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CANTIDAD.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CANTIDAD.DefaultCellStyle = dataGridViewCellStyle15;
             this.CANTIDAD.HeaderText = "CANT.";
             this.CANTIDAD.MinimumWidth = 8;
             this.CANTIDAD.Name = "CANTIDAD";
@@ -838,6 +830,7 @@
             this.Name = "FrmMesas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mesas";
+            this.Load += new System.EventHandler(this.FrmMesas_Load);
             this.PnlCuenta.ResumeLayout(false);
             this.PnlCuenta.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCuentas)).EndInit();
@@ -858,9 +851,8 @@
         private System.Windows.Forms.ComboBox CbArea;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TxtBusarCuenta;
+        private System.Windows.Forms.TextBox TxtBuscarCuentas;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label LblNombArea;
         private System.Windows.Forms.Label LblCantCuentas;
         private System.Windows.Forms.DataGridView DgvCuentas;
         private System.Windows.Forms.DataGridViewTextBoxColumn CUENTA;

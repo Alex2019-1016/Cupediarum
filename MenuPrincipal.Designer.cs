@@ -240,6 +240,7 @@
             this.BtnSalir.Text = "SALIR";
             this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // BtnMesero
             // 

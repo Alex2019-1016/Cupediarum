@@ -47,12 +47,12 @@ namespace Cupediarum
         private void CargarDetalleExistente()
         {
             string connStr = ConfigurationManager
-                .ConnectionStrings["ConexionRestaurante"]
-                .ConnectionString;
+        .ConnectionStrings["ConexionRestaurante"]
+        .ConnectionString;
 
             using (SqlConnection conn = new SqlConnection(connStr))
             using (SqlCommand cmd = new SqlCommand(@"
-        SELECT Id_Producto, Cantidad, Precio, Subtotal
+        SELECT Id_Producto, Cantidad, Precio
         FROM DETALLE_CUENTA
         WHERE Id_Cuenta = @IdCuenta", conn))
             {
@@ -66,17 +66,18 @@ namespace Cupediarum
                     int idProducto = reader.GetInt32(0);
                     int cantidad = reader.GetInt32(1);
                     decimal precioUnitario = reader.GetDecimal(2);
-                    decimal subtotal = reader.GetDecimal(3);
+
+                    decimal subtotal = precioUnitario * cantidad;
 
                     string nombre = ObtenerNombreProducto(idProducto);
 
                     DgvComanda.Rows.Add(
-                        idProducto,
-                        "1",
-                        cantidad,
-                        nombre,
-                        subtotal,
-                        0
+                        idProducto,     // 0
+                        "1",            // 1 COMANDA
+                        cantidad,       // 2 CANT
+                        nombre,         // 3 DESCRIPCION
+                        subtotal,       // 4 PRECIO
+                        0               // 5 DESCUENTO
                     );
                 }
             }
@@ -94,7 +95,7 @@ namespace Cupediarum
 
             using (SqlConnection conn = new SqlConnection(connStr))
             using (SqlCommand cmd = new SqlCommand(
-                "SELECT Nomb_Producto FROM PRODUCTOS WHERE IdProducto = @Id", conn))
+                "SELECT Nomb_Producto FROM PRODUCTOS WHERE Id_Producto = @Id", conn))
             {
                 cmd.Parameters.AddWithValue("@Id", idProducto);
                 conn.Open();
@@ -124,7 +125,7 @@ namespace Cupediarum
                 while (reader.Read())
                 {
                     int id = reader.GetInt32(0);
-                    string nombre = reader.GetString(1).ToLower();
+                    string nombre = reader.GetString(1).ToUpper();
 
                     if (nombre == "POSTRES")
                         BtnPostres.Tag = id;
@@ -137,14 +138,16 @@ namespace Cupediarum
 
                     else if (nombre == "OTROS")
                         BtnOtros.Tag = id;
-
-                    BtnPostres.Click += BtnCategoria_Click;
-                    BtnBebidas.Click += BtnCategoria_Click;
-                    BtnComida.Click += BtnCategoria_Click;
-                    BtnOtros.Click += BtnCategoria_Click;
                 }
             }
+
+            // Eventos fuera del while
+            BtnPostres.Click += BtnCategoria_Click;
+            BtnBebidas.Click += BtnCategoria_Click;
+            BtnComida.Click += BtnCategoria_Click;
+            BtnOtros.Click += BtnCategoria_Click;
         }
+        
 
         // =============================
         // CLICK CATEGORÍA
@@ -225,7 +228,7 @@ namespace Cupediarum
         {
             FlpProductos.Controls.Clear();
 
-            string query = @"SELECT IdProducto, Nomb_Producto, Precio
+            string query = @"SELECT Id_Producto, Nomb_Producto, Precio
                      FROM PRODUCTOS
                      WHERE Id_Categoria = @IdCategoria
                      ORDER BY Nomb_Producto ASC";
@@ -267,7 +270,7 @@ namespace Cupediarum
                     FlpProductos.Controls.Add(btn);
                 }
             }
-            
+
         }
 
         // =============================
@@ -281,8 +284,8 @@ namespace Cupediarum
 
             foreach (DataGridViewRow row in DgvComanda.Rows)
             {
-                if (row.Cells["IDPRODUCTO"].Value != null &&
-                    Convert.ToInt32(row.Cells["IDPRODUCTO"].Value) == producto.Id)
+                if (row.Cells[0].Value != null &&
+                    Convert.ToInt32(row.Cells[0].Value) == producto.Id)
                 {
                     int cantidad = Convert.ToInt32(row.Cells["CANT"].Value);
                     cantidad++;
@@ -298,12 +301,12 @@ namespace Cupediarum
             if (!encontrado)
             {
                 DgvComanda.Rows.Add(
-                    producto.Id,          // IDPRODUCTO
-                    "1",                  // COMANDA
-                    1,                    // CANT
-                    producto.Nombre,      // DESCRIPCION
-                    producto.Precio,      // PRECIO
-                    0                     // DESCUENTO
+                    producto.Id,
+                    "1",
+                    1,
+                    producto.Nombre,
+                    producto.Precio,
+                    0
                 );
             }
 
@@ -331,19 +334,19 @@ namespace Cupediarum
                 // 🔥 Luego insertamos lo actual
                 foreach (DataGridViewRow row in DgvComanda.Rows)
                 {
-                    if (row.Cells["IDPRODUCTO"].Value == null)
+                    if (row.Cells[0].Value == null)
                         continue;
 
-                    int idProducto = Convert.ToInt32(row.Cells["IDPRODUCTO"].Value);
+                    int idProducto = Convert.ToInt32(row.Cells[0].Value);
                     int cantidad = Convert.ToInt32(row.Cells["CANT"].Value);
                     decimal subtotal = Convert.ToDecimal(row.Cells["PRECIO"].Value);
 
                     decimal precioUnitario = subtotal / cantidad;
 
                     string query = @"INSERT INTO DETALLE_CUENTA
-                             (Id_Cuenta, Id_Producto, Cantidad, Precio, Comentarios)
-                             VALUES
-                             (@IdCuenta, @IdProducto, @Cantidad, @Precio, @Comentarios)";
+                    (Id_Cuenta, Id_Producto, Cantidad, Precio, Comentarios)
+                    VALUES
+                    (@IdCuenta, @IdProducto, @Cantidad, @Precio, @Comentarios)";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
@@ -489,7 +492,7 @@ namespace Cupediarum
                 return;
 
             int idProducto = Convert.ToInt32(
-                DgvComanda.CurrentRow.Cells["IDPRODUCTO"].Value);
+                DgvComanda.CurrentRow.Cells[0].Value);
 
             EliminarProductoBD(idProducto);
 

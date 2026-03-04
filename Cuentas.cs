@@ -205,7 +205,7 @@ namespace Cupediarum
         {
             FrmMesero frm = new FrmMesero(this);
             frm.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void BtnPrecios_Click(object sender, EventArgs e)

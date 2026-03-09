@@ -21,14 +21,12 @@ namespace Cupediarum
         {
             FrmMesero frm = new FrmMesero();
             frm.Show();
-            this.Hide();
         }
         
         private void BtnMesas_Click(object sender, EventArgs e)
         {
-            FrmMesas frm = new FrmMesas();
+            FrmUsuario frm = new FrmUsuario();
             frm.Show();
-            this.Hide();
         }
 
         private void BtnPrecios_Click(object sender, EventArgs e)

@@ -124,7 +124,7 @@
             // 
             // BtnMas
             // 
-            this.BtnMas.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnMas.BackColor = System.Drawing.Color.Plum;
             this.BtnMas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMas.BackgroundImage")));
             this.BtnMas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnMas.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -140,7 +140,7 @@
             // 
             // BtnGuion
             // 
-            this.BtnGuion.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnGuion.BackColor = System.Drawing.Color.Plum;
             this.BtnGuion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnGuion.BackgroundImage")));
             this.BtnGuion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnGuion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -156,7 +156,7 @@
             // 
             // BtnAsterisco
             // 
-            this.BtnAsterisco.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAsterisco.BackColor = System.Drawing.Color.Plum;
             this.BtnAsterisco.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAsterisco.BackgroundImage")));
             this.BtnAsterisco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnAsterisco.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -172,7 +172,7 @@
             // 
             // BtnSlash
             // 
-            this.BtnSlash.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnSlash.BackColor = System.Drawing.Color.Plum;
             this.BtnSlash.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSlash.BackgroundImage")));
             this.BtnSlash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnSlash.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -188,7 +188,7 @@
             // 
             // BtnGuionBajo
             // 
-            this.BtnGuionBajo.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnGuionBajo.BackColor = System.Drawing.Color.Plum;
             this.BtnGuionBajo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnGuionBajo.BackgroundImage")));
             this.BtnGuionBajo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnGuionBajo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -204,7 +204,7 @@
             // 
             // BtnNum9
             // 
-            this.BtnNum9.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum9.BackColor = System.Drawing.Color.Plum;
             this.BtnNum9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum9.BackgroundImage")));
             this.BtnNum9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -220,7 +220,7 @@
             // 
             // BtnNum8
             // 
-            this.BtnNum8.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum8.BackColor = System.Drawing.Color.Plum;
             this.BtnNum8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum8.BackgroundImage")));
             this.BtnNum8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -236,7 +236,7 @@
             // 
             // BtnNum7
             // 
-            this.BtnNum7.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum7.BackColor = System.Drawing.Color.Plum;
             this.BtnNum7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum7.BackgroundImage")));
             this.BtnNum7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -252,7 +252,7 @@
             // 
             // BtnNum6
             // 
-            this.BtnNum6.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum6.BackColor = System.Drawing.Color.Plum;
             this.BtnNum6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum6.BackgroundImage")));
             this.BtnNum6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -268,7 +268,7 @@
             // 
             // BtnNum5
             // 
-            this.BtnNum5.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum5.BackColor = System.Drawing.Color.Plum;
             this.BtnNum5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum5.BackgroundImage")));
             this.BtnNum5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -284,7 +284,7 @@
             // 
             // BtnNum4
             // 
-            this.BtnNum4.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum4.BackColor = System.Drawing.Color.Plum;
             this.BtnNum4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum4.BackgroundImage")));
             this.BtnNum4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -300,7 +300,7 @@
             // 
             // BtnNum3
             // 
-            this.BtnNum3.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum3.BackColor = System.Drawing.Color.Plum;
             this.BtnNum3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum3.BackgroundImage")));
             this.BtnNum3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -316,7 +316,7 @@
             // 
             // BtnNum2
             // 
-            this.BtnNum2.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum2.BackColor = System.Drawing.Color.Plum;
             this.BtnNum2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum2.BackgroundImage")));
             this.BtnNum2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -332,7 +332,7 @@
             // 
             // BtnNum1
             // 
-            this.BtnNum1.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum1.BackColor = System.Drawing.Color.Plum;
             this.BtnNum1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum1.BackgroundImage")));
             this.BtnNum1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -348,7 +348,7 @@
             // 
             // BtnPunto
             // 
-            this.BtnPunto.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnPunto.BackColor = System.Drawing.Color.Plum;
             this.BtnPunto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPunto.BackgroundImage")));
             this.BtnPunto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnPunto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -364,7 +364,7 @@
             // 
             // BtnNum0
             // 
-            this.BtnNum0.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum0.BackColor = System.Drawing.Color.Plum;
             this.BtnNum0.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum0.BackgroundImage")));
             this.BtnNum0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -424,11 +424,11 @@
             // 
             // BtnAceptar
             // 
-            this.BtnAceptar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAceptar.BackColor = System.Drawing.Color.Plum;
             this.BtnAceptar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.BtnAceptar.FlatAppearance.BorderSize = 5;
+            this.BtnAceptar.FlatAppearance.BorderSize = 3;
             this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAceptar.Font = new System.Drawing.Font("Times New Roman", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAceptar.Image = global::Cupediarum.Properties.Resources.Icono_RDAceptar32;
@@ -444,11 +444,11 @@
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnCancelar.BackColor = System.Drawing.Color.Plum;
             this.BtnCancelar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.BtnCancelar.FlatAppearance.BorderSize = 5;
+            this.BtnCancelar.FlatAppearance.BorderSize = 3;
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.Font = new System.Drawing.Font("Times New Roman", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Icono_RDCancelar32;
@@ -464,7 +464,7 @@
             // 
             // BtnBorrar
             // 
-            this.BtnBorrar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnBorrar.BackColor = System.Drawing.Color.Plum;
             this.BtnBorrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBorrar.BackgroundImage")));
             this.BtnBorrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnBorrar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -484,7 +484,7 @@
             // 
             // BtnMinuscula
             // 
-            this.BtnMinuscula.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnMinuscula.BackColor = System.Drawing.Color.Plum;
             this.BtnMinuscula.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnMinuscula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnMinuscula.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -501,7 +501,7 @@
             // 
             // BtnEspacio
             // 
-            this.BtnEspacio.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnEspacio.BackColor = System.Drawing.Color.Plum;
             this.BtnEspacio.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnEspacio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnEspacio.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -517,7 +517,7 @@
             // 
             // BtnPunto2
             // 
-            this.BtnPunto2.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnPunto2.BackColor = System.Drawing.Color.Plum;
             this.BtnPunto2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPunto2.BackgroundImage")));
             this.BtnPunto2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnPunto2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -533,7 +533,7 @@
             // 
             // BtnComa
             // 
-            this.BtnComa.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnComa.BackColor = System.Drawing.Color.Plum;
             this.BtnComa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnComa.BackgroundImage")));
             this.BtnComa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnComa.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -550,7 +550,7 @@
             // 
             // BtnLetraM
             // 
-            this.BtnLetraM.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraM.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraM.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraM.BackgroundImage")));
             this.BtnLetraM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraM.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -566,7 +566,7 @@
             // 
             // BtnLetraN
             // 
-            this.BtnLetraN.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraN.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraN.BackgroundImage")));
             this.BtnLetraN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraN.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -582,7 +582,7 @@
             // 
             // BtnLetraB
             // 
-            this.BtnLetraB.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraB.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraB.BackgroundImage")));
             this.BtnLetraB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraB.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -598,7 +598,7 @@
             // 
             // BtnLetraV
             // 
-            this.BtnLetraV.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraV.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraV.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraV.BackgroundImage")));
             this.BtnLetraV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraV.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -614,7 +614,7 @@
             // 
             // BtnLetraC
             // 
-            this.BtnLetraC.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraC.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraC.BackgroundImage")));
             this.BtnLetraC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraC.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -630,7 +630,7 @@
             // 
             // BtnLetraX
             // 
-            this.BtnLetraX.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraX.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraX.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraX.BackgroundImage")));
             this.BtnLetraX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraX.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -646,7 +646,7 @@
             // 
             // BtnLetraZ
             // 
-            this.BtnLetraZ.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraZ.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraZ.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraZ.BackgroundImage")));
             this.BtnLetraZ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraZ.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -662,7 +662,7 @@
             // 
             // BtnArroba
             // 
-            this.BtnArroba.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnArroba.BackColor = System.Drawing.Color.Plum;
             this.BtnArroba.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnArroba.BackgroundImage")));
             this.BtnArroba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnArroba.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -678,7 +678,7 @@
             // 
             // BtnLetraÑ
             // 
-            this.BtnLetraÑ.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraÑ.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraÑ.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraÑ.BackgroundImage")));
             this.BtnLetraÑ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraÑ.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -694,7 +694,7 @@
             // 
             // BtnLetraL
             // 
-            this.BtnLetraL.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraL.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraL.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraL.BackgroundImage")));
             this.BtnLetraL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraL.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -710,7 +710,7 @@
             // 
             // BtnLetraK
             // 
-            this.BtnLetraK.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraK.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraK.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraK.BackgroundImage")));
             this.BtnLetraK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraK.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -726,7 +726,7 @@
             // 
             // BtnLetraJ
             // 
-            this.BtnLetraJ.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraJ.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraJ.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraJ.BackgroundImage")));
             this.BtnLetraJ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraJ.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -742,7 +742,7 @@
             // 
             // BtnLetraH
             // 
-            this.BtnLetraH.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraH.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraH.BackgroundImage")));
             this.BtnLetraH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraH.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -758,7 +758,7 @@
             // 
             // BtnLetraG
             // 
-            this.BtnLetraG.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraG.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraG.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraG.BackgroundImage")));
             this.BtnLetraG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraG.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -774,7 +774,7 @@
             // 
             // BtnLetraF
             // 
-            this.BtnLetraF.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraF.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraF.BackgroundImage")));
             this.BtnLetraF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraF.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -790,7 +790,7 @@
             // 
             // BtnLetraD
             // 
-            this.BtnLetraD.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraD.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraD.BackgroundImage")));
             this.BtnLetraD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraD.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -806,7 +806,7 @@
             // 
             // BtnLetraS
             // 
-            this.BtnLetraS.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraS.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraS.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraS.BackgroundImage")));
             this.BtnLetraS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -822,7 +822,7 @@
             // 
             // BtnLetraA
             // 
-            this.BtnLetraA.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraA.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraA.BackgroundImage")));
             this.BtnLetraA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraA.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -838,7 +838,7 @@
             // 
             // BtnLetraP
             // 
-            this.BtnLetraP.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraP.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraP.BackgroundImage")));
             this.BtnLetraP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraP.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -854,7 +854,7 @@
             // 
             // BtnLetraO
             // 
-            this.BtnLetraO.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraO.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraO.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraO.BackgroundImage")));
             this.BtnLetraO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraO.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -870,7 +870,7 @@
             // 
             // BtnLetraI
             // 
-            this.BtnLetraI.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraI.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraI.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraI.BackgroundImage")));
             this.BtnLetraI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraI.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -886,7 +886,7 @@
             // 
             // BtnLetraU
             // 
-            this.BtnLetraU.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraU.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraU.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraU.BackgroundImage")));
             this.BtnLetraU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraU.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -902,7 +902,7 @@
             // 
             // BtnLetraY
             // 
-            this.BtnLetraY.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraY.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraY.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraY.BackgroundImage")));
             this.BtnLetraY.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraY.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -918,7 +918,7 @@
             // 
             // BtnLetraT
             // 
-            this.BtnLetraT.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraT.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraT.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraT.BackgroundImage")));
             this.BtnLetraT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraT.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -934,7 +934,7 @@
             // 
             // BtnLetraR
             // 
-            this.BtnLetraR.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraR.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraR.BackgroundImage")));
             this.BtnLetraR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraR.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -950,7 +950,7 @@
             // 
             // BtnLetraE
             // 
-            this.BtnLetraE.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraE.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraE.BackgroundImage")));
             this.BtnLetraE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraE.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -966,7 +966,7 @@
             // 
             // BtnLetraW
             // 
-            this.BtnLetraW.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraW.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraW.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraW.BackgroundImage")));
             this.BtnLetraW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraW.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -982,7 +982,7 @@
             // 
             // BtnLetraQ
             // 
-            this.BtnLetraQ.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnLetraQ.BackColor = System.Drawing.Color.Plum;
             this.BtnLetraQ.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLetraQ.BackgroundImage")));
             this.BtnLetraQ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLetraQ.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -1000,6 +1000,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImage = global::Cupediarum.Properties.Resources.Fondo_Degradado;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(734, 575);
             this.Controls.Add(this.PnlTecladoAlf);

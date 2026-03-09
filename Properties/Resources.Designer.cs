@@ -63,6 +63,16 @@ namespace Cupediarum.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BackGroundImage {
+            get {
+                object obj = ResourceManager.GetObject("BackGroundImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CupediarumLogo {
             get {
                 object obj = ResourceManager.GetObject("CupediarumLogo", resourceCulture);
@@ -83,9 +93,29 @@ namespace Cupediarum.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FBAzul1 {
+            get {
+                object obj = ResourceManager.GetObject("FBAzul1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FBNaranja {
             get {
                 object obj = ResourceManager.GetObject("FBNaranja", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fondo_Degradado {
+            get {
+                object obj = ResourceManager.GetObject("Fondo_Degradado", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -586,6 +616,26 @@ namespace Cupediarum.Properties {
         internal static System.Drawing.Bitmap Icono_Table48 {
             get {
                 object obj = ResourceManager.GetObject("Icono_Table48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icono_Usuarios {
+            get {
+                object obj = ResourceManager.GetObject("Icono_Usuarios", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_CP {
+            get {
+                object obj = ResourceManager.GetObject("Logo_CP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

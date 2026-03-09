@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMesero));
-            this.MnuMesero = new System.Windows.Forms.MenuStrip();
-            this.configurarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlDatosMesero = new System.Windows.Forms.Panel();
             this.TxtClave = new System.Windows.Forms.TextBox();
             this.BtnMesero = new System.Windows.Forms.Button();
@@ -54,35 +51,9 @@
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnPunto = new System.Windows.Forms.Button();
             this.BtnNum0 = new System.Windows.Forms.Button();
-            this.MnuMesero.SuspendLayout();
             this.PnlDatosMesero.SuspendLayout();
             this.PnlTecladoNum.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // MnuMesero
-            // 
-            this.MnuMesero.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.MnuMesero.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.MnuMesero.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.configurarToolStripMenuItem,
-            this.acercaDeToolStripMenuItem});
-            this.MnuMesero.Location = new System.Drawing.Point(0, 0);
-            this.MnuMesero.Name = "MnuMesero";
-            this.MnuMesero.Size = new System.Drawing.Size(743, 33);
-            this.MnuMesero.TabIndex = 17;
-            this.MnuMesero.Text = "menuStrip1";
-            // 
-            // configurarToolStripMenuItem
-            // 
-            this.configurarToolStripMenuItem.Name = "configurarToolStripMenuItem";
-            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
-            this.configurarToolStripMenuItem.Text = "Configurar";
-            // 
-            // acercaDeToolStripMenuItem
-            // 
-            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
-            this.acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // PnlDatosMesero
             // 
@@ -90,7 +61,7 @@
             this.PnlDatosMesero.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PnlDatosMesero.Controls.Add(this.TxtClave);
             this.PnlDatosMesero.Controls.Add(this.BtnMesero);
-            this.PnlDatosMesero.Location = new System.Drawing.Point(58, 176);
+            this.PnlDatosMesero.Location = new System.Drawing.Point(13, 142);
             this.PnlDatosMesero.Name = "PnlDatosMesero";
             this.PnlDatosMesero.Size = new System.Drawing.Size(382, 83);
             this.PnlDatosMesero.TabIndex = 53;
@@ -105,11 +76,11 @@
             // 
             // BtnMesero
             // 
-            this.BtnMesero.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnMesero.BackColor = System.Drawing.Color.Plum;
             this.BtnMesero.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnMesero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnMesero.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.BtnMesero.FlatAppearance.BorderSize = 3;
+            this.BtnMesero.FlatAppearance.BorderSize = 2;
             this.BtnMesero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMesero.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMesero.Image = global::Cupediarum.Properties.Resources.Icono_Mesero;
@@ -144,14 +115,14 @@
             this.PnlTecladoNum.Controls.Add(this.BtnCancelar);
             this.PnlTecladoNum.Controls.Add(this.BtnPunto);
             this.PnlTecladoNum.Controls.Add(this.BtnNum0);
-            this.PnlTecladoNum.Location = new System.Drawing.Point(485, 36);
+            this.PnlTecladoNum.Location = new System.Drawing.Point(426, 1);
             this.PnlTecladoNum.Name = "PnlTecladoNum";
             this.PnlTecladoNum.Size = new System.Drawing.Size(253, 375);
             this.PnlTecladoNum.TabIndex = 55;
             // 
             // BtnBorrar
             // 
-            this.BtnBorrar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnBorrar.BackColor = System.Drawing.Color.Plum;
             this.BtnBorrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBorrar.BackgroundImage")));
             this.BtnBorrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnBorrar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -170,7 +141,7 @@
             // 
             // BtnAceptar
             // 
-            this.BtnAceptar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAceptar.BackColor = System.Drawing.Color.Plum;
             this.BtnAceptar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAceptar.BackgroundImage")));
             this.BtnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
@@ -187,7 +158,7 @@
             // 
             // BtnGuion
             // 
-            this.BtnGuion.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnGuion.BackColor = System.Drawing.Color.Plum;
             this.BtnGuion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnGuion.BackgroundImage")));
             this.BtnGuion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnGuion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -203,7 +174,7 @@
             // 
             // BtnAsterisco
             // 
-            this.BtnAsterisco.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAsterisco.BackColor = System.Drawing.Color.Plum;
             this.BtnAsterisco.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAsterisco.BackgroundImage")));
             this.BtnAsterisco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnAsterisco.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -219,7 +190,7 @@
             // 
             // BtnSlash
             // 
-            this.BtnSlash.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnSlash.BackColor = System.Drawing.Color.Plum;
             this.BtnSlash.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSlash.BackgroundImage")));
             this.BtnSlash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnSlash.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -235,7 +206,7 @@
             // 
             // BtnGuionBajo
             // 
-            this.BtnGuionBajo.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnGuionBajo.BackColor = System.Drawing.Color.Plum;
             this.BtnGuionBajo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnGuionBajo.BackgroundImage")));
             this.BtnGuionBajo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnGuionBajo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -251,7 +222,7 @@
             // 
             // BtnNum9
             // 
-            this.BtnNum9.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum9.BackColor = System.Drawing.Color.Plum;
             this.BtnNum9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum9.BackgroundImage")));
             this.BtnNum9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -267,7 +238,7 @@
             // 
             // BtnNum8
             // 
-            this.BtnNum8.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum8.BackColor = System.Drawing.Color.Plum;
             this.BtnNum8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum8.BackgroundImage")));
             this.BtnNum8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -283,7 +254,7 @@
             // 
             // BtnNum7
             // 
-            this.BtnNum7.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum7.BackColor = System.Drawing.Color.Plum;
             this.BtnNum7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum7.BackgroundImage")));
             this.BtnNum7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -299,7 +270,7 @@
             // 
             // BtnNum6
             // 
-            this.BtnNum6.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum6.BackColor = System.Drawing.Color.Plum;
             this.BtnNum6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum6.BackgroundImage")));
             this.BtnNum6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -315,7 +286,7 @@
             // 
             // BtnNum5
             // 
-            this.BtnNum5.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum5.BackColor = System.Drawing.Color.Plum;
             this.BtnNum5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum5.BackgroundImage")));
             this.BtnNum5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -331,7 +302,7 @@
             // 
             // BtnNum4
             // 
-            this.BtnNum4.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum4.BackColor = System.Drawing.Color.Plum;
             this.BtnNum4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum4.BackgroundImage")));
             this.BtnNum4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -347,7 +318,7 @@
             // 
             // BtnNum3
             // 
-            this.BtnNum3.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum3.BackColor = System.Drawing.Color.Plum;
             this.BtnNum3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum3.BackgroundImage")));
             this.BtnNum3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -363,7 +334,7 @@
             // 
             // BtnNum2
             // 
-            this.BtnNum2.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum2.BackColor = System.Drawing.Color.Plum;
             this.BtnNum2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum2.BackgroundImage")));
             this.BtnNum2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -379,7 +350,7 @@
             // 
             // BtnNum1
             // 
-            this.BtnNum1.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum1.BackColor = System.Drawing.Color.Plum;
             this.BtnNum1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum1.BackgroundImage")));
             this.BtnNum1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -395,7 +366,7 @@
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnCancelar.BackColor = System.Drawing.Color.Plum;
             this.BtnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.BackgroundImage")));
             this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
@@ -412,7 +383,7 @@
             // 
             // BtnPunto
             // 
-            this.BtnPunto.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnPunto.BackColor = System.Drawing.Color.Plum;
             this.BtnPunto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPunto.BackgroundImage")));
             this.BtnPunto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnPunto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -428,7 +399,7 @@
             // 
             // BtnNum0
             // 
-            this.BtnNum0.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum0.BackColor = System.Drawing.Color.Plum;
             this.BtnNum0.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnNum0.BackgroundImage")));
             this.BtnNum0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -446,31 +417,27 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImage = global::Cupediarum.Properties.Resources.Fondo_Degradado;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(743, 414);
+            this.ClientSize = new System.Drawing.Size(680, 381);
             this.Controls.Add(this.PnlTecladoNum);
             this.Controls.Add(this.PnlDatosMesero);
-            this.Controls.Add(this.MnuMesero);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmMesero";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MESERO";
             this.Load += new System.EventHandler(this.FrmMesero_Load);
-            this.MnuMesero.ResumeLayout(false);
-            this.MnuMesero.PerformLayout();
             this.PnlDatosMesero.ResumeLayout(false);
             this.PnlDatosMesero.PerformLayout();
             this.PnlTecladoNum.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.MenuStrip MnuMesero;
-        private System.Windows.Forms.ToolStripMenuItem configurarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.Panel PnlDatosMesero;
         private System.Windows.Forms.TextBox TxtClave;
         private System.Windows.Forms.Button BtnMesero;

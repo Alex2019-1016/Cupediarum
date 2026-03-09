@@ -83,7 +83,7 @@
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnCancelar.BackColor = System.Drawing.Color.Plum;
             this.BtnCancelar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
@@ -101,7 +101,7 @@
             // 
             // BtnAceptar
             // 
-            this.BtnAceptar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAceptar.BackColor = System.Drawing.Color.Plum;
             this.BtnAceptar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
@@ -120,7 +120,7 @@
             // 
             // BtnBorrar
             // 
-            this.BtnBorrar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnBorrar.BackColor = System.Drawing.Color.Plum;
             this.BtnBorrar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnBorrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnBorrar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -140,7 +140,7 @@
             // 
             // BtnPunto
             // 
-            this.BtnPunto.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnPunto.BackColor = System.Drawing.Color.Plum;
             this.BtnPunto.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnPunto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnPunto.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -156,7 +156,7 @@
             // 
             // BtnNum0
             // 
-            this.BtnNum0.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum0.BackColor = System.Drawing.Color.Plum;
             this.BtnNum0.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnNum0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -172,7 +172,7 @@
             // 
             // BtnNum3
             // 
-            this.BtnNum3.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum3.BackColor = System.Drawing.Color.Plum;
             this.BtnNum3.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnNum3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -188,7 +188,7 @@
             // 
             // BtnNum2
             // 
-            this.BtnNum2.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum2.BackColor = System.Drawing.Color.Plum;
             this.BtnNum2.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnNum2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -204,7 +204,7 @@
             // 
             // BtnNum1
             // 
-            this.BtnNum1.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum1.BackColor = System.Drawing.Color.Plum;
             this.BtnNum1.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnNum1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -220,7 +220,7 @@
             // 
             // BtnNum6
             // 
-            this.BtnNum6.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum6.BackColor = System.Drawing.Color.Plum;
             this.BtnNum6.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnNum6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -236,7 +236,7 @@
             // 
             // BtnNum5
             // 
-            this.BtnNum5.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum5.BackColor = System.Drawing.Color.Plum;
             this.BtnNum5.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnNum5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -252,7 +252,7 @@
             // 
             // BtnNum4
             // 
-            this.BtnNum4.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum4.BackColor = System.Drawing.Color.Plum;
             this.BtnNum4.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnNum4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -268,7 +268,7 @@
             // 
             // BtnNum9
             // 
-            this.BtnNum9.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum9.BackColor = System.Drawing.Color.Plum;
             this.BtnNum9.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnNum9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -284,7 +284,7 @@
             // 
             // BtnNum8
             // 
-            this.BtnNum8.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum8.BackColor = System.Drawing.Color.Plum;
             this.BtnNum8.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnNum8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -300,7 +300,7 @@
             // 
             // BtnNum7
             // 
-            this.BtnNum7.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnNum7.BackColor = System.Drawing.Color.Plum;
             this.BtnNum7.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnNum7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNum7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -318,6 +318,8 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImage = global::Cupediarum.Properties.Resources.Fondo_Degradado;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(250, 451);
             this.Controls.Add(this.PnlCantidadPersonas);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

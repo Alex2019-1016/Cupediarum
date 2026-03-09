@@ -65,7 +65,7 @@
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnCancelar.BackColor = System.Drawing.Color.Plum;
             this.BtnCancelar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
@@ -85,7 +85,7 @@
             // 
             // BtnAbrirMesa
             // 
-            this.BtnAbrirMesa.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAbrirMesa.BackColor = System.Drawing.Color.Plum;
             this.BtnAbrirMesa.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnAbrirMesa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnAbrirMesa.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
@@ -105,7 +105,7 @@
             // 
             // BtnPersonas
             // 
-            this.BtnPersonas.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnPersonas.BackColor = System.Drawing.Color.Plum;
             this.BtnPersonas.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnPersonas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnPersonas.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
@@ -123,7 +123,7 @@
             // 
             // BtnCuenta
             // 
-            this.BtnCuenta.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnCuenta.BackColor = System.Drawing.Color.Plum;
             this.BtnCuenta.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnCuenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnCuenta.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
@@ -141,7 +141,7 @@
             // 
             // PnlDatosCuenta
             // 
-            this.PnlDatosCuenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PnlDatosCuenta.BackColor = System.Drawing.Color.Transparent;
             this.PnlDatosCuenta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PnlDatosCuenta.Controls.Add(this.LblNombArea);
             this.PnlDatosCuenta.Controls.Add(this.DtpFecha);
@@ -274,6 +274,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImage = global::Cupediarum.Properties.Resources.Fondo_Degradado;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(645, 322);
             this.Controls.Add(this.label2);

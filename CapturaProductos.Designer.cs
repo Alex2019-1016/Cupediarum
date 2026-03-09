@@ -105,13 +105,13 @@
             // configurarToolStripMenuItem
             // 
             this.configurarToolStripMenuItem.Name = "configurarToolStripMenuItem";
-            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
+            this.configurarToolStripMenuItem.Size = new System.Drawing.Size(112, 30);
             this.configurarToolStripMenuItem.Text = "Configurar";
             // 
             // acercaToolStripMenuItem
             // 
             this.acercaToolStripMenuItem.Name = "acercaToolStripMenuItem";
-            this.acercaToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
+            this.acercaToolStripMenuItem.Size = new System.Drawing.Size(105, 30);
             this.acercaToolStripMenuItem.Text = "Acerca de";
             // 
             // menuStrip1
@@ -123,7 +123,7 @@
             this.acercaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1199, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1199, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -149,7 +149,7 @@
             // 
             // BtnComentario
             // 
-            this.BtnComentario.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnComentario.BackColor = System.Drawing.Color.Plum;
             this.BtnComentario.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnComentario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnComentario.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
@@ -168,7 +168,7 @@
             // 
             // BtnComandas
             // 
-            this.BtnComandas.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnComandas.BackColor = System.Drawing.Color.Plum;
             this.BtnComandas.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnComandas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnComandas.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
@@ -187,7 +187,7 @@
             // 
             // BtnAceptar
             // 
-            this.BtnAceptar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnAceptar.BackColor = System.Drawing.Color.Plum;
             this.BtnAceptar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
@@ -205,7 +205,7 @@
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnCancelar.BackColor = System.Drawing.Color.Plum;
             this.BtnCancelar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
@@ -223,7 +223,7 @@
             // 
             // BtnDescuento
             // 
-            this.BtnDescuento.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnDescuento.BackColor = System.Drawing.Color.Plum;
             this.BtnDescuento.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnDescuento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnDescuento.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
@@ -240,7 +240,7 @@
             // 
             // BtnMenos
             // 
-            this.BtnMenos.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnMenos.BackColor = System.Drawing.Color.Plum;
             this.BtnMenos.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnMenos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnMenos.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
@@ -258,7 +258,7 @@
             // 
             // BtnMas
             // 
-            this.BtnMas.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnMas.BackColor = System.Drawing.Color.Plum;
             this.BtnMas.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnMas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnMas.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
@@ -286,7 +286,7 @@
             // 
             // BtnBorrarTodo
             // 
-            this.BtnBorrarTodo.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnBorrarTodo.BackColor = System.Drawing.Color.Plum;
             this.BtnBorrarTodo.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
             this.BtnBorrarTodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnBorrarTodo.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
@@ -306,7 +306,7 @@
             // 
             // BtnBorrarProducto
             // 
-            this.BtnBorrarProducto.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnBorrarProducto.BackColor = System.Drawing.Color.Plum;
             this.BtnBorrarProducto.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
             this.BtnBorrarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnBorrarProducto.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
@@ -417,11 +417,11 @@
             // 
             this.LblTotal.AutoSize = true;
             this.LblTotal.BackColor = System.Drawing.Color.Transparent;
-            this.LblTotal.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTotal.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTotal.ForeColor = System.Drawing.Color.White;
             this.LblTotal.Location = new System.Drawing.Point(3, 558);
             this.LblTotal.Name = "LblTotal";
-            this.LblTotal.Size = new System.Drawing.Size(62, 20);
+            this.LblTotal.Size = new System.Drawing.Size(69, 20);
             this.LblTotal.TabIndex = 23;
             this.LblTotal.Text = "TOTAL";
             // 
@@ -439,7 +439,7 @@
             // 
             // BtnComida
             // 
-            this.BtnComida.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnComida.BackColor = System.Drawing.Color.Plum;
             this.BtnComida.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnComida.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnComida.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
@@ -458,7 +458,7 @@
             // 
             // BtnPostres
             // 
-            this.BtnPostres.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnPostres.BackColor = System.Drawing.Color.Plum;
             this.BtnPostres.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnPostres.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnPostres.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
@@ -477,7 +477,7 @@
             // 
             // BtnBebidas
             // 
-            this.BtnBebidas.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnBebidas.BackColor = System.Drawing.Color.Plum;
             this.BtnBebidas.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnBebidas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnBebidas.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
@@ -496,7 +496,7 @@
             // 
             // BtnOtros
             // 
-            this.BtnOtros.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnOtros.BackColor = System.Drawing.Color.Plum;
             this.BtnOtros.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
             this.BtnOtros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnOtros.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;

@@ -52,7 +52,7 @@
             // 
             // BtnCerrar
             // 
-            this.BtnCerrar.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnCerrar.BackColor = System.Drawing.Color.Plum;
             this.BtnCerrar.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
             this.BtnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
@@ -109,7 +109,7 @@
             // FrmPrecios
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1020, 651);
             this.Controls.Add(this.DgvPrecios);
             this.Controls.Add(this.panel1);

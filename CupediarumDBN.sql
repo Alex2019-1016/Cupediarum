@@ -87,7 +87,9 @@ INSERT INTO CATEGORIAS (Nomb_Categoria, Id_CategoriaPadre) VALUES
 ('RON', 2),
 ('COCTELES', 2),
 ('COCTELES SIN ALCOHOL', 2),
-('JUGOS NATURALES', 2);----BEBIDAS
+('JUGOS NATURALES', 2),
+('AGUAS', 2),
+('SODAS', 2);----BEBIDAS
 
 INSERT INTO CATEGORIAS (Nomb_Categoria, Id_CategoriaPadre) VALUES
 ('CHICLES', 4),
@@ -119,7 +121,7 @@ ORDER BY CP.Nomb_Categoria, C.Nomb_Categoria;
 ---------------------------------------------------------------------------------------
 
 CREATE TABLE PRODUCTOS (
-IdProducto INT IDENTITY(1,1) PRIMARY KEY,
+Id_Producto INT IDENTITY(1,1) PRIMARY KEY,
 Nomb_Producto VARCHAR(100) NOT NULL,
 Precio DECIMAL(10,2) NOT NULL,
 Id_Categoria INT NOT NULL,
@@ -335,7 +337,7 @@ INSERT INTO PRODUCTOS(Nomb_Producto, Precio, Id_Categoria) VALUES
 ('TABLA MIXTA P8',2650.00,27);------PARRILADAS
 
 INSERT INTO PRODUCTOS(Nomb_Producto, Precio, Id_Categoria) VALUES
-('MOGONGO DE CHICHARRON',500.00,28),
+('MOFONGO DE CHICHARRON',500.00,28),
 ('MOFONGO DE POLLO',500.00,28),
 ('MOFONGO DE CAMARONES',575.00,28),
 ('MOFONGO MIXTO',700.00,28);-----MOFONGOS
@@ -390,9 +392,10 @@ CREATE TABLE DETALLE_CUENTA (
     Subtotal AS (Cantidad * Precio) PERSISTED,
     Comentarios VARCHAR(255),
     CONSTRAINT FK__Cuentas
-        FOREIGN KEY (Id_Cuenta) REFERENCES Cuentas(Id_Cuenta),
+        FOREIGN KEY (Id_Cuenta) REFERENCES CUENTAS(Id_Cuenta),
     CONSTRAINT FK_DetalleCuenta_Productos
-        FOREIGN KEY (Id_Producto) REFERENCES Productos(IdProducto)
+        FOREIGN KEY (Id_Producto) REFERENCES PRODUCTOS(Id_Producto)
 );
 
-SELECT * FROM DETALLE_CUENTA DROP TABLE DETALLE_CUENTA
+SELECT * FROM DETALLE_CUENTA DROP TABLE DETALLE_CUENTA 
+

@@ -198,8 +198,6 @@ namespace Cupediarum
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
-            FrmMenuPrincipal frm = new FrmMenuPrincipal();
-            frm.Show();
             this.Hide();
         }
 

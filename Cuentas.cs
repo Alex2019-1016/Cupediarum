@@ -115,7 +115,9 @@ namespace Cupediarum
             cuentaSeleccionada = (int) btn.Tag;
 
             FrmOpcionesMesero frm = new FrmOpcionesMesero(cuentaSeleccionada);
-            frm.Show();
+            frm.ShowDialog();
+            this.Hide();
+
         }
 
         private void CargarAreasEnPanel()
@@ -151,9 +153,9 @@ namespace Cupediarum
                             Tag = idArea,
                             BackgroundImage = Properties.Resources.FBNaranja,
                             BackgroundImageLayout = ImageLayout.Stretch,
-                            BackColor = Color.LightCoral,
+                            BackColor = Color.Plum,
                             FlatStyle = FlatStyle.Flat,
-                            FlatAppearance = { BorderSize = 3, BorderColor = Color.Cyan },
+                            FlatAppearance = { BorderSize = 3, BorderColor = Color.Salmon},
                             Font = new Font("Times New Roman", 12, FontStyle.Bold),
                         };
 
@@ -181,7 +183,7 @@ namespace Cupediarum
             foreach (Button b in FlpAreas.Controls)
                 b.BackColor = Color.DarkGray;
 
-            btn.BackColor = Color.LightGreen;
+            btn.BackColor = Color.Cyan;
         }
 
         private void BtnAgregarCuenta_Click(object sender, EventArgs e)

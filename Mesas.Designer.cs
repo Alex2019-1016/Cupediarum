@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMesas));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PnlCuenta = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.LblCantCuentas = new System.Windows.Forms.Label();
@@ -197,14 +197,14 @@
             this.DgvCuentas.RowHeadersVisible = false;
             this.DgvCuentas.RowHeadersWidth = 62;
             this.DgvCuentas.RowTemplate.Height = 28;
-            this.DgvCuentas.Size = new System.Drawing.Size(365, 564);
+            this.DgvCuentas.Size = new System.Drawing.Size(365, 548);
             this.DgvCuentas.TabIndex = 18;
             this.DgvCuentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvCuentas_CellContentClick);
             // 
             // CUENTA
             // 
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CUENTA.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CUENTA.DefaultCellStyle = dataGridViewCellStyle6;
             this.CUENTA.HeaderText = "CUENTA";
             this.CUENTA.MinimumWidth = 8;
             this.CUENTA.Name = "CUENTA";
@@ -213,10 +213,10 @@
             // 
             // IMPRESA
             // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.NullValue = false;
-            this.IMPRESA.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.NullValue = false;
+            this.IMPRESA.DefaultCellStyle = dataGridViewCellStyle7;
             this.IMPRESA.HeaderText = "IMPRESA";
             this.IMPRESA.MinimumWidth = 8;
             this.IMPRESA.Name = "IMPRESA";
@@ -241,13 +241,13 @@
             this.FlpOpciones.Controls.Add(this.BtnCambiarMesero);
             this.FlpOpciones.Controls.Add(this.BtnEliminarProducto);
             this.FlpOpciones.Controls.Add(this.BtnImprimir);
-            this.FlpOpciones.Controls.Add(this.BtnCerrar);
             this.FlpOpciones.Controls.Add(this.BtnAgregar);
+            this.FlpOpciones.Controls.Add(this.BtnCerrar);
             this.FlpOpciones.Controls.Add(this.BtnPagarCuenta);
             this.FlpOpciones.Controls.Add(this.BtnDescuento);
             this.FlpOpciones.Location = new System.Drawing.Point(379, 3);
             this.FlpOpciones.Name = "FlpOpciones";
-            this.FlpOpciones.Size = new System.Drawing.Size(728, 164);
+            this.FlpOpciones.Size = new System.Drawing.Size(728, 143);
             this.FlpOpciones.TabIndex = 19;
             // 
             // BtnAbrirCuenta
@@ -263,7 +263,7 @@
             this.BtnAbrirCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAbrirCuenta.Location = new System.Drawing.Point(3, 3);
             this.BtnAbrirCuenta.Name = "BtnAbrirCuenta";
-            this.BtnAbrirCuenta.Size = new System.Drawing.Size(125, 71);
+            this.BtnAbrirCuenta.Size = new System.Drawing.Size(111, 60);
             this.BtnAbrirCuenta.TabIndex = 11;
             this.BtnAbrirCuenta.Text = "Abrir Cuenta";
             this.BtnAbrirCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -280,9 +280,9 @@
             this.BtnCambiarMesero.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCambiarMesero.Image = global::Cupediarum.Properties.Resources.Icono_Mesero;
             this.BtnCambiarMesero.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCambiarMesero.Location = new System.Drawing.Point(134, 3);
+            this.BtnCambiarMesero.Location = new System.Drawing.Point(120, 3);
             this.BtnCambiarMesero.Name = "BtnCambiarMesero";
-            this.BtnCambiarMesero.Size = new System.Drawing.Size(125, 71);
+            this.BtnCambiarMesero.Size = new System.Drawing.Size(111, 60);
             this.BtnCambiarMesero.TabIndex = 16;
             this.BtnCambiarMesero.Text = "Cambiar Mesero";
             this.BtnCambiarMesero.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -299,9 +299,9 @@
             this.BtnEliminarProducto.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEliminarProducto.Image = global::Cupediarum.Properties.Resources.Icono_Delete;
             this.BtnEliminarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEliminarProducto.Location = new System.Drawing.Point(265, 3);
+            this.BtnEliminarProducto.Location = new System.Drawing.Point(237, 3);
             this.BtnEliminarProducto.Name = "BtnEliminarProducto";
-            this.BtnEliminarProducto.Size = new System.Drawing.Size(125, 71);
+            this.BtnEliminarProducto.Size = new System.Drawing.Size(111, 60);
             this.BtnEliminarProducto.TabIndex = 12;
             this.BtnEliminarProducto.Text = "Elim. Producto";
             this.BtnEliminarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -318,9 +318,9 @@
             this.BtnImprimir.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnImprimir.Image = global::Cupediarum.Properties.Resources.Icono_Imprimir;
             this.BtnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnImprimir.Location = new System.Drawing.Point(396, 3);
+            this.BtnImprimir.Location = new System.Drawing.Point(354, 3);
             this.BtnImprimir.Name = "BtnImprimir";
-            this.BtnImprimir.Size = new System.Drawing.Size(125, 71);
+            this.BtnImprimir.Size = new System.Drawing.Size(111, 60);
             this.BtnImprimir.TabIndex = 15;
             this.BtnImprimir.Text = "Imprim.";
             this.BtnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -337,9 +337,9 @@
             this.BtnCerrar.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCerrar.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
             this.BtnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCerrar.Location = new System.Drawing.Point(527, 3);
+            this.BtnCerrar.Location = new System.Drawing.Point(588, 3);
             this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.Size = new System.Drawing.Size(125, 71);
+            this.BtnCerrar.Size = new System.Drawing.Size(111, 60);
             this.BtnCerrar.TabIndex = 18;
             this.BtnCerrar.Text = "Cerrar";
             this.BtnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -356,9 +356,9 @@
             this.BtnAgregar.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAgregar.Image = global::Cupediarum.Properties.Resources.Icono_Agregar;
             this.BtnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregar.Location = new System.Drawing.Point(3, 80);
+            this.BtnAgregar.Location = new System.Drawing.Point(471, 3);
             this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(125, 71);
+            this.BtnAgregar.Size = new System.Drawing.Size(111, 60);
             this.BtnAgregar.TabIndex = 14;
             this.BtnAgregar.Text = "Agregar";
             this.BtnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -375,9 +375,9 @@
             this.BtnPagarCuenta.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPagarCuenta.Image = global::Cupediarum.Properties.Resources.Icono_Pagar48;
             this.BtnPagarCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnPagarCuenta.Location = new System.Drawing.Point(134, 80);
+            this.BtnPagarCuenta.Location = new System.Drawing.Point(3, 69);
             this.BtnPagarCuenta.Name = "BtnPagarCuenta";
-            this.BtnPagarCuenta.Size = new System.Drawing.Size(125, 71);
+            this.BtnPagarCuenta.Size = new System.Drawing.Size(111, 60);
             this.BtnPagarCuenta.TabIndex = 17;
             this.BtnPagarCuenta.Text = "Pagar Cuenta";
             this.BtnPagarCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -392,11 +392,11 @@
             this.BtnDescuento.FlatAppearance.BorderSize = 3;
             this.BtnDescuento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDescuento.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDescuento.Image = global::Cupediarum.Properties.Resources.Icono_Descuento;
+            this.BtnDescuento.Image = global::Cupediarum.Properties.Resources.Icono_Descuento48;
             this.BtnDescuento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDescuento.Location = new System.Drawing.Point(265, 80);
+            this.BtnDescuento.Location = new System.Drawing.Point(120, 69);
             this.BtnDescuento.Name = "BtnDescuento";
-            this.BtnDescuento.Size = new System.Drawing.Size(125, 71);
+            this.BtnDescuento.Size = new System.Drawing.Size(111, 60);
             this.BtnDescuento.TabIndex = 19;
             this.BtnDescuento.Text = "Desc.";
             this.BtnDescuento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -420,7 +420,7 @@
             this.PnlDatosCuenta.Controls.Add(this.label7);
             this.PnlDatosCuenta.Controls.Add(this.label6);
             this.PnlDatosCuenta.Controls.Add(this.LblCuenta);
-            this.PnlDatosCuenta.Location = new System.Drawing.Point(381, 173);
+            this.PnlDatosCuenta.Location = new System.Drawing.Point(381, 152);
             this.PnlDatosCuenta.Name = "PnlDatosCuenta";
             this.PnlDatosCuenta.Size = new System.Drawing.Size(726, 132);
             this.PnlDatosCuenta.TabIndex = 20;
@@ -593,8 +593,8 @@
             // 
             this.DgvComanda.AllowUserToAddRows = false;
             this.DgvComanda.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.DgvComanda.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DgvComanda.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
             this.DgvComanda.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.DgvComanda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvComanda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -604,7 +604,7 @@
             this.DESCRIPCION,
             this.DESCUENTO,
             this.PRECIO});
-            this.DgvComanda.Location = new System.Drawing.Point(381, 312);
+            this.DgvComanda.Location = new System.Drawing.Point(381, 290);
             this.DgvComanda.Name = "DgvComanda";
             this.DgvComanda.ReadOnly = true;
             this.DgvComanda.RowHeadersVisible = false;
@@ -615,8 +615,8 @@
             // 
             // COMANDA
             // 
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.COMANDA.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.COMANDA.DefaultCellStyle = dataGridViewCellStyle9;
             this.COMANDA.HeaderText = "COMANDA";
             this.COMANDA.MinimumWidth = 8;
             this.COMANDA.Name = "COMANDA";
@@ -625,8 +625,8 @@
             // 
             // CANTIDAD
             // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CANTIDAD.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CANTIDAD.DefaultCellStyle = dataGridViewCellStyle10;
             this.CANTIDAD.HeaderText = "CANT.";
             this.CANTIDAD.MinimumWidth = 8;
             this.CANTIDAD.Name = "CANTIDAD";
@@ -678,7 +678,7 @@
             this.panel3.Controls.Add(this.label36);
             this.panel3.Controls.Add(this.label37);
             this.panel3.Controls.Add(this.label38);
-            this.panel3.Location = new System.Drawing.Point(660, 529);
+            this.panel3.Location = new System.Drawing.Point(660, 509);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(447, 202);
             this.panel3.TabIndex = 22;
@@ -797,7 +797,7 @@
             this.label23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label23.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(381, 531);
+            this.label23.Location = new System.Drawing.Point(381, 517);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(114, 24);
             this.label23.TabIndex = 23;
@@ -805,7 +805,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(381, 555);
+            this.richTextBox1.Location = new System.Drawing.Point(381, 541);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(273, 166);
             this.richTextBox1.TabIndex = 24;
@@ -817,7 +817,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1113, 738);
+            this.ClientSize = new System.Drawing.Size(1113, 714);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.panel3);
@@ -829,7 +829,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMesas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Mesas";
+            this.Text = "MESAS";
             this.Load += new System.EventHandler(this.FrmMesas_Load);
             this.PnlCuenta.ResumeLayout(false);
             this.PnlCuenta.PerformLayout();

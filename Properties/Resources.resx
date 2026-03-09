@@ -124,11 +124,11 @@
   <data name="Icono_Descuento" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Descuento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Logo_CP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Logo_CP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icono_Cancelar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Cancelar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icono_Otros" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_Otros.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,6 +148,12 @@
   <data name="Icono_Agregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CupediarumLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\CupediarumLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BackGroundImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\BackGroundImage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icono_Monitor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Monitor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,11 +166,8 @@
   <data name="Icono_Menos32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icono_Menos32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_Consultar64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icono_Consultar641.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icono_Caja" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_Caja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_AbrirCuenta48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_AbrirCuenta48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_CorteCaja48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icono_CorteCaja48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,29 +190,41 @@
   <data name="Icono_Mesero" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Mesero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Fondo_Degradado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Fondo_Degradado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icono_Reabrir64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icono_Reabrir64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_AbrirTurno48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icono_AbrirTurno481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_PagarCuenta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_PagarCuenta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Comandas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Comandas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FBNaranja" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\FBNaranja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Icono_Cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icono_Descuento48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Descuento48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FBAzul1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\FBAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Icono_Pedidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Pedidos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icono_CerrarTurno48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icono_CerrarTurno48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_Mas32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icono_Mas32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_RDAceptar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_RDAceptar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Reloj_Cerrado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Reloj_Cerrado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,11 +232,8 @@
   <data name="Icono_Buscar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Buscar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_AbrirCuenta48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icono_AbrirCuenta48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icono_People" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_People.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_AgregarCuenta48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_AgregarCuenta48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_Postres" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Postres.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,17 +241,20 @@
   <data name="Icono_Reservas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Reservas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_AgregarCuenta48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_AgregarCuenta48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Precios48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Precios48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_AbrirCuenta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_AbrirCuenta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_Aceptar64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_Aceptar64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Caja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Caja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CupediarumLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\CupediarumLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Search32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Search32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_Mas32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_Mas32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_Personas48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icono_Personas48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,11 +271,11 @@
   <data name="Icono_RDCancelar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_RDCancelar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_Comandas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_Comandas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Consultar64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_Consultar641.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_Mas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_Mas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Aceptar64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Aceptar64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono_Imprimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Imprimir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -268,19 +283,19 @@
   <data name="Icono_Borrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\Icono_Borrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_Precios48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_Precios48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Mas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Mas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_Cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_Cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_People" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_People.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_Pedidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_Pedidos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_PagarCuenta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_PagarCuenta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_RDAceptar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_RDAceptar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Otros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Otros.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono_Search32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\Icono_Search32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono_Usuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\Icono_Usuarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -77,13 +77,13 @@
             // BtnMesero
             // 
             this.BtnMesero.BackColor = System.Drawing.Color.Plum;
-            this.BtnMesero.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnMesero.BackgroundImage = global::Cupediarum.Properties.Resources.FondoAzul;
             this.BtnMesero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnMesero.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnMesero.FlatAppearance.BorderSize = 2;
             this.BtnMesero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMesero.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMesero.Image = global::Cupediarum.Properties.Resources.Icono_Mesero;
+            this.BtnMesero.Image = global::Cupediarum.Properties.Resources.Mesero64;
             this.BtnMesero.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnMesero.Location = new System.Drawing.Point(9, 4);
             this.BtnMesero.Name = "BtnMesero";
@@ -129,7 +129,7 @@
             this.BtnBorrar.FlatAppearance.BorderSize = 3;
             this.BtnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBorrar.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBorrar.Image = global::Cupediarum.Properties.Resources.Icono_Borrar;
+            this.BtnBorrar.Image = global::Cupediarum.Properties.Resources.Borrar;
             this.BtnBorrar.Location = new System.Drawing.Point(5, 310);
             this.BtnBorrar.Name = "BtnBorrar";
             this.BtnBorrar.Size = new System.Drawing.Size(246, 60);
@@ -148,7 +148,7 @@
             this.BtnAceptar.FlatAppearance.BorderSize = 3;
             this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAceptar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAceptar.Image = global::Cupediarum.Properties.Resources.Icono_Aceptar48;
+            this.BtnAceptar.Image = global::Cupediarum.Properties.Resources.Aceptar32;
             this.BtnAceptar.Location = new System.Drawing.Point(187, 66);
             this.BtnAceptar.Name = "BtnAceptar";
             this.BtnAceptar.Size = new System.Drawing.Size(60, 121);
@@ -373,7 +373,7 @@
             this.BtnCancelar.FlatAppearance.BorderSize = 3;
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Icono_Cancelar48;
+            this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Cancelar32;
             this.BtnCancelar.Location = new System.Drawing.Point(187, 188);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(60, 121);
@@ -417,7 +417,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BackgroundImage = global::Cupediarum.Properties.Resources.Fondo_Degradado;
+            this.BackgroundImage = global::Cupediarum.Properties.Resources.BackGroundImage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(680, 381);
             this.Controls.Add(this.PnlTecladoNum);

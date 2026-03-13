@@ -41,13 +41,13 @@
             // BtnSalir
             // 
             this.BtnSalir.BackColor = System.Drawing.Color.Plum;
-            this.BtnSalir.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
+            this.BtnSalir.BackgroundImage = global::Cupediarum.Properties.Resources.FondoNaranja;
             this.BtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnSalir.FlatAppearance.BorderSize = 3;
             this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSalir.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalir.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
+            this.BtnSalir.Image = global::Cupediarum.Properties.Resources.Exit;
             this.BtnSalir.Location = new System.Drawing.Point(409, 4);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(96, 139);
@@ -66,7 +66,7 @@
             this.BtnReabrir.FlatAppearance.BorderSize = 3;
             this.BtnReabrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnReabrir.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnReabrir.Image = global::Cupediarum.Properties.Resources.Icono_Reabrir64;
+            this.BtnReabrir.Image = global::Cupediarum.Properties.Resources.Reabrir48;
             this.BtnReabrir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnReabrir.Location = new System.Drawing.Point(274, 75);
             this.BtnReabrir.Name = "BtnReabrir";
@@ -85,7 +85,7 @@
             this.BtnPagar.FlatAppearance.BorderSize = 3;
             this.BtnPagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPagar.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPagar.Image = global::Cupediarum.Properties.Resources.Icono_Pagar48;
+            this.BtnPagar.Image = global::Cupediarum.Properties.Resources.Pagar48;
             this.BtnPagar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnPagar.Location = new System.Drawing.Point(139, 75);
             this.BtnPagar.Name = "BtnPagar";
@@ -104,13 +104,13 @@
             this.BtnImprimir.FlatAppearance.BorderSize = 3;
             this.BtnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnImprimir.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnImprimir.Image = global::Cupediarum.Properties.Resources.Icono_Imprimir64;
+            this.BtnImprimir.Image = global::Cupediarum.Properties.Resources.Imp64;
             this.BtnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnImprimir.Location = new System.Drawing.Point(4, 75);
             this.BtnImprimir.Name = "BtnImprimir";
             this.BtnImprimir.Size = new System.Drawing.Size(132, 68);
             this.BtnImprimir.TabIndex = 22;
-            this.BtnImprimir.Text = "IMPRIMIR";
+            this.BtnImprimir.Text = "IMP.";
             this.BtnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnImprimir.UseVisualStyleBackColor = false;
             // 
@@ -123,7 +123,7 @@
             this.BtnCambiarMesero.FlatAppearance.BorderSize = 3;
             this.BtnCambiarMesero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCambiarMesero.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCambiarMesero.Image = global::Cupediarum.Properties.Resources.Icono_Mesero;
+            this.BtnCambiarMesero.Image = global::Cupediarum.Properties.Resources.Mesero64;
             this.BtnCambiarMesero.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnCambiarMesero.Location = new System.Drawing.Point(274, 4);
             this.BtnCambiarMesero.Name = "BtnCambiarMesero";
@@ -142,8 +142,8 @@
             this.BtnConsultar.FlatAppearance.BorderSize = 3;
             this.BtnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnConsultar.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnConsultar.Image = global::Cupediarum.Properties.Resources.Icono_Consultar64;
-            this.BtnConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnConsultar.Image = global::Cupediarum.Properties.Resources.ResumenC64;
+            this.BtnConsultar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BtnConsultar.Location = new System.Drawing.Point(139, 4);
             this.BtnConsultar.Name = "BtnConsultar";
             this.BtnConsultar.Size = new System.Drawing.Size(132, 68);
@@ -161,8 +161,8 @@
             this.BtnAgregar.FlatAppearance.BorderSize = 3;
             this.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregar.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregar.Image = global::Cupediarum.Properties.Resources.Icono_Agregar;
-            this.BtnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAgregar.Image = global::Cupediarum.Properties.Resources.tap64;
+            this.BtnAgregar.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.BtnAgregar.Location = new System.Drawing.Point(4, 4);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.Size = new System.Drawing.Size(132, 68);
@@ -176,6 +176,8 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = global::Cupediarum.Properties.Resources.FondoDg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(509, 148);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnReabrir);

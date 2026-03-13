@@ -197,7 +197,7 @@ namespace Cupediarum
                         Margin = new Padding(5),
                         BackColor = Color.LightCoral,
                         Font = new Font("Times New Roman", 10, FontStyle.Bold),
-                        BackgroundImage = Properties.Resources.FBAzul,
+                        BackgroundImage = Properties.Resources.FondoAzul,
                         BackgroundImageLayout = ImageLayout.Stretch,
                         FlatStyle = FlatStyle.Flat
                     };
@@ -254,7 +254,7 @@ namespace Cupediarum
                         Text = nombre + "\n$" + precio.ToString("N2"),
                         BackColor = Color.LightCoral,
                         Font = new Font("Times New Roman", 10, FontStyle.Bold),
-                        BackgroundImage = Properties.Resources.FBNaranja,
+                        BackgroundImage = Properties.Resources.FondoNaranja,
                         BackgroundImageLayout = ImageLayout.Stretch,
                         Tag = new ProductoTemp
                         {
@@ -314,6 +314,8 @@ namespace Cupediarum
 
         private void GuardarDetalleCuenta()
         {
+            string comentario = RtbComentario.Text;
+
             string connStr = ConfigurationManager
                 .ConnectionStrings["ConexionRestaurante"]
                 .ConnectionString;
@@ -322,7 +324,6 @@ namespace Cupediarum
             {
                 conn.Open();
 
-                // 🔥 Primero borramos lo que ya exista
                 using (SqlCommand deleteCmd = new SqlCommand(
                     "DELETE FROM DETALLE_CUENTA WHERE Id_Cuenta = @IdCuenta", conn))
                 {
@@ -330,7 +331,6 @@ namespace Cupediarum
                     deleteCmd.ExecuteNonQuery();
                 }
 
-                // 🔥 Luego insertamos lo actual
                 foreach (DataGridViewRow row in DgvComanda.Rows)
                 {
                     if (row.Cells[0].Value == null)
@@ -343,9 +343,9 @@ namespace Cupediarum
                     decimal precioUnitario = subtotal / cantidad;
 
                     string query = @"INSERT INTO DETALLE_CUENTA
-                    (Id_Cuenta, Id_Producto, Cantidad, Precio, Comentarios)
+                    (Id_Cuenta, Id_Producto, Cantidad, Precio, Comentario)
                     VALUES
-                    (@IdCuenta, @IdProducto, @Cantidad, @Precio, @Comentarios)";
+                    (@IdCuenta, @IdProducto, @Cantidad, @Precio, @Comentario)";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
@@ -353,7 +353,7 @@ namespace Cupediarum
                         cmd.Parameters.AddWithValue("@IdProducto", idProducto);
                         cmd.Parameters.AddWithValue("@Cantidad", cantidad);
                         cmd.Parameters.AddWithValue("@Precio", precioUnitario);
-                        cmd.Parameters.AddWithValue("@Comentarios", DBNull.Value);
+                        cmd.Parameters.AddWithValue("@Comentario", DBNull.Value);
 
                         cmd.ExecuteNonQuery();
                     }

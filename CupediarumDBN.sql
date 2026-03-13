@@ -368,6 +368,8 @@ CREATE TABLE CUENTAS (
     Impresa BIT NOT NULL DEFAULT 0,
     Estado BIT NOT NULL DEFAULT 1,
 
+	Comentario VARCHAR(255) NULL,
+
     Id_Area INT NOT NULL,
     Id_Mesa INT NULL,
     Id_Usuario INT NOT NULL,
@@ -379,8 +381,10 @@ CREATE TABLE CUENTAS (
         FOREIGN KEY (Id_Mesa) REFERENCES MESAS(Id_Mesa),
 
     CONSTRAINT FK_Cuentas_Usuarios
-        FOREIGN KEY (Id_Usuario) REFERENCES USUARIOS(Id_Usuario)
+        FOREIGN KEY (Id_Usuario) REFERENCES USUARIOS(Id_Usuario) 
 );
+
+SELECT * FROM CUENTAS
 ---------------------------------------------------------------------------------------
 
 CREATE TABLE DETALLE_CUENTA (
@@ -389,13 +393,15 @@ CREATE TABLE DETALLE_CUENTA (
     Id_Producto INT NOT NULL,
     Cantidad INT NOT NULL,
     Precio DECIMAL(10,2) NOT NULL,
-    Subtotal AS (Cantidad * Precio) PERSISTED,
-    Comentarios VARCHAR(255),
-    CONSTRAINT FK__Cuentas
+    Descuento DECIMAL(10,2) DEFAULT 0,
+    Subtotal AS ((Cantidad * Precio) - Descuento) PERSISTED,
+    Comentario VARCHAR(255),
+
+    CONSTRAINT FK_Cuentas
         FOREIGN KEY (Id_Cuenta) REFERENCES CUENTAS(Id_Cuenta),
-    CONSTRAINT FK_DetalleCuenta_Productos
+
+    CONSTRAINT FK_DetalleCuenta_Producto
         FOREIGN KEY (Id_Producto) REFERENCES PRODUCTOS(Id_Producto)
 );
 
-SELECT * FROM DETALLE_CUENTA DROP TABLE DETALLE_CUENTA 
-
+SELECT * FROM DETALLE_CUENTA 

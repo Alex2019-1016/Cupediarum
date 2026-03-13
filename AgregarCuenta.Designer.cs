@@ -425,13 +425,13 @@
             // BtnAceptar
             // 
             this.BtnAceptar.BackColor = System.Drawing.Color.Plum;
-            this.BtnAceptar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnAceptar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAceptar.BackgroundImage")));
             this.BtnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.BtnAceptar.FlatAppearance.BorderSize = 3;
             this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAceptar.Font = new System.Drawing.Font("Times New Roman", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAceptar.Image = global::Cupediarum.Properties.Resources.Icono_RDAceptar32;
+            this.BtnAceptar.Image = global::Cupediarum.Properties.Resources.Aceptar32;
             this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnAceptar.Location = new System.Drawing.Point(539, 186);
             this.BtnAceptar.Name = "BtnAceptar";
@@ -445,13 +445,13 @@
             // BtnCancelar
             // 
             this.BtnCancelar.BackColor = System.Drawing.Color.Plum;
-            this.BtnCancelar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.BackgroundImage")));
             this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.BtnCancelar.FlatAppearance.BorderSize = 3;
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.Font = new System.Drawing.Font("Times New Roman", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Icono_RDCancelar32;
+            this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Cancelar32;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnCancelar.Location = new System.Drawing.Point(631, 186);
             this.BtnCancelar.Name = "BtnCancelar";
@@ -471,7 +471,7 @@
             this.BtnBorrar.FlatAppearance.BorderSize = 3;
             this.BtnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBorrar.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBorrar.Image = global::Cupediarum.Properties.Resources.Icono_Borrar;
+            this.BtnBorrar.Image = global::Cupediarum.Properties.Resources.Borrar;
             this.BtnBorrar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BtnBorrar.Location = new System.Drawing.Point(613, 3);
             this.BtnBorrar.Name = "BtnBorrar";
@@ -485,7 +485,7 @@
             // BtnMinuscula
             // 
             this.BtnMinuscula.BackColor = System.Drawing.Color.Plum;
-            this.BtnMinuscula.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnMinuscula.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnMinuscula.BackgroundImage")));
             this.BtnMinuscula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnMinuscula.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnMinuscula.FlatAppearance.BorderSize = 3;
@@ -502,7 +502,7 @@
             // BtnEspacio
             // 
             this.BtnEspacio.BackColor = System.Drawing.Color.Plum;
-            this.BtnEspacio.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnEspacio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnEspacio.BackgroundImage")));
             this.BtnEspacio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnEspacio.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnEspacio.FlatAppearance.BorderSize = 3;
@@ -1000,7 +1000,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BackgroundImage = global::Cupediarum.Properties.Resources.Fondo_Degradado;
+            this.BackgroundImage = global::Cupediarum.Properties.Resources.FondoDg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(734, 575);
             this.Controls.Add(this.PnlTecladoAlf);

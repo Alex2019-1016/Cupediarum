@@ -92,11 +92,11 @@ namespace Cupediarum
             this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAceptar.Font = new System.Drawing.Font("Monotype Corsiva", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAceptar.ForeColor = System.Drawing.Color.White;
-            this.BtnAceptar.Image = global::Cupediarum.Properties.Resources.Icono_Aceptar48;
+            this.BtnAceptar.Image = global::Cupediarum.Properties.Resources.Aceptar32;
             this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAceptar.Location = new System.Drawing.Point(391, 464);
+            this.BtnAceptar.Location = new System.Drawing.Point(429, 464);
             this.BtnAceptar.Name = "BtnAceptar";
-            this.BtnAceptar.Size = new System.Drawing.Size(179, 57);
+            this.BtnAceptar.Size = new System.Drawing.Size(141, 57);
             this.BtnAceptar.TabIndex = 12;
             this.BtnAceptar.Text = "Aceptar";
             this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -111,11 +111,11 @@ namespace Cupediarum
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.Font = new System.Drawing.Font("Monotype Corsiva", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
-            this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Icono_Cancelar32;
+            this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Cancelar32;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnCancelar.Location = new System.Drawing.Point(12, 464);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(179, 57);
+            this.BtnCancelar.Size = new System.Drawing.Size(141, 57);
             this.BtnCancelar.TabIndex = 11;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -125,9 +125,10 @@ namespace Cupediarum
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.BackgroundImage = global::Cupediarum.Properties.Resources.CupediarumLogo;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(579, 528);

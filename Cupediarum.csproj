@@ -36,6 +36,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -115,6 +116,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Sesion.cs" />
     <Compile Include="Usuario.cs">
       <SubType>Form</SubType>
@@ -167,11 +173,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -183,21 +184,51 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <None Include="Imagenes\BackGroundImage.jpg" />
-    <None Include="Imagenes\Fondo_Degradado.jpg" />
-    <Content Include="Imagenes\Icono_AbrirCuenta48.png" />
-    <Content Include="Imagenes\Icono_AbrirTurno48.png" />
-    <Content Include="Imagenes\Icono_Aceptar48.png" />
-    <Content Include="Imagenes\Icono_Aceptar64.png" />
-    <Content Include="Imagenes\Icono_Agregar.png" />
-    <None Include="Imagenes\Icono_AgregarCuenta48.png" />
-    <Content Include="Imagenes\Icono_Bebidas.png" />
-    <None Include="Imagenes\Icono_Buscar32.png" />
-    <Content Include="Imagenes\Icono_Cancelar48.png" />
-    <Content Include="Imagenes\Icono_Cancelar64.png" />
-    <Content Include="Imagenes\Icono_CerrarTurno48.png" />
-    <Content Include="Imagenes\Icono_Cliente.png" />
-    <Content Include="Imagenes\Icono_Comandas.png" />
+    <None Include="Img\Cuenta48.png" />
+    <None Include="Img\Descuento48.png" />
+    <None Include="Img\AbrirCuenta48.png" />
+    <None Include="Img\AbrirCuenta32.png" />
+    <None Include="Img\Imp48.png" />
+    <None Include="Img\BackGroundImage.jpg" />
+    <None Include="Img\Usuarios.png" />
+    <None Include="Img\Search32.png" />
+    <None Include="Img\Reabrir48.png" />
+    <None Include="Img\Pagar48.png" />
+    <None Include="Img\Imp64.png" />
+    <None Include="Img\ResumenC64.png" />
+    <None Include="Img\Click48.png" />
+    <None Include="Img\Click32.png" />
+    <None Include="Img\tap64.png" />
+    <None Include="Img\Agregar64.png" />
+    <None Include="Img\Otros.png" />
+    <None Include="Img\Bebida.png" />
+    <None Include="Img\Postre.png" />
+    <None Include="Img\Food.png" />
+    <None Include="Img\Mas32.png" />
+    <None Include="Img\Menos32.png" />
+    <None Include="Img\Delete.png" />
+    <None Include="Img\Cancelar48.png" />
+    <None Include="Img\Aceptar48.png" />
+    <None Include="Img\ResumenC48.png" />
+    <None Include="Img\Resumen48.png" />
+    <None Include="Img\Calc48.png" />
+    <None Include="Img\Personas48.png" />
+    <None Include="Img\AgregarCuenta48.png" />
+    <None Include="Img\Exit32.png" />
+    <None Include="Img\Exit.png" />
+    <None Include="Img\FondoDg.jpg" />
+    <None Include="Img\Borrar.png" />
+    <None Include="Img\Salir.png" />
+    <None Include="Img\FondoNaranja.png" />
+    <None Include="Img\Mesero64.png" />
+    <None Include="Img\FondoAzul.png" />
+    <None Include="Img\CupediarumLogo.png" />
+    <None Include="Img\CerrarTurno48.png" />
+    <None Include="Img\AbrirTurno48.png" />
+    <None Include="Img\Precios48.png" />
+    <None Include="Img\Mesa48.png" />
+    <None Include="Img\Aceptar32.png" />
+    <None Include="Img\Cancelar32.png" />
     <None Include="Resources\Icono_Reabrir64.png" />
     <None Include="Resources\Icono_Imprimir641.png" />
     <None Include="Resources\Icono_Consultar641.png" />
@@ -215,57 +246,7 @@
     <None Include="Resources\Icono_Table32.png" />
     <None Include="Resources\Icono_Mas32.png" />
     <None Include="Resources\Icono_Menos32.png" />
-    <None Include="Imagenes\Icono_Delete.png" />
-    <Content Include="Imagenes\Icono_CorteCaja48.png" />
-    <Content Include="Imagenes\Icono_Descuento.png" />
-    <None Include="Imagenes\Icono_Descuento48.png" />
-    <Content Include="Imagenes\Icono_Drink.png" />
-    <Content Include="Imagenes\Icono_Food.png" />
-    <Content Include="Imagenes\Icono_Favorito.png" />
-    <Content Include="Imagenes\Icono_Comentario.png" />
-    <Content Include="Imagenes\Icono_Imprimir.png" />
-    <Content Include="Imagenes\Icono_Mas.png" />
-    <Content Include="Imagenes\Icono_Mas32.png" />
-    <Content Include="Imagenes\Icono_Menos.png" />
-    <Content Include="Imagenes\Icono_Menos32.png" />
-    <Content Include="Imagenes\Icono_Otros.png" />
-    <Content Include="Imagenes\Icono_Pagar48.png" />
-    <Content Include="Imagenes\Icono_PagarCuenta.png" />
-    <Content Include="Imagenes\Icono_People.png" />
-    <Content Include="Imagenes\Icono_Personas48.png" />
-    <Content Include="Imagenes\Icono_Postres.png" />
-    <None Include="Imagenes\Icono_Precios48.png" />
-    <None Include="Imagenes\Icono_Search32.png" />
-    <Content Include="Imagenes\Icono_Table48.png" />
-    <None Include="Imagenes\Icono_Usuarios.png" />
-    <Content Include="Imagenes\Ico_AbrirCuenta.ico" />
-    <Content Include="Imagenes\Ico_Datos.ico" />
-    <Content Include="Imagenes\Ico_Pedidos.ico" />
-    <Content Include="Imagenes\FBAzul.png" />
-    <Content Include="Imagenes\FBNaranja.png" />
-    <Content Include="Imagenes\CupediarumLogo.png" />
-    <Content Include="Imagenes\Icono_AbrirCuenta.png" />
-    <Content Include="Imagenes\Icono_Aceptar32.png" />
-    <Content Include="Imagenes\Icono_Borrar.png" />
-    <Content Include="Imagenes\Icono_Caja.png" />
-    <Content Include="Imagenes\Icono_Exit.png" />
-    <Content Include="Imagenes\Icono_Left.png" />
-    <Content Include="Imagenes\Icono_Mesero.png" />
-    <Content Include="Imagenes\Icono_Cancelar32.png" />
-    <Content Include="Imagenes\Icono_Monitor.png" />
     <None Include="Resources\Icono_Bebidas.png" />
-    <None Include="Imagenes\Icono_RDAceptar32.png" />
-    <None Include="Imagenes\Icono_RDCancelar32.png" />
-    <Content Include="Imagenes\Icono_Precios.png" />
-    <Content Include="Imagenes\Icono_Reservas.png" />
-    <Content Include="Imagenes\Icono_Right.png" />
-    <Content Include="Imagenes\Ico_Chef.ico" />
-    <Content Include="Imagenes\Ico_Mesero.ico" />
-    <Content Include="Imagenes\Icono_Pedidos.png" />
-    <Content Include="Imagenes\Ico_People.ico" />
-    <None Include="Imagenes\Logo_CP.png" />
-    <Content Include="Imagenes\Reloj_Abierto.png" />
-    <Content Include="Imagenes\Reloj_Cerrado.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

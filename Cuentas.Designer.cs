@@ -74,13 +74,13 @@
             this.BtnArea2 = new System.Windows.Forms.Button();
             this.BtnArea3 = new System.Windows.Forms.Button();
             this.BtnArea4 = new System.Windows.Forms.Button();
-            this.BtnSalir = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.RtbArea = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.TxtNombMesero = new System.Windows.Forms.TextBox();
             this.TxtIDMesero = new System.Windows.Forms.TextBox();
             this.LblUsuario = new System.Windows.Forms.Label();
+            this.BtnSalir = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.FlpCuentas.SuspendLayout();
             this.FlpAreas.SuspendLayout();
@@ -107,8 +107,8 @@
             this.BtnPrecios.FlatAppearance.BorderSize = 3;
             this.BtnPrecios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPrecios.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPrecios.Image = global::Cupediarum.Properties.Resources.Icono_Precios48;
-            this.BtnPrecios.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BtnPrecios.Image = global::Cupediarum.Properties.Resources.Precios48;
+            this.BtnPrecios.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.BtnPrecios.Location = new System.Drawing.Point(147, 2);
             this.BtnPrecios.Name = "BtnPrecios";
             this.BtnPrecios.Size = new System.Drawing.Size(143, 60);
@@ -127,8 +127,8 @@
             this.BtnAgregarCuenta.FlatAppearance.BorderSize = 3;
             this.BtnAgregarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregarCuenta.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregarCuenta.Image = global::Cupediarum.Properties.Resources.Icono_AgregarCuenta48;
-            this.BtnAgregarCuenta.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BtnAgregarCuenta.Image = global::Cupediarum.Properties.Resources.Cuenta48;
+            this.BtnAgregarCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAgregarCuenta.Location = new System.Drawing.Point(1, 2);
             this.BtnAgregarCuenta.Name = "BtnAgregarCuenta";
             this.BtnAgregarCuenta.Size = new System.Drawing.Size(143, 60);
@@ -676,26 +676,6 @@
             this.BtnArea4.TabIndex = 22;
             this.BtnArea4.UseVisualStyleBackColor = false;
             // 
-            // BtnSalir
-            // 
-            this.BtnSalir.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnSalir.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
-            this.BtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnSalir.FlatAppearance.BorderSize = 5;
-            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnSalir.Font = new System.Drawing.Font("Modern No. 20", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalir.Image = global::Cupediarum.Properties.Resources.Icono_Exit;
-            this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSalir.Location = new System.Drawing.Point(819, 577);
-            this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(138, 51);
-            this.BtnSalir.TabIndex = 48;
-            this.BtnSalir.Text = "SALIR";
-            this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSalir.UseVisualStyleBackColor = false;
-            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
-            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -762,11 +742,32 @@
             this.LblUsuario.TabIndex = 11;
             this.LblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // BtnSalir
+            // 
+            this.BtnSalir.BackColor = System.Drawing.Color.Plum;
+            this.BtnSalir.BackgroundImage = global::Cupediarum.Properties.Resources.FondoNaranja;
+            this.BtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnSalir.FlatAppearance.BorderSize = 2;
+            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSalir.Font = new System.Drawing.Font("Modern No. 20", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSalir.Image = global::Cupediarum.Properties.Resources.Exit32;
+            this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnSalir.Location = new System.Drawing.Point(820, 583);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(130, 43);
+            this.BtnSalir.TabIndex = 48;
+            this.BtnSalir.Text = "SALIR";
+            this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
             // FrmCuentas
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BackgroundImage = global::Cupediarum.Properties.Resources.FondoDg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(957, 633);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.FlpAreas);

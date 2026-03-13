@@ -66,19 +66,18 @@
             // BtnCancelar
             // 
             this.BtnCancelar.BackColor = System.Drawing.Color.Plum;
-            this.BtnCancelar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.BackgroundImage")));
             this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.BtnCancelar.FlatAppearance.BorderSize = 3;
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Icono_Cancelar48;
+            this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Cancelar32;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnCancelar.Location = new System.Drawing.Point(517, 6);
+            this.BtnCancelar.Location = new System.Drawing.Point(576, 4);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(115, 78);
+            this.BtnCancelar.Size = new System.Drawing.Size(58, 50);
             this.BtnCancelar.TabIndex = 14;
-            this.BtnCancelar.Text = "CANCELAR";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnCancelar.UseVisualStyleBackColor = false;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
@@ -86,19 +85,18 @@
             // BtnAbrirMesa
             // 
             this.BtnAbrirMesa.BackColor = System.Drawing.Color.Plum;
-            this.BtnAbrirMesa.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnAbrirMesa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAbrirMesa.BackgroundImage")));
             this.BtnAbrirMesa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnAbrirMesa.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.BtnAbrirMesa.FlatAppearance.BorderSize = 3;
             this.BtnAbrirMesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAbrirMesa.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAbrirMesa.Image = global::Cupediarum.Properties.Resources.Icono_Aceptar48;
+            this.BtnAbrirMesa.Image = global::Cupediarum.Properties.Resources.Aceptar32;
             this.BtnAbrirMesa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnAbrirMesa.Location = new System.Drawing.Point(396, 5);
+            this.BtnAbrirMesa.Location = new System.Drawing.Point(512, 3);
             this.BtnAbrirMesa.Name = "BtnAbrirMesa";
-            this.BtnAbrirMesa.Size = new System.Drawing.Size(115, 78);
+            this.BtnAbrirMesa.Size = new System.Drawing.Size(58, 50);
             this.BtnAbrirMesa.TabIndex = 13;
-            this.BtnAbrirMesa.Text = "ABRIR MESA";
             this.BtnAbrirMesa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAbrirMesa.UseVisualStyleBackColor = false;
             this.BtnAbrirMesa.Click += new System.EventHandler(this.BtnAbrirMesa_Click);
@@ -106,13 +104,13 @@
             // BtnPersonas
             // 
             this.BtnPersonas.BackColor = System.Drawing.Color.Plum;
-            this.BtnPersonas.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnPersonas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPersonas.BackgroundImage")));
             this.BtnPersonas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnPersonas.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnPersonas.FlatAppearance.BorderSize = 3;
             this.BtnPersonas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPersonas.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPersonas.Image = global::Cupediarum.Properties.Resources.Icono_Personas48;
+            this.BtnPersonas.Image = global::Cupediarum.Properties.Resources.Personas48;
             this.BtnPersonas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnPersonas.Location = new System.Drawing.Point(124, 4);
             this.BtnPersonas.Name = "BtnPersonas";
@@ -124,13 +122,13 @@
             // BtnCuenta
             // 
             this.BtnCuenta.BackColor = System.Drawing.Color.Plum;
-            this.BtnCuenta.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnCuenta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCuenta.BackgroundImage")));
             this.BtnCuenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnCuenta.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnCuenta.FlatAppearance.BorderSize = 3;
             this.BtnCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCuenta.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCuenta.Image = global::Cupediarum.Properties.Resources.Icono_Table48;
+            this.BtnCuenta.Image = global::Cupediarum.Properties.Resources.Mesa48;
             this.BtnCuenta.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnCuenta.Location = new System.Drawing.Point(3, 4);
             this.BtnCuenta.Name = "BtnCuenta";
@@ -252,7 +250,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(14, 96);
+            this.label1.Location = new System.Drawing.Point(18, 96);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 20);
             this.label1.TabIndex = 2;
@@ -264,7 +262,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(133, 96);
+            this.label2.Location = new System.Drawing.Point(131, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 20);
             this.label2.TabIndex = 3;
@@ -274,7 +272,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BackgroundImage = global::Cupediarum.Properties.Resources.Fondo_Degradado;
+            this.BackgroundImage = global::Cupediarum.Properties.Resources.FondoDg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(645, 322);
             this.Controls.Add(this.label2);

@@ -53,12 +53,12 @@
             // BtnCerrar
             // 
             this.BtnCerrar.BackColor = System.Drawing.Color.Plum;
-            this.BtnCerrar.BackgroundImage = global::Cupediarum.Properties.Resources.FBNaranja;
+            this.BtnCerrar.BackgroundImage = global::Cupediarum.Properties.Resources.FondoNaranja;
             this.BtnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.BtnCerrar.FlatAppearance.BorderSize = 2;
             this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCerrar.Image = global::Cupediarum.Properties.Resources.Icono_Cancelar32;
+            this.BtnCerrar.Image = global::Cupediarum.Properties.Resources.Cancelar32;
             this.BtnCerrar.Location = new System.Drawing.Point(961, 2);
             this.BtnCerrar.Name = "BtnCerrar";
             this.BtnCerrar.Size = new System.Drawing.Size(52, 44);
@@ -69,12 +69,12 @@
             // BtnBuscar
             // 
             this.BtnBuscar.BackColor = System.Drawing.Color.LightCoral;
-            this.BtnBuscar.BackgroundImage = global::Cupediarum.Properties.Resources.FBAzul;
+            this.BtnBuscar.BackgroundImage = global::Cupediarum.Properties.Resources.FondoAzul;
             this.BtnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnBuscar.FlatAppearance.BorderSize = 2;
             this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBuscar.Image = global::Cupediarum.Properties.Resources.Icono_Search32;
+            this.BtnBuscar.Image = global::Cupediarum.Properties.Resources.Search32;
             this.BtnBuscar.Location = new System.Drawing.Point(367, 9);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(38, 26);

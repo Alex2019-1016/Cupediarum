@@ -176,7 +176,7 @@ namespace Cupediarum
 
                             TxtClave.Enabled = false;
 
-                            FrmCuentas frm = new FrmCuentas();
+                            FrmCuentas frm = new FrmCuentas(this);
                             frm.Show();
                             this.Hide();
                         }
@@ -198,7 +198,7 @@ namespace Cupediarum
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
 
         private void TecladoNumerico_Click(object sender, EventArgs e)

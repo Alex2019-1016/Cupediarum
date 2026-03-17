@@ -43,6 +43,7 @@ namespace Cupediarum
             DgvPrecios.DefaultCellStyle.Font = new Font("Times New Roman", 12);
             DgvPrecios.DefaultCellStyle.SelectionBackColor = Color.Cyan;
             DgvPrecios.DefaultCellStyle.SelectionForeColor = Color.Black;
+
         }
         private void CargarProductos(string filtro = "")
         {

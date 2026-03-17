@@ -20,7 +20,7 @@ namespace Cupediarum
         {
             InitializeComponent();
             idCuenta = idCuentaRecibida;
-          
+
         }
 
         private void FrmCapturaProductos_Load_1(object sender, EventArgs e)
@@ -28,20 +28,14 @@ namespace Cupediarum
             ConfigurarDgv();
             CargarCategoriasPrincipales();
             CargarDetalleExistente();
+            CargarComentarioCuenta();
         }
 
-        // =============================
-        // CONFIGURAR DGV
-        // =============================
         private void ConfigurarDgv()
         {
             DgvComanda.Rows.Clear();
             DgvComanda.AllowUserToAddRows = false;
         }
-
-        // =============================
-        // CARGAR CATEGORÍAS PRINCIPALES
-        // =============================
 
         private void CargarDetalleExistente()
         {
@@ -146,11 +140,7 @@ namespace Cupediarum
             BtnComida.Click += BtnCategoria_Click;
             BtnOtros.Click += BtnCategoria_Click;
         }
-        
 
-        // =============================
-        // CLICK CATEGORÍA
-        // =============================
         private void BtnCategoria_Click(object sender, EventArgs e)
         {
 
@@ -161,9 +151,6 @@ namespace Cupediarum
 
         }
 
-        // =============================
-        // CARGAR SUBCATEGORÍAS
-        // =============================
         private void CargarSubCategorias(int idCategoria)
         {
             FlpSubCategorias.Controls.Clear();
@@ -172,7 +159,7 @@ namespace Cupediarum
             string query = @"SELECT Id_Categoria, Nomb_Categoria
                      FROM CATEGORIAS
                      WHERE Id_CategoriaPadre = @IdCategoria
-                     ORDER BY Nomb_Categoria ASC";   // 👈 AQUÍ
+                     ORDER BY Nomb_Categoria ASC";
 
             using (SqlConnection conn = new SqlConnection(
                 ConfigurationManager.ConnectionStrings["ConexionRestaurante"].ConnectionString))
@@ -209,9 +196,6 @@ namespace Cupediarum
             }
         }
 
-        // =============================
-        // CLICK SUBCATEGORÍA
-        // =============================
         private void BtnSubCategoria_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
@@ -220,9 +204,6 @@ namespace Cupediarum
             CargarProductos(idSubCategoriaSeleccionada);
         }
 
-        // =============================
-        // CARGAR PRODUCTOS
-        // =============================
         private void CargarProductos(int idSubCategoria)
         {
             FlpProductos.Controls.Clear();
@@ -269,12 +250,8 @@ namespace Cupediarum
                     FlpProductos.Controls.Add(btn);
                 }
             }
-
         }
 
-        // =============================
-        // AGREGAR PRODUCTO A COMANDA
-        // =============================
         private void BtnProducto_Click(object sender, EventArgs e)
         {
             ProductoTemp producto = (ProductoTemp)((Button)sender).Tag;
@@ -314,7 +291,7 @@ namespace Cupediarum
 
         private void GuardarDetalleCuenta()
         {
-            string comentario = RtbComentario.Text;
+            string comentario = RtbComent.Text;
 
             string connStr = ConfigurationManager
                 .ConnectionStrings["ConexionRestaurante"]
@@ -343,9 +320,9 @@ namespace Cupediarum
                     decimal precioUnitario = subtotal / cantidad;
 
                     string query = @"INSERT INTO DETALLE_CUENTA
-                    (Id_Cuenta, Id_Producto, Cantidad, Precio, Comentario)
+                    (Id_Cuenta, Id_Producto, Cantidad, Precio)
                     VALUES
-                    (@IdCuenta, @IdProducto, @Cantidad, @Precio, @Comentario)";
+                    (@IdCuenta, @IdProducto, @Cantidad, @Precio)";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
@@ -353,7 +330,6 @@ namespace Cupediarum
                         cmd.Parameters.AddWithValue("@IdProducto", idProducto);
                         cmd.Parameters.AddWithValue("@Cantidad", cantidad);
                         cmd.Parameters.AddWithValue("@Precio", precioUnitario);
-                        cmd.Parameters.AddWithValue("@Comentario", DBNull.Value);
 
                         cmd.ExecuteNonQuery();
                     }
@@ -361,9 +337,6 @@ namespace Cupediarum
             }
         }
 
-        // =============================
-        // CALCULAR TOTAL
-        // =============================
         private void CalcularTotal()
         {
             totalCuenta = 0;
@@ -379,9 +352,6 @@ namespace Cupediarum
             LblTotal.Text = "TOTAL: $" + totalCuenta.ToString("N2");
         }
 
-        // =============================
-        // ACEPTAR
-        // =============================
         private void BtnAceptar_Click_1(object sender, EventArgs e)
         {
             if (DgvComanda.Rows.Count == 0)
@@ -393,12 +363,13 @@ namespace Cupediarum
             try
             {
                 GuardarDetalleCuenta();
+                GuardarComentarioCuenta();
 
                 MessageBox.Show("Comanda guardada correctamente ✔");
 
-                FrmCuentas frm = new FrmCuentas();
+                FrmCuentas frm = new FrmCuentas(this);
                 frm.Show();
-                this.Hide();
+                this.Close();
             }
             catch (Exception ex)
             {
@@ -406,16 +377,12 @@ namespace Cupediarum
             }
         }
 
-        // =============================
-        // CANCELAR
-        // =============================
         private void BtnCancelar_Click_1(object sender, EventArgs e)
         {
-            FrmCuentas frm = new FrmCuentas();
+            FrmCuentas frm = new FrmCuentas(this);
             frm.Show();
-            this.Hide();
+            this.Close();
         }
-
 
         private void BtnMenos_Click(object sender, EventArgs e)
         {
@@ -480,7 +447,6 @@ namespace Cupediarum
                 cmd.ExecuteNonQuery();
             }
 
-            // Refrescar pantalla
             DgvComanda.Rows.Clear();
             CargarDetalleExistente();
         }
@@ -508,9 +474,9 @@ namespace Cupediarum
 
             using (SqlConnection conn = new SqlConnection(connStr))
             using (SqlCommand cmd = new SqlCommand(@"
-        DELETE FROM DETALLE_CUENTA
-        WHERE Id_Cuenta = @IdCuenta
-        AND Id_Producto = @IdProducto", conn))
+            DELETE FROM DETALLE_CUENTA
+            WHERE Id_Cuenta = @IdCuenta
+            AND Id_Producto = @IdProducto", conn))
             {
                 cmd.Parameters.AddWithValue("@IdCuenta", idCuenta);
                 cmd.Parameters.AddWithValue("@IdProducto", idProducto);
@@ -532,8 +498,8 @@ namespace Cupediarum
 
             using (SqlConnection conn = new SqlConnection(connStr))
             using (SqlCommand cmd = new SqlCommand(@"
-        DELETE FROM DETALLE_CUENTA
-        WHERE Id_Cuenta = @IdCuenta", conn))
+            DELETE FROM DETALLE_CUENTA
+            WHERE Id_Cuenta = @IdCuenta", conn))
             {
                 cmd.Parameters.AddWithValue("@IdCuenta", idCuenta);
                 conn.Open();
@@ -543,13 +509,65 @@ namespace Cupediarum
             DgvComanda.Rows.Clear();
             CalcularTotal();
         }
-    }
 
-    // Clase temporal para guardar producto en botón
-    public class ProductoTemp
-    {
-        public int Id { get; set; }
-        public string Nombre { get; set; }
-        public decimal Precio { get; set; }
+        private void CargarComentarioCuenta()
+        {
+            string connStr = ConfigurationManager
+                .ConnectionStrings["ConexionRestaurante"]
+                .ConnectionString;
+
+            string query = @"SELECT Comentario 
+                     FROM CUENTAS
+                     WHERE Id_Cuenta = @IdCuenta";
+
+            using (SqlConnection conn = new SqlConnection(connStr))
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@IdCuenta", idCuenta);
+
+                conn.Open();
+
+                object result = cmd.ExecuteScalar();
+
+                if (result != null && result != DBNull.Value)
+                {
+                    RtbComent.Text = result.ToString();
+                }
+                else
+                {
+                    RtbComent.Text = "";
+                }
+            }
+        }
+
+        private void GuardarComentarioCuenta()
+        {
+            string comentario = RtbComent.Text;
+
+            string connStr = ConfigurationManager
+                .ConnectionStrings["ConexionRestaurante"]
+                .ConnectionString;
+
+            string query = @"UPDATE CUENTAS
+                     SET Comentario = @Comentario
+                     WHERE Id_Cuenta = @IdCuenta";
+
+            using (SqlConnection conn = new SqlConnection(connStr))
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@Comentario", comentario);
+                cmd.Parameters.AddWithValue("@IdCuenta", idCuenta);
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        public class ProductoTemp
+        {
+            public int Id { get; set; }
+            public string Nombre { get; set; }
+            public decimal Precio { get; set; }
+        }
     }
 }

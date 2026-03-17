@@ -133,6 +133,16 @@ namespace Cupediarum.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cancelar16 {
+            get {
+                object obj = ResourceManager.GetObject("Cancelar16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cancelar32 {
             get {
                 object obj = ResourceManager.GetObject("Cancelar32", resourceCulture);
@@ -196,6 +206,16 @@ namespace Cupediarum.Properties {
         internal static System.Drawing.Bitmap Descuento48 {
             get {
                 object obj = ResourceManager.GetObject("Descuento48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EliminarCuenta48 {
+            get {
+                object obj = ResourceManager.GetObject("EliminarCuenta48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -376,16 +396,6 @@ namespace Cupediarum.Properties {
         internal static System.Drawing.Bitmap Reabrir48 {
             get {
                 object obj = ResourceManager.GetObject("Reabrir48", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ResumenC48 {
-            get {
-                object obj = ResourceManager.GetObject("ResumenC48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

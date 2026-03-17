@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -182,7 +183,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Img\Cancelar16.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Img\Cuenta48.png" />
     <None Include="Img\Descuento48.png" />
@@ -209,7 +212,6 @@
     <None Include="Img\Delete.png" />
     <None Include="Img\Cancelar48.png" />
     <None Include="Img\Aceptar48.png" />
-    <None Include="Img\ResumenC48.png" />
     <None Include="Img\Resumen48.png" />
     <None Include="Img\Calc48.png" />
     <None Include="Img\Personas48.png" />
@@ -247,6 +249,9 @@
     <None Include="Resources\Icono_Mas32.png" />
     <None Include="Resources\Icono_Menos32.png" />
     <None Include="Resources\Icono_Bebidas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\EliminarCuenta48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

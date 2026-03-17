@@ -13,13 +13,15 @@ using static System.Windows.Forms.MonthCalendar;
 
 namespace Cupediarum
 {
+
     public partial class FrmCuentas : Form
     {
-        
-        public FrmCuentas()
+        private Form formularioAnterior;
+
+        public FrmCuentas(Form frmAnterior)
         {
             InitializeComponent();
-        
+            formularioAnterior = frmAnterior;
         }
 
         private int cuentaSeleccionada = 0;
@@ -204,9 +206,11 @@ namespace Cupediarum
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
-            FrmMesero frm = new FrmMesero();
-            frm.Show();
-            this.Hide();
+            if (formularioAnterior != null)
+            {
+                formularioAnterior.Show();
+                this.Close();
+            }
         }
 
         private void BtnPrecios_Click(object sender, EventArgs e)

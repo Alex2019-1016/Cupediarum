@@ -58,10 +58,10 @@
             this.BtnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.BtnCerrar.FlatAppearance.BorderSize = 2;
             this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCerrar.Image = global::Cupediarum.Properties.Resources.Cancelar32;
-            this.BtnCerrar.Location = new System.Drawing.Point(961, 2);
+            this.BtnCerrar.Image = global::Cupediarum.Properties.Resources.Cancelar16;
+            this.BtnCerrar.Location = new System.Drawing.Point(411, 9);
             this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.Size = new System.Drawing.Size(52, 44);
+            this.BtnCerrar.Size = new System.Drawing.Size(38, 26);
             this.BtnCerrar.TabIndex = 4;
             this.BtnCerrar.UseVisualStyleBackColor = false;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
@@ -113,10 +113,12 @@
             this.ClientSize = new System.Drawing.Size(1020, 651);
             this.Controls.Add(this.DgvPrecios);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPrecios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PRECIOS";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Precios_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

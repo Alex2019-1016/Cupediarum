@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Aceptar48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\Aceptar48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Cancelar48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\Cancelar48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -144,6 +147,9 @@
   </data>
   <data name="Calc48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\Calc48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BackGroundImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\BackGroundImage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Personas48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\Personas48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,9 +202,6 @@
   <data name="Cancelar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\Cancelar32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Exit32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\Exit32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Search32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\Search32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,11 +214,8 @@
   <data name="CupediarumLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\CupediarumLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Aceptar48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\Aceptar48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ResumenC48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\ResumenC48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Exit32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\Exit32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FondoAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\FondoAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,10 +223,13 @@
   <data name="Borrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\Borrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Cancelar16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\Cancelar16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Mesero64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\Mesero64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BackGroundImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\BackGroundImage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EliminarCuenta48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\EliminarCuenta48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

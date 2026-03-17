@@ -91,7 +91,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.RtbComent = new System.Windows.Forms.RichTextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.FlpComanda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvComanda)).BeginInit();
@@ -1016,14 +1016,14 @@
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // richTextBox1
+            // RtbComent
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(412, 575);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(623, 65);
-            this.richTextBox1.TabIndex = 26;
-            this.richTextBox1.Text = "";
+            this.RtbComent.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RtbComent.Location = new System.Drawing.Point(412, 575);
+            this.RtbComent.Name = "RtbComent";
+            this.RtbComent.Size = new System.Drawing.Size(623, 65);
+            this.RtbComent.TabIndex = 26;
+            this.RtbComent.Text = "";
             // 
             // label23
             // 
@@ -1043,10 +1043,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BackgroundImage = global::Cupediarum.Properties.Resources.FondoDg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1199, 652);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.RtbComent);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.FlpProductos);
             this.Controls.Add(this.FlpSubCategorias);
@@ -1124,7 +1123,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DESCRIPCION;
         private System.Windows.Forms.DataGridViewTextBoxColumn PRECIO;
         private System.Windows.Forms.DataGridViewTextBoxColumn DESCUENTO;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox RtbComent;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Button BtnComentario;
         private System.Windows.Forms.Button BtnComandas;

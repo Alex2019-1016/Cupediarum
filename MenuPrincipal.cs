@@ -20,27 +20,27 @@ namespace Cupediarum
         private void BtnMesero_Click_1(object sender, EventArgs e)
         {
             FrmMesero frm = new FrmMesero();
-            frm.Show();
+            frm.ShowDialog();
         }
         
         private void BtnMesas_Click(object sender, EventArgs e)
         {
             FrmUsuario frm = new FrmUsuario();
-            frm.Show();
+            frm.ShowDialog();
         }
 
         private void BtnPrecios_Click(object sender, EventArgs e)
         {
             FrmPrecios frm = new FrmPrecios(this);
             frm.Show();
-            this.Hide();
+           
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             FrmInicioSesion frm = new FrmInicioSesion();
             frm.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

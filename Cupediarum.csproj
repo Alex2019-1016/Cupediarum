@@ -109,6 +109,12 @@
     <Compile Include="OpcionesMesero.Designer.cs">
       <DependentUpon>OpcionesMesero.cs</DependentUpon>
     </Compile>
+    <Compile Include="PagarCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagarCuenta.Designer.cs">
+      <DependentUpon>PagarCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Precios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OpcionesMesero.resx">
       <DependentUpon>OpcionesMesero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagarCuenta.resx">
+      <DependentUpon>PagarCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Precios.resx">
       <DependentUpon>Precios.cs</DependentUpon>
@@ -252,6 +261,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Img\EliminarCuenta48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Efectivo48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Cash48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\VISA48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Mastercard48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\American48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Img\Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

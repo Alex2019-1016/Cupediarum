@@ -62,6 +62,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.DgvComanda = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.LblDesc = new System.Windows.Forms.Label();
             this.LblImp = new System.Windows.Forms.Label();
             this.LblSubTotal = new System.Windows.Forms.Label();
             this.LblDescuento = new System.Windows.Forms.Label();
@@ -73,7 +74,6 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.RtbComentario = new System.Windows.Forms.RichTextBox();
-            this.LblDesc = new System.Windows.Forms.Label();
             this.PnlCuenta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCuentas)).BeginInit();
             this.PnlDatosCuenta.SuspendLayout();
@@ -203,6 +203,7 @@
             this.BtnImprimir.Text = "IMP.";
             this.BtnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnImprimir.UseVisualStyleBackColor = false;
+            this.BtnImprimir.Click += new System.EventHandler(this.BtnImprimir_Click);
             // 
             // BtnAgregar
             // 
@@ -252,7 +253,7 @@
             this.BtnPagarCuenta.FlatAppearance.BorderSize = 3;
             this.BtnPagarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPagarCuenta.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPagarCuenta.Image = global::Cupediarum.Properties.Resources.Pagar48;
+            this.BtnPagarCuenta.Image = global::Cupediarum.Properties.Resources.Cash48;
             this.BtnPagarCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnPagarCuenta.Location = new System.Drawing.Point(786, 69);
             this.BtnPagarCuenta.Name = "BtnPagarCuenta";
@@ -261,6 +262,7 @@
             this.BtnPagarCuenta.Text = "Pagar Cuenta";
             this.BtnPagarCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnPagarCuenta.UseVisualStyleBackColor = false;
+            this.BtnPagarCuenta.Click += new System.EventHandler(this.BtnPagarCuenta_Click);
             // 
             // BtnDescuento
             // 
@@ -573,6 +575,18 @@
             this.panel3.Size = new System.Drawing.Size(336, 184);
             this.panel3.TabIndex = 22;
             // 
+            // LblDesc
+            // 
+            this.LblDesc.BackColor = System.Drawing.Color.Transparent;
+            this.LblDesc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblDesc.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDesc.ForeColor = System.Drawing.Color.White;
+            this.LblDesc.Location = new System.Drawing.Point(135, 51);
+            this.LblDesc.Name = "LblDesc";
+            this.LblDesc.Size = new System.Drawing.Size(77, 30);
+            this.LblDesc.TabIndex = 28;
+            this.LblDesc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // LblImp
             // 
             this.LblImp.BackColor = System.Drawing.Color.Transparent;
@@ -603,9 +617,9 @@
             this.LblDescuento.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.LblDescuento.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblDescuento.ForeColor = System.Drawing.Color.White;
-            this.LblDescuento.Location = new System.Drawing.Point(225, 51);
+            this.LblDescuento.Location = new System.Drawing.Point(218, 51);
             this.LblDescuento.Name = "LblDescuento";
-            this.LblDescuento.Size = new System.Drawing.Size(104, 30);
+            this.LblDescuento.Size = new System.Drawing.Size(111, 30);
             this.LblDescuento.TabIndex = 25;
             this.LblDescuento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -707,18 +721,6 @@
             this.RtbComentario.TabIndex = 24;
             this.RtbComentario.Text = "";
             this.RtbComentario.TextChanged += new System.EventHandler(this.RtbComentario_Leave);
-            // 
-            // LblDesc
-            // 
-            this.LblDesc.BackColor = System.Drawing.Color.Transparent;
-            this.LblDesc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LblDesc.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDesc.ForeColor = System.Drawing.Color.White;
-            this.LblDesc.Location = new System.Drawing.Point(135, 51);
-            this.LblDesc.Name = "LblDesc";
-            this.LblDesc.Size = new System.Drawing.Size(77, 30);
-            this.LblDesc.TabIndex = 28;
-            this.LblDesc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmMesas
             // 

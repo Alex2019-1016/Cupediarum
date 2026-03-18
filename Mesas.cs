@@ -1,22 +1,28 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
-using Microsoft.VisualBasic;
 
 namespace Cupediarum
 {
     public partial class FrmMesas : Form
     {
         private decimal descuentoPorcentaje = 0;
+        PrintDocument documento = new PrintDocument();
+        int idCuentaImprimir = 0;
+        int anchoTicket = 280;
+
         public FrmMesas()
         {
             InitializeComponent();
@@ -255,9 +261,9 @@ namespace Cupediarum
             }
 
             decimal descuento = subtotal * (descuentoPorcentaje / 100);
-            decimal baseImponible = subtotal - descuento;
-            decimal impuesto = baseImponible * 0.18m;
-            decimal total = baseImponible + impuesto;
+            decimal subtotalConDesc = subtotal - descuento;
+            decimal impuesto = subtotalConDesc * 0.18m;
+            decimal total = subtotalConDesc + impuesto;
 
             LblSubTotal.Text = subtotal.ToString("N2");
             LblDescuento.Text = descuento.ToString("N2");
@@ -536,26 +542,209 @@ namespace Cupediarum
                 descuentoPorcentaje = valor;
 
                 GuardarDescuento(idCuenta, valor);
-                CalcularTotales();
+                CargarComanda(idCuenta);
             }
         }
 
         private void GuardarDescuento(int idCuenta, decimal porcentaje)
         {
             string query = @"UPDATE DETALLE_CUENTA 
-                     SET Descuento = @Descuento
+                     SET Descuento = (Cantidad * Precio) * (@Porcentaje / 100)
                      WHERE Id_Cuenta = @IdCuenta";
 
             using (SqlConnection conn = new SqlConnection(
                 ConfigurationManager.ConnectionStrings["ConexionRestaurante"].ConnectionString))
             using (SqlCommand cmd = new SqlCommand(query, conn))
             {
-                cmd.Parameters.AddWithValue("@Descuento", porcentaje);
+                cmd.Parameters.AddWithValue("@Porcentaje", porcentaje);
                 cmd.Parameters.AddWithValue("@IdCuenta", idCuenta);
 
                 conn.Open();
                 cmd.ExecuteNonQuery();
             }
+        }
+
+        private void BtnPagarCuenta_Click(object sender, EventArgs e)
+        {
+
+            if (DgvCuentas.CurrentRow == null)
+            {
+                MessageBox.Show("Seleccione una cuenta");
+                return;
+            }
+
+            int idCuenta = Convert.ToInt32(
+                DgvCuentas.CurrentRow.Cells["Id_Cuenta"].Value);
+
+            decimal total = Convert.ToDecimal(LblTotal.Text);
+
+            FrmPagarCuenta frm = new FrmPagarCuenta(idCuenta, total);
+            frm.ShowDialog();
+
+            CargarCuentas();
+        }
+
+        private void BtnImprimir_Click(object sender, EventArgs e)
+        {
+            if (DgvCuentas.CurrentRow == null)
+            {
+                MessageBox.Show("Seleccione una cuenta");
+                return;
+            }
+
+            ConfigurarTicket();
+            idCuentaImprimir = Convert.ToInt32(DgvCuentas.CurrentRow.Cells["Id_Cuenta"].Value);
+
+            documento.PrintPage -= ImprimirTicket;
+            documento.PrintPage += ImprimirTicket;
+
+            PaperSize ps = new PaperSize("Ticket", anchoTicket, 1000);
+            documento.DefaultPageSettings.PaperSize = ps;
+
+            PrintPreviewDialog vista = new PrintPreviewDialog();
+            vista.Document = documento;
+            vista.Width = 400;
+            vista.Height = 600;
+
+            DialogResult r = vista.ShowDialog();
+
+            if (r == DialogResult.OK || r == DialogResult.Yes)
+            {
+                try
+                {
+                    documento.Print();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al imprimir: " + ex.Message);
+                }
+            }
+        }
+
+        private void ImprimirTicket(object sender, PrintPageEventArgs e)
+        {
+            float y = 10;
+
+            Font titulo = new Font("Times New Roman", 14, FontStyle.Bold);
+            Font subtitulo = new Font("Arial", 9, FontStyle.Bold);
+            Font normal = new Font("Consolas", 9);
+            Font negrita = new Font("Consolas", 10, FontStyle.Bold);
+
+            StringFormat centro = new StringFormat();
+            centro.Alignment = StringAlignment.Center;
+
+            StringFormat derecha = new StringFormat();
+            derecha.Alignment = StringAlignment.Far;
+
+            int colProducto = 0;
+            int colCantidad = (int)(anchoTicket * 0.55);
+            int colTotal = anchoTicket - 5;
+
+            Image logo = Image.FromFile(@"C:\Users\Laptop\Desktop\Proy_Cupediarum\Img\Logo.png");
+            int maxLogoWidth = anchoTicket - 20; // margen 10px a cada lado
+            float aspectRatio = (float)logo.Width / logo.Height;
+            int logoWidth = maxLogoWidth;
+            int logoHeight = (int)(logoWidth / aspectRatio);
+            int xLogo = (anchoTicket - logoWidth) / 2;
+
+            // Dibujar el logo
+            e.Graphics.DrawImage(logo, xLogo, y, logoWidth, logoHeight);
+            y += logoHeight + 5; // avanzar después del logo
+
+            // -----------------------------
+            // ENCABEZADO
+            // -----------------------------
+            e.Graphics.DrawString("CUPEDIARUM RESTAURANT", titulo, Brushes.Black, anchoTicket / 2, y, centro);
+            y += 25;
+            e.Graphics.DrawString("Fantino, República Dominicana", normal, Brushes.Black, anchoTicket / 2, y, centro);
+            y += 18;
+            e.Graphics.DrawString("Tel: 809-000-0000", normal, Brushes.Black, anchoTicket / 2, y, centro);
+            y += 25;
+            e.Graphics.DrawString("********** PRECUENTA **********", negrita, Brushes.Black, anchoTicket / 2, y, centro);
+            y += 30;
+
+            // -----------------------------
+            // INFO DE LA CUENTA
+            // -----------------------------
+            e.Graphics.DrawString("Cuenta: " + LblCuenta.Text, normal, Brushes.Black, 0, y);
+            y += 18;
+            e.Graphics.DrawString("Mesero: " + LblNombMesero.Text, normal, Brushes.Black, 0, y);
+            y += 18;
+            e.Graphics.DrawString("Area: " + LblNombArea.Text, normal, Brushes.Black, 0, y);
+            y += 18;
+            e.Graphics.DrawString("Personas: " + LblPersonas.Text, normal, Brushes.Black, 0, y);
+            y += 18;
+            e.Graphics.DrawString("Fecha: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm"), normal, Brushes.Black, 0, y);
+            y += 25;
+
+            e.Graphics.DrawString("------------------------------------------", normal, Brushes.Black, 0, y);
+            y += 20;
+
+            // -----------------------------
+            // ENCABEZADO PRODUCTOS
+            // -----------------------------
+            e.Graphics.DrawString("Producto", subtitulo, Brushes.Black, colProducto, y);
+            e.Graphics.DrawString("Cant", subtitulo, Brushes.Black, colCantidad, y);
+            e.Graphics.DrawString("Total", subtitulo, Brushes.Black, colTotal, y, derecha);
+            y += 20;
+            e.Graphics.DrawString("------------------------------------------", normal, Brushes.Black, 0, y);
+            y += 20;
+
+            // -----------------------------
+            // PRODUCTOS
+            // -----------------------------
+            foreach (DataGridViewRow row in DgvComanda.Rows)
+            {
+                if (row.Cells["Producto"].Value == null)
+                    continue;
+
+                string producto = row.Cells["Producto"].Value.ToString();
+                string cantidad = row.Cells["Cantidad"].Value.ToString();
+                string total = Convert.ToDecimal(row.Cells["Total"].Value).ToString("N2");
+
+                e.Graphics.DrawString(producto, normal, Brushes.Black, colProducto, y);
+                e.Graphics.DrawString(cantidad, normal, Brushes.Black, colCantidad, y);
+                e.Graphics.DrawString(total, normal, Brushes.Black, colTotal, y, derecha);
+                y += 20;
+            }
+
+            y += 10;
+            e.Graphics.DrawString("------------------------------------------", normal, Brushes.Black, 0, y);
+            y += 20;
+
+            // -----------------------------
+            // TOTALES
+            // -----------------------------
+            e.Graphics.DrawString("Subtotal:", normal, Brushes.Black, 0, y);
+            e.Graphics.DrawString(LblSubTotal.Text, normal, Brushes.Black, colTotal, y, derecha);
+            y += 20;
+
+            e.Graphics.DrawString("Descuento:", normal, Brushes.Black, 0, y);
+            e.Graphics.DrawString(LblDescuento.Text, normal, Brushes.Black, colTotal, y, derecha);
+            y += 20;
+
+            e.Graphics.DrawString("ITBIS (18%):", normal, Brushes.Black, 0, y);
+            e.Graphics.DrawString(LblImpuesto.Text, normal, Brushes.Black, colTotal, y, derecha);
+            y += 25;
+
+            e.Graphics.DrawString("TOTAL:", negrita, Brushes.Black, 0, y);
+            e.Graphics.DrawString(LblTotal.Text, negrita, Brushes.Black, colTotal, y, derecha);
+            y += 40;
+
+            // -----------------------------
+            // PIE DEL TICKET
+            // -----------------------------
+            e.Graphics.DrawString("ESTO NO ES UNA FACTURA FISCAL", normal, Brushes.Black, anchoTicket / 2, y, centro);
+            y += 18;
+            e.Graphics.DrawString("Gracias por su visita", normal, Brushes.Black, anchoTicket / 2, y, centro);
+            y += 18;
+            e.Graphics.DrawString("Vuelva pronto!", normal, Brushes.Black, anchoTicket / 2, y, centro);
+        }
+
+        private void ConfigurarTicket()
+        {
+            string tipo = "80mm"; 
+            anchoTicket = tipo == "58mm" ? 230 : 300;
         }
     }
 }

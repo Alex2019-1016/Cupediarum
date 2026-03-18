@@ -93,6 +93,16 @@ namespace Cupediarum.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap American48 {
+            get {
+                object obj = ResourceManager.GetObject("American48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BackGroundImage {
             get {
                 object obj = ResourceManager.GetObject("BackGroundImage", resourceCulture);
@@ -163,6 +173,16 @@ namespace Cupediarum.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cash48 {
+            get {
+                object obj = ResourceManager.GetObject("Cash48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CerrarTurno48 {
             get {
                 object obj = ResourceManager.GetObject("CerrarTurno48", resourceCulture);
@@ -206,6 +226,16 @@ namespace Cupediarum.Properties {
         internal static System.Drawing.Bitmap Descuento48 {
             get {
                 object obj = ResourceManager.GetObject("Descuento48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Efectivo48 {
+            get {
+                object obj = ResourceManager.GetObject("Efectivo48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -306,6 +336,16 @@ namespace Cupediarum.Properties {
         internal static System.Drawing.Bitmap Mas32 {
             get {
                 object obj = ResourceManager.GetObject("Mas32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mastercard48 {
+            get {
+                object obj = ResourceManager.GetObject("Mastercard48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -436,6 +476,16 @@ namespace Cupediarum.Properties {
         internal static System.Drawing.Bitmap Usuarios {
             get {
                 object obj = ResourceManager.GetObject("Usuarios", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VISA48 {
+            get {
+                object obj = ResourceManager.GetObject("VISA48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

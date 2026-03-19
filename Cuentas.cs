@@ -118,7 +118,6 @@ namespace Cupediarum
 
             FrmOpcionesMesero frm = new FrmOpcionesMesero(cuentaSeleccionada);
             frm.ShowDialog();
-            this.Hide();
 
         }
 

@@ -67,6 +67,12 @@
     <Compile Include="CapturaProductos.Designer.cs">
       <DependentUpon>CapturaProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Consultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar.Designer.cs">
+      <DependentUpon>Consultar.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatosCuenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Sesion.cs" />
+    <Compile Include="TicketHelper.cs" />
     <Compile Include="Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapturaProductos.resx">
       <DependentUpon>CapturaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultar.resx">
+      <DependentUpon>Consultar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DatosCuenta.resx">
       <DependentUpon>DatosCuenta.cs</DependentUpon>
@@ -278,7 +288,9 @@
     <None Include="Img\American48.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Img\Logo.png" />
+    <Content Include="Img\Logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

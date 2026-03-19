@@ -405,3 +405,15 @@ CREATE TABLE DETALLE_CUENTA (
 );
 
 SELECT * FROM DETALLE_CUENTA
+
+---------------------------------------------------------------------------------------
+
+CREATE TABLE Pagos (
+    Id_Pago INT IDENTITY(1,1) PRIMARY KEY,
+    Id_Cuenta INT,
+    MetodoPago VARCHAR(50),
+    Monto DECIMAL(10,2),
+    Propina DECIMAL(10,2),
+    Total DECIMAL(10,2),
+    Fecha DATETIME DEFAULT GETDATE()
+);

@@ -13,7 +13,7 @@ namespace Cupediarum
     public partial class FrmOpcionesMesero : Form
     {
         private readonly int idCuenta;
-        
+
         public FrmOpcionesMesero(int idCuentaRecibida)
         {
             InitializeComponent();
@@ -30,6 +30,20 @@ namespace Cupediarum
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
+            this.Hide();
+        }
+
+        private void BtnImprimir_Click(object sender, EventArgs e)
+        {
+            string logoPath = Application.StartupPath + @"\Img\Logo.png";
+
+            TicketHelper.Imprimir(idCuenta, logoPath);
+        }
+
+        private void BtnConsultar_Click(object sender, EventArgs e)
+        {
+            FrmConsultar frm = new FrmConsultar(idCuenta);
+            frm.Show();
             this.Hide();
         }
     }

@@ -75,21 +75,18 @@ namespace Cupediarum
             int area = Convert.ToInt32(CbArea.SelectedValue);
 
             string query = @"SELECT 
-                        C.Id_Cuenta,
-                        C.Nomb_Cuenta,
-                        CASE 
-                            WHEN C.Impresa = 1 THEN 'SI'
-                            ELSE 'NO'
-                        END AS Impresa,
-                        U.Nomb_Usuario AS Usuario,
-                        R.Nomb_Rol AS Rol
-                    FROM CUENTAS C
-                    INNER JOIN USUARIOS U 
-                        ON U.Id_Usuario = C.Id_Usuario
-                    INNER JOIN ROLES R
-                        ON R.Id_Rol = U.Id_Rol
-                    WHERE C.Estado = 1
-                    AND C.Nomb_Cuenta LIKE @buscar";
+                 C.Id_Cuenta,
+                 C.Nomb_Cuenta,
+                 C.Impresa,
+                 U.Nomb_Usuario AS Usuario,
+                 R.Nomb_Rol AS Rol
+                 FROM CUENTAS C
+                 INNER JOIN USUARIOS U 
+                 ON U.Id_Usuario = C.Id_Usuario
+                 INNER JOIN ROLES R
+                 ON R.Id_Rol = U.Id_Rol
+                 WHERE C.Estado = 1
+                 AND C.Nomb_Cuenta LIKE @buscar";
 
             if (area != 0)
                 query += " AND C.Id_Area = @area";
@@ -107,6 +104,20 @@ namespace Cupediarum
                 da.Fill(dt);
 
                 DgvCuentas.DataSource = dt;
+
+                if (DgvCuentas.Columns["Impresa"] is DataGridViewTextBoxColumn)
+                {
+                    int index = DgvCuentas.Columns["Impresa"].Index;
+                    DgvCuentas.Columns.Remove("Impresa");
+
+                    DataGridViewCheckBoxColumn chk = new DataGridViewCheckBoxColumn();
+                    chk.Name = "Impresa";
+                    chk.HeaderText = "IMPRESA";
+                    chk.DataPropertyName = "Impresa";
+
+                    DgvCuentas.Columns.Insert(index, chk);
+                }
+
                 DgvCuentas.Refresh();
 
                 DgvCuentas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -116,7 +127,6 @@ namespace Cupediarum
                     DgvCuentas.Columns["Id_Cuenta"].Visible = false;
 
                 DgvCuentas.Columns["Nomb_Cuenta"].HeaderText = "CUENTA";
-                DgvCuentas.Columns["Impresa"].HeaderText = "IMPRESA";
                 DgvCuentas.Columns["Usuario"].HeaderText = "USUARIO";
                 DgvCuentas.Columns["Rol"].HeaderText = "ROL";
 
@@ -147,7 +157,6 @@ namespace Cupediarum
             using (SqlConnection conn = new SqlConnection(
                 ConfigurationManager.ConnectionStrings["ConexionRestaurante"].ConnectionString))
             using (SqlCommand cmd = new SqlCommand(query, conn))
-
             {
                 cmd.Parameters.AddWithValue("@Impresa", impresa);
                 cmd.Parameters.AddWithValue("@IdCuenta", idCuenta);
@@ -253,12 +262,9 @@ namespace Cupediarum
         private void CalcularTotales()
         {
             decimal subtotal = 0;
-
             foreach (DataGridViewRow row in DgvComanda.Rows)
-            {
                 if (row.Cells["Total"].Value != null)
                     subtotal += Convert.ToDecimal(row.Cells["Total"].Value);
-            }
 
             decimal descuento = subtotal * (descuentoPorcentaje / 100);
             decimal subtotalConDesc = subtotal - descuento;
@@ -579,6 +585,14 @@ namespace Cupediarum
             decimal total = Convert.ToDecimal(LblTotal.Text);
 
             FrmPagarCuenta frm = new FrmPagarCuenta(idCuenta, total);
+
+            frm.NumeroCuenta = LblCuenta.Text;
+            frm.NombreMesero = LblNombMesero.Text;
+            frm.NombreArea = LblNombArea.Text;
+            frm.CantidadPersonas = int.Parse(LblPersonas.Text);
+            frm.Impuesto = decimal.Parse(LblImpuesto.Text);
+            frm.DgvComanda = DgvComanda;
+
             frm.ShowDialog();
 
             CargarCuentas();
@@ -593,7 +607,11 @@ namespace Cupediarum
             }
 
             ConfigurarTicket();
-            idCuentaImprimir = Convert.ToInt32(DgvCuentas.CurrentRow.Cells["Id_Cuenta"].Value);
+
+            int idCuenta = Convert.ToInt32(
+                DgvCuentas.CurrentRow.Cells["Id_Cuenta"].Value);
+
+            idCuentaImprimir = idCuenta;
 
             documento.PrintPage -= ImprimirTicket;
             documento.PrintPage += ImprimirTicket;
@@ -601,10 +619,12 @@ namespace Cupediarum
             PaperSize ps = new PaperSize("Ticket", anchoTicket, 1000);
             documento.DefaultPageSettings.PaperSize = ps;
 
-            PrintPreviewDialog vista = new PrintPreviewDialog();
-            vista.Document = documento;
-            vista.Width = 400;
-            vista.Height = 600;
+            PrintPreviewDialog vista = new PrintPreviewDialog
+            {
+                Document = documento,
+                Width = 400,
+                Height = 600
+            };
 
             DialogResult r = vista.ShowDialog();
 
@@ -613,6 +633,22 @@ namespace Cupediarum
                 try
                 {
                     documento.Print();
+
+                    ActualizarImpresa(idCuenta, true);
+
+                    CargarCuentas();
+
+                    foreach (DataGridViewRow row in DgvCuentas.Rows)
+                    {
+                        if (Convert.ToInt32(row.Cells["Id_Cuenta"].Value) == idCuenta)
+                        {
+                            row.Cells["Impresa"].Value = true;
+                            row.Selected = true;
+                            break;
+                        }
+                    }
+
+                    MessageBox.Show("Cuenta impresa correctamente ✔");
                 }
                 catch (Exception ex)
                 {
@@ -624,36 +660,33 @@ namespace Cupediarum
         private void ImprimirTicket(object sender, PrintPageEventArgs e)
         {
             float y = 10;
-
             Font titulo = new Font("Times New Roman", 14, FontStyle.Bold);
             Font subtitulo = new Font("Arial", 9, FontStyle.Bold);
             Font normal = new Font("Consolas", 9);
             Font negrita = new Font("Consolas", 10, FontStyle.Bold);
-
-            StringFormat centro = new StringFormat();
-            centro.Alignment = StringAlignment.Center;
-
-            StringFormat derecha = new StringFormat();
-            derecha.Alignment = StringAlignment.Far;
+            StringFormat centro = new StringFormat { Alignment = StringAlignment.Center };
+            StringFormat derecha = new StringFormat { Alignment = StringAlignment.Far };
 
             int colProducto = 0;
             int colCantidad = (int)(anchoTicket * 0.55);
             int colTotal = anchoTicket - 5;
 
-            Image logo = Image.FromFile(@"C:\Users\Laptop\Desktop\Proy_Cupediarum\Img\Logo.png");
-            int maxLogoWidth = anchoTicket - 20; // margen 10px a cada lado
-            float aspectRatio = (float)logo.Width / logo.Height;
-            int logoWidth = maxLogoWidth;
-            int logoHeight = (int)(logoWidth / aspectRatio);
-            int xLogo = (anchoTicket - logoWidth) / 2;
+            string logoPath = Application.StartupPath + @"\Img\Logo.png";
+            if (System.IO.File.Exists(logoPath))
+            {
+                using (Image logo = Image.FromFile(logoPath))
+                {
+                    int maxLogoWidth = anchoTicket - 20;
+                    float aspectRatio = (float)logo.Width / logo.Height;
+                    int logoWidth = maxLogoWidth;
+                    int logoHeight = (int)(logoWidth / aspectRatio);
+                    int xLogo = (anchoTicket - logoWidth) / 2;
+                    e.Graphics.DrawImage(logo, xLogo, y, logoWidth, logoHeight);
+                    y += logoHeight + 5;
+                }
+            }
 
-            // Dibujar el logo
-            e.Graphics.DrawImage(logo, xLogo, y, logoWidth, logoHeight);
-            y += logoHeight + 5; // avanzar después del logo
-
-            // -----------------------------
-            // ENCABEZADO
-            // -----------------------------
+            // Encabezado
             e.Graphics.DrawString("CUPEDIARUM RESTAURANT", titulo, Brushes.Black, anchoTicket / 2, y, centro);
             y += 25;
             e.Graphics.DrawString("Fantino, República Dominicana", normal, Brushes.Black, anchoTicket / 2, y, centro);
@@ -663,81 +696,50 @@ namespace Cupediarum
             e.Graphics.DrawString("********** PRECUENTA **********", negrita, Brushes.Black, anchoTicket / 2, y, centro);
             y += 30;
 
-            // -----------------------------
-            // INFO DE LA CUENTA
-            // -----------------------------
-            e.Graphics.DrawString("Cuenta: " + LblCuenta.Text, normal, Brushes.Black, 0, y);
-            y += 18;
-            e.Graphics.DrawString("Mesero: " + LblNombMesero.Text, normal, Brushes.Black, 0, y);
-            y += 18;
-            e.Graphics.DrawString("Area: " + LblNombArea.Text, normal, Brushes.Black, 0, y);
-            y += 18;
-            e.Graphics.DrawString("Personas: " + LblPersonas.Text, normal, Brushes.Black, 0, y);
-            y += 18;
-            e.Graphics.DrawString("Fecha: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm"), normal, Brushes.Black, 0, y);
-            y += 25;
+            // Info de cuenta
+            e.Graphics.DrawString("Cuenta: " + LblCuenta.Text, normal, Brushes.Black, 0, y); y += 18;
+            e.Graphics.DrawString("Mesero: " + LblNombMesero.Text, normal, Brushes.Black, 0, y); y += 18;
+            e.Graphics.DrawString("Area: " + LblNombArea.Text, normal, Brushes.Black, 0, y); y += 18;
+            e.Graphics.DrawString("Personas: " + LblPersonas.Text, normal, Brushes.Black, 0, y); y += 18;
+            e.Graphics.DrawString("Fecha: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm"), normal, Brushes.Black, 0, y); y += 25;
 
-            e.Graphics.DrawString("------------------------------------------", normal, Brushes.Black, 0, y);
-            y += 20;
+            e.Graphics.DrawString("------------------------------------------", normal, Brushes.Black, 0, y); y += 20;
 
-            // -----------------------------
-            // ENCABEZADO PRODUCTOS
-            // -----------------------------
+            // Productos
             e.Graphics.DrawString("Producto", subtitulo, Brushes.Black, colProducto, y);
             e.Graphics.DrawString("Cant", subtitulo, Brushes.Black, colCantidad, y);
-            e.Graphics.DrawString("Total", subtitulo, Brushes.Black, colTotal, y, derecha);
-            y += 20;
-            e.Graphics.DrawString("------------------------------------------", normal, Brushes.Black, 0, y);
-            y += 20;
+            e.Graphics.DrawString("Total", subtitulo, Brushes.Black, colTotal, y, derecha); y += 20;
+            e.Graphics.DrawString("------------------------------------------", normal, Brushes.Black, 0, y); y += 20;
 
-            // -----------------------------
-            // PRODUCTOS
-            // -----------------------------
             foreach (DataGridViewRow row in DgvComanda.Rows)
             {
-                if (row.Cells["Producto"].Value == null)
-                    continue;
-
+                if (row.Cells["Producto"].Value == null) continue;
                 string producto = row.Cells["Producto"].Value.ToString();
                 string cantidad = row.Cells["Cantidad"].Value.ToString();
                 string total = Convert.ToDecimal(row.Cells["Total"].Value).ToString("N2");
-
                 e.Graphics.DrawString(producto, normal, Brushes.Black, colProducto, y);
                 e.Graphics.DrawString(cantidad, normal, Brushes.Black, colCantidad, y);
                 e.Graphics.DrawString(total, normal, Brushes.Black, colTotal, y, derecha);
                 y += 20;
+                if (y > e.MarginBounds.Bottom) { e.HasMorePages = true; return; }
             }
 
             y += 10;
-            e.Graphics.DrawString("------------------------------------------", normal, Brushes.Black, 0, y);
-            y += 20;
+            e.Graphics.DrawString("------------------------------------------", normal, Brushes.Black, 0, y); y += 20;
 
-            // -----------------------------
-            // TOTALES
-            // -----------------------------
+            // Totales
             e.Graphics.DrawString("Subtotal:", normal, Brushes.Black, 0, y);
-            e.Graphics.DrawString(LblSubTotal.Text, normal, Brushes.Black, colTotal, y, derecha);
-            y += 20;
-
+            e.Graphics.DrawString(LblSubTotal.Text, normal, Brushes.Black, colTotal, y, derecha); y += 20;
             e.Graphics.DrawString("Descuento:", normal, Brushes.Black, 0, y);
-            e.Graphics.DrawString(LblDescuento.Text, normal, Brushes.Black, colTotal, y, derecha);
-            y += 20;
-
+            e.Graphics.DrawString(LblDescuento.Text + " (" + LblDesc.Text + ")", normal, Brushes.Black, colTotal, y, derecha); y += 20;
             e.Graphics.DrawString("ITBIS (18%):", normal, Brushes.Black, 0, y);
-            e.Graphics.DrawString(LblImpuesto.Text, normal, Brushes.Black, colTotal, y, derecha);
-            y += 25;
-
+            e.Graphics.DrawString(LblImpuesto.Text, normal, Brushes.Black, colTotal, y, derecha); y += 25;
             e.Graphics.DrawString("TOTAL:", negrita, Brushes.Black, 0, y);
-            e.Graphics.DrawString(LblTotal.Text, negrita, Brushes.Black, colTotal, y, derecha);
-            y += 40;
+            e.Graphics.DrawString(LblTotal.Text, negrita, Brushes.Black, colTotal, y, derecha); y += 40;
 
-            // -----------------------------
-            // PIE DEL TICKET
-            // -----------------------------
-            e.Graphics.DrawString("ESTO NO ES UNA FACTURA FISCAL", normal, Brushes.Black, anchoTicket / 2, y, centro);
-            y += 18;
-            e.Graphics.DrawString("Gracias por su visita", normal, Brushes.Black, anchoTicket / 2, y, centro);
-            y += 18;
+            // Pie
+            e.Graphics.DrawString("ESTO NO ES UNA FACTURA FISCAL", normal, Brushes.Black, anchoTicket / 2, y, centro); y += 18;
+            e.Graphics.DrawString("Gracias por su visita", normal, Brushes.Black, anchoTicket / 2, y, centro); y += 18;
             e.Graphics.DrawString("Vuelva pronto!", normal, Brushes.Black, anchoTicket / 2, y, centro);
         }
 

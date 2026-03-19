@@ -14,8 +14,14 @@ namespace Cupediarum
         string metodoSeleccionado = "";
         int idCuenta;
         int filaSeleccionada = -1;
-
         string entrada = "";
+
+        public string NumeroCuenta { get; set; }
+        public string NombreMesero { get; set; }
+        public string NombreArea { get; set; }
+        public int CantidadPersonas { get; set; }
+        public decimal Impuesto { get; set; }
+        public DataGridView DgvComanda { get; set; }
 
 
         public FrmPagarCuenta(int idCuentaRecibida, decimal total)
@@ -49,7 +55,7 @@ namespace Cupediarum
 
         private void BtnMetodo_Click(object sender, EventArgs e)
         {
-           
+
             Button btn = (Button)sender;
             metodoSeleccionado = btn.Text;
 
@@ -181,39 +187,24 @@ namespace Cupediarum
 
         private void GuardarPagos()
         {
-            string connStr = ConfigurationManager
-                .ConnectionStrings["ConexionRestaurante"]
-                .ConnectionString;
-
+            string connStr = ConfigurationManager.ConnectionStrings["ConexionRestaurante"].ConnectionString;
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 conn.Open();
                 SqlTransaction tran = conn.BeginTransaction();
-
                 try
                 {
                     foreach (DataGridViewRow row in DgvPagos.Rows)
                     {
                         if (row.IsNewRow) continue;
-
                         string metodo = row.Cells[0].Value?.ToString() ?? "";
-
-                        decimal monto = 0;
-                        decimal.TryParse(row.Cells[2].Value?.ToString(), out monto);
-
+                        decimal monto = Convert.ToDecimal(row.Cells[2].Value ?? 0);
+                        decimal propina = Convert.ToDecimal(row.Cells[3].Value ?? 0);
+                        decimal total = Convert.ToDecimal(row.Cells[4].Value ?? 0);
                         if (monto <= 0) continue;
 
-                        decimal propina = 0;
-                        decimal.TryParse(row.Cells[3].Value?.ToString(), out propina);
-
-                        decimal total = 0;
-                        decimal.TryParse(row.Cells[4].Value?.ToString(), out total);
-
-                        string query = @"INSERT INTO Pagos
-                            (Id_Cuenta, MetodoPago, Monto, Propina, Total)
-                            VALUES
-                            (@IdCuenta, @Metodo, @Monto, @Propina, @Total)";
-
+                        string query = @"INSERT INTO Pagos (Id_Cuenta, MetodoPago, Monto, Propina, Total)
+                                         VALUES (@IdCuenta, @Metodo, @Monto, @Propina, @Total)";
                         using (SqlCommand cmd = new SqlCommand(query, conn, tran))
                         {
                             cmd.Parameters.AddWithValue("@IdCuenta", idCuenta);
@@ -221,15 +212,11 @@ namespace Cupediarum
                             cmd.Parameters.AddWithValue("@Monto", monto);
                             cmd.Parameters.AddWithValue("@Propina", propina);
                             cmd.Parameters.AddWithValue("@Total", total);
-
                             cmd.ExecuteNonQuery();
                         }
                     }
 
-                    string update = @"UPDATE CUENTAS 
-                                      SET Estado = 'PAGADA' 
-                                      WHERE Id_Cuenta = @IdCuenta";
-
+                    string update = @"UPDATE CUENTAS SET EstadoCuenta = 'PAGADA' WHERE Id_Cuenta = @IdCuenta";
                     using (SqlCommand cmd = new SqlCommand(update, conn, tran))
                     {
                         cmd.Parameters.AddWithValue("@IdCuenta", idCuenta);
@@ -271,6 +258,12 @@ namespace Cupediarum
             GuardarPagos();
 
             MessageBox.Show("Cuenta pagada correctamente");
+
+            string logoPath = Application.StartupPath + @"\Img\Logo.png";
+
+            
+            TicketHelper.ImprimirCuentaSaldada(idCuenta, logoPath, totalPropinas, totalPagado);
+
             this.Close();
         }
 
@@ -368,3 +361,4 @@ namespace Cupediarum
         }
     }
 }
+    

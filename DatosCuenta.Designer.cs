@@ -38,8 +38,6 @@
             this.LblNombArea = new System.Windows.Forms.Label();
             this.DtpFecha = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.TxtIDMesa = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.TxtNombMesero = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.TxtIDArea = new System.Windows.Forms.TextBox();
@@ -144,8 +142,6 @@
             this.PnlDatosCuenta.Controls.Add(this.LblNombArea);
             this.PnlDatosCuenta.Controls.Add(this.DtpFecha);
             this.PnlDatosCuenta.Controls.Add(this.label6);
-            this.PnlDatosCuenta.Controls.Add(this.TxtIDMesa);
-            this.PnlDatosCuenta.Controls.Add(this.label5);
             this.PnlDatosCuenta.Controls.Add(this.TxtNombMesero);
             this.PnlDatosCuenta.Controls.Add(this.label3);
             this.PnlDatosCuenta.Controls.Add(this.TxtIDArea);
@@ -153,7 +149,7 @@
             this.PnlDatosCuenta.ForeColor = System.Drawing.Color.White;
             this.PnlDatosCuenta.Location = new System.Drawing.Point(5, 134);
             this.PnlDatosCuenta.Name = "PnlDatosCuenta";
-            this.PnlDatosCuenta.Size = new System.Drawing.Size(635, 186);
+            this.PnlDatosCuenta.Size = new System.Drawing.Size(635, 150);
             this.PnlDatosCuenta.TabIndex = 1;
             // 
             // LblNombArea
@@ -170,7 +166,7 @@
             // 
             this.DtpFecha.Font = new System.Drawing.Font("Mongolian Baiti", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DtpFecha.Location = new System.Drawing.Point(188, 134);
+            this.DtpFecha.Location = new System.Drawing.Point(187, 92);
             this.DtpFecha.Name = "DtpFecha";
             this.DtpFecha.Size = new System.Drawing.Size(141, 33);
             this.DtpFecha.TabIndex = 23;
@@ -180,30 +176,11 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(7, 146);
+            this.label6.Location = new System.Drawing.Point(6, 104);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 23);
             this.label6.TabIndex = 22;
             this.label6.Text = "FECHA :";
-            // 
-            // TxtIDMesa
-            // 
-            this.TxtIDMesa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtIDMesa.Location = new System.Drawing.Point(187, 93);
-            this.TxtIDMesa.Name = "TxtIDMesa";
-            this.TxtIDMesa.Size = new System.Drawing.Size(44, 35);
-            this.TxtIDMesa.TabIndex = 21;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(7, 102);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 23);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "MESA :";
             // 
             // TxtNombMesero
             // 
@@ -274,7 +251,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::Cupediarum.Properties.Resources.FondoDg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(645, 322);
+            this.ClientSize = new System.Drawing.Size(645, 294);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PnlDatosCuenta);
@@ -307,8 +284,6 @@
         private System.Windows.Forms.TextBox TxtNombMesero;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TxtIDArea;
-        private System.Windows.Forms.TextBox TxtIDMesa;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker DtpFecha;
         private System.Windows.Forms.Label LblNombArea;

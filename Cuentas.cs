@@ -116,9 +116,8 @@ namespace Cupediarum
             Button btn = sender as Button;
             cuentaSeleccionada = (int) btn.Tag;
 
-            FrmOpcionesMesero frm = new FrmOpcionesMesero(cuentaSeleccionada);
-            frm.ShowDialog();
-
+           FrmOpcionesMesero frm = new FrmOpcionesMesero(cuentaSeleccionada);
+            frm.Show();
         }
 
         private void CargarAreasEnPanel()
@@ -200,7 +199,6 @@ namespace Cupediarum
 
             FrmAgregarCuenta frm = new FrmAgregarCuenta(this, idAreaSeleccionada);
             frm.Show();
-            this.Hide();
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)

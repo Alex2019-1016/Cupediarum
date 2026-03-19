@@ -126,6 +126,7 @@
             this.BtnComentario.BackColor = System.Drawing.Color.Plum;
             this.BtnComentario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnComentario.BackgroundImage")));
             this.BtnComentario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnComentario.Enabled = false;
             this.BtnComentario.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
             this.BtnComentario.FlatAppearance.BorderSize = 3;
             this.BtnComentario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -145,6 +146,7 @@
             this.BtnComandas.BackColor = System.Drawing.Color.Plum;
             this.BtnComandas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnComandas.BackgroundImage")));
             this.BtnComandas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnComandas.Enabled = false;
             this.BtnComandas.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
             this.BtnComandas.FlatAppearance.BorderSize = 3;
             this.BtnComandas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -200,6 +202,7 @@
             this.BtnDescuento.BackColor = System.Drawing.Color.Plum;
             this.BtnDescuento.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnDescuento.BackgroundImage")));
             this.BtnDescuento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnDescuento.Enabled = false;
             this.BtnDescuento.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
             this.BtnDescuento.FlatAppearance.BorderSize = 3;
             this.BtnDescuento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -251,12 +254,12 @@
             // TxtCantProducto
             // 
             this.TxtCantProducto.BackColor = System.Drawing.Color.Gainsboro;
-            this.TxtCantProducto.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCantProducto.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCantProducto.Location = new System.Drawing.Point(288, 65);
-            this.TxtCantProducto.Multiline = true;
             this.TxtCantProducto.Name = "TxtCantProducto";
-            this.TxtCantProducto.Size = new System.Drawing.Size(89, 56);
+            this.TxtCantProducto.Size = new System.Drawing.Size(63, 53);
             this.TxtCantProducto.TabIndex = 17;
+            this.TxtCantProducto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // BtnBorrarTodo
             // 
@@ -1043,6 +1046,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImage = global::Cupediarum.Properties.Resources.FondoDg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1199, 652);
             this.Controls.Add(this.RtbComent);

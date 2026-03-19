@@ -78,15 +78,6 @@ namespace Cupediarum
                                 LblNombArea.Text = "Sin asignar";
                             }
 
-                            // Mesa
-                            if (reader["Id_Mesa"] != DBNull.Value)
-                            {
-                                TxtIDMesa.Text = reader["Id_Mesa"].ToString();
-                            }
-                            else
-                            {
-                                TxtIDMesa.Text = "";
-                            }
 
                             // Fecha
                             if (reader["FechaApertura"] != DBNull.Value)
@@ -98,7 +89,7 @@ namespace Cupediarum
                             // Solo lectura
                             TxtNombMesero.ReadOnly = true;
                             TxtIDArea.ReadOnly = true;
-                            TxtIDMesa.ReadOnly = true;
+                            
                         }
                     }
                 }

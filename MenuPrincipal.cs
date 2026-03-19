@@ -20,7 +20,7 @@ namespace Cupediarum
         private void BtnMesero_Click_1(object sender, EventArgs e)
         {
             FrmMesero frm = new FrmMesero();
-            frm.ShowDialog();
+            frm.Show();
         }
         
         private void BtnMesas_Click(object sender, EventArgs e)

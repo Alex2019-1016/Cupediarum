@@ -27,8 +27,10 @@ namespace Cupediarum
         {
             ConfigurarDgv();
             CargarCategoriasPrincipales();
-            CargarDetalleExistente();
+            //CargarDetalleExistente();
             CargarComentarioCuenta();
+
+            TxtCantProducto.Text = "1";
         }
 
         private void ConfigurarDgv()
@@ -256,6 +258,8 @@ namespace Cupediarum
         {
             ProductoTemp producto = (ProductoTemp)((Button)sender).Tag;
 
+            int cantidadSeleccionada = int.Parse(TxtCantProducto.Text);
+
             bool encontrado = false;
 
             foreach (DataGridViewRow row in DgvComanda.Rows)
@@ -263,11 +267,12 @@ namespace Cupediarum
                 if (row.Cells[0].Value != null &&
                     Convert.ToInt32(row.Cells[0].Value) == producto.Id)
                 {
-                    int cantidad = Convert.ToInt32(row.Cells["CANT"].Value);
-                    cantidad++;
+                    int cantidadActual = Convert.ToInt32(row.Cells["CANT"].Value);
 
-                    row.Cells["CANT"].Value = cantidad;
-                    row.Cells["PRECIO"].Value = cantidad * producto.Precio;
+                    cantidadActual += cantidadSeleccionada;
+
+                    row.Cells["CANT"].Value = cantidadActual;
+                    row.Cells["PRECIO"].Value = cantidadActual * producto.Precio;
 
                     encontrado = true;
                     break;
@@ -279,12 +284,14 @@ namespace Cupediarum
                 DgvComanda.Rows.Add(
                     producto.Id,
                     "1",
-                    1,
+                    cantidadSeleccionada,
                     producto.Nombre,
-                    producto.Precio,
+                    producto.Precio * cantidadSeleccionada,
                     0
                 );
             }
+
+            TxtCantProducto.Text = "1";
 
             CalcularTotal();
         }
@@ -386,6 +393,13 @@ namespace Cupediarum
 
         private void BtnMenos_Click(object sender, EventArgs e)
         {
+            int cant = int.Parse(TxtCantProducto.Text);
+
+            if (cant > 1)
+                cant--;
+
+            TxtCantProducto.Text = cant.ToString();
+
             if (DgvComanda.CurrentRow == null)
                 return;
 
@@ -408,6 +422,10 @@ namespace Cupediarum
 
         private void BtnMas_Click(object sender, EventArgs e)
         {
+            int cant = int.Parse(TxtCantProducto.Text);
+            cant++;
+            TxtCantProducto.Text = cant.ToString();
+
             if (DgvComanda.CurrentRow == null)
                 return;
 

@@ -44,7 +44,7 @@
             this.BtnUsuario.FlatAppearance.BorderSize = 3;
             this.BtnUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnUsuario.Image = global::Cupediarum.Properties.Resources.Usuarios;
-            this.BtnUsuario.Location = new System.Drawing.Point(103, 82);
+            this.BtnUsuario.Location = new System.Drawing.Point(25, 84);
             this.BtnUsuario.Name = "BtnUsuario";
             this.BtnUsuario.Size = new System.Drawing.Size(49, 44);
             this.BtnUsuario.TabIndex = 0;
@@ -53,7 +53,7 @@
             // TxtClave
             // 
             this.TxtClave.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtClave.Location = new System.Drawing.Point(157, 86);
+            this.TxtClave.Location = new System.Drawing.Point(79, 88);
             this.TxtClave.Name = "TxtClave";
             this.TxtClave.Size = new System.Drawing.Size(225, 40);
             this.TxtClave.TabIndex = 12;
@@ -67,7 +67,7 @@
             this.BtnAceptar.FlatAppearance.BorderSize = 3;
             this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAceptar.Image = global::Cupediarum.Properties.Resources.Aceptar32;
-            this.BtnAceptar.Location = new System.Drawing.Point(397, 3);
+            this.BtnAceptar.Location = new System.Drawing.Point(386, 12);
             this.BtnAceptar.Name = "BtnAceptar";
             this.BtnAceptar.Size = new System.Drawing.Size(44, 41);
             this.BtnAceptar.TabIndex = 13;
@@ -83,7 +83,7 @@
             this.BtnCancelar.FlatAppearance.BorderSize = 3;
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Cancelar32;
-            this.BtnCancelar.Location = new System.Drawing.Point(444, 3);
+            this.BtnCancelar.Location = new System.Drawing.Point(433, 12);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(44, 41);
             this.BtnCancelar.TabIndex = 14;
@@ -95,7 +95,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Cupediarum.Properties.Resources.BackGroundImage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(493, 224);
+            this.ClientSize = new System.Drawing.Size(489, 224);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.BtnAceptar);
             this.Controls.Add(this.TxtClave);
@@ -104,6 +104,7 @@
             this.Name = "FrmUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuario";
+            this.Load += new System.EventHandler(this.FrmUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

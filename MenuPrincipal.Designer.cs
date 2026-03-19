@@ -142,6 +142,7 @@
             this.BtnCerrarTurno.BackColor = System.Drawing.Color.Plum;
             this.BtnCerrarTurno.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCerrarTurno.BackgroundImage")));
             this.BtnCerrarTurno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnCerrarTurno.Enabled = false;
             this.BtnCerrarTurno.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnCerrarTurno.FlatAppearance.BorderSize = 3;
             this.BtnCerrarTurno.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -161,6 +162,7 @@
             this.BtnAbrirTurno.BackColor = System.Drawing.Color.Plum;
             this.BtnAbrirTurno.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAbrirTurno.BackgroundImage")));
             this.BtnAbrirTurno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnAbrirTurno.Enabled = false;
             this.BtnAbrirTurno.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnAbrirTurno.FlatAppearance.BorderSize = 3;
             this.BtnAbrirTurno.FlatStyle = System.Windows.Forms.FlatStyle.Popup;

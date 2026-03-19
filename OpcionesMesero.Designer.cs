@@ -62,6 +62,7 @@
             this.BtnReabrir.BackColor = System.Drawing.Color.Plum;
             this.BtnReabrir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnReabrir.BackgroundImage")));
             this.BtnReabrir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnReabrir.Enabled = false;
             this.BtnReabrir.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnReabrir.FlatAppearance.BorderSize = 3;
             this.BtnReabrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -81,11 +82,12 @@
             this.BtnPagar.BackColor = System.Drawing.Color.Plum;
             this.BtnPagar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPagar.BackgroundImage")));
             this.BtnPagar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnPagar.Enabled = false;
             this.BtnPagar.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnPagar.FlatAppearance.BorderSize = 3;
             this.BtnPagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPagar.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPagar.Image = global::Cupediarum.Properties.Resources.Pagar48;
+            this.BtnPagar.Image = global::Cupediarum.Properties.Resources.Cash48;
             this.BtnPagar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnPagar.Location = new System.Drawing.Point(139, 75);
             this.BtnPagar.Name = "BtnPagar";
@@ -113,12 +115,14 @@
             this.BtnImprimir.Text = "IMP.";
             this.BtnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnImprimir.UseVisualStyleBackColor = false;
+            this.BtnImprimir.Click += new System.EventHandler(this.BtnImprimir_Click);
             // 
             // BtnCambiarMesero
             // 
             this.BtnCambiarMesero.BackColor = System.Drawing.Color.Plum;
             this.BtnCambiarMesero.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCambiarMesero.BackgroundImage")));
             this.BtnCambiarMesero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnCambiarMesero.Enabled = false;
             this.BtnCambiarMesero.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.BtnCambiarMesero.FlatAppearance.BorderSize = 3;
             this.BtnCambiarMesero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -151,6 +155,7 @@
             this.BtnConsultar.Text = "CONSULTAR";
             this.BtnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnConsultar.UseVisualStyleBackColor = false;
+            this.BtnConsultar.Click += new System.EventHandler(this.BtnConsultar_Click);
             // 
             // BtnAgregar
             // 

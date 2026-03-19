@@ -51,7 +51,7 @@
             this.LblCuenta = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.DgvComanda = new System.Windows.Forms.DataGridView();
+            this.DgvConsulta = new System.Windows.Forms.DataGridView();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,7 +72,7 @@
             this.label38 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.PnlDatosCuenta.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvComanda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvConsulta)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -417,22 +417,22 @@
             this.label4.TabIndex = 17;
             this.label4.Text = "Cuenta";
             // 
-            // DgvComanda
+            // DgvConsulta
             // 
-            this.DgvComanda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvComanda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DgvConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvConsulta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Cantidad,
             this.Descripcion,
             this.Descuento,
             this.Precio,
             this.Total,
             this.Comentario});
-            this.DgvComanda.Location = new System.Drawing.Point(6, 210);
-            this.DgvComanda.Name = "DgvComanda";
-            this.DgvComanda.RowHeadersWidth = 62;
-            this.DgvComanda.RowTemplate.Height = 28;
-            this.DgvComanda.Size = new System.Drawing.Size(1100, 177);
-            this.DgvComanda.TabIndex = 39;
+            this.DgvConsulta.Location = new System.Drawing.Point(6, 210);
+            this.DgvConsulta.Name = "DgvConsulta";
+            this.DgvConsulta.RowHeadersWidth = 62;
+            this.DgvConsulta.RowTemplate.Height = 28;
+            this.DgvConsulta.Size = new System.Drawing.Size(1100, 177);
+            this.DgvConsulta.TabIndex = 39;
             // 
             // Cantidad
             // 
@@ -640,7 +640,7 @@
             this.Controls.Add(this.RtbComentario);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.DgvComanda);
+            this.Controls.Add(this.DgvConsulta);
             this.Controls.Add(this.PnlDatosCuenta);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -652,7 +652,7 @@
             this.panel1.ResumeLayout(false);
             this.PnlDatosCuenta.ResumeLayout(false);
             this.PnlDatosCuenta.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvComanda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvConsulta)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -684,7 +684,7 @@
         private System.Windows.Forms.Label LblCuenta;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView DgvComanda;
+        private System.Windows.Forms.DataGridView DgvConsulta;
         private System.Windows.Forms.RichTextBox RtbComentario;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel3;

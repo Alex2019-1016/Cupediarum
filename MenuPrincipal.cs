@@ -26,7 +26,7 @@ namespace Cupediarum
         private void BtnMesas_Click(object sender, EventArgs e)
         {
             FrmUsuario frm = new FrmUsuario();
-            frm.ShowDialog();
+            frm.Show();
         }
 
         private void BtnPrecios_Click(object sender, EventArgs e)

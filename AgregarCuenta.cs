@@ -71,7 +71,6 @@ namespace Cupediarum
 
                     FrmCantidadPersonas frm = new FrmCantidadPersonas(idCuentaCreada, this);
                     frm.Show();
-
                     this.Close();
                 }
                 catch (Exception ex)

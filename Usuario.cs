@@ -79,7 +79,7 @@ namespace Cupediarum
                             TxtClave.Enabled = false;
 
                             FrmMesas frm = new FrmMesas();
-                            frm.ShowDialog();
+                            frm.Show();
                             this.Hide();
                         }
                         else

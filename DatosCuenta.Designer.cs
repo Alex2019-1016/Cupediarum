@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDatosCuenta));
             this.PnlDatosC = new System.Windows.Forms.Panel();
-            this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnAbrirMesa = new System.Windows.Forms.Button();
             this.BtnPersonas = new System.Windows.Forms.Button();
             this.BtnCuenta = new System.Windows.Forms.Button();
@@ -52,7 +51,6 @@
             // 
             this.PnlDatosC.BackColor = System.Drawing.Color.Transparent;
             this.PnlDatosC.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PnlDatosC.Controls.Add(this.BtnCancelar);
             this.PnlDatosC.Controls.Add(this.BtnAbrirMesa);
             this.PnlDatosC.Controls.Add(this.BtnPersonas);
             this.PnlDatosC.Controls.Add(this.BtnCuenta);
@@ -60,25 +58,6 @@
             this.PnlDatosC.Name = "PnlDatosC";
             this.PnlDatosC.Size = new System.Drawing.Size(639, 91);
             this.PnlDatosC.TabIndex = 0;
-            // 
-            // BtnCancelar
-            // 
-            this.BtnCancelar.BackColor = System.Drawing.Color.Plum;
-            this.BtnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.BackgroundImage")));
-            this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.BtnCancelar.FlatAppearance.BorderSize = 3;
-            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancelar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelar.Image = global::Cupediarum.Properties.Resources.Cancelar32;
-            this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnCancelar.Location = new System.Drawing.Point(576, 4);
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(58, 50);
-            this.BtnCancelar.TabIndex = 14;
-            this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnCancelar.UseVisualStyleBackColor = false;
-            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnAbrirMesa
             // 
@@ -91,9 +70,9 @@
             this.BtnAbrirMesa.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAbrirMesa.Image = global::Cupediarum.Properties.Resources.Aceptar32;
             this.BtnAbrirMesa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnAbrirMesa.Location = new System.Drawing.Point(512, 3);
+            this.BtnAbrirMesa.Location = new System.Drawing.Point(588, -1);
             this.BtnAbrirMesa.Name = "BtnAbrirMesa";
-            this.BtnAbrirMesa.Size = new System.Drawing.Size(58, 50);
+            this.BtnAbrirMesa.Size = new System.Drawing.Size(46, 40);
             this.BtnAbrirMesa.TabIndex = 13;
             this.BtnAbrirMesa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAbrirMesa.UseVisualStyleBackColor = false;
@@ -280,7 +259,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.TextBox TxtNombMesero;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TxtIDArea;

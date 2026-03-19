@@ -197,22 +197,23 @@ namespace Cupediarum
                 return;
             }
 
-            FrmAgregarCuenta frm = new FrmAgregarCuenta(this, idAreaSeleccionada);
+            FrmAgregarCuenta frm = new FrmAgregarCuenta(formularioAnterior, idAreaSeleccionada);
             frm.Show();
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             if (formularioAnterior != null)
-            {
+
                 formularioAnterior.Show();
-                this.Close();
-            }
+
+            this.Close();
+
         }
 
         private void BtnPrecios_Click(object sender, EventArgs e)
         {
-            FrmPrecios frm = new FrmPrecios(this);
+            FrmPrecios frm = new FrmPrecios(formularioAnterior);
             frm.Show();
             this.Hide();
         }

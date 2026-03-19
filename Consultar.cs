@@ -26,7 +26,7 @@ namespace Cupediarum
         private void FrmConsultar_Load(object sender, EventArgs e)
         {
             CargarDatosCuenta();
-            DiseñarTabla(DgvComanda);
+            DiseñarTabla(DgvConsulta);
 
         }
         private void CargarDatosCuenta()
@@ -70,7 +70,7 @@ namespace Cupediarum
 
                     SqlDataReader dr = cmd.ExecuteReader();
 
-                    DgvComanda.Rows.Clear();
+                    DgvConsulta.Rows.Clear();
 
                     while (dr.Read())
                     {
@@ -84,7 +84,7 @@ namespace Cupediarum
                         RtbComentario.Text = dr["Comentario"]?.ToString();
 
                         // 🔹 DETALLE
-                        DgvComanda.Rows.Add(
+                        DgvConsulta.Rows.Add(
                             dr["Cantidad"],
                             dr["Producto"],
                             dr["Descuento"],

@@ -416,9 +416,9 @@
             // FrmMesero
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::Cupediarum.Properties.Resources.BackGroundImage;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(680, 381);
             this.Controls.Add(this.PnlTecladoNum);
             this.Controls.Add(this.PnlDatosMesero);

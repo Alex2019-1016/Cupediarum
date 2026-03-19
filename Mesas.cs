@@ -18,6 +18,7 @@ namespace Cupediarum
 {
     public partial class FrmMesas : Form
     {
+
         private decimal descuentoPorcentaje = 0;
         PrintDocument documento = new PrintDocument();
         int idCuentaImprimir = 0;
@@ -488,8 +489,6 @@ namespace Cupediarum
 
         private void BtnCerrar_Click(object sender, EventArgs e)
         {
-            FrmMenuPrincipal frm = new FrmMenuPrincipal();
-            frm.Show();
             this.Close();
         }
 

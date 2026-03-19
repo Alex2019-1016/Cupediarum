@@ -102,12 +102,5 @@ namespace Cupediarum
             frm.Show();
             this.Hide();
         }
-
-        private void BtnCancelar_Click(object sender, EventArgs e)
-        {
-            FrmCuentas frm = new FrmCuentas(this);
-            frm.Show();
-            this.Hide();
-        }
     }
 }

@@ -136,7 +136,6 @@ namespace Cupediarum
                 }
             }
 
-            // Eventos fuera del while
             BtnPostres.Click += BtnCategoria_Click;
             BtnBebidas.Click += BtnCategoria_Click;
             BtnComida.Click += BtnCategoria_Click;
@@ -307,13 +306,6 @@ namespace Cupediarum
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 conn.Open();
-
-                using (SqlCommand deleteCmd = new SqlCommand(
-                    "DELETE FROM DETALLE_CUENTA WHERE Id_Cuenta = @IdCuenta", conn))
-                {
-                    deleteCmd.Parameters.AddWithValue("@IdCuenta", idCuenta);
-                    deleteCmd.ExecuteNonQuery();
-                }
 
                 foreach (DataGridViewRow row in DgvComanda.Rows)
                 {

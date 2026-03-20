@@ -16,13 +16,15 @@ namespace Cupediarum
     {
         private readonly int idCuenta;
         private readonly Form formularioAnterior;
+        private Form formularioPadre;
 
-        public FrmDatosCuenta(int idCuentaRecibida, Form anterior)
+        public FrmDatosCuenta(int idCuentaRecibida, Form anterior, Form formularioPadre)
         {
             InitializeComponent();
             idCuenta = idCuentaRecibida;
             formularioAnterior = anterior;
             CargarDatosCuenta();
+            this.formularioPadre = formularioPadre;
         }
 
         private void CargarDatosCuenta()
@@ -57,16 +59,12 @@ namespace Cupediarum
                     {
                         if (reader.Read())
                         {
-                            // Nombre de la cuenta
                             BtnCuenta.Text = reader["Nomb_Cuenta"].ToString();
 
-                            // Cantidad de personas
                             BtnPersonas.Text = reader["Cantidad_Personas"].ToString();
 
-                            // Nombre del mesero
                             TxtNombMesero.Text = reader["Nomb_Usuario"].ToString();
 
-                            // Área
                             if (reader["Id_Area"] != DBNull.Value)
                             {
                                 TxtIDArea.Text = reader["Id_Area"].ToString();
@@ -79,14 +77,12 @@ namespace Cupediarum
                             }
 
 
-                            // Fecha
                             if (reader["FechaApertura"] != DBNull.Value)
                             {
                                 DateTime fecha = Convert.ToDateTime(reader["FechaApertura"]);
                                 DtpFecha.Value = fecha;
                             }
 
-                            // Solo lectura
                             TxtNombMesero.ReadOnly = true;
                             TxtIDArea.ReadOnly = true;
                             
@@ -98,9 +94,9 @@ namespace Cupediarum
 
         private void BtnAbrirMesa_Click(object sender, EventArgs e)
         {
-            FrmCapturaProductos frm = new FrmCapturaProductos(idCuenta);
-            frm.Show();
-            this.Hide();
+            FrmCapturaProductos frm = new FrmCapturaProductos(idCuenta,formularioPadre);
+            frm.ShowDialog();
+            this.Close();
         }
     }
 }

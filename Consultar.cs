@@ -29,7 +29,7 @@ namespace Cupediarum
             DiseñarTabla(DgvConsulta);
 
         }
-        private void CargarDatosCuenta()
+        public void CargarDatosCuenta()
         {
             string connStr = ConfigurationManager
                 .ConnectionStrings["ConexionRestaurante"]
@@ -74,7 +74,6 @@ namespace Cupediarum
 
                     while (dr.Read())
                     {
-                        // 🔹 CABECERA (solo una vez)
                         LblCuenta.Text = dr["Nomb_Cuenta"].ToString();
                         LblNombMesero.Text = dr["Mesero"].ToString();
                         LblNombArea.Text = dr["Nomb_Area"].ToString();
@@ -83,7 +82,6 @@ namespace Cupediarum
                         checkBox1.Checked = Convert.ToBoolean(dr["Impresa"]);
                         RtbComentario.Text = dr["Comentario"]?.ToString();
 
-                        // 🔹 DETALLE
                         DgvConsulta.Rows.Add(
                             dr["Cantidad"],
                             dr["Producto"],
@@ -140,14 +138,14 @@ namespace Cupediarum
 
         private void BtnAbrirCuenta_Click(object sender, EventArgs e)
         {
-            FrmCuentas frm = new FrmCuentas(this);
+            FrmCuentas frm = new FrmCuentas(this, this);
             frm.Show();
             this.Hide();
         }
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
-            FrmCapturaProductos frm = new FrmCapturaProductos(idCuenta);
+            FrmCapturaProductos frm = new FrmCapturaProductos(idCuenta, this);
             frm.ShowDialog();
 
             CargarDatosCuenta();

@@ -105,7 +105,6 @@ namespace Cupediarum
                 int colCant = (int)(ancho * 0.6);
                 int colTotal = ancho - 5;
 
-                // LOGO
                 if (System.IO.File.Exists(logoPath))
                 {
                     using (Image logo = Image.FromFile(logoPath))
@@ -117,14 +116,12 @@ namespace Cupediarum
                     }
                 }
 
-                // ENCABEZADO
                 e.Graphics.DrawString("CUPEDIARUM RESTAURANT", titulo, Brushes.Black, ancho / 2, y, centro);
                 y += 20;
 
                 e.Graphics.DrawString("***** CUENTA SALDADA *****", normal, Brushes.Black, ancho / 2, y, centro);
                 y += 25;
 
-                // INFO
                 e.Graphics.DrawString($"Cuenta: {cuenta}", normal, Brushes.Black, 0, y); y += 15;
                 e.Graphics.DrawString($"Mesero: {mesero}", normal, Brushes.Black, 0, y); y += 15;
                 e.Graphics.DrawString($"Area: {area}", normal, Brushes.Black, 0, y); y += 15;
@@ -134,7 +131,6 @@ namespace Cupediarum
                 e.Graphics.DrawString("----------------------------------------", normal, Brushes.Black, 0, y);
                 y += 15;
 
-                // PRODUCTOS
                 foreach (var p in productos)
                 {
                     e.Graphics.DrawString(p.nombre, normal, Brushes.Black, 0, y);
@@ -147,7 +143,6 @@ namespace Cupediarum
                 e.Graphics.DrawString("----------------------------------------", normal, Brushes.Black, 0, y);
                 y += 20;
 
-                // TOTALES
                 e.Graphics.DrawString("Consumo:", normal, Brushes.Black, 0, y);
                 e.Graphics.DrawString(subtotal.ToString("N2"), normal, Brushes.Black, colTotal, y, derecha); y += 15;
 
@@ -174,7 +169,6 @@ namespace Cupediarum
 
                 y += 20;
 
-                // FINAL
                 e.Graphics.DrawString("Gracias por su visita", normal, Brushes.Black, ancho / 2, y, centro); y += 15;
                 e.Graphics.DrawString("Vuelva pronto!", normal, Brushes.Black, ancho / 2, y, centro);
             };
@@ -277,7 +271,6 @@ namespace Cupediarum
                 int colCant = (int)(ancho * 0.6);
                 int colTotal = ancho - 5;
 
-                // LOGO
                 if (System.IO.File.Exists(logoPath))
                 {
                     using (Image logo = Image.FromFile(logoPath))
@@ -289,14 +282,12 @@ namespace Cupediarum
                     }
                 }
 
-                // ENCABEZADO
                 e.Graphics.DrawString("CUPEDIARUM RESTAURANT", titulo, Brushes.Black, ancho / 2, y, centro);
                 y += 20;
 
                 e.Graphics.DrawString("PRECUENTA", normal, Brushes.Black, ancho / 2, y, centro);
                 y += 25;
 
-                // INFO
                 e.Graphics.DrawString($"Cuenta: {cuenta}", normal, Brushes.Black, 0, y); y += 15;
                 e.Graphics.DrawString($"Mesero: {mesero}", normal, Brushes.Black, 0, y); y += 15;
                 e.Graphics.DrawString($"Area: {area}", normal, Brushes.Black, 0, y); y += 15;
@@ -306,7 +297,6 @@ namespace Cupediarum
                 e.Graphics.DrawString("----------------------------------------", normal, Brushes.Black, 0, y);
                 y += 15;
 
-                // PRODUCTOS
                 foreach (var p in productos)
                 {
                     e.Graphics.DrawString(p.nombre, normal, Brushes.Black, 0, y);
@@ -319,7 +309,6 @@ namespace Cupediarum
                 e.Graphics.DrawString("----------------------------------------", normal, Brushes.Black, 0, y);
                 y += 20;
 
-                // TOTALES
                 e.Graphics.DrawString("Subtotal:", normal, Brushes.Black, 0, y);
                 e.Graphics.DrawString(subtotal.ToString("N2"), normal, Brushes.Black, colTotal, y, derecha); y += 15;
 

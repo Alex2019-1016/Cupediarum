@@ -18,11 +18,14 @@ namespace Cupediarum
 
         private readonly Form formularioAnterior;
 
-        public FrmCantidadPersonas(int idCuentaRecibida, Form anterior)
+        private Form formularioPadre;
+
+        public FrmCantidadPersonas(int idCuentaRecibida, Form anterior, Form Padre)
         {
             InitializeComponent();
             idCuenta = idCuentaRecibida;
             formularioAnterior = anterior;
+            this.formularioPadre = Padre;
 
         }
 
@@ -57,9 +60,9 @@ namespace Cupediarum
                     conn.Open();
                     cmd.ExecuteNonQuery();
 
-                    FrmDatosCuenta frm = new FrmDatosCuenta(idCuenta,this);
+                    FrmDatosCuenta frm = new FrmDatosCuenta(idCuenta, this, formularioPadre);
                     frm.Show();
-                    this.Close();
+                    this.Hide();
                 }
                 catch (Exception ex)
                 {
@@ -84,7 +87,6 @@ namespace Cupediarum
             {
                 if (ctrl is Button btn)
                 {
-                    // ignoramos los botones especiales
                     if (btn.Name != "BtnAceptar" && btn.Name != "BtnCancelar" && btn.Name != "BtnBorrar")
                     {
                         btn.Click += TecladoNumerico_Click;

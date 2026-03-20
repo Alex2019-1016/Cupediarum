@@ -283,24 +283,20 @@ namespace Cupediarum
 
         private void DiseñarGrid()
         {
-            // CABECERAS
             DgvPagos.ColumnHeadersDefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(192, 255, 255);
             DgvPagos.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             DgvPagos.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Times New Roman", 10, FontStyle.Bold);
             DgvPagos.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             DgvPagos.ColumnHeadersHeight = 35;
 
-            // FILAS
             DgvPagos.DefaultCellStyle.Font = new System.Drawing.Font("Times New Roman", 10);
             DgvPagos.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.LightCoral;
             DgvPagos.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
 
             DgvPagos.RowTemplate.Height = 30;
 
-            // COLORES ALTERNOS
             DgvPagos.AlternatingRowsDefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(245, 245, 245);
 
-            // CONFIG
             DgvPagos.RowHeadersVisible = false;
             DgvPagos.AllowUserToAddRows = false;
             DgvPagos.AllowUserToResizeRows = false;
@@ -309,19 +305,16 @@ namespace Cupediarum
             DgvPagos.ReadOnly = true;
             DgvPagos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
-            // TAMAÑOS
             DgvPagos.Columns[0].Width = 60;
             DgvPagos.Columns[1].Width = 180;
             DgvPagos.Columns[2].Width = 130;
             DgvPagos.Columns[3].Width = 130;
             DgvPagos.Columns[4].Width = 130;
 
-            // FORMATO DINERO
             DgvPagos.Columns[2].DefaultCellStyle.Format = "N2";
             DgvPagos.Columns[3].DefaultCellStyle.Format = "N2";
             DgvPagos.Columns[4].DefaultCellStyle.Format = "N2";
 
-            // ALINEACIÓN
             DgvPagos.Columns[2].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             DgvPagos.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             DgvPagos.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;

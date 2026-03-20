@@ -17,17 +17,22 @@ namespace Cupediarum
     public partial class FrmCuentas : Form
     {
         private Form formularioAnterior;
+        private Form formularioPadre;
 
-        public FrmCuentas(Form frmAnterior)
+        public FrmCuentas(Form frmAnterior, Form Padre)
         {
             InitializeComponent();
             formularioAnterior = frmAnterior;
+            formularioPadre = Padre;
         }
 
         private int cuentaSeleccionada = 0;
         private int idAreaSeleccionada = 0;
-       
 
+        public void RecargarCuentas()
+        {
+            CargarCuentas();
+        }
         private void Pedidos_Load(object sender, EventArgs e)
         {
             TxtNombMesero.Text = Sesion.NombreUsuario;
@@ -35,18 +40,18 @@ namespace Cupediarum
 
             LblUsuario.Text = Sesion.NombreRol;
 
-            if (Sesion.IdRol == 1) // Admin
+            if (Sesion.IdRol == 1)
                 LblUsuario.ForeColor = Color.Red;
-            else if (Sesion.IdRol == 2) // Cajero
+            else if (Sesion.IdRol == 2)
                 LblUsuario.ForeColor = Color.Lime;
-            else if(Sesion.IdRol == 3) // Mesero
+            else if(Sesion.IdRol == 3)
                 LblUsuario.ForeColor = Color.Yellow;
 
             CargarCuentas();
             CargarAreasEnPanel();
         }
 
-        private void CargarCuentas()
+        public void CargarCuentas()
         {
             FlpCuentas.Controls.Clear();
 
@@ -116,7 +121,7 @@ namespace Cupediarum
             Button btn = sender as Button;
             cuentaSeleccionada = (int) btn.Tag;
 
-           FrmOpcionesMesero frm = new FrmOpcionesMesero(cuentaSeleccionada);
+            FrmOpcionesMesero frm = new FrmOpcionesMesero(cuentaSeleccionada, this);
             frm.Show();
         }
 
@@ -197,15 +202,21 @@ namespace Cupediarum
                 return;
             }
 
-            FrmAgregarCuenta frm = new FrmAgregarCuenta(formularioAnterior, idAreaSeleccionada);
+            FrmAgregarCuenta frm = new FrmAgregarCuenta(this, idAreaSeleccionada, this);
             frm.Show();
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
-            if (formularioAnterior != null)
-
+            if (formularioAnterior is FrmMesas frmMesas)
+            {
+                frmMesas.RecargarDatos(0);
+                frmMesas.Show();
+            }
+            else if (formularioAnterior != null)
+            {
                 formularioAnterior.Show();
+            }
 
             this.Close();
 

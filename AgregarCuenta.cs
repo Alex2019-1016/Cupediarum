@@ -17,12 +17,14 @@ namespace Cupediarum
     {
         private readonly Form formularioAnterior;
         private readonly int idAreaSeleccionada;
+        private Form formularioPadre;
 
-        public FrmAgregarCuenta(Form anterior, int idArea)
+        public FrmAgregarCuenta(Form anterior, int idArea, Form Padre)
         {
             InitializeComponent();
             formularioAnterior = anterior;
             idAreaSeleccionada = idArea;
+            this.formularioPadre = Padre;
         }
 
         private void BtnAceptar_Click_1(object sender, EventArgs e)
@@ -69,9 +71,9 @@ namespace Cupediarum
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
 
-                    FrmCantidadPersonas frm = new FrmCantidadPersonas(idCuentaCreada, this);
+                    FrmCantidadPersonas frm = new FrmCantidadPersonas(idCuentaCreada, this, formularioPadre);
                     frm.Show();
-                    this.Close();
+                    this.Hide();
                 }
                 catch (Exception ex)
                 {

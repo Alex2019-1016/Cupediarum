@@ -176,7 +176,7 @@ namespace Cupediarum
 
                             TxtClave.Enabled = false;
 
-                            FrmCuentas frm = new FrmCuentas(this);
+                            FrmCuentas frm = new FrmCuentas(this, this);
                             frm.Show();
                             this.Hide();
                         }

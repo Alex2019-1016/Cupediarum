@@ -62,7 +62,6 @@ namespace Cupediarum
                             string nombreUsuario = reader.GetString(1);
                             int idRol = reader.GetInt32(2);
 
-                            // SOLO ADMIN (1) Y CAJERO (2)
                             if (idRol != 1 && idRol != 2)
                             {
                                 MessageBox.Show("Este usuario no tiene permisos para iniciar el sistema.",

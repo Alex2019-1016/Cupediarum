@@ -29,6 +29,11 @@ namespace Cupediarum
             InitializeComponent();
         }
 
+        public void RecargarDatos(int idCuenta)
+        {
+            CargarCuentas();
+            CargarComanda(idCuenta);
+        }
         private void FrmMesas_Load(object sender, EventArgs e)
         {
             CargarAreas();
@@ -64,7 +69,7 @@ namespace Cupediarum
             }
         }
 
-        private void CargarCuentas()
+        public void CargarCuentas()
         {
             if (CbArea.SelectedValue == null || CbArea.SelectedValue is DataRowView)
                 return;
@@ -144,6 +149,36 @@ namespace Cupediarum
                     CargarComanda(idCuenta);
                 }
             }
+            DgvCuentas.RowPrePaint -= DgvCuentas_RowPrePaint;
+            DgvCuentas.RowPrePaint += DgvCuentas_RowPrePaint;
+        }
+
+        private void DgvCuentas_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
+        {
+            if (DgvCuentas.Rows[e.RowIndex].Cells["Usuario"].Value == null)
+                return;
+
+            string usuario = DgvCuentas.Rows[e.RowIndex].Cells["Usuario"].Value.ToString().Trim();
+
+            Color colorUsuario = Color.Black;
+
+            if (usuario.Equals("MARCOS", StringComparison.OrdinalIgnoreCase))
+                colorUsuario = Color.Red;
+
+            else if (usuario.Equals("GABRIEL", StringComparison.OrdinalIgnoreCase))
+                colorUsuario = Color.DarkBlue;
+
+            else if (usuario.Equals("MARIA", StringComparison.OrdinalIgnoreCase))
+                colorUsuario = Color.DarkGreen;
+
+            else if (usuario.Equals("ALEX", StringComparison.OrdinalIgnoreCase))
+                colorUsuario = Color.Purple;
+
+            DgvCuentas.Rows[e.RowIndex].Cells["Usuario"].Style.ForeColor = colorUsuario;
+            DgvCuentas.Rows[e.RowIndex].Cells["Rol"].Style.ForeColor = colorUsuario;
+
+            DgvCuentas.Rows[e.RowIndex].Cells["Usuario"].Style.Font = new Font("Times New Roman", 10, FontStyle.Bold);
+            DgvCuentas.Rows[e.RowIndex].Cells["Rol"].Style.Font = new Font("Times New Roman", 10, FontStyle.Bold);
         }
 
         private void TxtBuscarCuentas_TextChanged(object sender, EventArgs e)
@@ -217,7 +252,7 @@ namespace Cupediarum
             CalcularTotales();
         }
 
-        private void CargarComanda(int idCuenta)
+        public void CargarComanda(int idCuenta)
         {
             string connStr = ConfigurationManager
        .ConnectionStrings["ConexionRestaurante"]
@@ -498,7 +533,7 @@ namespace Cupediarum
             Sesion.NombreUsuario = "MARCOS";
             Sesion.IdRol = 2;
 
-            FrmCuentas frm = new FrmCuentas(this);
+            FrmCuentas frm = new FrmCuentas(this, this);
             frm.Show();
             this.Hide();
         }
@@ -517,7 +552,7 @@ namespace Cupediarum
             int idCuenta = Convert.ToInt32(
                 DgvCuentas.CurrentRow.Cells["Id_Cuenta"].Value);
 
-            FrmCapturaProductos frm = new FrmCapturaProductos(idCuenta);
+            FrmCapturaProductos frm = new FrmCapturaProductos(idCuenta, this);
             frm.ShowDialog();
 
             CargarComanda(idCuenta);
@@ -685,7 +720,6 @@ namespace Cupediarum
                 }
             }
 
-            // Encabezado
             e.Graphics.DrawString("CUPEDIARUM RESTAURANT", titulo, Brushes.Black, anchoTicket / 2, y, centro);
             y += 25;
             e.Graphics.DrawString("Fantino, República Dominicana", normal, Brushes.Black, anchoTicket / 2, y, centro);
@@ -695,7 +729,6 @@ namespace Cupediarum
             e.Graphics.DrawString("********** PRECUENTA **********", negrita, Brushes.Black, anchoTicket / 2, y, centro);
             y += 30;
 
-            // Info de cuenta
             e.Graphics.DrawString("Cuenta: " + LblCuenta.Text, normal, Brushes.Black, 0, y); y += 18;
             e.Graphics.DrawString("Mesero: " + LblNombMesero.Text, normal, Brushes.Black, 0, y); y += 18;
             e.Graphics.DrawString("Area: " + LblNombArea.Text, normal, Brushes.Black, 0, y); y += 18;
@@ -704,7 +737,6 @@ namespace Cupediarum
 
             e.Graphics.DrawString("------------------------------------------", normal, Brushes.Black, 0, y); y += 20;
 
-            // Productos
             e.Graphics.DrawString("Producto", subtitulo, Brushes.Black, colProducto, y);
             e.Graphics.DrawString("Cant", subtitulo, Brushes.Black, colCantidad, y);
             e.Graphics.DrawString("Total", subtitulo, Brushes.Black, colTotal, y, derecha); y += 20;
@@ -726,7 +758,6 @@ namespace Cupediarum
             y += 10;
             e.Graphics.DrawString("------------------------------------------", normal, Brushes.Black, 0, y); y += 20;
 
-            // Totales
             e.Graphics.DrawString("Subtotal:", normal, Brushes.Black, 0, y);
             e.Graphics.DrawString(LblSubTotal.Text, normal, Brushes.Black, colTotal, y, derecha); y += 20;
             e.Graphics.DrawString("Descuento:", normal, Brushes.Black, 0, y);
@@ -736,7 +767,6 @@ namespace Cupediarum
             e.Graphics.DrawString("TOTAL:", negrita, Brushes.Black, 0, y);
             e.Graphics.DrawString(LblTotal.Text, negrita, Brushes.Black, colTotal, y, derecha); y += 40;
 
-            // Pie
             e.Graphics.DrawString("ESTO NO ES UNA FACTURA FISCAL", normal, Brushes.Black, anchoTicket / 2, y, centro); y += 18;
             e.Graphics.DrawString("Gracias por su visita", normal, Brushes.Black, anchoTicket / 2, y, centro); y += 18;
             e.Graphics.DrawString("Vuelva pronto!", normal, Brushes.Black, anchoTicket / 2, y, centro);

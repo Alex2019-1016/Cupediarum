@@ -149,7 +149,7 @@
             this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAceptar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAceptar.Image = global::Cupediarum.Properties.Resources.Aceptar32;
-            this.BtnAceptar.Location = new System.Drawing.Point(187, 66);
+            this.BtnAceptar.Location = new System.Drawing.Point(187, 65);
             this.BtnAceptar.Name = "BtnAceptar";
             this.BtnAceptar.Size = new System.Drawing.Size(60, 121);
             this.BtnAceptar.TabIndex = 18;

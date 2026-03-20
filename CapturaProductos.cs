@@ -10,17 +10,19 @@ namespace Cupediarum
 {
     public partial class FrmCapturaProductos : Form
     {
+        private Form formularioPadre;
+
         private int idCategoriaSeleccionada = 0;
         private int idSubCategoriaSeleccionada = 0;
         private decimal totalCuenta = 0;
 
         private readonly int idCuenta;
 
-        public FrmCapturaProductos(int idCuentaRecibida)
+        public FrmCapturaProductos(int idCuentaRecibida, Form formularioPadre)
         {
             InitializeComponent();
             idCuenta = idCuentaRecibida;
-
+            this.formularioPadre = formularioPadre;
         }
 
         private void FrmCapturaProductos_Load_1(object sender, EventArgs e)
@@ -67,12 +69,12 @@ namespace Cupediarum
                     string nombre = ObtenerNombreProducto(idProducto);
 
                     DgvComanda.Rows.Add(
-                        idProducto,     // 0
-                        "1",            // 1 COMANDA
-                        cantidad,       // 2 CANT
-                        nombre,         // 3 DESCRIPCION
-                        subtotal,       // 4 PRECIO
-                        0               // 5 DESCUENTO
+                        idProducto,    
+                        "1",            
+                        cantidad,       
+                        nombre,         
+                        subtotal,       
+                        0              
                     );
                 }
             }
@@ -365,9 +367,23 @@ namespace Cupediarum
                 GuardarComentarioCuenta();
 
                 MessageBox.Show("Comanda guardada correctamente ✔");
+                if (formularioPadre != null)
+                {
+                    if (formularioPadre is FrmCuentas frmCuentas)
+                    {
+                        frmCuentas.RecargarCuentas();
+                    }
 
-                FrmCuentas frm = new FrmCuentas(this);
-                frm.Show();
+                    else if (formularioPadre is FrmConsultar frmConsultar)
+                    {
+                        frmConsultar.CargarDatosCuenta();
+                    }
+                    else if (formularioPadre is FrmMesas frmMesas)
+                    {
+                        frmMesas.RecargarDatos(idCuenta);
+                    }
+                }
+                formularioPadre.Show();
                 this.Close();
             }
             catch (Exception ex)
@@ -378,8 +394,6 @@ namespace Cupediarum
 
         private void BtnCancelar_Click_1(object sender, EventArgs e)
         {
-            FrmCuentas frm = new FrmCuentas(this);
-            frm.Show();
             this.Close();
         }
 
